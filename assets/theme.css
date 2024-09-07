@@ -24208,6 +24208,11 @@ nav.drawer .drawer__body .drawer__menu {
   animation: blink 2s infinite linear;
 } 
 
+/* Mobile menu */ 
+.sliderule__wrapper--secondary .sliderow, .sliderule__wrapper--secondary .sliderow__title {
+  min-height: 20px;
+}
+
 /* Animation for nav link */
 @keyframes blink {
   50% {
@@ -24307,9 +24312,6 @@ nav.drawer .drawer__body .drawer__menu {
 }
 
 /*----- COLLECTION PAGE -----*/
-
-
-
 /* Removing the padding from the collection page header (Boost APP), because it was appearing as empty space on collections without an image */
 .boost-sd__collection-header .boost-sd__header-main-2-content {
   padding: 0;
