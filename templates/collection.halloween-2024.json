@@ -105,6 +105,9 @@
         "collection_HiBK4D",
         "collection_DTazw4"
       ],
+      "custom_css": [
+        ".collection-item__info {display: none;}"
+      ],
       "settings": {
         "title": "",
         "description": "",
