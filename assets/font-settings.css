@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Oswald;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//candycatz.com/cdn/fonts/oswald/oswald_n4.a5ee385bde39969d807f7f1297bf51d73fbf3c1e.woff2?h1=Y2FuZHljYXR6LmNvbQ&h2=Y2FuZHljYXR6LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=e9f52eaffcb72b06ddcc46ac9fb291fc2a96bf99f7c3d6b34c4c2dbdadf6f6fb") format("woff2"),
+       url("//candycatz.com/cdn/fonts/oswald/oswald_n4.8f3e284746fbc2d29e34993609c51fdc432b0b24.woff?h1=Y2FuZHljYXR6LmNvbQ&h2=Y2FuZHljYXR6LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=6ea96a07e61f5576e6cd232f619fd738574b0a58ed848d71b06d0256778f5e12") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//candycatz.com/cdn/fonts/avenir_next/avenirnext_n4.7fd0287595be20cd5a683102bf49d073b6abf144.woff2?h1=Y2FuZHljYXR6LmNvbQ&h2=Y2FuZHljYXR6LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=6201d27e72911ac8ded10f09b4cf1fea3bea4132b7c35c461ea8b1ca8c702820") format("woff2"),
+       url("//candycatz.com/cdn/fonts/avenir_next/avenirnext_n4.a26a334a0852627a5f36b195112385b0cd700077.woff?h1=Y2FuZHljYXR6LmNvbQ&h2=Y2FuZHljYXR6LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=f03157b956c3584e623da47663ab33d4a01e5c40a3857f688ad46bf2cbd14135") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//candycatz.com/cdn/fonts/avenir_next/avenirnext_n4.7fd0287595be20cd5a683102bf49d073b6abf144.woff2?h1=Y2FuZHljYXR6LmNvbQ&h2=Y2FuZHljYXR6LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=6201d27e72911ac8ded10f09b4cf1fea3bea4132b7c35c461ea8b1ca8c702820") format("woff2"),
+       url("//candycatz.com/cdn/fonts/avenir_next/avenirnext_n4.a26a334a0852627a5f36b195112385b0cd700077.woff?h1=Y2FuZHljYXR6LmNvbQ&h2=Y2FuZHljYXR6LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=f03157b956c3584e623da47663ab33d4a01e5c40a3857f688ad46bf2cbd14135") format("woff");
+}
+
+
+
+  @font-face {
+  font-family: Oswald;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("//candycatz.com/cdn/fonts/oswald/oswald_n5.22b74dce86cb1e4738ccceb326c9284bc24641e9.woff2?h1=Y2FuZHljYXR6LmNvbQ&h2=Y2FuZHljYXR6LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=eba66111925e0004f4e1ae91a96a360ccc603e149df8295d214180d3d87589fe") format("woff2"),
+       url("//candycatz.com/cdn/fonts/oswald/oswald_n5.c60897f79173105d5bae1e28e68e9326a4a64631.woff?h1=Y2FuZHljYXR6LmNvbQ&h2=Y2FuZHljYXR6LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=421550556db516f22a906532efba397af1ae6128d6c7b329ccb16d111632b210") format("woff");
+}
+
+
+
+
+  @font-face {
+  font-family: "Avenir Next";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("//candycatz.com/cdn/fonts/avenir_next/avenirnext_n5.972a96b7a049f12c89d6d1cd0e1b6c9211f7ba14.woff2?h1=Y2FuZHljYXR6LmNvbQ&h2=Y2FuZHljYXR6LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=83b89efaafcbbaca59e3eaca1b1076e72379dd5edbfa41d5b427d770f023e777") format("woff2"),
+       url("//candycatz.com/cdn/fonts/avenir_next/avenirnext_n5.9e88d20fa9eb66ba268ac60ab013006ef69a310a.woff?h1=Y2FuZHljYXR6LmNvbQ&h2=Y2FuZHljYXR6LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=8ed0144c7f3223b1146e25d2f8225d68134db93f99c34ddd4e8432a7aaff9738") format("woff");
+}
+
+
+
+
+
+
+
+  @font-face {
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("//candycatz.com/cdn/fonts/avenir_next/avenirnext_i4.f1583d9f457b68e44fbda187a48b4096d547d7f4.woff2?h1=Y2FuZHljYXR6LmNvbQ&h2=Y2FuZHljYXR6LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=609e8d820fc1de75db91d8ee5861267f2443d5ca532166dd3779de63bdd0fa89") format("woff2"),
+       url("//candycatz.com/cdn/fonts/avenir_next/avenirnext_i4.67fb53a3e0351125941146246183577ae8d8bf23.woff?h1=Y2FuZHljYXR6LmNvbQ&h2=Y2FuZHljYXR6LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=2f43fc1ba1df4744b9944cd45caa330ffa9a42e0a0af4cf384dbc921da6c635a") format("woff");
+}
+
+
+
+
+  @font-face {
+  font-family: "Avenir Next";
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+  src: url("//candycatz.com/cdn/fonts/avenir_next/avenirnext_i5.2d1a6d537e5b485482d6bcca34a56cc10d441a55.woff2?h1=Y2FuZHljYXR6LmNvbQ&h2=Y2FuZHljYXR6LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=88be86a0c4018346dcc3f7e16845e9325a424ad6d87f66712f8f089d2b4ec792") format("woff2"),
+       url("//candycatz.com/cdn/fonts/avenir_next/avenirnext_i5.fcfa37c68ca483c41031623bfae4701d99bb4b95.woff?h1=Y2FuZHljYXR6LmNvbQ&h2=Y2FuZHljYXR6LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=30d96f6e224ce04fefbf13fb01f5ee479c039445d186728136e38c3a54daf1c6") format("woff");
+}
+

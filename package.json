@@ -1,0 +1,16 @@
+{
+  "name": "candy-catz-broadcast-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "shopify theme dev --store candycatz.myshopify.com"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.4.4",
+    "prettier": "^3.2.5"
+  }
+}
