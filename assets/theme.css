@@ -24366,10 +24366,9 @@ nav.drawer .drawer__body .drawer__menu {
  .boost-sd__filter-option-item-label, 
  .boost-sd__filter-option-item-amount, 
  .loox-icon, 
- #header.minimal-header > div.summary{
+ #header > div.summary{
   color: #E9E9E9!important;
 }
-
 
 #menu-btn {
   background-color: gray;
