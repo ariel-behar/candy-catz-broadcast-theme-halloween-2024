@@ -5,7 +5,7 @@
   {%- if products_count > 0 -%}
     <div class="grid-outer">
       <grid-slider align-arrows>
-        <div class="grid grid--slider{% if products_count <= 4 %} grid--slider-disabled{% endif %}"
+        <div class="grid grid--slider{% if products_count <= 4 %} grid--slider-disabled{% endif %} grid--mobile-slider"
           data-grid-slider
           id="product-recommendations">
           {%- liquid
