@@ -24307,10 +24307,8 @@ nav.drawer .drawer__body .drawer__menu {
 }
 
 /*----- COLLECTION PAGE -----*/
-/* Removing the margin-bottom of the filter/sort by toolbar */
-.boost-sd__filter-block .boost-sd-container .boost-sd__toolbar-container {
-  margin-bottom: 0;
-}
+
+
 
 /* Removing the padding from the collection page header (Boost APP), because it was appearing as empty space on collections without an image */
 .boost-sd__collection-header .boost-sd__header-main-2-content {
@@ -24343,6 +24341,43 @@ nav.drawer .drawer__body .drawer__menu {
   gap: 5px;
 }
 
+/* Removing the margin-bottom of the filter/sort by toolbar */
+.boost-sd__filter-block .boost-sd-container .boost-sd__toolbar-container {
+  margin-bottom: 0;
+  background-color: black!important;
+}
+
+#boost-sd__filter-tree-wrapper > div > div {
+  background-color: black!important;
+}
+
+.booost-sd__sorting {
+  border-left: none;
+}
+
+.boost-sd__filter-tree-toggle-button {
+  border-right: none!important;
+}
+
+.boost-sd__sorting-label-wrapper .boost-sd__sorting-label,
+ .boost-sd__sorting-label-wrapper .boost-sd__sorting-value, 
+ .boost-sd__filter-tree-toggle-button-title,
+ .boost-sd__filter-option-label .boost-sd__filter-option-title,
+ .boost-sd__filter-option-item-label, 
+ .boost-sd__filter-option-item-amount, 
+ .loox-icon, 
+ #header.minimal-header > div.summary{
+  color: #E9E9E9!important;
+}
+
+
+#menu-btn {
+  background-color: gray;
+}
+
+.loox-icon {
+  color: #CB4FD4!important;
+}
 
 @media only screen and (max-width: 767px) {
   .boost-sd-layout.boost-sd-layout--has-filter-vertical.boost-sd-layout--has-vertical-style-expand {
