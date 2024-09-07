@@ -24335,8 +24335,8 @@ nav.drawer .drawer__body .drawer__menu {
 }
 
 .boost-sd__product-item {
-  --boostsd-product-list-gap-desktop: 4px;
-  --boostsd-product-list-gap-mobile: 4px;
+  --boostsd-product-list-gap-desktop: 2px;
+  --boostsd-product-list-gap-mobile: 2px;
 }
 
 
