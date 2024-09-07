@@ -24365,14 +24365,11 @@ nav.drawer .drawer__body .drawer__menu {
  .boost-sd__filter-option-label .boost-sd__filter-option-title,
  .boost-sd__filter-option-item-label, 
  .boost-sd__filter-option-item-amount, 
- .loox-icon, 
- #header > div.summary{
+ .loox-icon,
+ #header > div.summary > button > div > span {
   color: #E9E9E9!important;
 }
 
-#menu-btn {
-  background-color: gray;
-}
 
 .loox-icon {
   color: #CB4FD4!important;
