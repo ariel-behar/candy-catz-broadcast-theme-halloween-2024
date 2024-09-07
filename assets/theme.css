@@ -24351,8 +24351,8 @@ nav.drawer .drawer__body .drawer__menu {
   background-color: black!important;
 }
 
-.booost-sd__sorting {
-  border-left: none;
+.boost-sd__sorting {
+  border-left: none!important;
 }
 
 .boost-sd__filter-tree-toggle-button {
