@@ -24339,6 +24339,9 @@ nav.drawer .drawer__body .drawer__menu {
   --boostsd-product-list-gap-mobile: 2px;
 }
 
+.boost-sd__product-list .boost-sd__product-item {
+  gap: 5px;
+}
 
 
 @media only screen and (max-width: 767px) {
