@@ -24203,17 +24203,6 @@ nav.drawer .drawer__body .drawer__menu {
 }
 
 /* Header */
-/* Adding a halloween pumpkin icon to the desktop header menu */
-.header__menu .menu__item.child:nth-of-type(2) .navlink.navlink--toplevel.navlink--highlight .navtext::before,
-.header__menu .menu__item.child:nth-of-type(2) .navlink.navlink--toplevel.navlink--highlight .navtext::after {
-  content: "\00a0\01F383\00a0";
-}
-
-/* Adding a halloween pumpkin icon to the mobile drawer menu*/
-/* .drawer__main-menu.drawer__main-menu--mobile .sliderule__wrapper:nth-of-type(2) .sliderow .sliderow__title.sliderow__title--highlight::before,
-.drawer__main-menu.drawer__main-menu--mobile .sliderule__wrapper:nth-of-type(2) .sliderow .sliderow__title.sliderow__title--highlight::after {
-  content: "\01F383";
-} */
 
 /* Menu highlighted nav link animation */
 .navlink--highlight,
