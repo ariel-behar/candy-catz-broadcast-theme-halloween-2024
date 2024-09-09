@@ -106,6 +106,66 @@
             "text_color": ""
           }
         },
+        "image_PRrw3r": {
+          "type": "image",
+          "settings": {
+            "position": "2",
+            "image": "shopify:\/\/shop_images\/darkDesk_12753e70-d369-4fad-99a0-7acad1025ad9.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "shopify:\/\/collections\/all-halloween",
+            "text_color": ""
+          }
+        },
+        "image_fLR878": {
+          "type": "image",
+          "settings": {
+            "position": "2",
+            "image": "shopify:\/\/shop_images\/darkDesk_12753e70-d369-4fad-99a0-7acad1025ad9.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "shopify:\/\/collections\/halloween-skeletons",
+            "text_color": ""
+          }
+        },
+        "image_eBrgwq": {
+          "type": "image",
+          "settings": {
+            "position": "2",
+            "image": "shopify:\/\/shop_images\/darkDesk_12753e70-d369-4fad-99a0-7acad1025ad9.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "shopify:\/\/collections\/fairy",
+            "text_color": ""
+          }
+        },
+        "image_3pfbpN": {
+          "type": "image",
+          "settings": {
+            "position": "2",
+            "image": "shopify:\/\/shop_images\/darkDesk_12753e70-d369-4fad-99a0-7acad1025ad9.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "shopify:\/\/collections\/witches",
+            "text_color": ""
+          }
+        },
         "image_wnnKKU": {
           "type": "image",
           "settings": {
@@ -202,6 +262,10 @@
         "image_WwXa7Y",
         "image_cjaiDG",
         "image_qbnhRi",
+        "image_PRrw3r",
+        "image_fLR878",
+        "image_eBrgwq",
+        "image_3pfbpN",
         "image_wnnKKU",
         "image_3wN3Cm",
         "image_JMej6B",
