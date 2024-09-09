@@ -24210,7 +24210,7 @@ nav.drawer .drawer__body .drawer__menu {
 
 /* Mobile menu */ 
 .sliderule__wrapper--secondary .sliderow, .sliderule__wrapper--secondary .sliderow__title {
-  min-height: 20px;
+  min-height: 35px;
 }
 
 /* Animation for nav link */
