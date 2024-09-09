@@ -231,7 +231,7 @@
         "main_menu_linklist": "broadcast-theme-main-menu",
         "mobile_menu_linklist": "mobile-broadcast-menu",
         "enable_search": true,
-        "show_social_icons": false,
+        "show_social_icons": true,
         "show_locale_selector": false,
         "show_country_selector": false,
         "show_country_name": false,
