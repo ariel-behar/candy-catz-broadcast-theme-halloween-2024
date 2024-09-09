@@ -261,7 +261,7 @@
 {%- capture toolbar_menu -%}
   {%- if show_toolbar_menu -%}
     {%- for link in menu_links -%}
-      <a href="{{ link.url }}" class="navlink navlink--toplevel">{{ link.title | replace: '&#x1F383;', "🎃" }}</a>
+      <a href="{{ link.url }}" class="navlink navlink--toplevel">{{ link.title }}</a>
     {%- endfor -%}
   {%- endif -%}
 {%- endcapture -%}
@@ -501,7 +501,7 @@
         <div class="header__mobile__nav__scroller">
           {%- for link in linklists[tertiary_menu_linklist].links -%}
             <a class="navlink" href="{{ link.url }}">
-              <span class="navtext">{{ link.title | replace: '&#x1F383;', "🎃" }}</span>
+              <span class="navtext">{{ link.title }}</span>
             </a>
           {%- endfor -%}
         </div>
