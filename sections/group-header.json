@@ -181,6 +181,126 @@
             "text_color": ""
           }
         },
+        "image_3zjcMV": {
+          "type": "image",
+          "settings": {
+            "position": "3",
+            "image": "shopify:\/\/shop_images\/obsidiaDesk_c7b9a844-b4ac-450c-b019-9db83b95e6ef.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "shopify:\/\/collections\/all-halloween",
+            "text_color": ""
+          }
+        },
+        "image_EUcbnJ": {
+          "type": "image",
+          "settings": {
+            "position": "3",
+            "image": "shopify:\/\/shop_images\/obsidiaDesk_c7b9a844-b4ac-450c-b019-9db83b95e6ef.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "shopify:\/\/collections\/full-bodysuits",
+            "text_color": ""
+          }
+        },
+        "image_xKTgat": {
+          "type": "image",
+          "settings": {
+            "position": "3",
+            "image": "shopify:\/\/shop_images\/obsidiaDesk_c7b9a844-b4ac-450c-b019-9db83b95e6ef.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "shopify:\/\/collections\/bodysuits",
+            "text_color": ""
+          }
+        },
+        "image_mFdBRf": {
+          "type": "image",
+          "settings": {
+            "position": "3",
+            "image": "shopify:\/\/shop_images\/obsidiaDesk_c7b9a844-b4ac-450c-b019-9db83b95e6ef.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "shopify:\/\/collections\/all-dresses",
+            "text_color": ""
+          }
+        },
+        "image_BX33Ge": {
+          "type": "image",
+          "settings": {
+            "position": "4",
+            "image": "shopify:\/\/shop_images\/uvPulseDesk_5b80760c-1c18-433e-b495-8f73e0a2e791.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "shopify:\/\/collections\/all-halloween",
+            "text_color": ""
+          }
+        },
+        "image_64a4Di": {
+          "type": "image",
+          "settings": {
+            "position": "4",
+            "image": "shopify:\/\/shop_images\/uvPulseDesk_5b80760c-1c18-433e-b495-8f73e0a2e791.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "shopify:\/\/collections\/sonic-surge",
+            "text_color": ""
+          }
+        },
+        "image_EMmXeU": {
+          "type": "image",
+          "settings": {
+            "position": "4",
+            "image": "shopify:\/\/shop_images\/uvPulseDesk_5b80760c-1c18-433e-b495-8f73e0a2e791.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "",
+            "text_color": ""
+          }
+        },
+        "image_jN8PEc": {
+          "type": "image",
+          "settings": {
+            "position": "4",
+            "image": "shopify:\/\/shop_images\/uvPulseDesk_5b80760c-1c18-433e-b495-8f73e0a2e791.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "shopify:\/\/collections\/test-bestsellers-men",
+            "text_color": ""
+          }
+        },
         "image_3wN3Cm": {
           "type": "image",
           "settings": {
@@ -255,6 +375,66 @@
             "link": "shopify:\/\/pages\/collections",
             "text_color": ""
           }
+        },
+        "image_F7pzij": {
+          "type": "image",
+          "settings": {
+            "position": "6",
+            "image": "shopify:\/\/shop_images\/raveWaveDesk_5d53924c-df5a-4546-ad39-2a19508e742a.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "shopify:\/\/collections\/all-halloween",
+            "text_color": ""
+          }
+        },
+        "image_BNz78i": {
+          "type": "image",
+          "settings": {
+            "position": "6",
+            "image": "shopify:\/\/shop_images\/raveWaveDesk_5d53924c-df5a-4546-ad39-2a19508e742a.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "shopify:\/\/collections\/pride-2024",
+            "text_color": ""
+          }
+        },
+        "image_JADE9R": {
+          "type": "image",
+          "settings": {
+            "position": "6",
+            "image": "shopify:\/\/shop_images\/raveWaveDesk_5d53924c-df5a-4546-ad39-2a19508e742a.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "shopify:\/\/collections\/rave",
+            "text_color": ""
+          }
+        },
+        "image_Bh7Yj9": {
+          "type": "image",
+          "settings": {
+            "position": "6",
+            "image": "shopify:\/\/shop_images\/raveWaveDesk_5d53924c-df5a-4546-ad39-2a19508e742a.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "shopify:\/\/collections\/in-the-shadows",
+            "text_color": ""
+          }
         }
       },
       "block_order": [
@@ -267,11 +447,23 @@
         "image_eBrgwq",
         "image_3pfbpN",
         "image_wnnKKU",
+        "image_3zjcMV",
+        "image_EUcbnJ",
+        "image_xKTgat",
+        "image_mFdBRf",
+        "image_BX33Ge",
+        "image_64a4Di",
+        "image_EMmXeU",
+        "image_jN8PEc",
         "image_3wN3Cm",
         "image_JMej6B",
         "image_BVGCmT",
         "image_6Gf7CC",
-        "image_j73KPt"
+        "image_j73KPt",
+        "image_F7pzij",
+        "image_BNz78i",
+        "image_JADE9R",
+        "image_Bh7Yj9"
       ],
       "custom_css": [
         ".navlink.navlink--child span {color: #d980ef;}",
