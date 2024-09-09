@@ -229,7 +229,7 @@
         "logo_max_limit": 125,
         "logo_max_limit_mobile": 125,
         "main_menu_linklist": "broadcast-theme-main-menu",
-        "mobile_menu_linklist": "mobile-broadcast-menu",
+        "mobile_menu_linklist": "broadcast-theme-mobile-halloween-2024-menu",
         "enable_search": true,
         "show_social_icons": true,
         "show_locale_selector": false,
