@@ -46,66 +46,63 @@
     "header": {
       "type": "header",
       "blocks": {
-        "image_tbWE4k": {
+        "image_RgLCC4": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "position": "3",
-            "image": "shopify:\/\/shop_images\/1.2_98195ab2-de63-4574-9009-77d562daefc8.png",
-            "aspect_ratio": 1,
-            "wide_image": false,
+            "position": "1",
+            "image": "shopify:\/\/shop_images\/cyberDesk.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
             "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "title": "WOMEN",
+            "overlay_color": "#000",
+            "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/best-womens",
+            "link": "shopify:\/\/collections\/all-halloween",
             "text_color": ""
           }
         },
-        "image_kicrTC": {
+        "image_WwXa7Y": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "position": "3",
-            "image": "shopify:\/\/shop_images\/il_fullxfull.4206309420_i62f_9cc70aa4-16fb-418b-b921-085821bfc456.jpg",
-            "aspect_ratio": 1,
-            "wide_image": false,
+            "position": "1",
+            "image": "shopify:\/\/shop_images\/cyberDesk.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
             "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "title": "MEN",
+            "overlay_color": "#000",
+            "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/male-most-wanted",
+            "link": "shopify:\/\/collections\/rave",
             "text_color": ""
           }
         },
-        "image_QWmqPp": {
+        "image_cjaiDG": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "position": "4",
-            "aspect_ratio": 1,
-            "wide_image": false,
+            "position": "1",
+            "image": "shopify:\/\/shop_images\/cyberDesk.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
             "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "title": "WOMEN",
+            "overlay_color": "#000",
+            "title": "",
             "link_text": "",
-            "link": "",
+            "link": "shopify:\/\/collections\/uv-bodysuits",
             "text_color": ""
           }
         },
-        "image_rwTkW3": {
+        "image_qbnhRi": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "position": "5",
-            "image": "shopify:\/\/shop_images\/il_fullxfull.4044505721_4obd_c3b38fae-5808-4032-a2f6-974c4becebc9.jpg",
-            "aspect_ratio": 1,
-            "wide_image": false,
+            "position": "1",
+            "image": "shopify:\/\/shop_images\/cyberDesk.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
             "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "title": "MEN",
+            "overlay_color": "#000",
+            "title": "",
             "link_text": "",
-            "link": "",
+            "link": "shopify:\/\/collections\/test-bestsellers-women",
             "text_color": ""
           }
         },
@@ -201,10 +198,10 @@
         }
       },
       "block_order": [
-        "image_tbWE4k",
-        "image_kicrTC",
-        "image_QWmqPp",
-        "image_rwTkW3",
+        "image_RgLCC4",
+        "image_WwXa7Y",
+        "image_cjaiDG",
+        "image_qbnhRi",
         "image_wnnKKU",
         "image_3wN3Cm",
         "image_JMej6B",
