@@ -24203,6 +24203,10 @@ nav.drawer .drawer__body .drawer__menu {
 }
 
 /* Header */
+/* Hiding the social icons from the desktop header */
+.header__desktop__bar__r .header__desktop__button .socials{
+  display: none;
+}
 
 /* Menu highlighted nav link animation */
 .navlink--highlight,
