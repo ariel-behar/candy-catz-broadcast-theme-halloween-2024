@@ -49,7 +49,7 @@
           "type": "collection",
           "settings": {
             "collection": "halloween-skeletons",
-            "collection_image": "shopify:\/\/shop_images\/fairyMINIDesk_copy.jpg",
+            "collection_image": "shopify:\/\/shop_images\/skeletonMINIDesk_copy.jpg",
             "title": ""
           }
         },
@@ -57,6 +57,7 @@
           "type": "collection",
           "settings": {
             "collection": "fairy",
+            "collection_image": "shopify:\/\/shop_images\/fairyMINIDesk_copy.jpg",
             "title": ""
           }
         },
@@ -64,6 +65,7 @@
           "type": "collection",
           "settings": {
             "collection": "witches",
+            "collection_image": "shopify:\/\/shop_images\/witchesMINIDesk_copy.jpg",
             "title": ""
           }
         },
@@ -71,6 +73,7 @@
           "type": "collection",
           "settings": {
             "collection": "cyber",
+            "collection_image": "shopify:\/\/shop_images\/popCultMINIDesk_copy.jpg",
             "title": ""
           }
         },
@@ -78,6 +81,7 @@
           "type": "collection",
           "settings": {
             "collection": "halloween-zombies",
+            "collection_image": "shopify:\/\/shop_images\/popCultMINIDesk_copy.jpg",
             "title": ""
           }
         },
@@ -85,6 +89,7 @@
           "type": "collection",
           "settings": {
             "collection": "sexy-hwf",
+            "collection_image": "shopify:\/\/shop_images\/popCultMINIDesk_copy.jpg",
             "title": ""
           }
         },
@@ -92,6 +97,15 @@
           "type": "collection",
           "settings": {
             "collection": "uv-bodysuits",
+            "collection_image": "shopify:\/\/shop_images\/popCultMINIDesk_copy.jpg",
+            "title": ""
+          }
+        },
+        "collection_rJPhgL": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify:\/\/shop_images\/popCultMINIDesk_copy.jpg",
             "title": ""
           }
         }
@@ -103,7 +117,8 @@
         "collection_JU3eMx",
         "collection_yM88Kw",
         "collection_HiBK4D",
-        "collection_DTazw4"
+        "collection_DTazw4",
+        "collection_rJPhgL"
       ],
       "custom_css": [
         ".collection-item__info {display: none;}"
