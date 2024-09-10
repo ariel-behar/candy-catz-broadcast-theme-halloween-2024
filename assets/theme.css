@@ -24215,9 +24215,9 @@ nav.drawer .drawer__body .drawer__menu {
 } 
 
 /* Begin fixing the banners on desktop */
-.header__desktop .header__menu .menu__item:nth-child(3) .header__dropdown.is-visible .menu__blocks,
 .header__desktop .header__menu .menu__item:nth-child(4) .header__dropdown.is-visible .menu__blocks,
-.header__desktop .header__menu .menu__item:nth-child(6) .header__dropdown.is-visible .menu__blocks {
+.header__desktop .header__menu .menu__item:nth-child(5) .header__dropdown.is-visible .menu__blocks,
+.header__desktop .header__menu .menu__item:nth-child(7) .header__dropdown.is-visible .menu__blocks {
   max-width: 40%;
   display: grid;
     grid-template-rows: repeat(2, 1fr);
