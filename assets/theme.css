@@ -24371,7 +24371,7 @@ nav.drawer .drawer__body .drawer__menu {
 
 /* Removing the margin-bottom of the filter/sort by toolbar */
 .boost-sd__filter-block .boost-sd-container .boost-sd__toolbar-container,
-.boost-sd__filter-block .boost-sd-container .boost-sd__toolbar-container.boost-sd__toolbar-sticky{
+.boost-sd__filter-block .boost-sd-container .boost-sd__toolbar-container .boost-sd__toolbar-top-mobile{
   margin-bottom: 0;
   background-color: black!important;
 }
