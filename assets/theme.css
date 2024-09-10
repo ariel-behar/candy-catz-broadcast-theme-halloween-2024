@@ -24212,6 +24212,7 @@ nav.drawer .drawer__body .drawer__menu {
 .navlink--highlight,
 .sliderow__title--highlight {
   animation: blink 2s infinite linear;
+  color: var(--highlight);
 } 
 
 /* Begin fixing the banners on desktop */
