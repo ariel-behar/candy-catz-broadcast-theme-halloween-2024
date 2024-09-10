@@ -75,7 +75,7 @@
         "collection_bHhMYW": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "fairy",
             "collection_image": "shopify:\/\/shop_images\/fairyMINIDesk_copy.jpg",
             "title": ""
           }
@@ -83,7 +83,7 @@
         "collection_q9DQPR": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "witches",
             "collection_image": "shopify:\/\/shop_images\/witchesMINIDesk_copy.jpg",
             "title": ""
           }
@@ -120,6 +120,10 @@
         "collection_jUzNpP",
         "collection_mMr8Tt"
       ],
+      "custom_css": [
+        ".grid-outer.collection-list-outer {gap: 3px;}",
+        ".collection-item__info {display: none;}"
+      ],
       "settings": {
         "title": "",
         "description": "",
@@ -131,12 +135,12 @@
         "show_arrow": false,
         "layout": "grid",
         "aspect_ratio": 1.2,
-        "grid": 4,
+        "grid": 5,
         "layout_mobile": "slider",
         "bg_color": "",
         "color": "",
-        "padding_top": 32,
-        "padding_bottom": 32
+        "padding_top": 0,
+        "padding_bottom": 10
       }
     },
     "section_columns_3L8zbh": {
@@ -245,6 +249,7 @@
         "image_KzdTKz",
         "image_PDynNG"
       ],
+      "disabled": true,
       "custom_css": [
         ".wrapper--full-padded {padding-left: 0; padding-right: 0;}",
         ".grid.grid--mobile-slider {gap: 0;}"
