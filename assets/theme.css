@@ -24214,6 +24214,25 @@ nav.drawer .drawer__body .drawer__menu {
   animation: blink 2s infinite linear;
 } 
 
+/* Begin fixing the banners on desktop */
+.header__desktop .header__menu .menu__item:nth-child(3) .header__dropdown.is-visible .menu__blocks,
+.header__desktop .header__menu .menu__item:nth-child(4) .header__dropdown.is-visible .menu__blocks,
+.header__desktop .header__menu .menu__item:nth-child(6) .header__dropdown.is-visible .menu__blocks {
+  max-width: 40%;
+  display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+[class*=images-].grandparent.kids-6 .header__grandparent__links {
+  grid-template-columns: repeat(6, minmax(0, 1fr))!important;
+}
+
+[class*=images-].grandparent.kids-7 .header__grandparent__links {
+  grid-template-columns: repeat(7, minmax(0, 1fr))!important;
+}
+/* Finish fixing banners on desktop */
+
 /* Mobile menu */ 
 .sliderule__wrapper--secondary .sliderow, .sliderule__wrapper--secondary .sliderow__title {
   min-height: 35px;
