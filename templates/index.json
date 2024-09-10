@@ -170,6 +170,10 @@
         "image_KzdTKz",
         "image_PDynNG"
       ],
+      "custom_css": [
+        ".wrapper--full-padded {padding-left: 0; padding-right: 0;}",
+        ".grid.grid--mobile-slider {gap: 0;}"
+      ],
       "settings": {
         "title": "",
         "heading_size": 5,
@@ -181,8 +185,8 @@
         "width": "wrapper--full-padded",
         "bg_color": "",
         "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "layout_mobile": "slider"
       }
     },
