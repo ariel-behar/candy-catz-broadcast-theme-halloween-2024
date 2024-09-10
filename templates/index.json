@@ -75,7 +75,8 @@
         "image_4Wrimz": {
           "type": "image",
           "settings": {
-            "image_aspect_ratio": 1,
+            "image": "shopify:\/\/shop_images\/fairyMINIDesk_copy.jpg",
+            "image_aspect_ratio": 1.3,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "",
@@ -93,7 +94,8 @@
         "image_B78RYH": {
           "type": "image",
           "settings": {
-            "image_aspect_ratio": 1,
+            "image": "shopify:\/\/shop_images\/witchesMINIDesk_copy.jpg",
+            "image_aspect_ratio": 1.3,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "",
@@ -111,7 +113,8 @@
         "image_rzt9f4": {
           "type": "image",
           "settings": {
-            "image_aspect_ratio": 1,
+            "image": "shopify:\/\/shop_images\/scaryMINIDesk_copy.jpg",
+            "image_aspect_ratio": 1.3,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "",
@@ -129,7 +132,8 @@
         "image_KzdTKz": {
           "type": "image",
           "settings": {
-            "image_aspect_ratio": 1,
+            "image": "shopify:\/\/shop_images\/skeletonMINIDesk_copy.jpg",
+            "image_aspect_ratio": 1.3,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "",
@@ -147,7 +151,8 @@
         "image_PDynNG": {
           "type": "image",
           "settings": {
-            "image_aspect_ratio": 1,
+            "image": "shopify:\/\/shop_images\/popCultMINIDesk_copy.jpg",
+            "image_aspect_ratio": 1.3,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
             "title": "",
