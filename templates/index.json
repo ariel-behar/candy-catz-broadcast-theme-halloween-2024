@@ -121,7 +121,7 @@
         "collection_mMr8Tt"
       ],
       "custom_css": [
-        ".grid-outer.collection-list-outer {gap: 3px;}",
+        ".grid {gap: 3px;}",
         ".collection-item__info {display: none;}"
       ],
       "settings": {
@@ -141,133 +141,6 @@
         "color": "",
         "padding_top": 0,
         "padding_bottom": 10
-      }
-    },
-    "section_columns_3L8zbh": {
-      "type": "section-columns",
-      "blocks": {
-        "image_4Wrimz": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fairyMINIDesk_copy.jpg",
-            "image_aspect_ratio": 1.3,
-            "mobile_image_aspect_ratio": 1,
-            "image_shape": "normal",
-            "title": "",
-            "heading_size": 4,
-            "text": "",
-            "text_size": 3,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "image_B78RYH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/witchesMINIDesk_copy.jpg",
-            "image_aspect_ratio": 1.3,
-            "mobile_image_aspect_ratio": 1,
-            "image_shape": "normal",
-            "title": "",
-            "heading_size": 4,
-            "text": "",
-            "text_size": 3,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "image_rzt9f4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/scaryMINIDesk_copy.jpg",
-            "image_aspect_ratio": 1.3,
-            "mobile_image_aspect_ratio": 1,
-            "image_shape": "normal",
-            "title": "",
-            "heading_size": 4,
-            "text": "",
-            "text_size": 3,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "image_KzdTKz": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/skeletonMINIDesk_copy.jpg",
-            "image_aspect_ratio": 1.3,
-            "mobile_image_aspect_ratio": 1,
-            "image_shape": "normal",
-            "title": "",
-            "heading_size": 4,
-            "text": "",
-            "text_size": 3,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "image_PDynNG": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/popCultMINIDesk_copy.jpg",
-            "image_aspect_ratio": 1.3,
-            "mobile_image_aspect_ratio": 1,
-            "image_shape": "normal",
-            "title": "",
-            "heading_size": 4,
-            "text": "",
-            "text_size": 3,
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "image_4Wrimz",
-        "image_B78RYH",
-        "image_rzt9f4",
-        "image_KzdTKz",
-        "image_PDynNG"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".wrapper--full-padded {padding-left: 0; padding-right: 0;}",
-        ".grid.grid--mobile-slider {gap: 0;}"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": 5,
-        "layout": "grid",
-        "grid": 5,
-        "align_heading": "text-left",
-        "align_text": "text-left",
-        "align_columns": "flex-align-top",
-        "width": "wrapper--full-padded",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "layout_mobile": "slider"
       }
     },
     "section_hero_9QPMnh": {
@@ -968,7 +841,6 @@
     "section_hero_WzHaFX",
     "tabs",
     "section_collections_list_GmreYY",
-    "section_columns_3L8zbh",
     "section_hero_9QPMnh",
     "section_tab_collections_aqTECq",
     "section_hero_PFp7m6",
