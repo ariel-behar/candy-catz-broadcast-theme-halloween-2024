@@ -118,7 +118,7 @@
         "button_style": "btn--solid",
         "show_arrow": false,
         "layout": "slider",
-        "aspect_ratio": 0.7,
+        "aspect_ratio": 1.2,
         "grid": 4,
         "layout_mobile": "slider",
         "bg_color": "",
