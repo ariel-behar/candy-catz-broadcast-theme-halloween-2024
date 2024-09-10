@@ -24382,7 +24382,8 @@ nav.drawer .drawer__body .drawer__menu {
   background-color: black!important;
 }
 
-.boost-sd__filter-tree-vertical-mobile-toolbar .boost-sd__filter-tree-vertical-toolbar-middle {
+.boost-sd__filter-tree-vertical-mobile-toolbar .boost-sd__filter-tree-vertical-toolbar-middle,
+.boost-sd__pagination-infinite-scroll-container-button .boost-sd__pagination-button .boost-sd__pagination-button-text{
   color: #E9E9E9;
 }
 
