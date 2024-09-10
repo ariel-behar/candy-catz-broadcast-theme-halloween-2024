@@ -24376,8 +24376,14 @@ nav.drawer .drawer__body .drawer__menu {
   background-color: black!important;
 }
 
-#boost-sd__filter-tree-wrapper > div > div {
+#boost-sd__filter-tree-wrapper > div > div,
+.boost-sd__filter-tree-vertical--sticky,
+.boost-sd__filter-tree-vertical-mobile-toolbar {
   background-color: black!important;
+}
+
+.boost-sd__filter-tree-vertical-mobile-toolbar .boost-sd__filter-tree-vertical-toolbar-middle {
+  color: #E9E9E9;
 }
 
 .boost-sd__sorting {
