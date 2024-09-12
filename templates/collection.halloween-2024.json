@@ -45,11 +45,19 @@
     "section_collections_list_bnq8D6": {
       "type": "section-collections-list",
       "blocks": {
+        "collection_A6A8g8": {
+          "type": "collection",
+          "settings": {
+            "collection": "all-halloween",
+            "collection_image": "shopify:\/\/shop_images\/shopAllMINIDesk_copy.jpg",
+            "title": ""
+          }
+        },
         "collection_VkKYTy": {
           "type": "collection",
           "settings": {
             "collection": "halloween-skeletons",
-            "collection_image": "shopify:\/\/shop_images\/skeletonMINIDesk_copy.jpg",
+            "collection_image": "shopify:\/\/shop_images\/skeletonMINIDesk_copy_a64f828a-524d-4bd4-8772-94b84c3431b4.jpg",
             "title": ""
           }
         },
@@ -57,7 +65,7 @@
           "type": "collection",
           "settings": {
             "collection": "fairy",
-            "collection_image": "shopify:\/\/shop_images\/fairyMINIDesk_copy.jpg",
+            "collection_image": "shopify:\/\/shop_images\/fairyMINIDesk_copy_61da2a67-50d6-4090-979d-f29118f78eb7.jpg",
             "title": ""
           }
         },
@@ -65,7 +73,7 @@
           "type": "collection",
           "settings": {
             "collection": "witches",
-            "collection_image": "shopify:\/\/shop_images\/witchesMINIDesk_copy.jpg",
+            "collection_image": "shopify:\/\/shop_images\/witchesMINIDesk_copy_d14a2e52-66d0-4365-8142-233f72a07a30.jpg",
             "title": ""
           }
         },
@@ -73,7 +81,7 @@
           "type": "collection",
           "settings": {
             "collection": "cyber",
-            "collection_image": "shopify:\/\/shop_images\/popCultMINIDesk_copy.jpg",
+            "collection_image": "shopify:\/\/shop_images\/cyber_MINIDesk_copy.jpg",
             "title": ""
           }
         },
@@ -81,7 +89,7 @@
           "type": "collection",
           "settings": {
             "collection": "halloween-zombies",
-            "collection_image": "shopify:\/\/shop_images\/popCultMINIDesk_copy.jpg",
+            "collection_image": "shopify:\/\/shop_images\/scaryMINIDesk_copy_df59aa5d-2132-449c-99a7-3e9203bbd567.jpg",
             "title": ""
           }
         },
@@ -89,7 +97,7 @@
           "type": "collection",
           "settings": {
             "collection": "sexy-hwf",
-            "collection_image": "shopify:\/\/shop_images\/popCultMINIDesk_copy.jpg",
+            "collection_image": "shopify:\/\/shop_images\/sexyMINIDesk_copy_copy_2.jpg",
             "title": ""
           }
         },
@@ -97,7 +105,7 @@
           "type": "collection",
           "settings": {
             "collection": "uv-bodysuits",
-            "collection_image": "shopify:\/\/shop_images\/popCultMINIDesk_copy.jpg",
+            "collection_image": "shopify:\/\/shop_images\/UVMINIDesk_copy.jpg",
             "title": ""
           }
         },
@@ -105,12 +113,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "collection_image": "shopify:\/\/shop_images\/popCultMINIDesk_copy.jpg",
+            "collection_image": "shopify:\/\/shop_images\/popCultMINIDesk_copy_fc709fdd-2caa-470b-b606-fb2ef3264089.jpg",
             "title": ""
           }
         }
       },
       "block_order": [
+        "collection_A6A8g8",
         "collection_VkKYTy",
         "collection_cEYphe",
         "collection_4UGUm4",
