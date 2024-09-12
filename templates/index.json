@@ -91,7 +91,7 @@
         "collection_XwLqPz": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "halloween-zombies",
             "collection_image": "shopify:\/\/shop_images\/scaryMINIDesk_copy.jpg",
             "title": ""
           }
@@ -99,7 +99,7 @@
         "collection_jUzNpP": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "halloween-skeletons",
             "collection_image": "shopify:\/\/shop_images\/skeletonMINIDesk_copy.jpg",
             "title": ""
           }
