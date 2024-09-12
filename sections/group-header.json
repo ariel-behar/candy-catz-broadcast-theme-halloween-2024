@@ -17,7 +17,7 @@
         "text_fpe78z": {
           "type": "text",
           "settings": {
-            "text": "<p>🌈 <strong> <\/strong>BUY ONE, GET ONE 70% OFF! CODE BOGO70 🦄<\/p>",
+            "text": "<p>🌈 <strong> <\/strong>BUY ONE, GET ONE 50% OFF! CODE BOGO50 🦄<\/p>",
             "target_url_enabled": false,
             "target_url": "shopify:\/\/collections\/shop-all",
             "target_referrer_enabled": false,
@@ -155,8 +155,8 @@
           "type": "image",
           "settings": {
             "position": "2",
-            "image": "shopify:\/\/shop_images\/darkDesk_12753e70-d369-4fad-99a0-7acad1025ad9.jpg",
-            "aspect_ratio": 0.5,
+            "image": "shopify:\/\/shop_images\/witchMobileX2_copy.jpg",
+            "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -170,8 +170,8 @@
           "type": "image",
           "settings": {
             "position": "4",
-            "image": "shopify:\/\/shop_images\/obsidiaDesk_c7b9a844-b4ac-450c-b019-9db83b95e6ef.jpg",
-            "aspect_ratio": 0.5,
+            "image": "shopify:\/\/shop_images\/halloweenMobileX2_copy.jpg",
+            "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -185,8 +185,8 @@
           "type": "image",
           "settings": {
             "position": "4",
-            "image": "shopify:\/\/shop_images\/obsidiaDesk_c7b9a844-b4ac-450c-b019-9db83b95e6ef.jpg",
-            "aspect_ratio": 0.5,
+            "image": "shopify:\/\/shop_images\/fullCotumes_X2_copy.jpg",
+            "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -200,8 +200,8 @@
           "type": "image",
           "settings": {
             "position": "4",
-            "image": "shopify:\/\/shop_images\/obsidiaDesk_c7b9a844-b4ac-450c-b019-9db83b95e6ef.jpg",
-            "aspect_ratio": 0.5,
+            "image": "shopify:\/\/shop_images\/bodysuitesX2_copy.jpg",
+            "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -215,8 +215,8 @@
           "type": "image",
           "settings": {
             "position": "4",
-            "image": "shopify:\/\/shop_images\/obsidiaDesk_c7b9a844-b4ac-450c-b019-9db83b95e6ef.jpg",
-            "aspect_ratio": 0.5,
+            "image": "shopify:\/\/shop_images\/dressesX2_copy.jpg",
+            "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -230,8 +230,8 @@
           "type": "image",
           "settings": {
             "position": "5",
-            "image": "shopify:\/\/shop_images\/uvPulseDesk_5b80760c-1c18-433e-b495-8f73e0a2e791.jpg",
-            "aspect_ratio": 0.5,
+            "image": "shopify:\/\/shop_images\/halloweenMenX2_copy.jpg",
+            "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -245,8 +245,8 @@
           "type": "image",
           "settings": {
             "position": "5",
-            "image": "shopify:\/\/shop_images\/uvPulseDesk_5b80760c-1c18-433e-b495-8f73e0a2e791.jpg",
-            "aspect_ratio": 0.5,
+            "image": "shopify:\/\/shop_images\/sonicSurgeX2_copy.jpg",
+            "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -260,14 +260,14 @@
           "type": "image",
           "settings": {
             "position": "5",
-            "image": "shopify:\/\/shop_images\/uvPulseDesk_5b80760c-1c18-433e-b495-8f73e0a2e791.jpg",
-            "aspect_ratio": 0.5,
+            "image": "shopify:\/\/shop_images\/primalX2.222_copy.jpg",
+            "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "",
+            "link": "shopify:\/\/collections\/all-animal-prints",
             "text_color": ""
           }
         },
@@ -275,8 +275,8 @@
           "type": "image",
           "settings": {
             "position": "5",
-            "image": "shopify:\/\/shop_images\/uvPulseDesk_5b80760c-1c18-433e-b495-8f73e0a2e791.jpg",
-            "aspect_ratio": 0.5,
+            "image": "shopify:\/\/shop_images\/MENSFAVESX2_copy.jpg",
+            "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -365,8 +365,8 @@
           "type": "image",
           "settings": {
             "position": "7",
-            "image": "shopify:\/\/shop_images\/raveWaveDesk_5d53924c-df5a-4546-ad39-2a19508e742a.jpg",
-            "aspect_ratio": 0.5,
+            "image": "shopify:\/\/shop_images\/halloweenMobileX2_copy.jpg",
+            "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -380,8 +380,8 @@
           "type": "image",
           "settings": {
             "position": "7",
-            "image": "shopify:\/\/shop_images\/raveWaveDesk_5d53924c-df5a-4546-ad39-2a19508e742a.jpg",
-            "aspect_ratio": 0.5,
+            "image": "shopify:\/\/shop_images\/prideX2_copy.jpg",
+            "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -395,8 +395,8 @@
           "type": "image",
           "settings": {
             "position": "7",
-            "image": "shopify:\/\/shop_images\/raveWaveDesk_5d53924c-df5a-4546-ad39-2a19508e742a.jpg",
-            "aspect_ratio": 0.5,
+            "image": "shopify:\/\/shop_images\/raveWaveMobileX2_copy_bed3923e-1e84-4b45-a614-60b31db0b9eb.jpg",
+            "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -410,8 +410,8 @@
           "type": "image",
           "settings": {
             "position": "7",
-            "image": "shopify:\/\/shop_images\/raveWaveDesk_5d53924c-df5a-4546-ad39-2a19508e742a.jpg",
-            "aspect_ratio": 0.5,
+            "image": "shopify:\/\/shop_images\/inTheShadowsX2_copy.jpg",
+            "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
