@@ -18205,6 +18205,8 @@ body.has-header-transparent .section-overlay-header:first-of-type .article__hero
 /**
  * COLLECTION PAGE HEADER
  */
+
+
 .collection-image-with-title {
   overflow: hidden;
 }
@@ -24338,6 +24340,23 @@ nav.drawer .drawer__body .drawer__menu {
 }
 
 /*----- COLLECTION PAGE -----*/
+/* Styling the product label  */
+.boost-sd__product-label.boost-sd__product-label--rounded-rectangle.boost-sd__product-label--customLabelByTag {
+  color: rgb(255, 255, 255);
+  background-color: rgb(70 71 71)!important;
+  margin: 0;
+  opacity: 0.7;
+  padding: 5px 5px;
+ }
+
+ .boost-sd__product-label.boost-sd__product-label--rounded-rectangle.boost-sd__product-label--customLabelByTag .boost-sd__product-label-text  {
+  overflow: visible;
+  text-overflow: unset;
+  max-width: 100%!important;
+  font-size: 12px;
+ }
+
+
 /* Removing the padding from the collection page header (Boost APP), because it was appearing as empty space on collections without an image */
 .boost-sd__collection-header .boost-sd__header-main-2-content {
   padding: 0;
@@ -24520,4 +24539,5 @@ nav.drawer .drawer__body .drawer__menu {
     flex-basis: 33%;
   }
 }
+
 
