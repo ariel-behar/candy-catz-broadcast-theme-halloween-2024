@@ -24374,13 +24374,13 @@ nav.drawer .drawer__body .drawer__menu {
 .boost-sd__filter-block .boost-sd-container .boost-sd__toolbar-container,
 .boost-sd__filter-block .boost-sd-container .boost-sd__toolbar-container .boost-sd__toolbar-top-mobile{
   margin-bottom: 0;
-  background-color: black!important;
+  background-color: var(--COLOR-BG)!important;
 }
 
 #boost-sd__filter-tree-wrapper > div > div,
 .boost-sd__filter-tree-vertical--sticky,
 .boost-sd__filter-tree-vertical-mobile-toolbar {
-  background-color: black!important;
+  background-color: var(--COLOR-BG)!important;
 }
 
 .boost-sd__filter-tree-vertical-mobile-toolbar .boost-sd__filter-tree-vertical-toolbar-middle,
@@ -24453,6 +24453,7 @@ nav.drawer .drawer__body .drawer__menu {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+}
 
 @media only screen and (min-width: 768px) {
   .boost-sd__toolbar-content {
@@ -24481,16 +24482,22 @@ nav.drawer .drawer__body .drawer__menu {
 }
 
 /* ---- SEARCH PAGE ----- */
+.boost-sd__filter-block .boost-sd__search-form-wrapper, 
+.boost-sd__filter-block .boost-sd__search-result-toolbar-container .boost-sd__search-result-toolbar {
+  background-color: var(--COLOR-BG);
+}
+
+.boost-sd__filter-block .boost-sd__search-form-title,
+.boost-sd__search-result-toolbar .boost-sd__search-result-toolbar-item{
+  color: var(--text);
+}
+
+.boost-sd__filter-block button.boost-sd__button.boost-sd__button--as-search {
+  background-color: var(--BTN-PRIMARY-BG-COLOR);
+}
+
 .boost-sd__filter-block .boost-sd__search-result-toolbar-container .boost-sd__search-result-toolbar-item .boost-sd__search-result-toolbar-panel-wrapper{
   display: none;
-}
-
-.boost-sd__filter-block .boost-sd__button--as-search, .boost-sd__filter-block .boost-sd__button--as-search:focus {
-  --boostsd-button-as-search-background-color: #000;
-}
-
-.boost-sd__filter-block .boost-sd__button--as-search:hover {
-  --boostsd-button-as-search-background-color: #383838;
 }
 
 .boost-sd__filter-block .boost-sd__search-result-toolbar-container {
@@ -24501,6 +24508,7 @@ nav.drawer .drawer__body .drawer__menu {
   --boostsd-search-form-wrapper-border-bottom: none;
   --boostsd-search-form-wrapper-padding: 56px 16px 30px 16px;
 }
+
 
 /*----- FOOTER -----*/
 /* Fixing the Footer columns layout on small and medium screens */
