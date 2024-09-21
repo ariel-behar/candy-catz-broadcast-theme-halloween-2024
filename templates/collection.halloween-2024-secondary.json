@@ -137,7 +137,7 @@
         "color": "",
         "bg_color": "",
         "layout_mobile": "slider",
-        "padding_top": 20,
+        "padding_top": 10,
         "padding_bottom": 10
       }
     },
