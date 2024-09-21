@@ -125,7 +125,7 @@
       ],
       "custom_css": [
         ".highlights__items.highlights__items--mobile-slider {--columns-desktop: 9;}",
-        ".highlights__items.highlights__items--mobile-slider .highlights__item {padding: 0 5px !important;}"
+        ".highlights__items.highlights__items--mobile-slider .highlights__item {padding: 0 2px !important;}"
       ],
       "settings": {
         "style": "rectangle",
