@@ -24368,7 +24368,7 @@ nav.drawer .drawer__body .drawer__menu {
 
 @media only screen and (max-width: 749px) {
   .highlights .highlights__items--mobile-slider .highlights__item {
-    width: calc(100% - 230px);
+    width: calc(100% - 225px);
   }
 }
  
