@@ -131,7 +131,7 @@
         "style": "rectangle",
         "grid": 8,
         "width": "wrapper--full-padded",
-        "heading": "Shop ALL HALLOWEEN",
+        "heading": "{{ collection.title }}",
         "heading_position": "text-left",
         "heading_size": 6,
         "text_size": 3,
