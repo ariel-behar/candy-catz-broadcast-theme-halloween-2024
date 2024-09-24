@@ -17,9 +17,9 @@
         "text_fpe78z": {
           "type": "text",
           "settings": {
-            "text": "<p>🌈 <strong> <\/strong>BUY ONE, GET ONE 50% OFF! CODE BOGO50 🦄<\/p>",
+            "text": "<p>🌈 <strong> </strong>BUY ONE, GET ONE 70% OFF! CODE BOGO70 🦄</p>",
             "target_url_enabled": false,
-            "target_url": "shopify:\/\/collections\/shop-all",
+            "target_url": "shopify://collections/shop-all",
             "target_referrer_enabled": false,
             "target_referrer": "",
             "target_device_enabled": false,
@@ -50,14 +50,14 @@
           "type": "image",
           "settings": {
             "position": "1",
-            "image": "shopify:\/\/shop_images\/halloweenMobileX2_copy.jpg",
+            "image": "shopify://shop_images/halloweenMobileX2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/new-all-halloween",
+            "link": "shopify://collections/new-all-halloween",
             "text_color": ""
           }
         },
@@ -65,14 +65,14 @@
           "type": "image",
           "settings": {
             "position": "1",
-            "image": "shopify:\/\/shop_images\/raveWaveMobileX2_copy_bed3923e-1e84-4b45-a614-60b31db0b9eb.jpg",
+            "image": "shopify://shop_images/raveWaveMobileX2_copy_bed3923e-1e84-4b45-a614-60b31db0b9eb.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/rave",
+            "link": "shopify://collections/rave",
             "text_color": ""
           }
         },
@@ -80,14 +80,14 @@
           "type": "image",
           "settings": {
             "position": "1",
-            "image": "shopify:\/\/shop_images\/UVMobileX2_copy.jpg",
+            "image": "shopify://shop_images/UVMobileX2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/uv-bodysuits",
+            "link": "shopify://collections/uv-bodysuits",
             "text_color": ""
           }
         },
@@ -95,14 +95,14 @@
           "type": "image",
           "settings": {
             "position": "1",
-            "image": "shopify:\/\/shop_images\/WOMENFavMobileX2_copy.jpg",
+            "image": "shopify://shop_images/WOMENFavMobileX2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/test-bestsellers-women",
+            "link": "shopify://collections/test-bestsellers-women",
             "text_color": ""
           }
         },
@@ -110,14 +110,14 @@
           "type": "image",
           "settings": {
             "position": "2",
-            "image": "shopify:\/\/shop_images\/halloweenMobileX2_copy.jpg",
+            "image": "shopify://shop_images/halloweenMobileX2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/new-all-halloween",
+            "link": "shopify://collections/new-all-halloween",
             "text_color": ""
           }
         },
@@ -125,14 +125,14 @@
           "type": "image",
           "settings": {
             "position": "2",
-            "image": "shopify:\/\/shop_images\/skeletonMobileX2.jpg",
+            "image": "shopify://shop_images/skeletonMobileX2.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/halloween-skeletons",
+            "link": "shopify://collections/halloween-skeletons",
             "text_color": ""
           }
         },
@@ -140,14 +140,14 @@
           "type": "image",
           "settings": {
             "position": "2",
-            "image": "shopify:\/\/shop_images\/fairyMobileX2_copy.jpg",
+            "image": "shopify://shop_images/fairyMobileX2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/fairy",
+            "link": "shopify://collections/fairy",
             "text_color": ""
           }
         },
@@ -155,14 +155,14 @@
           "type": "image",
           "settings": {
             "position": "2",
-            "image": "shopify:\/\/shop_images\/witchMobileX2_copy.jpg",
+            "image": "shopify://shop_images/witchMobileX2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/witches",
+            "link": "shopify://collections/witches",
             "text_color": ""
           }
         },
@@ -170,14 +170,14 @@
           "type": "image",
           "settings": {
             "position": "4",
-            "image": "shopify:\/\/shop_images\/halloweenMobileX2_copy.jpg",
+            "image": "shopify://shop_images/halloweenMobileX2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/new-all-halloween",
+            "link": "shopify://collections/new-all-halloween",
             "text_color": ""
           }
         },
@@ -185,14 +185,14 @@
           "type": "image",
           "settings": {
             "position": "4",
-            "image": "shopify:\/\/shop_images\/fullCotumes_X2_copy.jpg",
+            "image": "shopify://shop_images/fullCotumes_X2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/full-bodysuits",
+            "link": "shopify://collections/full-bodysuits",
             "text_color": ""
           }
         },
@@ -200,14 +200,14 @@
           "type": "image",
           "settings": {
             "position": "4",
-            "image": "shopify:\/\/shop_images\/bodysuitesX2_copy.jpg",
+            "image": "shopify://shop_images/bodysuitesX2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/bodysuits",
+            "link": "shopify://collections/bodysuits",
             "text_color": ""
           }
         },
@@ -215,14 +215,14 @@
           "type": "image",
           "settings": {
             "position": "4",
-            "image": "shopify:\/\/shop_images\/dressesX2_copy.jpg",
+            "image": "shopify://shop_images/dressesX2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/all-dresses",
+            "link": "shopify://collections/all-dresses",
             "text_color": ""
           }
         },
@@ -230,14 +230,14 @@
           "type": "image",
           "settings": {
             "position": "5",
-            "image": "shopify:\/\/shop_images\/halloweenMenX2_copy.jpg",
+            "image": "shopify://shop_images/halloweenMenX2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/all-halloween",
+            "link": "shopify://collections/all-halloween",
             "text_color": ""
           }
         },
@@ -245,14 +245,14 @@
           "type": "image",
           "settings": {
             "position": "5",
-            "image": "shopify:\/\/shop_images\/sonicSurgeX2_copy.jpg",
+            "image": "shopify://shop_images/sonicSurgeX2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/sonic-surge",
+            "link": "shopify://collections/sonic-surge",
             "text_color": ""
           }
         },
@@ -260,14 +260,14 @@
           "type": "image",
           "settings": {
             "position": "5",
-            "image": "shopify:\/\/shop_images\/primalX2.222_copy.jpg",
+            "image": "shopify://shop_images/primalX2.222_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/all-animal-prints",
+            "link": "shopify://collections/all-animal-prints",
             "text_color": ""
           }
         },
@@ -275,14 +275,14 @@
           "type": "image",
           "settings": {
             "position": "5",
-            "image": "shopify:\/\/shop_images\/MENSFAVESX2_copy.jpg",
+            "image": "shopify://shop_images/MENSFAVESX2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/test-bestsellers-men",
+            "link": "shopify://collections/test-bestsellers-men",
             "text_color": ""
           }
         },
@@ -290,14 +290,14 @@
           "type": "image",
           "settings": {
             "position": "6",
-            "image": "shopify:\/\/shop_images\/obisidiaSearchBAr_2.jpg",
+            "image": "shopify://shop_images/obisidiaSearchBAr_2.jpg",
             "aspect_ratio": 0.9,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/obsidia",
+            "link": "shopify://collections/obsidia",
             "text_color": ""
           }
         },
@@ -305,14 +305,14 @@
           "type": "image",
           "settings": {
             "position": "6",
-            "image": "shopify:\/\/shop_images\/darkSearchBar_copy2.jpg",
+            "image": "shopify://shop_images/darkSearchBar_copy2.jpg",
             "aspect_ratio": 0.9,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/dark",
+            "link": "shopify://collections/dark",
             "text_color": ""
           }
         },
@@ -320,14 +320,14 @@
           "type": "image",
           "settings": {
             "position": "6",
-            "image": "shopify:\/\/shop_images\/uvPulseSearchBar_copy.jpg",
+            "image": "shopify://shop_images/uvPulseSearchBar_copy.jpg",
             "aspect_ratio": 0.9,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/uv-bodysuits",
+            "link": "shopify://collections/uv-bodysuits",
             "text_color": ""
           }
         },
@@ -335,14 +335,14 @@
           "type": "image",
           "settings": {
             "position": "6",
-            "image": "shopify:\/\/shop_images\/menSearchBar_2.jpg",
+            "image": "shopify://shop_images/menSearchBar_2.jpg",
             "aspect_ratio": 0.9,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/test-bestsellers-men",
+            "link": "shopify://collections/test-bestsellers-men",
             "text_color": ""
           }
         },
@@ -350,14 +350,14 @@
           "type": "image",
           "settings": {
             "position": "6",
-            "image": "shopify:\/\/shop_images\/view_all_copy.jpg",
+            "image": "shopify://shop_images/view_all_copy.jpg",
             "aspect_ratio": 0.9,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/pages\/collections",
+            "link": "shopify://pages/collections",
             "text_color": ""
           }
         },
@@ -365,14 +365,14 @@
           "type": "image",
           "settings": {
             "position": "7",
-            "image": "shopify:\/\/shop_images\/halloweenMobileX2_copy.jpg",
+            "image": "shopify://shop_images/halloweenMobileX2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/all-halloween",
+            "link": "shopify://collections/all-halloween",
             "text_color": ""
           }
         },
@@ -380,14 +380,14 @@
           "type": "image",
           "settings": {
             "position": "7",
-            "image": "shopify:\/\/shop_images\/prideX2_copy.jpg",
+            "image": "shopify://shop_images/prideX2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/pride-2024",
+            "link": "shopify://collections/pride-2024",
             "text_color": ""
           }
         },
@@ -395,14 +395,14 @@
           "type": "image",
           "settings": {
             "position": "7",
-            "image": "shopify:\/\/shop_images\/raveWaveMobileX2_copy_bed3923e-1e84-4b45-a614-60b31db0b9eb.jpg",
+            "image": "shopify://shop_images/raveWaveMobileX2_copy_bed3923e-1e84-4b45-a614-60b31db0b9eb.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/rave",
+            "link": "shopify://collections/rave",
             "text_color": ""
           }
         },
@@ -410,14 +410,14 @@
           "type": "image",
           "settings": {
             "position": "7",
-            "image": "shopify:\/\/shop_images\/inTheShadowsX2_copy.jpg",
+            "image": "shopify://shop_images/inTheShadowsX2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify:\/\/collections\/in-the-shadows",
+            "link": "shopify://collections/in-the-shadows",
             "text_color": ""
           }
         }
@@ -462,7 +462,7 @@
         "show_icons": true,
         "icon_as_circle": false,
         "cart_icon_family": "cart",
-        "logo": "shopify:\/\/shop_images\/XxxLogo.jpg",
+        "logo": "shopify://shop_images/XxxLogo.jpg",
         "logo_max_limit": 125,
         "logo_max_limit_mobile": 125,
         "main_menu_linklist": "broadcast-theme-main-menu",
