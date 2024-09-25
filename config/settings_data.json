@@ -53,9 +53,9 @@
     "parallax_strength": 20,
     "product_grid_outline": false,
     "show_scroll_top_button": true,
-    "instagram_link": "https:\/\/www.instagram.com\/candycatz.wear\/",
-    "facebook_link": "https:\/\/www.facebook.com\/CandyCatzWear\/",
-    "pinterest_link": "https:\/\/www.pinterest.com\/CandyCatzWear\/",
+    "instagram_link": "https://www.instagram.com/candycatz.wear/",
+    "facebook_link": "https://www.facebook.com/CandyCatzWear/",
+    "pinterest_link": "https://www.pinterest.com/CandyCatzWear/",
     "product_grid_center": true,
     "overlay_text": false,
     "product_grid_aspect_ratio": 1.5,
@@ -73,10 +73,10 @@
     "sale_badge": true,
     "color_swatches": false,
     "swatch_style": "circle",
-    "favicon": "shopify:\/\/shop_images\/favicon-32x32_6887d16e-2ed2-4575-82a6-357d1b9c85c8.png",
+    "favicon": "shopify://shop_images/favicon-32x32_6887d16e-2ed2-4575-82a6-357d1b9c85c8.png",
     "cart_type": "drawer",
     "enable_accept_terms": false,
-    "checkout_logo_image": "shopify:\/\/shop_images\/Candy_Catz_Final-05.jpg",
+    "checkout_logo_image": "shopify://shop_images/Candy_Catz_Final-05.jpg",
     "checkout_logo_position": "center",
     "checkout_logo_size": "large",
     "checkout_body_background_color": "#ffffff",
@@ -100,58 +100,64 @@
     ],
     "blocks": {
       "11532412952436166569": {
-        "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-inject\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+        "type": "shopify://apps/loox-reviews/blocks/loox-inject/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
         "disabled": false,
         "settings": {
         }
       },
       "98be8eaf-c81a-477b-83db-1b6de7313048": {
-        "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/boost-sd\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+        "type": "shopify://apps/boost-ai-search-discovery/blocks/boost-sd/7fc998ae-a150-4367-bab8-505d8a4503f7",
         "disabled": false,
         "settings": {
         }
       },
       "385851483394302733": {
-        "type": "shopify:\/\/apps\/scroll-freely-infinite-scroll\/blocks\/scroll-freely\/ab81353f-60e9-48db-81f5-5b6037635a06",
+        "type": "shopify://apps/scroll-freely-infinite-scroll/blocks/scroll-freely/ab81353f-60e9-48db-81f5-5b6037635a06",
         "disabled": true,
         "settings": {
         }
       },
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
         }
       },
       "12512365888938011351": {
-        "type": "shopify:\/\/apps\/analyzify-ga4-ads-tracking\/blocks\/app-embed\/69637cfd-dd6f-4511-aa97-7037cfb5515c",
+        "type": "shopify://apps/analyzify-ga4-ads-tracking/blocks/app-embed/69637cfd-dd6f-4511-aa97-7037cfb5515c",
         "disabled": false,
         "settings": {
         }
       },
       "3824936769257688723": {
-        "type": "shopify:\/\/apps\/sami-product-labels\/blocks\/app-embed-block\/b9b44663-5d51-4be1-8104-faedd68da8c5",
+        "type": "shopify://apps/sami-product-labels/blocks/app-embed-block/b9b44663-5d51-4be1-8104-faedd68da8c5",
         "disabled": false,
         "settings": {
         }
       },
       "17676059084223943535": {
-        "type": "shopify:\/\/apps\/triplewhale\/blocks\/triple_pixel_snippet\/483d496b-3f1a-4609-aea7-8eee3b6b7a2a",
+        "type": "shopify://apps/triplewhale/blocks/triple_pixel_snippet/483d496b-3f1a-4609-aea7-8eee3b6b7a2a",
         "disabled": false,
         "settings": {
         }
       },
       "17453258828962521766": {
-        "type": "shopify:\/\/apps\/captain-insure\/blocks\/app\/a7ef2f88-bc96-4a68-ba4e-f042ccbc8beb",
+        "type": "shopify://apps/captain-insure/blocks/app/a7ef2f88-bc96-4a68-ba4e-f042ccbc8beb",
         "disabled": false,
         "settings": {
         }
       },
       "18228966181090706294": {
-        "type": "shopify:\/\/apps\/selleasy\/blocks\/app-embed\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+        "type": "shopify://apps/selleasy/blocks/app-embed/790c1a03-a71f-4bc1-9869-00dad526d3c2",
         "disabled": false,
         "settings": {
           "storefrontAccessToken": "f9d96f6d2a4cb69b6206276920142c2d"
+        }
+      },
+      "14952540001915115444": {
+        "type": "shopify://apps/upcart-cart-drawer/blocks/app-embed/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
+        "disabled": false,
+        "settings": {
         }
       }
     }
@@ -309,10 +315,10 @@
       "icon_style": "1.5",
       "product_grid_outline": false,
       "show_scroll_top_button": true,
-      "instagram_link": "https:\/\/instagram.com\/shopify",
-      "facebook_link": "https:\/\/facebook.com\/shopify",
-      "tiktok_link": "https:\/\/tiktok.com\/@shopify",
-      "pinterest_link": "https:\/\/pinterest.com\/shopify",
+      "instagram_link": "https://instagram.com/shopify",
+      "facebook_link": "https://facebook.com/shopify",
+      "tiktok_link": "https://tiktok.com/@shopify",
+      "pinterest_link": "https://pinterest.com/shopify",
       "overlay_text": false,
       "product_grid_aspect_ratio": 1.3,
       "sale_bg_color": "#1e6c53",
