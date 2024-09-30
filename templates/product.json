@@ -1,1 +1,342 @@
-{"sections":{"main":{"type":"product","blocks":{"title":{"type":"title","settings":{"subheading_option":"none","text_size":5,"padding_bottom":8}},"loox_reviews_loox_rating_BCKDnV":{"type":"shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e","settings":{"contentSize":14,"pattern":"","hideText":false,"alignment":"","layout":"","textColor":"","starColor":"#000000","showAllReviews":true,"looxOpenFloatingWidget":false,"emptyRatingWidget":false}},"price":{"type":"price","settings":{"padding_bottom":16}},"kiwi_size_chart_recommender_kiwi_sizing_HGHDmB":{"type":"shopify:\/\/apps\/kiwi-size-chart-recommender\/blocks\/kiwiSizing\/b7369922-bf15-44ce-a121-a22a8fcbc4b0","disabled":true,"settings":{"product":""}},"popup_xcAGBi":{"type":"popup","settings":{"title":"Size Chart","text":"","page":"sizing-chart","icon_name":"icon-ruler","icon_size":20,"icon_color":"#545454","padding_bottom":10}},"variants":{"type":"variants","settings":{"info_page":"","size_chart_style":"text","subscriptions_enable_selectors":false,"padding_bottom":16}},"buttons":{"type":"buttons","settings":{"show_quantity":true,"show_payment_button":false,"show_gift_card_recipient":false,"padding_bottom":32}},"sami_product_labels_app_block_highlight_ABJWqm":{"type":"shopify:\/\/apps\/sami-product-labels\/blocks\/app-block-highlight\/b9b44663-5d51-4be1-8104-faedd68da8c5","settings":{"shortcode":"<div class=\"samitaPL-highlight\" data-id=\"708\"><\/div>"}},"icon_dYwiFr":{"type":"icon","settings":{"icon_name":"icon-flower","icon_size":20,"icon_color":"#35ca52","title":"Limited-Edition Art Prints","text_size":3,"width":"full","padding_bottom":16}},"icon_VT6hKn":{"type":"icon","settings":{"icon_name":"icon-star","icon_size":20,"icon_color":"#4374d7","title":"Tested for Ideal Comfortable Fit","text_size":3,"width":"full","padding_bottom":16}},"icon_HGhAMg":{"type":"icon","settings":{"icon_name":"icon-heart","icon_size":20,"icon_color":"#f40c0c","title":"Soft and Premium Fabrics","text_size":3,"width":"full","padding_bottom":16}},"icon_i78Tap":{"type":"icon","settings":{"icon_name":"icon-droplet","icon_size":20,"icon_color":"#d226d0","title":"Secure & Reliable Payment Process","text_size":3,"width":"full","padding_bottom":16}},"divider_D73gCW":{"type":"divider","settings":{"show_line":true,"padding_bottom":20}},"tabs":{"type":"tab_richtext","settings":{"show_read_more":false,"style":"tabs","title_1":"SHIPPING & RETURNS","raw_content_1":"<p>Our orders typically blast off within 1-5 business days, but hey, even rockets have to refuel sometimes. For the full story, swing by our <a href=\"\/pages\/shipping\" title=\"Shipping\"><em>Shipping Information Page<\/em><\/a>. Delivery times depend on your location:<\/p><p><strong>Standard Shipping with USPS<\/strong><br\/>&gt; United States - 7-10 business days.<br\/>&gt; Europe - 5-7 business days.<br\/>&gt; Rest of the World - 10 business days<\/p><p><strong>Express Shipping with DHL or FedEx<\/strong><br\/>&gt; United States - 2-3 business days.<br\/>&gt; Europe - 1-2 business days.<br\/>&gt; Rest of the World - 2-5 business days<\/p><p>You've got a 30-day safety net from delivery to send it back. Take a look at our return policy <a href=\"\/pages\/returns\" title=\"Returns\"><em>here<\/em><\/a>.<\/p>","title_2":"","raw_content_2":"","title_3":"","raw_content_3":"","title_4":"","raw_content_4":"","title_5":"","raw_content_5":"","padding_bottom":0}},"upsell_Miyb47":{"type":"upsell","disabled":true,"settings":{"upsell_product":"jack-bag","upsell_product_list":[],"bg_color":"","padding_bottom":16}}},"block_order":["title","loox_reviews_loox_rating_BCKDnV","price","kiwi_size_chart_recommender_kiwi_sizing_HGHDmB","popup_xcAGBi","variants","buttons","sami_product_labels_app_block_highlight_ABJWqm","icon_dYwiFr","icon_VT6hKn","icon_HGhAMg","icon_i78Tap","divider_D73gCW","tabs","upsell_Miyb47"],"custom_css":[],"settings":{"product_sticky_enable":true,"image_layout":"grid-2","image_size":"stretch","show_cart_bar":false,"enable_zoom":true,"enable_video_looping":false,"mobile_image_style":"thumbs","padding_top":0,"padding_bottom":30}},"section_multicolumn_jGFDmN":{"type":"section-multicolumn","blocks":{"icon_Q9iQHg":{"type":"icon","settings":{"column_width":32,"icon_name":"icon-smile","icon_size":20,"icon_alignment":"icon--left","icon_color":"#545454","title":"30-DAY RETURN GUARANTEE","heading_size":3,"text":"<p>You've got a whole 30 days from the day you got your goodies to send 'em back and score either a refund or some store credit<\/p>","text_size":3}},"icon_YiAXr8":{"type":"icon","settings":{"column_width":33,"icon_name":"icon-fast-shipment","icon_size":20,"icon_alignment":"icon--left","icon_color":"#545454","title":"FAST SHIPPING","heading_size":3,"text":"<p>Our shipping magic usually happens within 1-5 business days. Picture us as the busy bees of the delivery world.<\/p>","text_size":3}},"icon_FUKdf7":{"type":"icon","settings":{"column_width":33,"icon_name":"icon-cloud","icon_size":20,"icon_alignment":"icon--left","icon_color":"#545454","title":"LET'S CHAT","heading_size":3,"text":"<p>Wondering about life, the universe, and everything? <a href=\"\/pages\/contact-us\" target=\"_blank\" title=\"Contact us\">Get in touch<\/a>, we're always up for a chat!<\/p>","text_size":3}}},"block_order":["icon_Q9iQHg","icon_YiAXr8","icon_FUKdf7"],"settings":{"title":"","heading_size":5,"description":"","align_heading":"text-left","align_text":"text-left","align_columns":"flex-align-top","width":"wrapper--full-padded","bg_color":"","color":"","padding_top":0,"padding_bottom":0,"layout_mobile":"1"}},"related":{"type":"related","blocks":{"related":{"type":"related","settings":{"product_recommendations_heading":"RELATED PRODUCTS","limit":6}},"recent_AMxW4H":{"type":"recent","settings":{"product_recently_heading":"RECENTLY VIEWED","product_recently_limit":6}}},"block_order":["related","recent_AMxW4H"],"settings":{"enable_tabs":false,"heading_alignment":"text-center","heading_size":4,"bg_color":"","color":"","border_color":"","padding_top":30,"padding_bottom":30}},"171059549045b3a026":{"type":"apps","blocks":{"loox_reviews_loox_dynamic_section_LMbTCJ":{"type":"shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e","settings":{"only_photos":false,"aggregated":false,"limit":20,"hide_thumbnails":false,"maxwidth":1080,"is_sample":true}}},"block_order":["loox_reviews_loox_dynamic_section_LMbTCJ"],"settings":{"include_margins":false}}},"order":["main","section_multicolumn_jGFDmN","related","171059549045b3a026"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "subheading_option": "none",
+            "text_size": 5,
+            "padding_bottom": 8
+          }
+        },
+        "loox_reviews_loox_rating_BCKDnV": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-rating/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "contentSize": 14,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "layout": "",
+            "textColor": "",
+            "starColor": "#000000",
+            "showAllReviews": true,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "padding_bottom": 16
+          }
+        },
+        "kiwi_size_chart_recommender_kiwi_sizing_HGHDmB": {
+          "type": "shopify://apps/kiwi-size-chart-recommender/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
+          "disabled": true,
+          "settings": {
+            "product": ""
+          }
+        },
+        "popup_xcAGBi": {
+          "type": "popup",
+          "settings": {
+            "title": "Size Chart",
+            "text": "",
+            "page": "sizing-chart",
+            "icon_name": "icon-ruler",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "padding_bottom": 10
+          }
+        },
+        "variants": {
+          "type": "variants",
+          "settings": {
+            "info_page": "",
+            "size_chart_style": "text",
+            "subscriptions_enable_selectors": false,
+            "padding_bottom": 16
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "show_quantity": true,
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "padding_bottom": 32
+          }
+        },
+        "sami_product_labels_app_block_highlight_ABJWqm": {
+          "type": "shopify://apps/sami-product-labels/blocks/app-block-highlight/b9b44663-5d51-4be1-8104-faedd68da8c5",
+          "settings": {
+            "shortcode": "<div class=\"samitaPL-highlight\" data-id=\"708\"></div>"
+          }
+        },
+        "icon_dYwiFr": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-flower",
+            "icon_size": 20,
+            "icon_color": "#35ca52",
+            "title": "Limited-Edition Art Prints",
+            "text_size": 3,
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "icon_VT6hKn": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-star",
+            "icon_size": 20,
+            "icon_color": "#4374d7",
+            "title": "Tested for Ideal Comfortable Fit",
+            "text_size": 3,
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "icon_HGhAMg": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#f40c0c",
+            "title": "Soft and Premium Fabrics",
+            "text_size": 3,
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "icon_i78Tap": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-droplet",
+            "icon_size": 20,
+            "icon_color": "#d226d0",
+            "title": "Secure & Reliable Payment Process",
+            "text_size": 3,
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "divider_D73gCW": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_bottom": 20
+          }
+        },
+        "tabs": {
+          "type": "tab_richtext",
+          "settings": {
+            "show_read_more": false,
+            "style": "tabs",
+            "title_1": "SHIPPING & RETURNS",
+            "raw_content_1": "<p>Our orders typically blast off within 1-5 business days, but hey, even rockets have to refuel sometimes. For the full story, swing by our <a href=\"/pages/shipping\" title=\"Shipping\"><em>Shipping Information Page</em></a>. Delivery times depend on your location:</p><p><strong>Standard Shipping with USPS</strong><br/>&gt; United States - 7-10 business days.<br/>&gt; Europe - 5-7 business days.<br/>&gt; Rest of the World - 10 business days</p><p><strong>Express Shipping with DHL or FedEx</strong><br/>&gt; United States - 2-3 business days.<br/>&gt; Europe - 1-2 business days.<br/>&gt; Rest of the World - 2-5 business days</p><p>You've got a 30-day safety net from delivery to send it back. Take a look at our return policy <a href=\"/pages/returns\" title=\"Returns\"><em>here</em></a>.</p>",
+            "title_2": "",
+            "raw_content_2": "",
+            "title_3": "",
+            "raw_content_3": "",
+            "title_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "raw_content_5": "",
+            "padding_bottom": 0
+          }
+        },
+        "upsell_Miyb47": {
+          "type": "upsell",
+          "disabled": true,
+          "settings": {
+            "upsell_product": "jack-bag",
+            "upsell_product_list": [
+
+            ],
+            "bg_color": "",
+            "padding_bottom": 16
+          }
+        },
+        "badges_cgXknY": {
+          "type": "badges",
+          "settings": {
+            "sale_badge": true,
+            "product_badges": true,
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "loox_reviews_loox_rating_BCKDnV",
+        "price",
+        "kiwi_size_chart_recommender_kiwi_sizing_HGHDmB",
+        "popup_xcAGBi",
+        "variants",
+        "buttons",
+        "sami_product_labels_app_block_highlight_ABJWqm",
+        "icon_dYwiFr",
+        "icon_VT6hKn",
+        "icon_HGhAMg",
+        "icon_i78Tap",
+        "divider_D73gCW",
+        "tabs",
+        "upsell_Miyb47",
+        "badges_cgXknY"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "product_sticky_enable": true,
+        "image_layout": "grid-2",
+        "image_size": "stretch",
+        "show_cart_bar": false,
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "mobile_image_style": "thumbs",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    },
+    "section_multicolumn_jGFDmN": {
+      "type": "section-multicolumn",
+      "blocks": {
+        "icon_Q9iQHg": {
+          "type": "icon",
+          "settings": {
+            "column_width": 32,
+            "icon_name": "icon-smile",
+            "icon_size": 20,
+            "icon_alignment": "icon--left",
+            "icon_color": "#545454",
+            "title": "30-DAY RETURN GUARANTEE",
+            "heading_size": 3,
+            "text": "<p>You've got a whole 30 days from the day you got your goodies to send 'em back and score either a refund or some store credit</p>",
+            "text_size": 3
+          }
+        },
+        "icon_YiAXr8": {
+          "type": "icon",
+          "settings": {
+            "column_width": 33,
+            "icon_name": "icon-fast-shipment",
+            "icon_size": 20,
+            "icon_alignment": "icon--left",
+            "icon_color": "#545454",
+            "title": "FAST SHIPPING",
+            "heading_size": 3,
+            "text": "<p>Our shipping magic usually happens within 1-5 business days. Picture us as the busy bees of the delivery world.</p>",
+            "text_size": 3
+          }
+        },
+        "icon_FUKdf7": {
+          "type": "icon",
+          "settings": {
+            "column_width": 33,
+            "icon_name": "icon-cloud",
+            "icon_size": 20,
+            "icon_alignment": "icon--left",
+            "icon_color": "#545454",
+            "title": "LET'S CHAT",
+            "heading_size": 3,
+            "text": "<p>Wondering about life, the universe, and everything? <a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact us\">Get in touch</a>, we're always up for a chat!</p>",
+            "text_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "icon_Q9iQHg",
+        "icon_YiAXr8",
+        "icon_FUKdf7"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": 5,
+        "description": "",
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "layout_mobile": "1"
+      }
+    },
+    "related": {
+      "type": "related",
+      "blocks": {
+        "related": {
+          "type": "related",
+          "settings": {
+            "product_recommendations_heading": "RELATED PRODUCTS",
+            "limit": 6
+          }
+        },
+        "recent_AMxW4H": {
+          "type": "recent",
+          "settings": {
+            "product_recently_heading": "RECENTLY VIEWED",
+            "product_recently_limit": 6
+          }
+        }
+      },
+      "block_order": [
+        "related",
+        "recent_AMxW4H"
+      ],
+      "settings": {
+        "enable_tabs": false,
+        "heading_alignment": "text-center",
+        "heading_size": 4,
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
+    },
+    "171059549045b3a026": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_LMbTCJ": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_LMbTCJ"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_multicolumn_jGFDmN",
+    "related",
+    "171059549045b3a026"
+  ]
+}
