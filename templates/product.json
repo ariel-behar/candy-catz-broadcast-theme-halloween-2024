@@ -20,6 +20,14 @@
             "padding_bottom": 8
           }
         },
+        "badges_cgXknY": {
+          "type": "badges",
+          "settings": {
+            "sale_badge": true,
+            "product_badges": true,
+            "padding_bottom": 8
+          }
+        },
         "loox_reviews_loox_rating_BCKDnV": {
           "type": "shopify://apps/loox-reviews/blocks/loox-rating/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
@@ -156,30 +164,11 @@
             "raw_content_5": "",
             "padding_bottom": 0
           }
-        },
-        "upsell_Miyb47": {
-          "type": "upsell",
-          "disabled": true,
-          "settings": {
-            "upsell_product": "jack-bag",
-            "upsell_product_list": [
-
-            ],
-            "bg_color": "",
-            "padding_bottom": 16
-          }
-        },
-        "badges_cgXknY": {
-          "type": "badges",
-          "settings": {
-            "sale_badge": true,
-            "product_badges": true,
-            "padding_bottom": 8
-          }
         }
       },
       "block_order": [
         "title",
+        "badges_cgXknY",
         "loox_reviews_loox_rating_BCKDnV",
         "price",
         "kiwi_size_chart_recommender_kiwi_sizing_HGHDmB",
@@ -192,9 +181,7 @@
         "icon_HGhAMg",
         "icon_i78Tap",
         "divider_D73gCW",
-        "tabs",
-        "upsell_Miyb47",
-        "badges_cgXknY"
+        "tabs"
       ],
       "custom_css": [
 
