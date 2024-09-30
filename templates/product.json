@@ -171,6 +171,7 @@
         },
         "badges_adcwXL": {
           "type": "badges",
+          "disabled": true,
           "settings": {
             "sale_badge": true,
             "product_badges": true,
