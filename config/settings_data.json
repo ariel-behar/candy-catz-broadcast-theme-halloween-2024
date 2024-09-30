@@ -68,7 +68,7 @@
     "show_cutline": false,
     "form_style": "modern",
     "show_lines": false,
-    "show_labels": false,
+    "show_labels": true,
     "variant_lines": true,
     "sale_badge": true,
     "color_swatches": false,
