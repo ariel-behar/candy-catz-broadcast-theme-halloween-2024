@@ -248,7 +248,7 @@
         "highlight_WFdR7p"
       ],
       "custom_css": [
-        ".wrapper--full-padded.highlights__container {padding-left: 20px; padding-right: 20px;}",
+        ".highlights__container {padding-left: 10px!important; padding-right: 10px!important;}",
         ".highlights__items {--gap: 0; flex-wrap: nowrap; justify-content: space-around;}",
         ".highlights__item {--width-desktop: 15px + 100% / var(--columns-desktop, var(--column-default));}",
         ".highlights__items .highlights__item-inner {padding: 3px 0px;}",
