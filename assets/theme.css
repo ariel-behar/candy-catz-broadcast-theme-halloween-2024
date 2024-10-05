@@ -24369,6 +24369,10 @@ nav.drawer .drawer__body .drawer__menu {
     font-size: 14px;
 }
 
+#shopify-pc__banner__btn-manage-prefs {
+    margin-top: 0;
+}
+
 #shopify-pc__banner__btn-manage-prefs span {
     font-size: 14px;
 }
