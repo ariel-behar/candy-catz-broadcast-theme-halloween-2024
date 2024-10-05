@@ -24339,6 +24339,23 @@ nav.drawer .drawer__body .drawer__menu {
   }
 }
 
+/* --- COOKIE BANNER --- */
+#shopify-pc__banner.shopify-pc__banner__dialog {
+    background-color: black;
+}
+
+#shopify-pc__banner__btn-manage-prefs, 
+#shopify-pc__banner .shopify-pc__banner__body-title, 
+#shopify-pc__banner .shopify-pc__banner__dialog p, 
+#shopify-pc__banner .shopify-pc__banner__body-policy-link {
+    color: white;
+}
+
+#shopify-pc__banner__btn-accept {
+    background-color: #cb4fd4;
+    color: white;
+}
+
 /*----- COLLECTION PAGE -----*/
 /* Styling the product label  */
 .boost-sd__product-label.boost-sd__product-label--rounded-rectangle.boost-sd__product-label--customLabelByTag {
