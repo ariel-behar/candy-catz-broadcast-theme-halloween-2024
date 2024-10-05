@@ -181,8 +181,8 @@
             "heading": "BOGO100",
             "url": "",
             "color": "",
-            "bg_color": "#cb4fd4",
-            "border_color": ""
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
           }
         },
         "highlight_6MMQNz": {
@@ -191,8 +191,8 @@
             "heading": "WINGS",
             "url": "",
             "color": "",
-            "bg_color": "#cb4fd4",
-            "border_color": ""
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
           }
         },
         "highlight_zVXtrk": {
@@ -201,8 +201,8 @@
             "heading": "SKELETON",
             "url": "",
             "color": "",
-            "bg_color": "#cb4fd4",
-            "border_color": ""
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
           }
         },
         "highlight_AYdkix": {
@@ -211,8 +211,8 @@
             "heading": "UV",
             "url": "",
             "color": "",
-            "bg_color": "#cb4fd4",
-            "border_color": ""
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
           }
         },
         "highlight_g8QW6H": {
@@ -221,8 +221,8 @@
             "heading": "BLACK",
             "url": "",
             "color": "",
-            "bg_color": "#cb4fd4",
-            "border_color": ""
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
           }
         },
         "highlight_WFdR7p": {
@@ -231,8 +231,8 @@
             "heading": "GREEN",
             "url": "",
             "color": "",
-            "bg_color": "#cb4fd4",
-            "border_color": ""
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
           }
         }
       },
