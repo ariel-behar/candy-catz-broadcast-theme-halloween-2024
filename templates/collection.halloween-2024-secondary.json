@@ -240,7 +240,7 @@
         ".highlights__items.highlights__items--mobile-slider {padding-left: 0;}",
         ".highlights__items {--gap: 0; flex-wrap: nowrap; justify-content: space-around;}",
         ".highlights__item {--width-desktop: 15px + 100% / var(--columns-desktop, var(--column-default));}",
-        ".highlights__items .highlights__item-inner {padding: 3px 0px;}",
+        ".highlights__items .highlights__item-inner {padding: 5px 0px;}",
         ".highlights__item-inner .highlights__item__content {font-size: 11px;}",
         ".highlights__item-inner .highlights__item__content span {text-wrap: nowrap;}"
       ],
