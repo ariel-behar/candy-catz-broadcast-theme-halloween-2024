@@ -247,9 +247,10 @@
         "highlight_WFdR7p"
       ],
       "custom_css": [
-        ".highlights__items {flex-wrap: nowrap;}",
-        ".highlights__item-inner.btn.btn--outline.btn--large {padding: 3px 0;}",
-        ".highlights__items {justify-content: space-around;}",
+        ".wrapper--full-padded.highlights__container {padding-left: 20px; padding-right: 20px;}",
+        ".highlights__items {--gap: 0; flex-wrap: nowrap; justify-content: space-around;}",
+        ".highlights__item {--width-item: 15px + 100% / var(--columns-desktop, var(--column-default));}",
+        ".highlights__items .highlights__item-inner {padding: 3px 0px;}",
         ".highlights__item-inner .highlights__item__content {font-size: 11px;}",
         ".highlights__item-inner .highlights__item__content span {text-wrap: nowrap;}"
       ],
