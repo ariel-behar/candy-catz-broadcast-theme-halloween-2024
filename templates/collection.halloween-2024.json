@@ -49,7 +49,7 @@
           "type": "collection",
           "settings": {
             "collection": "new-all-halloween",
-            "collection_image": "shopify:\/\/shop_images\/shopAllMINIDesk_copy.jpg",
+            "collection_image": "shopify://shop_images/shopAllMINIDesk_copy.jpg",
             "title": ""
           }
         },
@@ -57,7 +57,7 @@
           "type": "collection",
           "settings": {
             "collection": "halloween-skeletons",
-            "collection_image": "shopify:\/\/shop_images\/skeletonMINIDesk_copy_a64f828a-524d-4bd4-8772-94b84c3431b4.jpg",
+            "collection_image": "shopify://shop_images/skeletonMINIDesk_copy_a64f828a-524d-4bd4-8772-94b84c3431b4.jpg",
             "title": ""
           }
         },
@@ -65,7 +65,7 @@
           "type": "collection",
           "settings": {
             "collection": "fairy",
-            "collection_image": "shopify:\/\/shop_images\/fairyMINIDesk_copy_61da2a67-50d6-4090-979d-f29118f78eb7.jpg",
+            "collection_image": "shopify://shop_images/fairyMINIDesk_copy_61da2a67-50d6-4090-979d-f29118f78eb7.jpg",
             "title": ""
           }
         },
@@ -73,7 +73,7 @@
           "type": "collection",
           "settings": {
             "collection": "witches",
-            "collection_image": "shopify:\/\/shop_images\/witchesMINIDesk_copy_d14a2e52-66d0-4365-8142-233f72a07a30.jpg",
+            "collection_image": "shopify://shop_images/witchesMINIDesk_copy_d14a2e52-66d0-4365-8142-233f72a07a30.jpg",
             "title": ""
           }
         },
@@ -81,7 +81,7 @@
           "type": "collection",
           "settings": {
             "collection": "cyber",
-            "collection_image": "shopify:\/\/shop_images\/cyber_MINIDesk_copy.jpg",
+            "collection_image": "shopify://shop_images/cyber_MINIDesk_copy.jpg",
             "title": ""
           }
         },
@@ -89,7 +89,7 @@
           "type": "collection",
           "settings": {
             "collection": "halloween-zombies",
-            "collection_image": "shopify:\/\/shop_images\/scaryMINIDesk_copy_df59aa5d-2132-449c-99a7-3e9203bbd567.jpg",
+            "collection_image": "shopify://shop_images/scaryMINIDesk_copy_df59aa5d-2132-449c-99a7-3e9203bbd567.jpg",
             "title": ""
           }
         },
@@ -97,7 +97,7 @@
           "type": "collection",
           "settings": {
             "collection": "sexy-hwf",
-            "collection_image": "shopify:\/\/shop_images\/sexyMINIDesk_copy_copy_2.jpg",
+            "collection_image": "shopify://shop_images/sexyMINIDesk_copy_copy_2.jpg",
             "title": ""
           }
         },
@@ -105,7 +105,7 @@
           "type": "collection",
           "settings": {
             "collection": "uv-bodysuits",
-            "collection_image": "shopify:\/\/shop_images\/UVMINIDesk_copy.jpg",
+            "collection_image": "shopify://shop_images/UVMINIDesk_copy.jpg",
             "title": ""
           }
         },
@@ -113,7 +113,7 @@
           "type": "collection",
           "settings": {
             "collection": "pop-culture",
-            "collection_image": "shopify:\/\/shop_images\/popCultMINIDesk_copy_fc709fdd-2caa-470b-b606-fb2ef3264089.jpg",
+            "collection_image": "shopify://shop_images/popCultMINIDesk_copy_fc709fdd-2caa-470b-b606-fb2ef3264089.jpg",
             "title": ""
           }
         }
@@ -130,13 +130,14 @@
         "collection_rJPhgL"
       ],
       "custom_css": [
-        ".collection-item__info {display: none;}"
+        ".collection-item__info {display: none;}",
+        "@media only screen and (min-width: 990px) {.grid--slider {--item-width: calc((100vw - var(--scrollbar-width) - var(--outer) * 2) * 0.20) }"
       ],
       "settings": {
         "title": "",
         "description": "",
         "button_text": "",
-        "button_url": "shopify:\/\/collections",
+        "button_url": "shopify://collections",
         "button_type": "btn--primary",
         "button_size": "",
         "button_style": "btn--solid",
@@ -171,7 +172,7 @@
       "type": "apps",
       "blocks": {
         "boost_ai_search_discovery_product_filter_DWx8T8": {
-          "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/product-filter\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "type": "shopify://apps/boost-ai-search-discovery/blocks/product-filter/7fc998ae-a150-4367-bab8-505d8a4503f7",
           "settings": {
           }
         }
