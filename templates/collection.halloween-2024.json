@@ -152,6 +152,119 @@
         "padding_bottom": 0
       }
     },
+    "section_highlights_FPMfBp": {
+      "type": "section-highlights",
+      "blocks": {
+        "highlight_arFNJN": {
+          "type": "highlight",
+          "settings": {
+            "heading": "Women's Bodysuits",
+            "url": "",
+            "color": "",
+            "bg_color": "#cb4fd4",
+            "border_color": ""
+          }
+        },
+        "highlight_nrqRUi": {
+          "type": "highlight",
+          "settings": {
+            "heading": "Men's Bodysuits",
+            "url": "",
+            "color": "",
+            "bg_color": "#cb4fd4",
+            "border_color": ""
+          }
+        },
+        "highlight_DitcU8": {
+          "type": "highlight",
+          "settings": {
+            "heading": "BOGO100",
+            "url": "",
+            "color": "",
+            "bg_color": "#cb4fd4",
+            "border_color": ""
+          }
+        },
+        "highlight_6MMQNz": {
+          "type": "highlight",
+          "settings": {
+            "heading": "WINGS",
+            "url": "",
+            "color": "",
+            "bg_color": "#cb4fd4",
+            "border_color": ""
+          }
+        },
+        "highlight_zVXtrk": {
+          "type": "highlight",
+          "settings": {
+            "heading": "SKELETON",
+            "url": "",
+            "color": "",
+            "bg_color": "#cb4fd4",
+            "border_color": ""
+          }
+        },
+        "highlight_AYdkix": {
+          "type": "highlight",
+          "settings": {
+            "heading": "UV",
+            "url": "",
+            "color": "",
+            "bg_color": "#cb4fd4",
+            "border_color": ""
+          }
+        },
+        "highlight_g8QW6H": {
+          "type": "highlight",
+          "settings": {
+            "heading": "BLACK",
+            "url": "",
+            "color": "",
+            "bg_color": "#cb4fd4",
+            "border_color": ""
+          }
+        },
+        "highlight_WFdR7p": {
+          "type": "highlight",
+          "settings": {
+            "heading": "GREEN",
+            "url": "",
+            "color": "",
+            "bg_color": "#cb4fd4",
+            "border_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "highlight_arFNJN",
+        "highlight_nrqRUi",
+        "highlight_DitcU8",
+        "highlight_6MMQNz",
+        "highlight_zVXtrk",
+        "highlight_AYdkix",
+        "highlight_g8QW6H",
+        "highlight_WFdR7p"
+      ],
+      "custom_css": [
+        ".highlights__item-inner.btn.btn--outline.btn--large {padding: 3px 0;}",
+        ".highlights__items {justify-content: space-around; }"
+      ],
+      "settings": {
+        "style": "button",
+        "grid": 8,
+        "width": "wrapper--full-padded",
+        "heading": "",
+        "heading_position": "text-center",
+        "heading_size": 1,
+        "text_size": 1,
+        "color": "rgba(0,0,0,0)",
+        "bg_color": "rgba(0,0,0,0)",
+        "layout_mobile": "slider",
+        "padding_top": 5,
+        "padding_bottom": 5
+      }
+    },
     "main": {
       "type": "collection",
       "disabled": true,
@@ -189,6 +302,7 @@
     "subcollections",
     "hero",
     "section_collections_list_bnq8D6",
+    "section_highlights_FPMfBp",
     "main",
     "17258740864c636ff3"
   ]
