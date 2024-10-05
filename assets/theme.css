@@ -24340,8 +24340,14 @@ nav.drawer .drawer__body .drawer__menu {
 }
 
 /* --- COOKIE BANNER --- */
+#shopify-pc__banner {
+    padding: 15px;
+}
+
 #shopify-pc__banner.shopify-pc__banner__dialog {
     background-color: black;
+    left: 29.5%;
+    width: 41%;
 }
 
 #shopify-pc__banner__btn-manage-prefs, 
@@ -24349,6 +24355,26 @@ nav.drawer .drawer__body .drawer__menu {
 #shopify-pc__banner .shopify-pc__banner__wrapper .shopify-pc__banner__body p, 
 #shopify-pc__banner__body-policy-link {
     color: white;
+}
+
+#shopify-pc__banner__body-title {
+    font-size: 16px;
+}
+
+#shopify-pc__banner__btn-accept, #shopify-pc__banner__btn-decline {
+    transform: scale(0.9);
+}
+
+.shopify-pc__banner__wrapper .shopify-pc__banner__body {
+    margin-bottom: 0;
+}
+
+#shopify-pc__banner .shopify-pc__banner__wrapper .shopify-pc__banner__body p {
+    font-size: 14px;
+}
+
+#shopify-pc__banner__btn-manage-prefs span {
+    font-size: 14px;
 }
 
 #shopify-pc__banner__btn-accept {
