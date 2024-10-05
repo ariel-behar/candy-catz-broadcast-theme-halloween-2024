@@ -131,7 +131,8 @@
       ],
       "custom_css": [
         ".collection-item__info {display: none;}",
-        ".grid--slider {--item-width: calc((100vw - var(--scrollbar-width) - var(--outer) * 2) * 0.20); }"
+        ".grid--slider {--item-width: calc((100vw - var(--scrollbar-width) - var(--outer) * 2) * 0.2);}",
+        ".grid--mobile-slider.grid-item {width: calc(100% - 150px);}"
       ],
       "settings": {
         "title": "",
