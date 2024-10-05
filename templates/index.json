@@ -14,10 +14,10 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify://shop_images/halloween2Desktop_copy.jpg",
+        "image_1": "shopify://shop_images/halloween2024Desktop.png",
         "link": "shopify://collections/candy-bogo",
         "mobile_height": "image-height--mobile",
-        "mobile_image": "shopify://shop_images/halloween2Mobile_copy.jpg",
+        "mobile_image": "shopify://shop_images/halloweenMOBILE.png",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
