@@ -16,8 +16,8 @@
           "type": "highlight",
           "settings": {
             "heading": "",
-            "url": "shopify:\/\/collections\/new-all-halloween",
-            "image": "shopify:\/\/shop_images\/shopAllMINIDesk_copy.jpg",
+            "url": "shopify://collections/new-all-halloween",
+            "image": "shopify://shop_images/shopAllMINIDesk_copy.jpg",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": ""
@@ -27,8 +27,8 @@
           "type": "highlight",
           "settings": {
             "heading": "",
-            "url": "shopify:\/\/collections\/halloween-skeletons",
-            "image": "shopify:\/\/shop_images\/skeletonMINIDesk_copy_a64f828a-524d-4bd4-8772-94b84c3431b4.jpg",
+            "url": "shopify://collections/halloween-skeletons",
+            "image": "shopify://shop_images/skeletonMINIDesk_copy_a64f828a-524d-4bd4-8772-94b84c3431b4.jpg",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": ""
@@ -38,8 +38,8 @@
           "type": "highlight",
           "settings": {
             "heading": "",
-            "url": "shopify:\/\/collections\/fairy",
-            "image": "shopify:\/\/shop_images\/fairyMINIDesk_copy_61da2a67-50d6-4090-979d-f29118f78eb7.jpg",
+            "url": "shopify://collections/fairy",
+            "image": "shopify://shop_images/fairyMINIDesk_copy_61da2a67-50d6-4090-979d-f29118f78eb7.jpg",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": ""
@@ -49,8 +49,8 @@
           "type": "highlight",
           "settings": {
             "heading": "",
-            "url": "shopify:\/\/collections\/witches",
-            "image": "shopify:\/\/shop_images\/witchesMINIDesk_copy_d14a2e52-66d0-4365-8142-233f72a07a30.jpg",
+            "url": "shopify://collections/witches",
+            "image": "shopify://shop_images/witchesMINIDesk_copy_d14a2e52-66d0-4365-8142-233f72a07a30.jpg",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": ""
@@ -60,8 +60,8 @@
           "type": "highlight",
           "settings": {
             "heading": "",
-            "url": "shopify:\/\/collections\/cyber",
-            "image": "shopify:\/\/shop_images\/cyber_MINIDesk_copy.jpg",
+            "url": "shopify://collections/cyber",
+            "image": "shopify://shop_images/cyber_MINIDesk_copy.jpg",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": ""
@@ -71,8 +71,8 @@
           "type": "highlight",
           "settings": {
             "heading": "",
-            "url": "shopify:\/\/collections\/halloween-zombies",
-            "image": "shopify:\/\/shop_images\/scaryMINIDesk_copy_df59aa5d-2132-449c-99a7-3e9203bbd567.jpg",
+            "url": "shopify://collections/halloween-zombies",
+            "image": "shopify://shop_images/scaryMINIDesk_copy_df59aa5d-2132-449c-99a7-3e9203bbd567.jpg",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": ""
@@ -82,8 +82,8 @@
           "type": "highlight",
           "settings": {
             "heading": "",
-            "url": "shopify:\/\/collections\/sexy-hwf",
-            "image": "shopify:\/\/shop_images\/sexyMINIDesk_copy_copy_2.jpg",
+            "url": "shopify://collections/sexy-hwf",
+            "image": "shopify://shop_images/sexyMINIDesk_copy_copy_2.jpg",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": ""
@@ -93,8 +93,8 @@
           "type": "highlight",
           "settings": {
             "heading": "",
-            "url": "shopify:\/\/collections\/uv-bodysuits",
-            "image": "shopify:\/\/shop_images\/UVMINIDesk_copy.jpg",
+            "url": "shopify://collections/uv-bodysuits",
+            "image": "shopify://shop_images/UVMINIDesk_copy.jpg",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": ""
@@ -104,8 +104,8 @@
           "type": "highlight",
           "settings": {
             "heading": "",
-            "url": "shopify:\/\/collections\/pop-culture",
-            "image": "shopify:\/\/shop_images\/popCultMINIDesk_copy_fc709fdd-2caa-470b-b606-fb2ef3264089.jpg",
+            "url": "shopify://collections/pop-culture",
+            "image": "shopify://shop_images/popCultMINIDesk_copy_fc709fdd-2caa-470b-b606-fb2ef3264089.jpg",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": ""
@@ -141,11 +141,107 @@
         "padding_bottom": 10
       }
     },
+    "section_highlights_tF8dyw": {
+      "type": "section-highlights",
+      "blocks": {
+        "highlight_A9DyNE": {
+          "type": "highlight",
+          "settings": {
+            "heading": "Tops",
+            "url": "",
+            "color": "",
+            "bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        },
+        "highlight_gpBECh": {
+          "type": "highlight",
+          "settings": {
+            "heading": "Bottoms",
+            "url": "",
+            "color": "",
+            "bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        },
+        "highlight_N8QHxP": {
+          "type": "highlight",
+          "settings": {
+            "heading": "Dresses",
+            "url": "",
+            "color": "",
+            "bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        },
+        "highlight_y9E3Lj": {
+          "type": "highlight",
+          "settings": {
+            "heading": "Socks",
+            "url": "",
+            "color": "",
+            "bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        },
+        "highlight_LcAWjm": {
+          "type": "highlight",
+          "settings": {
+            "heading": "Sales",
+            "url": "",
+            "color": "",
+            "bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        },
+        "highlight_bfJXym": {
+          "type": "highlight",
+          "settings": {
+            "heading": "New Arrivals",
+            "url": "",
+            "color": "",
+            "bg_color": "#F0F0F0",
+            "border_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "highlight_A9DyNE",
+        "highlight_gpBECh",
+        "highlight_N8QHxP",
+        "highlight_y9E3Lj",
+        "highlight_LcAWjm",
+        "highlight_bfJXym"
+      ],
+      "custom_css": [
+        ".highlights__container {padding-left: 20px; padding-right: 20px;}",
+        ".highlights__items.highlights__items--mobile-slider {padding-left: 0;}",
+        ".highlights__items {--gap: 0; flex-wrap: nowrap; justify-content: space-around;}",
+        ".highlights__item {--width-desktop: 15px + 100% / var(--columns-desktop, var(--column-default));}",
+        ".highlights__items .highlights__item-inner {padding: 3px 0px;}",
+        ".highlights__item-inner .highlights__item__content {font-size: 11px;}",
+        ".highlights__item-inner .highlights__item__content span {text-wrap: nowrap;}"
+      ],
+      "settings": {
+        "style": "button",
+        "grid": 8,
+        "width": "wrapper--full-padded",
+        "heading": "",
+        "heading_position": "text-center",
+        "heading_size": 1,
+        "text_size": 1,
+        "color": "",
+        "bg_color": "",
+        "layout_mobile": "slider",
+        "padding_top": 15,
+        "padding_bottom": 15
+      }
+    },
     "9fef3eec-374d-4aa8-966c-d05b3537df60": {
       "type": "apps",
       "blocks": {
         "de305a87-1699-4623-83a2-cc252c7b7dea": {
-          "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/product-filter\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "type": "shopify://apps/boost-ai-search-discovery/blocks/product-filter/7fc998ae-a150-4367-bab8-505d8a4503f7",
           "settings": {
           }
         }
@@ -209,6 +305,7 @@
   },
   "order": [
     "section_highlights_4KjqtQ",
+    "section_highlights_tF8dyw",
     "9fef3eec-374d-4aa8-966c-d05b3537df60",
     "subcollections",
     "hero",
