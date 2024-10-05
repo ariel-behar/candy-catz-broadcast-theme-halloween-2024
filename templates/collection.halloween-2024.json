@@ -161,8 +161,8 @@
             "heading": "Women's Bodysuits",
             "url": "",
             "color": "",
-            "bg_color": "#cb4fd4",
-            "border_color": ""
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
           }
         },
         "highlight_nrqRUi": {
@@ -171,8 +171,8 @@
             "heading": "Men's Bodysuits",
             "url": "",
             "color": "",
-            "bg_color": "#cb4fd4",
-            "border_color": ""
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
           }
         },
         "highlight_DitcU8": {
@@ -248,7 +248,7 @@
       ],
       "custom_css": [
         ".highlights__item-inner.btn.btn--outline.btn--large {padding: 3px 0;}",
-        ".highlights__items {justify-content: space-around; }"
+        ".highlights__items {justify-content: space-around;}"
       ],
       "settings": {
         "style": "button",
@@ -261,8 +261,8 @@
         "color": "rgba(0,0,0,0)",
         "bg_color": "rgba(0,0,0,0)",
         "layout_mobile": "slider",
-        "padding_top": 5,
-        "padding_bottom": 5
+        "padding_top": 10,
+        "padding_bottom": 10
       }
     },
     "main": {
