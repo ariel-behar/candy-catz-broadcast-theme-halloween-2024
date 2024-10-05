@@ -147,21 +147,21 @@
         "highlight_A9DyNE": {
           "type": "highlight",
           "settings": {
-            "heading": "Tops",
+            "heading": "WOMEN BODYSUITS",
             "url": "",
             "color": "",
-            "bg_color": "#F0F0F0",
-            "border_color": ""
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
           }
         },
         "highlight_gpBECh": {
           "type": "highlight",
           "settings": {
-            "heading": "Bottoms",
+            "heading": "MEN BODYSUITS",
             "url": "",
             "color": "",
-            "bg_color": "#F0F0F0",
-            "border_color": ""
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
           }
         },
         "highlight_N8QHxP": {
