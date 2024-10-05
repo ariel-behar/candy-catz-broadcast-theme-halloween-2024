@@ -14,10 +14,10 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/halloween2024Desktop.png",
-        "link": "shopify:\/\/collections\/new-all-halloween",
+        "image_1": "shopify://shop_images/halloween2Desktop_copy.jpg",
+        "link": "shopify://collections/candy-bogo",
         "mobile_height": "image-height--mobile",
-        "mobile_image": "shopify:\/\/shop_images\/halloweenMOBILE.png",
+        "mobile_image": "shopify://shop_images/halloween2Mobile_copy.jpg",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
@@ -34,7 +34,7 @@
           "type": "collection",
           "settings": {
             "title": "",
-            "featured_collection": "new-all-halloween",
+            "featured_collection": "candy-bogo",
             "show_image": false,
             "align_with_product_images": false,
             "overlay_opacity": 0,
@@ -76,7 +76,7 @@
           "type": "collection",
           "settings": {
             "collection": "fairy",
-            "collection_image": "shopify:\/\/shop_images\/fairyMINIDesk_copy.jpg",
+            "collection_image": "shopify://shop_images/fairyMINIDesk_copy.jpg",
             "title": ""
           }
         },
@@ -84,7 +84,7 @@
           "type": "collection",
           "settings": {
             "collection": "witches",
-            "collection_image": "shopify:\/\/shop_images\/witchesMINIDesk_copy.jpg",
+            "collection_image": "shopify://shop_images/witchesMINIDesk_copy.jpg",
             "title": ""
           }
         },
@@ -92,7 +92,7 @@
           "type": "collection",
           "settings": {
             "collection": "halloween-zombies",
-            "collection_image": "shopify:\/\/shop_images\/scaryMINIDesk_copy.jpg",
+            "collection_image": "shopify://shop_images/scaryMINIDesk_copy.jpg",
             "title": ""
           }
         },
@@ -100,7 +100,7 @@
           "type": "collection",
           "settings": {
             "collection": "halloween-skeletons",
-            "collection_image": "shopify:\/\/shop_images\/skeletonMINIDesk_copy.jpg",
+            "collection_image": "shopify://shop_images/skeletonMINIDesk_copy.jpg",
             "title": ""
           }
         },
@@ -108,7 +108,7 @@
           "type": "collection",
           "settings": {
             "collection": "pop-culture",
-            "collection_image": "shopify:\/\/shop_images\/popCultMINIDesk_copy.jpg",
+            "collection_image": "shopify://shop_images/popCultMINIDesk_copy.jpg",
             "title": ""
           }
         }
@@ -128,7 +128,7 @@
         "title": "",
         "description": "",
         "button_text": "",
-        "button_url": "shopify:\/\/collections",
+        "button_url": "shopify://collections",
         "button_type": "btn--primary",
         "button_size": "",
         "button_style": "btn--solid",
@@ -190,10 +190,10 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/RaveWave1900x800NEW.jpg",
-        "link": "shopify:\/\/collections\/rave",
+        "image_1": "shopify://shop_images/RaveWave1900x800NEW.jpg",
+        "link": "shopify://collections/rave",
         "mobile_height": "image-height--mobile",
-        "mobile_image": "shopify:\/\/shop_images\/raveWaveMobile.jpg",
+        "mobile_image": "shopify://shop_images/raveWaveMobile.jpg",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
@@ -250,10 +250,10 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/menFavesDesk.jpg",
-        "link": "shopify:\/\/collections\/test-bestsellers-men",
+        "image_1": "shopify://shop_images/menFavesDesk.jpg",
+        "link": "shopify://collections/test-bestsellers-men",
         "mobile_height": "image-height--mobile",
-        "mobile_image": "shopify:\/\/shop_images\/menMobile_copy.jpg",
+        "mobile_image": "shopify://shop_images/menMobile_copy.jpg",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
@@ -311,10 +311,10 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify:\/\/shop_images\/prideDesk.jpg",
-        "link": "shopify:\/\/collections\/pride-2023-2024",
+        "image_1": "shopify://shop_images/prideDesk.jpg",
+        "link": "shopify://collections/pride-2023-2024",
         "mobile_height": "image-height--mobile",
-        "mobile_image": "shopify:\/\/shop_images\/prideMOBILE_copy.jpg",
+        "mobile_image": "shopify://shop_images/prideMOBILE_copy.jpg",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
@@ -374,7 +374,7 @@
         "image_NzB6zd": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DarkDesk.jpg",
+            "image": "shopify://shop_images/DarkDesk.jpg",
             "image_aspect_ratio": 1.5,
             "mobile_image_aspect_ratio": 1.5,
             "image_shape": "normal",
@@ -383,7 +383,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/dark",
+            "button_url": "shopify://collections/dark",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -393,7 +393,7 @@
         "image_xd4GPV": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/primalDesk.jpg",
+            "image": "shopify://shop_images/primalDesk.jpg",
             "image_aspect_ratio": 1.5,
             "mobile_image_aspect_ratio": 1.5,
             "image_shape": "normal",
@@ -402,7 +402,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/all-animal-prints",
+            "button_url": "shopify://collections/all-animal-prints",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -412,7 +412,7 @@
         "image_tYCHix": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/uvPulseDesk.jpg",
+            "image": "shopify://shop_images/uvPulseDesk.jpg",
             "image_aspect_ratio": 1.5,
             "mobile_image_aspect_ratio": 1.5,
             "image_shape": "normal",
@@ -421,7 +421,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/hw-uv-reflective-f",
+            "button_url": "shopify://collections/hw-uv-reflective-f",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -459,7 +459,7 @@
         "image_MPCHRe": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/meshDesk.jpg",
+            "image": "shopify://shop_images/meshDesk.jpg",
             "image_aspect_ratio": 1.3,
             "mobile_image_aspect_ratio": 1.3,
             "image_shape": "normal",
@@ -468,7 +468,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/mesh-female",
+            "button_url": "shopify://collections/mesh-female",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -478,7 +478,7 @@
         "image_DcEGrJ": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/dressesDesk.jpg",
+            "image": "shopify://shop_images/dressesDesk.jpg",
             "image_aspect_ratio": 1.3,
             "mobile_image_aspect_ratio": 1.3,
             "image_shape": "normal",
@@ -487,7 +487,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/all-dresses",
+            "button_url": "shopify://collections/all-dresses",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -497,7 +497,7 @@
         "image_AWpFpX": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bodysuitsDesk.jpg",
+            "image": "shopify://shop_images/bodysuitsDesk.jpg",
             "image_aspect_ratio": 1.3,
             "mobile_image_aspect_ratio": 1.3,
             "image_shape": "normal",
@@ -506,7 +506,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/bodysuits",
+            "button_url": "shopify://collections/bodysuits",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -516,7 +516,7 @@
         "image_PEhUEH": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sets_Desktop.jpg",
+            "image": "shopify://shop_images/sets_Desktop.jpg",
             "image_aspect_ratio": 1.3,
             "mobile_image_aspect_ratio": 1.3,
             "image_shape": "normal",
@@ -525,7 +525,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/sets",
+            "button_url": "shopify://collections/sets",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -535,7 +535,7 @@
         "image_dYeyBh": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/accessoriesDesk.jpg",
+            "image": "shopify://shop_images/accessoriesDesk.jpg",
             "image_aspect_ratio": 1.3,
             "mobile_image_aspect_ratio": 1.3,
             "image_shape": "normal",
@@ -544,7 +544,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/festival-accessories",
+            "button_url": "shopify://collections/festival-accessories",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -554,7 +554,7 @@
         "image_7wDiVD": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/shinyDesk.jpg",
+            "image": "shopify://shop_images/shinyDesk.jpg",
             "image_aspect_ratio": 1.3,
             "mobile_image_aspect_ratio": 1.3,
             "image_shape": "normal",
@@ -563,7 +563,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/shiny",
+            "button_url": "shopify://collections/shiny",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -605,7 +605,7 @@
         "image_yyCTAX": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/shinyDesk.jpg",
+            "image": "shopify://shop_images/shinyDesk.jpg",
             "image_aspect_ratio": 1.5,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -651,8 +651,8 @@
         "image_cp8rAT": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/XTRABOGODesktopBanner_2.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/XTRABOGOMobileBanner_3.jpg",
+            "image": "shopify://shop_images/XTRABOGODesktopBanner_2.jpg",
+            "mobile_image": "shopify://shop_images/XTRABOGOMobileBanner_3.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -699,7 +699,7 @@
         "image": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Best_Woman_s.png",
+            "image": "shopify://shop_images/Best_Woman_s.png",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -711,7 +711,7 @@
             "bg_color": "",
             "color": "#ffffff",
             "link_text": "",
-            "link": "shopify:\/\/collections\/test-bestsellers-women",
+            "link": "shopify://collections/test-bestsellers-women",
             "button_type": "btn--white",
             "button_size": "",
             "button_style": "btn--outline",
@@ -721,7 +721,7 @@
         "image_pGRBVV": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Best_Man_s.png",
+            "image": "shopify://shop_images/Best_Man_s.png",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -733,7 +733,7 @@
             "bg_color": "",
             "color": "#ffffff",
             "link_text": "",
-            "link": "shopify:\/\/collections\/test-bestsellers-men",
+            "link": "shopify://collections/test-bestsellers-men",
             "button_type": "btn--primary",
             "button_size": "btn--large",
             "button_style": "btn--solid",
@@ -763,7 +763,7 @@
         "image_JqgzWh": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Cyber_1.png",
+            "image": "shopify://shop_images/Cyber_1.png",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -775,7 +775,7 @@
             "bg_color": "",
             "color": "#ffffff",
             "link_text": "",
-            "link": "shopify:\/\/collections\/cyber",
+            "link": "shopify://collections/cyber",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -785,7 +785,7 @@
         "image_pyhLBj": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Neon_Faves.png",
+            "image": "shopify://shop_images/Neon_Faves.png",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -797,7 +797,7 @@
             "bg_color": "",
             "color": "#ffffff",
             "link_text": "",
-            "link": "shopify:\/\/collections\/uv-bodysuits",
+            "link": "shopify://collections/uv-bodysuits",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -824,7 +824,7 @@
     "section_custom_code_k3793W": {
       "type": "section-custom-code",
       "settings": {
-        "code": "<div id=\"join-instagram-coven-div\" class=\"hero__content hero__content--compact text-center\">\n<p class=\"hero__subheading subheading-size-5 aos-animate\" data-aos=\"hero\" data-aos-anchor=\"#BrickSection--template--20883765625165__section_custom_content_mhrxr6\" data-aos-order=\"1\" style=\"font-weight: bold\">JOIN OUR INSTAGRAM COVEN<\/p>\n\n<div class=\"hero__button aos-animate\" data-aos=\"hero\" data-aos-anchor=\"#BrickSection--template--20883765625165__section_custom_content_mhrxr6\" data-aos-order=\"2\">\n          <a href=\"https:\/\/www.instagram.com\/candycatz.wear\/\" class=\"btn btn--text btn--text-no-underline  btn--primary\">\n            <span>@candycatz.wear<\/span><svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-arrow-right\" viewBox=\"0 0 24 24\"><path d=\"M6 12h12.5m0 0-6-6m6 6-6 6\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path><\/svg><\/a>\n        <\/div>\n<\/div>",
+        "code": "<div id=\"join-instagram-coven-div\" class=\"hero__content hero__content--compact text-center\">\n<p class=\"hero__subheading subheading-size-5 aos-animate\" data-aos=\"hero\" data-aos-anchor=\"#BrickSection--template--20883765625165__section_custom_content_mhrxr6\" data-aos-order=\"1\" style=\"font-weight: bold\">JOIN OUR INSTAGRAM COVEN</p>\n\n<div class=\"hero__button aos-animate\" data-aos=\"hero\" data-aos-anchor=\"#BrickSection--template--20883765625165__section_custom_content_mhrxr6\" data-aos-order=\"2\">\n          <a href=\"https://www.instagram.com/candycatz.wear/\" class=\"btn btn--text btn--text-no-underline  btn--primary\">\n            <span>@candycatz.wear</span><svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-arrow-right\" viewBox=\"0 0 24 24\"><path d=\"M6 12h12.5m0 0-6-6m6 6-6 6\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></a>\n        </div>\n</div>",
         "width": "wrapper",
         "bg_color": "",
         "color": "",
@@ -836,7 +836,7 @@
       "type": "apps",
       "blocks": {
         "instafeed_app_block_n6k3L9": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "title": "",
             "title_color": "",
@@ -859,7 +859,7 @@
       "type": "apps",
       "blocks": {
         "loox_reviews_loox_agg_section_Um3n6K": {
-          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify://apps/loox-reviews/blocks/loox-agg-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "hide_thumbnails": true,
