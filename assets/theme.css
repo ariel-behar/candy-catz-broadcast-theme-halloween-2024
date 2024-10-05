@@ -24339,7 +24339,9 @@ nav.drawer .drawer__body .drawer__menu {
   }
 }
 
-/* --- UpCart Cart Drawer */
+/* --- UpCart Cart Drawer --- */
+/* The selectors needs to because these styles currently aren't being applied properly*/
+/* BEGIN */
 #CartPopup .upcart-products-section .upcart-product-quantity-minus,
 #CartPopup .upcart-products-section .upcart-product-quantity-plus,
 #CartPopup .upcart-products-section .upcart-product-quantity-input {
@@ -24375,6 +24377,7 @@ nav.drawer .drawer__body .drawer__menu {
 .upcart-addons .upcart-addons-toggle > {
     background-color: black;
 }
+/* END */
 
 /* --- COOKIE BANNER --- */
 #shopify-pc__banner {
