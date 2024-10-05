@@ -24447,6 +24447,10 @@ nav.drawer .drawer__body .drawer__menu {
   color: #CB4FD4!important;
 }
 
+.boost-sd-right .boost-sd__toolbar-inner .boost-sd__toolbar-content {
+    padding-top: 0;
+  }
+
 @media only screen and (max-width: 767px) {
   .boost-sd-layout.boost-sd-layout--has-filter-vertical.boost-sd-layout--has-vertical-style-expand {
     padding-left: 0;
