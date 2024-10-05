@@ -177,31 +177,51 @@
         "highlight_y9E3Lj": {
           "type": "highlight",
           "settings": {
-            "heading": "Socks",
+            "heading": "WINGS",
             "url": "",
             "color": "",
-            "bg_color": "#F0F0F0",
-            "border_color": ""
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
           }
         },
         "highlight_LcAWjm": {
           "type": "highlight",
           "settings": {
-            "heading": "Sales",
+            "heading": "SKELETON",
             "url": "",
             "color": "",
-            "bg_color": "#F0F0F0",
-            "border_color": ""
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
           }
         },
         "highlight_bfJXym": {
           "type": "highlight",
           "settings": {
-            "heading": "New Arrivals",
+            "heading": "UV",
             "url": "",
             "color": "",
-            "bg_color": "#F0F0F0",
-            "border_color": ""
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
+          }
+        },
+        "highlight_nzg9zJ": {
+          "type": "highlight",
+          "settings": {
+            "heading": "BLACK",
+            "url": "",
+            "color": "",
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
+          }
+        },
+        "highlight_NM3y7t": {
+          "type": "highlight",
+          "settings": {
+            "heading": "GREEN",
+            "url": "",
+            "color": "",
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
           }
         }
       },
@@ -211,7 +231,9 @@
         "highlight_N8QHxP",
         "highlight_y9E3Lj",
         "highlight_LcAWjm",
-        "highlight_bfJXym"
+        "highlight_bfJXym",
+        "highlight_nzg9zJ",
+        "highlight_NM3y7t"
       ],
       "custom_css": [
         ".highlights__container {padding-left: 20px; padding-right: 20px;}",
