@@ -24372,6 +24372,10 @@ nav.drawer .drawer__body .drawer__menu {
     font-weight: 400;
 }
 
+.upcart-addons .upcart-addons-toggle > {
+    background-color: black;
+}
+
 /* --- COOKIE BANNER --- */
 #shopify-pc__banner {
     padding: 10px 15px;
