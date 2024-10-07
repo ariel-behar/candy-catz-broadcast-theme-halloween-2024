@@ -124,7 +124,10 @@
         "highlight_nXKmhX"
       ],
       "custom_css": [
-
+        ".highlights .grid__heading-holder {margin-bottom: 10px;}",
+        ".highlights .highlights__items.highlights__items--mobile-slider {--columns-desktop: 9;}",
+        ".highlights .highlights__items.highlights__items--mobile-slider .highlights__item {padding: 0 2px !important;}",
+        "@media only screen and (max-width: 749px) {.highlights .highlights__items--mobile-slider .highlights__item {width: calc(100% - 225px); }}"
       ],
       "settings": {
         "style": "rectangle",
