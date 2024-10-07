@@ -178,6 +178,7 @@
         },
         "highlight_DitcU8": {
           "type": "highlight",
+          "disabled": true,
           "settings": {
             "heading": "BOGO100",
             "url": "shopify://collections/candy-bogo",
