@@ -208,7 +208,7 @@
           "type": "highlight",
           "settings": {
             "heading": "BLACK",
-            "url": "",
+            "url": "shopify://collections/black-1",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": "#ffffff"
@@ -218,7 +218,7 @@
           "type": "highlight",
           "settings": {
             "heading": "GREEN",
-            "url": "",
+            "url": "shopify://collections/green",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": "#ffffff"
