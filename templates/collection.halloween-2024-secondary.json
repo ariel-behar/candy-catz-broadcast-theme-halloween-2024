@@ -124,7 +124,7 @@
         "highlight_nXKmhX"
       ],
       "custom_css": [
-
+        "@media only screen and (max-width: 749px) {.highlights .highlights__items--mobile-slider .highlights__item {width: calc(100% - 225px); }}"
       ],
       "settings": {
         "style": "rectangle",
