@@ -200,7 +200,7 @@
           "type": "highlight",
           "settings": {
             "heading": "SKELETON",
-            "url": "",
+            "url": "shopify://collections/halloween-skeletons",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": "#ffffff"
