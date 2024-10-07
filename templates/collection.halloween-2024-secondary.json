@@ -124,7 +124,7 @@
         "highlight_nXKmhX"
       ],
       "custom_css": [
-
+        "@media only screen and (max-width: 749px) {.highlights .highlights__items--mobile-slider .highlights__item {width: calc(100% - 225px); }}"
       ],
       "settings": {
         "style": "rectangle",
@@ -238,12 +238,11 @@
       ],
       "custom_css": [
         ".highlights__container {padding-left: 20px; padding-right: 20px;}",
-        ".highlights__items.highlights__items--mobile-slider {padding-left: 0;}",
-        ".highlights__items {--gap: 0; flex-wrap: nowrap; justify-content: space-around;}",
+        ".highlights__items.highlights__items--mobile-slider {padding-left: 0; }",
         ".highlights__item {--width-desktop: 15px + 100% / var(--columns-desktop, var(--column-default));}",
         ".highlights__items .highlights__item-inner {padding: 5px 0px;}",
-        ".highlights__item-inner .highlights__item__content {font-size: 11px;}",
-        ".highlights__item-inner .highlights__item__content span {text-wrap: nowrap;}"
+        ".highlights__item-inner .highlights__item__content span {text-wrap: nowrap;}",
+        "@media only screen and (max-width: 749px) {.highlights .highlights__items--mobile-slider .highlights__item {font-size: 11px; }}"
       ],
       "settings": {
         "style": "button",
