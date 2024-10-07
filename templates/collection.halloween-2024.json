@@ -259,7 +259,7 @@
       ],
       "settings": {
         "style": "button",
-        "grid": 8,
+        "grid": 7,
         "width": "wrapper--full-padded",
         "heading": "",
         "heading_position": "text-center",
