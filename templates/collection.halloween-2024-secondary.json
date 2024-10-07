@@ -242,7 +242,7 @@
         ".highlights__item {--width-desktop: 15px + 100% / var(--columns-desktop, var(--column-default));}",
         ".highlights__items .highlights__item-inner {padding: 5px 0px;}",
         ".highlights__item-inner .highlights__item__content span {text-wrap: nowrap;}",
-        "@media only screen and (max-width: 749px) {.highlights .highlights__items--mobile-slider .highlights__item {width: auto; font-size: 11px; }}"
+        "@media only screen and (max-width: 749px) {.highlights .highlights__items--mobile-slider .highlights__item {font-size: 11px; }}"
       ],
       "settings": {
         "style": "button",
