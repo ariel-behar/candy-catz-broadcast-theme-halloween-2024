@@ -210,7 +210,7 @@
           "type": "highlight",
           "settings": {
             "heading": "UV",
-            "url": "",
+            "url": "shopify://collections/uv-bodysuits",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": "#ffffff"
