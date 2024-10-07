@@ -24461,12 +24461,12 @@ nav.drawer .drawer__body .drawer__menu {
   padding: 0 2px !important;
 }
 
-/* @media only screen and (max-width: 749px) {
+@media only screen and (max-width: 749px) {
   .highlights .highlights__items--mobile-slider .highlights__item {
     width: calc(100% - 225px);
   }
 }
-  */
+ 
 
 /* Removing the padding from the collection page header (Boost APP), because it was appearing as empty space on collections without an image */
 .boost-sd__collection-header .boost-sd__header-main-2-content {
