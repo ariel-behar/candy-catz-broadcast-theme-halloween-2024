@@ -17,7 +17,7 @@
         "text_fpe78z": {
           "type": "text",
           "settings": {
-            "text": "<p>🌈  BUY ONE, GET ONE FREE ON EVERYTHING! CODE CANDYBOGO 🦄</p>",
+            "text": "<p><a href=\"/collections/shop-all-bogo\" title=\"Shop All (Without Taffeta/Black Vinyl)\">🌈  BUY ONE, GET ONE FREE ON EVERYTHING! CODE CANDYBOGO 🦄</a></p>",
             "target_url_enabled": false,
             "target_url": "shopify://collections/shop-all",
             "target_referrer_enabled": false,
