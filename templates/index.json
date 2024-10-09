@@ -15,7 +15,7 @@
         "height": "image-height",
         "width": "wrapper--full",
         "image_1": "shopify://shop_images/halloween100OFF2.jpg",
-        "link": "shopify://collections/new-all-halloween",
+        "link": "shopify://collections/shop-all-bogo",
         "mobile_height": "image-height--mobile",
         "mobile_image": "shopify://shop_images/halloween100OFF2Mobile.jpg",
         "flex_align_desktop": "align--middle-center-desktop",
