@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -145,7 +145,7 @@
             "show_read_more": false,
             "style": "tabs",
             "title_1": "SHIPPING & RETURNS",
-            "raw_content_1": "<p>Our orders typically blast off within 1-5 business days, but hey, even rockets have to refuel sometimes. For the full story, swing by our <a href=\"/pages/shipping\" title=\"Shipping\"><em>Shipping Information Page</em></a>. Delivery times depend on your location:</p><p><strong>Standard Shipping with USPS</strong><br/>&gt; United States - 7-10 business days.<br/>&gt; Europe - 5-7 business days.<br/>&gt; Rest of the World - 10 business days</p><p><strong>Express Shipping with DHL or FedEx</strong><br/>&gt; United States - 2-3 business days.<br/>&gt; Europe - 1-2 business days.<br/>&gt; Rest of the World - 2-5 business days</p><p>You've got a 30-day safety net from delivery to send it back. Take a look at our return policy <a href=\"/pages/returns\" title=\"Returns\"><em>here</em></a>.</p>",
+            "raw_content_1": "<p>Our orders typically blast off within 1-5 days, but hey, even rockets have to refuel sometimes. For the full story, swing by our <a href=\"/pages/shipping\" title=\"Shipping\"><em>Shipping Information Page</em></a>. Delivery times depend on your location:</p><p><strong>Standard Shipping with USPS</strong><br/>&gt; United States - 7-10 business days.<br/>&gt; Europe - 5-7 business days.<br/>&gt; Rest of the World - 10 business days</p><p><strong>Express Shipping with DHL or FedEx</strong><br/>&gt; United States - 2-3 business days.<br/>&gt; Europe - 1-2 business days.<br/>&gt; Rest of the World - 2-5 business days</p><p>You've got a 30-day safety net from delivery to send it back. Take a look at our return policy <a href=\"/pages/returns\" title=\"Returns\"><em>here</em></a>.</p>",
             "title_2": "",
             "raw_content_2": "",
             "title_3": "",
