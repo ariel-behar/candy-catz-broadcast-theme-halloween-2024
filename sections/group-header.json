@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "header",
   "name": "Header",
@@ -29,12 +29,12 @@
         "countdown_KDEgXW": {
           "type": "countdown",
           "settings": {
-            "end_date": "2024-10-11",
+            "end_date": "2024-10-14",
             "end_time": "16:00",
             "period": "am",
             "end_message": "<p>Offer has expired</p>",
             "hide_on_complete": true,
-            "text": "<p>Limited time offer</p>"
+            "text": "<p>Limited time offer - EXTENDED -</p>"
           }
         }
       },
