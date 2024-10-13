@@ -24339,46 +24339,6 @@ nav.drawer .drawer__body .drawer__menu {
   }
 }
 
-/* --- UpCart Cart Drawer --- */
-/* The selectors needs to because these styles currently aren't being applied properly*/
-/* BEGIN */
-#CartPopup .upcart-products-section .upcart-product-quantity-minus,
-#CartPopup .upcart-products-section .upcart-product-quantity-plus,
-#CartPopup .upcart-products-section .upcart-product-quantity-input {
-    background-color: black;
-    color: white;
-    -webkit-text-fill-color: white;
-}
-
-#CartPopup .upcart-products-section .upcart-product-quantity-minus svg,
-#CartPopup .upcart-products-section .upcart-product-quantity-plus svg{ 
-    fill: white;
-}
-
-#CartPopup .upcart-upsell-item-card .upcart-upsell-item-variant-selector {
-    background-color: black;
-    color: white;
-}
-
-#up-upsell-carousel .carousel-root .carousel.carousel-slider .control-arrow.control-next,
-#up-upsell-carousel .carousel-root .carousel.carousel-slider .control-arrow.control-prev {
-    background-color: black!important;
-}
-
-#up-upsell-carousel .carousel-root .carousel.carousel-slider .control-arrow.control-next::before,
-#up-upsell-carousel .carousel-root .carousel.carousel-slider .control-arrow.control-prev::before {
-    border-color: white!important;
-}
-
-#CartPopup .upcart-product-savings {
-    font-weight: 400;
-}
-
-.upcart-addons .upcart-addons-toggle > {
-    background-color: black;
-}
-/* END */
-
 /* --- COOKIE BANNER --- */
 #shopify-pc__banner {
     padding: 10px 15px;
