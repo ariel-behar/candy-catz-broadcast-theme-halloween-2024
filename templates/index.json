@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "section_hero_WzHaFX": {
@@ -14,10 +14,10 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify://shop_images/halloween100OFF2.jpg",
+        "image_1": "shopify://shop_images/halloween3_copy.jpg",
         "link": "shopify://collections/shop-all-bogo",
         "mobile_height": "image-height--mobile",
-        "mobile_image": "shopify://shop_images/halloween100OFF2Mobile.jpg",
+        "mobile_image": "shopify://shop_images/halloween3Mobile_copy.jpg",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
