@@ -84,11 +84,6 @@
             "shortcode": "<div class=\"samitaPL-highlight\" data-id=\"708\"></div>"
           }
         },
-        "dingdoong_app_block_GCWeTy": {
-          "type": "shopify://apps/dingdoong/blocks/app-block/65ab0a55-83b7-43d0-839b-31ed27b3a16d",
-          "settings": {
-          }
-        },
         "icon_dYwiFr": {
           "type": "icon",
           "settings": {
@@ -193,7 +188,6 @@
         "variants",
         "buttons",
         "sami_product_labels_app_block_highlight_ABJWqm",
-        "dingdoong_app_block_GCWeTy",
         "icon_dYwiFr",
         "icon_VT6hKn",
         "icon_HGhAMg",
