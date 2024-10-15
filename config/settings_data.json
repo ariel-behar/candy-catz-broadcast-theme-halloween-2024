@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "text_color": "#ffffff",
@@ -163,6 +163,12 @@
       "16216491870256628967": {
         "type": "shopify://apps/bss-labels-badges/blocks/bss-pl-config-data/91bfe765-b604-49a1-805e-3599fa600b24",
         "disabled": true,
+        "settings": {
+        }
+      },
+      "2252613488580418660": {
+        "type": "shopify://apps/dingdoong/blocks/app-embed-block./65ab0a55-83b7-43d0-839b-31ed27b3a16d",
+        "disabled": false,
         "settings": {
         }
       }
