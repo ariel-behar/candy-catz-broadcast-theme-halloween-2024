@@ -17,7 +17,7 @@
         "text_fpe78z": {
           "type": "text",
           "settings": {
-            "text": "<p>🌈  BUY ONE, GET ONE 70% OFF! CODE BOGO70 🦄</p>",
+            "text": "<p>🌈  BUY ONE, GET ONE 50% OFF! CODE BOGO50 🦄</p>",
             "target_url_enabled": false,
             "target_url": "shopify://collections/shop-all",
             "target_referrer_enabled": false,
@@ -37,11 +37,24 @@
             "hide_on_complete": true,
             "text": "<p>Limited time offer - EXTENDED</p>"
           }
+        },
+        "text_Pm7cMa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>*Order before Oct 19th to get by Oct 24th</p>",
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
         }
       },
       "block_order": [
         "text_fpe78z",
-        "countdown_KDEgXW"
+        "countdown_KDEgXW",
+        "text_Pm7cMa"
       ],
       "settings": {
         "show_border": false,
