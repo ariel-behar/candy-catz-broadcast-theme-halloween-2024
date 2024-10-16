@@ -69,12 +69,6 @@
             "padding_bottom": 16
           }
         },
-        "sami_product_labels_app_block_highlight_ABJWqm": {
-          "type": "shopify://apps/sami-product-labels/blocks/app-block-highlight/b9b44663-5d51-4be1-8104-faedd68da8c5",
-          "settings": {
-            "shortcode": "<div class=\"samitaPL-highlight\" data-id=\"932\"></div>"
-          }
-        },
         "buttons": {
           "type": "buttons",
           "settings": {
@@ -82,6 +76,13 @@
             "show_payment_button": false,
             "show_gift_card_recipient": false,
             "padding_bottom": 32
+          }
+        },
+        "sami_product_labels_app_block_highlight_ABJWqm": {
+          "type": "shopify://apps/sami-product-labels/blocks/app-block-highlight/b9b44663-5d51-4be1-8104-faedd68da8c5",
+          "disabled": true,
+          "settings": {
+            "shortcode": "<div class=\"samitaPL-highlight\" data-id=\"932\"></div>"
           }
         },
         "icon_dYwiFr": {
@@ -186,8 +187,8 @@
         "kiwi_size_chart_recommender_kiwi_sizing_HGHDmB",
         "popup_xcAGBi",
         "variants",
-        "sami_product_labels_app_block_highlight_ABJWqm",
         "buttons",
+        "sami_product_labels_app_block_highlight_ABJWqm",
         "icon_dYwiFr",
         "icon_VT6hKn",
         "icon_HGhAMg",
