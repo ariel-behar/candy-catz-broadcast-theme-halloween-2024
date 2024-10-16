@@ -71,6 +71,7 @@
         },
         "sami_product_labels_app_block_highlight_ABJWqm": {
           "type": "shopify://apps/sami-product-labels/blocks/app-block-highlight/b9b44663-5d51-4be1-8104-faedd68da8c5",
+          "disabled": true,
           "settings": {
             "shortcode": "<div class=\"samitaPL-highlight\" data-id=\"708\"></div>"
           }
