@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "section_highlights_4KjqtQ": {
@@ -17,7 +17,7 @@
           "settings": {
             "heading": "",
             "url": "shopify://collections/new-all-halloween",
-            "image": "shopify://shop_images/shopAllMINIDesk_copy.jpg",
+            "image": "shopify://shop_images/SHOP_allMINIDesk2_copy_9418bf06-79d4-40ea-a8e3-38117a70d7e8.jpg",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": ""
@@ -238,7 +238,7 @@
       ],
       "custom_css": [
         ".highlights__container {padding-left: 20px; padding-right: 20px;}",
-        ".highlights__items.highlights__items--mobile-slider {padding-left: 0; }",
+        ".highlights__items.highlights__items--mobile-slider {padding-left: 0;}",
         ".highlights__item {--width-desktop: 15px + 100% / var(--columns-desktop, var(--column-default));}",
         ".highlights__items .highlights__item-inner {padding: 5px 0px;}",
         ".highlights__item-inner .highlights__item__content span {text-wrap: nowrap;}",
