@@ -46,7 +46,7 @@
             "period": "am",
             "end_message": "<p>Offer has expired</p>",
             "hide_on_complete": true,
-            "text": "<p>Limited Offer</p>"
+            "text": ""
           }
         },
         "text_bqqHRL": {
