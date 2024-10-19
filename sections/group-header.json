@@ -48,12 +48,25 @@
             "target_device_enabled": false,
             "target_device": "mobile"
           }
+        },
+        "text_bqqHRL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free express shipping upgrade</p>",
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
         }
       },
       "block_order": [
         "text_fpe78z",
         "countdown_KDEgXW",
-        "text_Pm7cMa"
+        "text_Pm7cMa",
+        "text_bqqHRL"
       ],
       "settings": {
         "show_border": false,
