@@ -75,7 +75,7 @@
     "swatch_style": "circle",
     "favicon": "shopify://shop_images/favicon-32x32_6887d16e-2ed2-4575-82a6-357d1b9c85c8.png",
     "cart_type": "drawer",
-    "enable_accept_terms": false,
+    "enable_accept_terms": true,
     "accept_terms_text": "<p><strong>I agree to a delivery after Oct 27th.</strong></p>",
     "checkout_logo_image": "shopify://shop_images/Candy_Catz_Final-05.jpg",
     "checkout_logo_position": "center",
@@ -146,13 +146,6 @@
         "type": "shopify://apps/captain-insure/blocks/app/a7ef2f88-bc96-4a68-ba4e-f042ccbc8beb",
         "disabled": false,
         "settings": {
-        }
-      },
-      "18228966181090706294": {
-        "type": "shopify://apps/selleasy/blocks/app-embed/790c1a03-a71f-4bc1-9869-00dad526d3c2",
-        "disabled": false,
-        "settings": {
-          "storefrontAccessToken": "f9d96f6d2a4cb69b6206276920142c2d"
         }
       },
       "14952540001915115444": {
