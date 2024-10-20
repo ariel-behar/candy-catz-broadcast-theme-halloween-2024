@@ -51,6 +51,7 @@
         },
         "text_bqqHRL": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Free express shipping upgrade</p>",
             "target_url_enabled": false,
@@ -75,7 +76,7 @@
         "text_alignment": "center",
         "show_arrows": false,
         "marquee_speed": 100,
-        "message_spacing": 50,
+        "message_spacing": 15,
         "text_size": 1,
         "bg_color": "#cb4fd4",
         "color": "#ffffff"
