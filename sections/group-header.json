@@ -28,9 +28,8 @@
         },
         "text_Pm7cMa": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>*delivery after Oct 27th</p>",
+            "text": "<p>Free express shipping upgrade</p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
