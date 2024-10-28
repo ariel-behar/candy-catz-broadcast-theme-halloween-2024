@@ -28,6 +28,7 @@
         },
         "text_Pm7cMa": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>*delivery after Oct 27th</p>",
             "target_url_enabled": false,
