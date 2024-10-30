@@ -11,6 +11,7 @@
   "sections": {
     "section_hero_WzHaFX": {
       "type": "section-hero",
+      "disabled": true,
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
@@ -53,6 +54,7 @@
       "block_order": [
         "tabs-0"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "text": "",
@@ -120,6 +122,7 @@
         "collection_jUzNpP",
         "collection_mMr8Tt"
       ],
+      "disabled": true,
       "custom_css": [
         ".grid {gap: 3px;}",
         ".collection-item__info {display: none;}"
@@ -169,6 +172,7 @@
       "block_order": [
         "collection_H4NHHL"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "text": "",
