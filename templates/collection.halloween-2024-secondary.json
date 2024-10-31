@@ -164,6 +164,16 @@
             "border_color": "#ffffff"
           }
         },
+        "highlight_bfJXym": {
+          "type": "highlight",
+          "settings": {
+            "heading": "UV",
+            "url": "shopify://collections/uv-bodysuits",
+            "color": "",
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
+          }
+        },
         "highlight_N8QHxP": {
           "type": "highlight",
           "disabled": true,
@@ -188,18 +198,8 @@
         "highlight_LcAWjm": {
           "type": "highlight",
           "settings": {
-            "heading": "SKELETON",
-            "url": "shopify://collections/halloween-skeletons",
-            "color": "",
-            "bg_color": "rgba(0,0,0,0)",
-            "border_color": "#ffffff"
-          }
-        },
-        "highlight_bfJXym": {
-          "type": "highlight",
-          "settings": {
-            "heading": "UV",
-            "url": "shopify://collections/uv-bodysuits",
+            "heading": "DRESSES",
+            "url": "shopify://collections/all-dresses",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": "#ffffff"
@@ -229,10 +229,10 @@
       "block_order": [
         "highlight_A9DyNE",
         "highlight_gpBECh",
+        "highlight_bfJXym",
         "highlight_N8QHxP",
         "highlight_y9E3Lj",
         "highlight_LcAWjm",
-        "highlight_bfJXym",
         "highlight_nzg9zJ",
         "highlight_NM3y7t"
       ],
