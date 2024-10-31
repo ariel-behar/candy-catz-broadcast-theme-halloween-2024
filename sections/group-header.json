@@ -270,18 +270,18 @@
             "text_color": ""
           }
         },
-        "image_BX33Ge": {
+        "image_jN8PEc": {
           "type": "image",
           "settings": {
             "position": "5",
-            "image": "shopify://shop_images/halloweenMenX2_copy.jpg",
+            "image": "shopify://shop_images/MENSFAVESX2_copy.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify://collections/all-halloween",
+            "link": "shopify://collections/bestsellers-men",
             "text_color": ""
           }
         },
@@ -315,18 +315,18 @@
             "text_color": ""
           }
         },
-        "image_jN8PEc": {
+        "image_BX33Ge": {
           "type": "image",
           "settings": {
             "position": "5",
-            "image": "shopify://shop_images/MENSFAVESX2_copy.jpg",
+            "image": "shopify://shop_images/prideMen.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify://collections/bestsellers-men",
+            "link": "shopify://collections/pride-men",
             "text_color": ""
           }
         },
@@ -479,10 +479,10 @@
         "image_EUcbnJ",
         "image_xKTgat",
         "image_mFdBRf",
-        "image_BX33Ge",
+        "image_jN8PEc",
         "image_64a4Di",
         "image_EMmXeU",
-        "image_jN8PEc",
+        "image_BX33Ge",
         "image_3wN3Cm",
         "image_JMej6B",
         "image_BVGCmT",
