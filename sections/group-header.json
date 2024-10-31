@@ -90,7 +90,7 @@
           "type": "image",
           "settings": {
             "position": "1",
-            "image": "shopify://shop_images/darkMobile.jpg",
+            "image": "shopify://shop_images/darkMenu.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
@@ -120,7 +120,7 @@
           "type": "image",
           "settings": {
             "position": "1",
-            "image": "shopify://shop_images/UVMobileX2_copy.jpg",
+            "image": "shopify://shop_images/uvPulseMenu.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
@@ -349,7 +349,7 @@
           "type": "image",
           "settings": {
             "position": "6",
-            "image": "shopify://shop_images/darkSearchBar_copy2.jpg",
+            "image": "shopify://shop_images/darkMenu.jpg",
             "aspect_ratio": 0.9,
             "wide_image": true,
             "overlay_opacity": 0,
