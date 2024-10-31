@@ -9,101 +9,6 @@
  */
 {
   "sections": {
-    "section_highlights_P3mVVj": {
-      "type": "section-highlights",
-      "blocks": {
-        "highlight_mdWGkw": {
-          "type": "highlight",
-          "settings": {
-            "heading": "WOMEN BODYSUITS",
-            "url": "shopify://collections/all-female-bodysuits",
-            "color": "",
-            "bg_color": "rgba(0,0,0,0)",
-            "border_color": "#ffffff"
-          }
-        },
-        "highlight_B9ad4T": {
-          "type": "highlight",
-          "settings": {
-            "heading": "MEN BODYSUITS",
-            "url": "shopify://collections/body-male",
-            "color": "",
-            "bg_color": "rgba(0,0,0,0)",
-            "border_color": "#ffffff"
-          }
-        },
-        "highlight_xYNck8": {
-          "type": "highlight",
-          "settings": {
-            "heading": "UV",
-            "url": "shopify://collections/uv-bodysuits",
-            "color": "",
-            "bg_color": "rgba(0,0,0,0)",
-            "border_color": "#ffffff"
-          }
-        },
-        "highlight_JK4qym": {
-          "type": "highlight",
-          "settings": {
-            "heading": "Dresses",
-            "url": "shopify://collections/all-dresses",
-            "color": "",
-            "bg_color": "rgba(0,0,0,0)",
-            "border_color": "#ffffff"
-          }
-        },
-        "highlight_AYVhCQ": {
-          "type": "highlight",
-          "settings": {
-            "heading": "BLACK",
-            "url": "shopify://collections/black-1",
-            "color": "",
-            "bg_color": "rgba(0,0,0,0)",
-            "border_color": "#ffffff"
-          }
-        },
-        "highlight_PzNAWh": {
-          "type": "highlight",
-          "settings": {
-            "heading": "GREEN",
-            "url": "shopify://collections/green",
-            "color": "",
-            "bg_color": "rgba(0,0,0,0)",
-            "border_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "highlight_mdWGkw",
-        "highlight_B9ad4T",
-        "highlight_xYNck8",
-        "highlight_JK4qym",
-        "highlight_AYVhCQ",
-        "highlight_PzNAWh"
-      ],
-      "custom_css": [
-        ".highlights__container {padding-left: 20px; padding-right: 20px;}",
-        ".highlights__items.highlights__items--mobile-slider {padding-left: 0;}",
-        ".highlights__item {--width-desktop: 15px + 100% / var(--columns-desktop, var(--column-default));}",
-        ".highlights__items .highlights__item-inner {padding: 5px 0px;}",
-        ".highlights__item-inner .highlights__item__content span {text-wrap: nowrap;}",
-        "@media only screen and (max-width: 749px) {.highlights .highlights__items--mobile-slider .highlights__item {font-size: 11px; }}"
-      ],
-      "settings": {
-        "style": "button",
-        "grid": 8,
-        "width": "wrapper--full-padded",
-        "heading": "",
-        "heading_position": "text-center",
-        "heading_size": 1,
-        "text_size": 1,
-        "color": "",
-        "bg_color": "",
-        "layout_mobile": "slider",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
     "9fef3eec-374d-4aa8-966c-d05b3537df60": {
       "type": "apps",
       "blocks": {
@@ -171,7 +76,6 @@
     }
   },
   "order": [
-    "section_highlights_P3mVVj",
     "9fef3eec-374d-4aa8-966c-d05b3537df60",
     "subcollections",
     "hero",
