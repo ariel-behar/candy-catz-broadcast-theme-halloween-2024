@@ -90,14 +90,14 @@
           "type": "image",
           "settings": {
             "position": "1",
-            "image": "shopify://shop_images/halloweenMobileX2_copy.jpg",
+            "image": "shopify://shop_images/darkMobile.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify://collections/new-all-halloween",
+            "link": "shopify://collections/dark",
             "text_color": ""
           }
         },
