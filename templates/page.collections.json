@@ -333,7 +333,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify://collections/test-bestsellers-women",
+            "button_url": "shopify://collections/bestsellers-women",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
