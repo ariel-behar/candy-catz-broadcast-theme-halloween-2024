@@ -153,7 +153,7 @@
         "image_eWUf6f": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/darkMobile.jpg",
+            "image": "shopify://shop_images/dark_Mini_Desk.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
