@@ -28,7 +28,7 @@
           "settings": {
             "heading": "",
             "url": "shopify://collections/bestsellers-women",
-            "image": "shopify://shop_images/women_Mobile.jpg",
+            "image": "shopify://shop_images/womensFavesMini_Desk.jpg",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": ""
@@ -39,7 +39,7 @@
           "settings": {
             "heading": "",
             "url": "shopify://collections/bestsellers-men",
-            "image": "shopify://shop_images/menMobile.jpg",
+            "image": "shopify://shop_images/mensFavesMini_Desk.jpg",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": ""
@@ -83,7 +83,7 @@
           "settings": {
             "heading": "",
             "url": "shopify://collections/dark",
-            "image": "shopify://shop_images/darkSearchBar_copy2.jpg",
+            "image": "shopify://shop_images/dark_Mini_Desk.jpg",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
             "border_color": ""
