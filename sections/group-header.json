@@ -90,7 +90,7 @@
           "type": "image",
           "settings": {
             "position": "1",
-            "image": "shopify://shop_images/darkMenu.jpg",
+            "image": "shopify://shop_images/darkSearchBar_copy2.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
