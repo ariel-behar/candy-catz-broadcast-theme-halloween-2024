@@ -349,7 +349,7 @@
           "type": "image",
           "settings": {
             "position": "6",
-            "image": "shopify://shop_images/darkMenu.jpg",
+            "image": "shopify://shop_images/dark_Mini_Desk.jpg",
             "aspect_ratio": 0.9,
             "wide_image": true,
             "overlay_opacity": 0,
