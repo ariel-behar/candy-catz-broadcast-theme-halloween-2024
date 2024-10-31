@@ -409,14 +409,14 @@
           "type": "image",
           "settings": {
             "position": "7",
-            "image": "shopify://shop_images/halloweenMobileX2_copy.jpg",
+            "image": "shopify://shop_images/uvPulseMenu.jpg",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify://collections/all-halloween",
+            "link": "shopify://collections/uv-bodysuits",
             "text_color": ""
           }
         },
