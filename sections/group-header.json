@@ -294,7 +294,7 @@
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify://collections/test-bestsellers-men",
+            "link": "shopify://collections/bestsellers-men",
             "text_color": ""
           }
         },
@@ -354,7 +354,7 @@
             "overlay_color": "#000000",
             "title": "",
             "link_text": "",
-            "link": "shopify://collections/test-bestsellers-men",
+            "link": "shopify://collections/bestsellers-men",
             "text_color": ""
           }
         },

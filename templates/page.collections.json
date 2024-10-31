@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -33,7 +33,7 @@
         "text_WLKd69": {
           "type": "text",
           "settings": {
-            "text": "<p>COLLECTIONS<\/p>",
+            "text": "<p>COLLECTIONS</p>",
             "text_size": 11,
             "text_style": "font-heading",
             "padding_bottom": 16
@@ -58,7 +58,7 @@
         "image_EiqABH": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/RaveWaveMobile_a240b571-ea76-4b0d-b8db-a7858f7272e2.jpg",
+            "image": "shopify://shop_images/RaveWaveMobile_a240b571-ea76-4b0d-b8db-a7858f7272e2.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -67,7 +67,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/rave",
+            "button_url": "shopify://collections/rave",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -77,7 +77,7 @@
         "image_qbKKTa": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/obisidiaMobile.jpg",
+            "image": "shopify://shop_images/obisidiaMobile.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -86,7 +86,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/obsidia",
+            "button_url": "shopify://collections/obsidia",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -96,7 +96,7 @@
         "image_WA4K6k": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bohemianMobile.jpg",
+            "image": "shopify://shop_images/bohemianMobile.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -105,7 +105,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/boho-bliss",
+            "button_url": "shopify://collections/boho-bliss",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -115,7 +115,7 @@
         "image_XDdBfb": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/psyvers1Mobile.jpg",
+            "image": "shopify://shop_images/psyvers1Mobile.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -124,7 +124,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/psyverse",
+            "button_url": "shopify://collections/psyverse",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -134,7 +134,7 @@
         "image_TVt7bK": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/psyverse2.2_copy.jpg",
+            "image": "shopify://shop_images/psyverse2.2_copy.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -143,7 +143,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/psyverse-vol-2",
+            "button_url": "shopify://collections/psyverse-vol-2",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -153,7 +153,7 @@
         "image_eWUf6f": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/darkMobile.jpg",
+            "image": "shopify://shop_images/darkMobile.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -162,7 +162,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/dark",
+            "button_url": "shopify://collections/dark",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -172,7 +172,7 @@
         "image_bEiqAX": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/inTheShadowsMobile.jpg",
+            "image": "shopify://shop_images/inTheShadowsMobile.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -181,7 +181,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/in-the-shadows",
+            "button_url": "shopify://collections/in-the-shadows",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -191,7 +191,7 @@
         "image_C7iUNz": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/nocturnalMobile.jpg",
+            "image": "shopify://shop_images/nocturnalMobile.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -200,7 +200,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/nocturnal",
+            "button_url": "shopify://collections/nocturnal",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -210,7 +210,7 @@
         "image_4TREaJ": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/primalMobile.jpg",
+            "image": "shopify://shop_images/primalMobile.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -219,7 +219,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/all-animal-prints",
+            "button_url": "shopify://collections/all-animal-prints",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -229,7 +229,7 @@
         "image_Q3Rtez": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sonicSurgeMobile.jpg",
+            "image": "shopify://shop_images/sonicSurgeMobile.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -238,7 +238,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/sonic-surge",
+            "button_url": "shopify://collections/sonic-surge",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -248,7 +248,7 @@
         "image_X4KEFQ": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/uvPulse_Moobile.jpg",
+            "image": "shopify://shop_images/uvPulse_Moobile.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -257,7 +257,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/uv-bodysuits",
+            "button_url": "shopify://collections/uv-bodysuits",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -267,7 +267,7 @@
         "image_6iwa3Q": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/prideMobile.jpg",
+            "image": "shopify://shop_images/prideMobile.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -276,7 +276,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/pride-2023-2024",
+            "button_url": "shopify://collections/pride-2023-2024",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -286,7 +286,7 @@
         "image_RhRNUq": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/imaginarium_Mobile.jpg",
+            "image": "shopify://shop_images/imaginarium_Mobile.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -295,7 +295,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/imaginarium",
+            "button_url": "shopify://collections/imaginarium",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -305,7 +305,7 @@
         "image_8tdLLQ": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/menMobile.jpg",
+            "image": "shopify://shop_images/menMobile.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -314,7 +314,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/test-bestsellers-men",
+            "button_url": "shopify://collections/bestsellers-men",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -324,7 +324,7 @@
         "image_WiatE3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/women_Mobile.jpg",
+            "image": "shopify://shop_images/women_Mobile.jpg",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
@@ -333,7 +333,7 @@
             "text": "",
             "text_size": 3,
             "button_text": "",
-            "button_url": "shopify:\/\/collections\/test-bestsellers-women",
+            "button_url": "shopify://collections/test-bestsellers-women",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
