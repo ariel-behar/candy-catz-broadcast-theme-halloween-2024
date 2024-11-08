@@ -28,9 +28,8 @@
         },
         "text_Pm7cMa": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>Free express shipping upgrade</p>",
+            "text": "<p>EXTENDED</p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
