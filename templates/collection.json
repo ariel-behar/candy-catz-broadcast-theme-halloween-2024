@@ -41,7 +41,7 @@
       "type": "collection-image-with-title",
       "settings": {
         "show_title": false,
-        "show_description": false,
+        "show_description": true,
         "flex_align": "align--middle-left",
         "bg_color": "",
         "color": "",
