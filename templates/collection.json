@@ -39,7 +39,6 @@
     },
     "hero": {
       "type": "collection-image-with-title",
-      "disabled": true,
       "settings": {
         "show_title": false,
         "show_description": false,
