@@ -17,7 +17,7 @@
         "text_fpe78z": {
           "type": "text",
           "settings": {
-            "text": "<p>🌈  BUY ONE, GET ONE FREE ON EVERYTHING! CODE BLACKBOGO 🦄</p>",
+            "text": "<p>🌈  BUY ONE, GET ONE FREE ON EVERYTHING! CODE CYBERBOGO 🦄</p>",
             "target_url_enabled": false,
             "target_url": "shopify://collections/shop-all",
             "target_referrer_enabled": false,
@@ -28,8 +28,9 @@
         },
         "text_Pm7cMa": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "text": "<p><strong>FINAL BLACK FRIDAY CALL</strong></p>",
+            "text": "<p><strong>CYBER BOGO ENDS SOON</strong></p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
@@ -40,9 +41,8 @@
         },
         "countdown_KDEgXW": {
           "type": "countdown",
-          "disabled": true,
           "settings": {
-            "end_date": "2024-12-2",
+            "end_date": "2024-12-4",
             "end_time": "12:00",
             "period": "pm",
             "end_message": "<p>Offer has expired</p>",
