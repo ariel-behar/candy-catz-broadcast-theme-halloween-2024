@@ -28,9 +28,8 @@
         },
         "text_Pm7cMa": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p><strong>CYBER BOGO ENDS SOON</strong></p>",
+            "text": "<p><strong>CYBER BOGO EXTENDED</strong></p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
