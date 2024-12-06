@@ -96,68 +96,65 @@
     "submenu_link_hover_color": "#AB8C52",
     "footer_link_hover": "#212121",
     "sale_background_color": "#be563f",
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "11532412952436166569": {
         "type": "shopify://apps/loox-reviews/blocks/loox-inject/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "98be8eaf-c81a-477b-83db-1b6de7313048": {
         "type": "shopify://apps/boost-ai-search-discovery/blocks/boost-sd/7fc998ae-a150-4367-bab8-505d8a4503f7",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "385851483394302733": {
         "type": "shopify://apps/scroll-freely-infinite-scroll/blocks/scroll-freely/ab81353f-60e9-48db-81f5-5b6037635a06",
         "disabled": true,
-        "settings": {
-        }
+        "settings": {}
       },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "12512365888938011351": {
         "type": "shopify://apps/analyzify-ga4-ads-tracking/blocks/app-embed/69637cfd-dd6f-4511-aa97-7037cfb5515c",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "3824936769257688723": {
         "type": "shopify://apps/sami-product-labels/blocks/app-embed-block/b9b44663-5d51-4be1-8104-faedd68da8c5",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "17676059084223943535": {
         "type": "shopify://apps/triplewhale/blocks/triple_pixel_snippet/483d496b-3f1a-4609-aea7-8eee3b6b7a2a",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "17453258828962521766": {
         "type": "shopify://apps/captain-insure/blocks/app/a7ef2f88-bc96-4a68-ba4e-f042ccbc8beb",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "14952540001915115444": {
         "type": "shopify://apps/upcart-cart-drawer/blocks/app-embed/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "16216491870256628967": {
         "type": "shopify://apps/bss-labels-badges/blocks/bss-pl-config-data/91bfe765-b604-49a1-805e-3599fa600b24",
         "disabled": true,
+        "settings": {}
+      },
+      "wholesale_gorilla": {
+        "type": "shopify://apps/wholesale-gorilla/blocks/wsg-header/c48d0487-dff9-41a4-94c8-ec6173fe8b8d",
+        "disabled": false,
         "settings": {
+          "embed_bg_color": "#000000",
+          "embed_text_color": "#000000",
+          "embed_SPOF_label": ""
         }
       }
     }
@@ -408,8 +405,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-
-    ]
+    "custom_css": []
   }
 }
