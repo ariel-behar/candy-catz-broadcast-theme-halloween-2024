@@ -24607,5 +24607,6 @@ nav.drawer .drawer__body .drawer__menu {
     flex-basis: 33%;
   }
 }
+.product__price--off { display: none;}
 
 
