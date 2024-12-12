@@ -12,12 +12,19 @@
     "9fef3eec-374d-4aa8-966c-d05b3537df60": {
       "type": "apps",
       "blocks": {
+        "sami_product_labels_app_block_highlight_NbbtUA": {
+          "type": "shopify://apps/sami-product-labels/blocks/app-block-highlight/b9b44663-5d51-4be1-8104-faedd68da8c5",
+          "settings": {
+            "shortcode": "<div class=\"samitaPL-highlight\" data-id=\"false\"></div>"
+          }
+        },
         "de305a87-1699-4623-83a2-cc252c7b7dea": {
           "type": "shopify://apps/boost-ai-search-discovery/blocks/product-filter/7fc998ae-a150-4367-bab8-505d8a4503f7",
           "settings": {}
         }
       },
       "block_order": [
+        "sami_product_labels_app_block_highlight_NbbtUA",
         "de305a87-1699-4623-83a2-cc252c7b7dea"
       ],
       "settings": {
