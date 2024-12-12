@@ -132,10 +132,10 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify://shop_images/ravebogo70_copy.jpg",
-        "link": "shopify://collections/shop-all-bogo",
+        "image_1": "shopify://shop_images/xmasSale.jpg",
+        "link": "shopify://collections/xmas-sale",
         "mobile_height": "image-height--mobile",
-        "mobile_image": "shopify://shop_images/ravebogo70Mobile.jpg",
+        "mobile_image": "shopify://shop_images/xmasMobile_jpg.jpg",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
@@ -840,13 +840,13 @@
         "instafeed_app_block_n6k3L9": {
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "feed_id": "",
             "title": "",
             "title_color": "",
             "title_size": 0,
             "alignment": "center",
             "margin_top": 0,
             "background_color": "",
+            "feed_id": "",
             "html_area": ""
           }
         }
