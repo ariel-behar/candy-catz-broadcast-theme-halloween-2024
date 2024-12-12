@@ -59,7 +59,7 @@
     "product_grid_center": true,
     "overlay_text": false,
     "product_grid_aspect_ratio": 1.5,
-    "sale_tags_enable": true,
+    "sale_tags_enable": false,
     "sale_bg_color": "#f9dee5",
     "sale_text_color": "#af7b88",
     "badge_bg_color": "#ffffff",
