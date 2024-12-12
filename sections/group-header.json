@@ -17,7 +17,7 @@
         "text_fpe78z": {
           "type": "text",
           "settings": {
-            "text": "<p>🌈  XMAS SALE: Enjoy Up To -60% OFF 🦄</p>",
+            "text": "<p>🌈  XMAS SALE: Enjoy Up To -60% 🦄</p>",
             "target_url_enabled": false,
             "target_url": "shopify://collections/shop-all",
             "target_referrer_enabled": false,
@@ -518,7 +518,7 @@
         "show_country_selector": false,
         "show_country_name": false,
         "show_country_flag": false,
-        "highlight_item": "XMAS SALE",
+        "highlight_item": "SALE",
         "highlight_item_color": "#d20000",
         "transparent_home": false,
         "transparent_product_page": false,
