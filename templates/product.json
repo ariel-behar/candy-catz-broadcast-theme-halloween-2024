@@ -80,7 +80,6 @@
         },
         "sami_product_labels_app_block_highlight_ABJWqm": {
           "type": "shopify://apps/sami-product-labels/blocks/app-block-highlight/b9b44663-5d51-4be1-8104-faedd68da8c5",
-          "disabled": true,
           "settings": {
             "shortcode": "<div class=\"samitaPL-highlight\" data-id=\"932\"></div>"
           }
@@ -163,9 +162,7 @@
           "disabled": true,
           "settings": {
             "upsell_product": "jack-bag",
-            "upsell_product_list": [
-
-            ],
+            "upsell_product_list": [],
             "bg_color": "",
             "padding_bottom": 16
           }
@@ -198,9 +195,7 @@
         "upsell_Miyb47",
         "badges_adcwXL"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "product_sticky_enable": true,
         "image_layout": "grid-2",
