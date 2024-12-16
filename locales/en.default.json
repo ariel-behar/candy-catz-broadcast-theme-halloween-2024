@@ -535,7 +535,7 @@
   "shopify": {
     "checkout": {
       "shipping": {
-        "shipping_method_title": "Shipping method (Upgrade to express shipping for delivery by NYE)"
+        "shipping_method_title": "Shipping method"
       }
     }
   }
