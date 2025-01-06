@@ -16,6 +16,7 @@
       "blocks": {
         "text_fpe78z": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>XMAS SALE: -60% on selected items</p>",
             "target_url_enabled": false,
@@ -26,34 +27,10 @@
             "target_device": "mobile"
           }
         },
-        "text_bqqHRL": {
-          "type": "text",
-          "settings": {
-            "text": "<p>|</p>",
-            "target_url_enabled": false,
-            "target_url": "",
-            "target_referrer_enabled": false,
-            "target_referrer": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
         "text_Pm7cMa": {
           "type": "text",
           "settings": {
-            "text": "<p>Buy One, Get One 50% OFF on the rest w/ code BOGO50</p>",
-            "target_url_enabled": false,
-            "target_url": "",
-            "target_referrer_enabled": false,
-            "target_referrer": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "text_gQgqL9": {
-          "type": "text",
-          "settings": {
-            "text": "<p>|</p>",
+            "text": "<p>🌈  BUY ONE, GET ONE 50% OFF! CODE BOGO50 🦄</p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
@@ -77,9 +54,7 @@
       },
       "block_order": [
         "text_fpe78z",
-        "text_bqqHRL",
         "text_Pm7cMa",
-        "text_gQgqL9",
         "countdown_KDEgXW"
       ],
       "settings": {
