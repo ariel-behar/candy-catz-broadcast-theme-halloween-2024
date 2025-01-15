@@ -63,7 +63,7 @@
         "slider_speed": 8,
         "text_alignment": "center",
         "show_arrows": false,
-        "marquee_speed": 100,
+        "marquee_speed": 75,
         "message_spacing": 15,
         "text_size": 1,
         "bg_color": "#cb4fd4",
