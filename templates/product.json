@@ -30,7 +30,7 @@
             "layout": "",
             "textColor": "",
             "starColor": "#000000",
-            "showAllReviews": true,
+            "showAllReviews": false,
             "looxOpenFloatingWidget": false,
             "emptyRatingWidget": false
           }
