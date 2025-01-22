@@ -58,6 +58,23 @@
   </div>
 </div>
 
+{%- javascript -%}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var currentProductHandle = "{{ product.handle }}"; // Вземи хендъл на текущия продукт
+      var recentlyViewedProducts = JSON.parse(localStorage.getItem('recentlyViewed')) || [];
+
+      // Филтрираме текущия продукт от списъка с наскоро разгледаните
+      recentlyViewedProducts = recentlyViewedProducts.filter(function(product) {
+        return product.handle !== currentProductHandle;
+      });
+
+      // Записваме обратно обновените данни в localStorage
+      localStorage.setItem('recentlyViewed', JSON.stringify(recentlyViewedProducts));
+    });
+  </script>
+{%- endjavascript -%}
+
 {% schema %}
 {
   "name": "Recently viewed products",
