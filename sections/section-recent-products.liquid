@@ -52,7 +52,18 @@
       </div>
 
       <div class="tab-content tab-content-0 tabs__recently-viewed current" data-tab-index="0">
-        {%- render 'products-recently-viewed', product: product, limit: section.settings.product_recently_limit, product_recently_minimum: section.settings.product_recently_minimum -%}
+        {%- assign current_product_handle = product.handle -%}
+        {%- assign recently_viewed_products = product.metafields.recently_viewed %}
+
+        {%- if recently_viewed_products != blank %}
+          {%- for recently_viewed_product in recently_viewed_products %}
+            {%- if recently_viewed_product.handle != current_product_handle %}
+              {%- render 'product-card', product: recently_viewed_product %}
+            {%- endif %}
+          {%- endfor %}
+        {%- else %}
+          <p>No recently viewed products.</p>
+        {%- endif %}
       </div>
     </div>
   </div>
