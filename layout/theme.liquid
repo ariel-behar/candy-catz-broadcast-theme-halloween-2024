@@ -223,6 +223,26 @@
   {% render 'boost-sd-fallback' %}
     {{ content_for_header }}
 
+  {% if template == 'index' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Candy Catz",
+  "url": "https://candycatz.com",
+  "logo": "https://candycatz.com/cdn/shop/files/XxxLogo.jpg?v=1710612433&width=125",
+  "sameAs": [
+    "https://www.facebook.com/CandyCatzWear",
+    "https://www.instagram.com/candycatz.wear"
+  ],
+  "address": {
+    "@type": "PostalAddress"
+  },
+  "areaServed": "US"
+}
+</script>
+{% endif %}
+  
 </head>
 
 <body id="{{ page_title | handle }}" class="template-{{ template.name | handle }} grid-{{ settings.grid_style }}{% if customer %} customer-logged-in{% endif %}{% if settings.animations_enable %} aos-initialized{% endif %}{% if settings.product_grid_outline %} has-line-design{% endif %}" data-animations="{{ settings.animations_enable }}">
