@@ -7,10 +7,9 @@
   <meta name="theme-color" content="{{ settings.accent_bright }}">
 
   {%- if request.path == '/404' -%}
-
-
+  <meta name="robots" content="noindex, nofollow">
   {%- else -%}
- <link rel="canonical" href="{{ canonical_url }}"> 
+  <link rel="canonical" href="{{ canonical_url }}"> 
   {%- endif -%}
  
   <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
