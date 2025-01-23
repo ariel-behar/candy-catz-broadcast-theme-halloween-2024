@@ -162,7 +162,7 @@
   endif
 
   assign current_variant = product.first_available_variant
-  assign product_url = product.url
+  assign product_url = product.url | within: collection
 
   capture item_unique
     echo 'product-item--' | append: section.id | append: '-' | append: product.id
