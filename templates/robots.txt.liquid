@@ -1,7 +1,7 @@
 # we use Shopify as our ecommerce platform
 {%- comment -%}
 # Caution! Please read https://help.shopify.com/en/manual/promoting-marketing/seo/editing-robots-txt before proceeding to make changes to this file.
-{% endcomment %}
+
 {% for group in robots.default_groups %}
   {{- group.user_agent -}}
 
@@ -12,4 +12,17 @@
   {%- if group.sitemap != blank -%}
     {{ group.sitemap }}
   {%- endif -%}
-{% endfor %}
+{% endfor %}{% endcomment %}
+User-agent: *
+Disallow: /admin
+Disallow: /cart
+Disallow: /orders
+Disallow: /checkouts/
+Disallow: /account
+Disallow: /*preview_theme_id*
+Disallow: /*preview_script_id*
+Disallow: /apple-app-site-association
+Disallow: /recommendations/products
+Disallow: /*/recommendations/products
+
+Sitemap: https://candycatz.com/sitemap.xml
