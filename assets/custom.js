@@ -11,6 +11,13 @@
 (function() {
   // Add custom code below this line
 window.addEventListener('DOMContentLoaded', () => {
+
+  const links = document.querySelectorAll('link[rel="canonical"]');
+    links.forEach(link => {
+        if (link.href === "https://candycatz.com/404") {
+            link.remove();
+        }
+    });
    var radioButton = document.querySelector('.radio__button.sale');
     if (radioButton) {
         var urlParams = new URLSearchParams(window.location.search);
