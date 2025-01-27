@@ -24595,8 +24595,8 @@ nav.drawer .drawer__body .drawer__menu {
   --boostsd-search-form-wrapper-border-bottom: none;
   --boostsd-search-form-wrapper-padding: 56px 16px 30px 16px;
 }
-.boost-sd__product-filter-fallback h1 {
-    margin: .1em 0;
+.collection_h1 h1 {
+    margin: .2em 0;
     font-size: 30px;
 }
 
