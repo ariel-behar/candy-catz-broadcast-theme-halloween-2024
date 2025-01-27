@@ -24599,7 +24599,7 @@ nav.drawer .drawer__body .drawer__menu {
     margin: .3em 0;
     font-size: 30px;
 }
-
+.highlights > div.grid__heading-holder.text-left { display: none; }
 /*----- FOOTER -----*/
 /* Fixing the Footer columns layout on small and medium screens */
 @media only screen and (min-width: 507px) and (max-width: 989px) {
