@@ -24,8 +24,9 @@
     },
     "hero": {
       "type": "collection-image-with-title",
+      "disabled": true,
       "settings": {
-        "show_title": true,
+        "show_title": false,
         "show_description": false,
         "flex_align": "align--middle-left",
         "bg_color": "",
