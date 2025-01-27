@@ -305,7 +305,7 @@
     <!-- CONTENT -->
     <main role="main" id="MainContent" class="main-content">
 
-{%- if template == 'collection' -%}
+{%- if request.path contains '/collection' -%}
       <div align="center" class="collection_h1"><h1>{{ collection.title }}</h1></div>
 {%- endif -%}
       {{ content_for_layout }}
