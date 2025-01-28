@@ -12,6 +12,14 @@
   // Add custom code below this line
 window.addEventListener('DOMContentLoaded', () => {
 
+   var canonicalTag = document.querySelector('link[rel="canonical"]');
+
+  
+  if (canonicalTag && canonicalTag.href === "https://candycatz.com/404") {
+   
+    canonicalTag.parentNode.removeChild(canonicalTag);
+    console.log("Canonical тагът е премахнат.");
+  }
   
    var radioButton = document.querySelector('.radio__button.sale');
     if (radioButton) {
