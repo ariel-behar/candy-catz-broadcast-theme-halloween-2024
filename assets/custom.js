@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
    
   }
 
-  if (canonicalTag && url.includes("variant") && robotsMetaTag) {
+  if (canonicalTag && url.includes("variant=") && robotsMetaTag) {
     robotsMetaTag.parentNode.removeChild(robotsMetaTag);
     
   }
