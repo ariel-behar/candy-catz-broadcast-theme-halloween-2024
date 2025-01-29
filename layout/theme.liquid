@@ -70,7 +70,7 @@
 
   {% if page_description %}
     {%- if template == 'product' -%}
-   <meta name="description" content="{{ product.title }} for {{ product.price_min }} from Candy Catz. Express yourself with our exclusive designs, perfect for parties, raves and festivals.">
+   <meta name="description" content="{{ product.title }} for {{ product.price_min | money }} from Candy Catz. Express yourself with our exclusive designs, perfect for parties, raves and festivals.">
     {%- else -%}
     <meta name="description" content="{{ page_description | escape }}">
     {%- endif -%}
