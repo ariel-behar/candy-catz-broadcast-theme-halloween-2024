@@ -12,14 +12,20 @@
   // Add custom code below this line
 window.addEventListener('DOMContentLoaded', () => {
 
-   var canonicalTag = document.querySelector('link[rel="canonical"]');
+  var canonicalTag = document.querySelector('link[rel="canonical"]');
+  var robotsMetaTag = document.querySelector('meta[name="robots"][content="noindex,nofollow"]');
+  var url = window.location.href;
 
-  
   if (canonicalTag && canonicalTag.href === "https://candycatz.com/404") {
-   
     canonicalTag.parentNode.removeChild(canonicalTag);
-    console.log("Canonical тагът е премахнат.");
+   
   }
+
+  if (canonicalTag && url.includes("variant") && robotsMetaTag) {
+    robotsMetaTag.parentNode.removeChild(robotsMetaTag);
+    
+  }
+
   
    var radioButton = document.querySelector('.radio__button.sale');
     if (radioButton) {
