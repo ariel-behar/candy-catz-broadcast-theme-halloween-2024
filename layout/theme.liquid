@@ -307,7 +307,7 @@
     <!-- CONTENT -->
     <main role="main" id="MainContent" class="main-content">
 
-{%- if request.path contains '/collection' and request.path does not contain '/product' -%}
+{%- if request.path contains '/collection' and not request.path contains '/product' -%}
   
       <div align="center" class="collection_h1"><h1>{{ collection.title }}</h1></div>
 {%- endif -%}
