@@ -78,7 +78,9 @@
   assign alt2title = product.title | append: " " | append: ranking_gender
   endif
 
-   
+   else
+
+   assign alt2title = product.title | append: " " | append: media.position
    
    endif
    
