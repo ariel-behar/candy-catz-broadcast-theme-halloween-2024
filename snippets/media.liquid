@@ -75,7 +75,7 @@
   if ranking_gender == blank
   assign alt2title = product.title | append: " " | append: media.position
   else
-  assign alt2title = product.title | append: " " | append: ranking_gender
+  assign alt2title = ranking_gender | append: " " | append: product.title
   endif
 
    else
