@@ -45,9 +45,11 @@
   assign alt2title = product.title
    elsif media.position == 2
 
-  unless ranking_color == blank
+  if ranking_color == blank
+  assign alt2title = product.title | append: " " | append: media.position
+  else
   assign alt2title = product.title | append: " " | append: ranking_color
-  endunless
+  endif
    
    elsif media.position == 3
    assign alt2title = product.title
