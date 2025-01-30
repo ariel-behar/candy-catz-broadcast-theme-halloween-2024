@@ -38,9 +38,16 @@
 
     assign image_sizes = '(min-width: 1400px) ' | append: image_width | append: 'px, (min-width: 750px) calc(50vw - 30px), calc(100vw - 32px)'
 
-
+  assign alt2title = ''
+    if media.position == 1 
+  assign alt2title = product.title
+   elsif media.position == 2
+assign alt2title = product.title
+   elsif media.position == 3
+   assign alt2title = product.title
+     endif
    
-    render 'image' image: media.preview_image, sizes: image_sizes, loading: loading, fetchpriority: fetchpriority, preload: preload, attributes: attributes, aspect_ratio: media_aspect_ratio, cover: cover
+    render 'image' image: media.preview_image, alt2: alt2title, sizes: image_sizes, loading: loading, fetchpriority: fetchpriority, preload: preload, attributes: attributes, aspect_ratio: media_aspect_ratio, cover: cover
 
   endcapture
 -%}
