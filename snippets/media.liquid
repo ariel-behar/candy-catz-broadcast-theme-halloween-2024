@@ -39,8 +39,9 @@
     assign image_sizes = '(min-width: 1400px) ' | append: image_width | append: 'px, (min-width: 750px) calc(50vw - 30px), calc(100vw - 32px)'
 
    assign ranking_color = product.metafields.custom.ranking_color | replace_last: ",", "" | replace: ",", ", "
-   
+   assign ranking_occasion = product.metafields.custom.ranking_occasion | replace_last: ",", "" | replace: ",", ", "
   assign alt2title = ''
+   
     if media.position == 1 
   assign alt2title = product.title
    elsif media.position == 2
@@ -52,7 +53,13 @@
   endif
    
    elsif media.position == 3
-   assign alt2title = product.title
+
+  if ranking_occasion == blank
+  assign alt2title = product.title | append: " " | append: media.position
+  else
+  assign alt2title = product.title | append: " " | append: ranking_occasion
+  endif
+   
    endif
    
     render 'image' image: media.preview_image, sizes: image_sizes, loading: loading, fetchpriority: fetchpriority, preload: preload, attributes: attributes, aspect_ratio: media_aspect_ratio, cover: cover
