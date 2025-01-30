@@ -40,6 +40,8 @@
 
    assign ranking_color = product.metafields.custom.ranking_color | replace_last: ",", "" | replace: ",", ", "
    assign ranking_occasion = product.metafields.custom.ranking_occasion | replace_last: ",", "" | replace: ",", ", "
+   assign ranking_fabric = product.metafields.custom.ranking_fabric | replace_last: ",", "" | replace: ",", ", "
+   assign ranking_gender = product.metafields.custom.ranking_gender | replace_last: ",", "" | replace: ",", ", "
   assign alt2title = ''
    
     if media.position == 1 
@@ -59,6 +61,24 @@
   else
   assign alt2title = product.title | append: " " | append: ranking_occasion
   endif
+
+   elsif media.position == 4
+
+  if ranking_fabric == blank
+  assign alt2title = product.title | append: " " | append: media.position
+  else
+  assign alt2title = product.title | append: " " | append: ranking_fabric
+  endif
+
+   elsif media.position == 5
+
+  if ranking_gender == blank
+  assign alt2title = product.title | append: " " | append: media.position
+  else
+  assign alt2title = product.title | append: " " | append: ranking_gender
+  endif
+
+   
    
    endif
    
