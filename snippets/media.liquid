@@ -38,7 +38,7 @@
 
     assign image_sizes = '(min-width: 1400px) ' | append: image_width | append: 'px, (min-width: 750px) calc(50vw - 30px), calc(100vw - 32px)'
 
-   assign ranking_color = product.metafields.custom.ranking_color | replace_last: ",", ""
+   assign ranking_color = product.metafields.custom.ranking_color | replace_last: ",", "" | replace: ",", ", "
    
   assign alt2title = ''
     if media.position == 1 
