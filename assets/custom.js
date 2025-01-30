@@ -12,6 +12,46 @@
   // Add custom code below this line
 window.addEventListener('DOMContentLoaded', () => {
 
+
+
+   const breadcrumbScript = document.querySelector('script[type="application/ld+json"]');
+    if (!breadcrumbScript) return;
+    
+    let breadcrumbData = JSON.parse(breadcrumbScript.textContent);
+    if (!Array.isArray(breadcrumbData)) return;
+    
+    let breadcrumbs = breadcrumbData[0].itemListElement;
+    
+    // Вземане на последната колекция от localStorage
+    let lastCollection = localStorage.getItem("lastCollection");
+    if (lastCollection) {
+        try {
+            lastCollection = JSON.parse(lastCollection);
+            breadcrumbs[1] = {
+                "@type": "ListItem",
+                "position": 2,
+                "name": lastCollection.name,
+                "item": lastCollection.url
+            };
+        } catch (e) {
+            console.error("Invalid stored collection data", e);
+        }
+    }
+    
+    // Ако текущата страница е колекция, запомни я в localStorage
+    const collectionMatch = window.location.pathname.match(/\/collections\/([^\/]+)/);
+    if (collectionMatch) {
+        let collectionName = document.querySelector("h1")?.innerText || collectionMatch[1];
+        let collectionData = {
+            name: collectionName,
+            url: window.location.pathname
+        };
+        localStorage.setItem("lastCollection", JSON.stringify(collectionData));
+    }
+    
+    // Актуализиране на JSON-LD
+    breadcrumbScript.textContent = JSON.stringify(breadcrumbData, null, 2);
+  
   var canonicalTag = document.querySelector('link[rel="canonical"]');
   var robotsMetaTag = document.querySelector('meta[name="robots"][content="noindex,nofollow"]');
   var url = window.location.href;
