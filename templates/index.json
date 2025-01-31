@@ -132,10 +132,10 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify://shop_images/bogo50_copy.png",
+        "image_1": "shopify://shop_images/bogofree.png",
         "link": "shopify://collections/shop-all-bogo",
         "mobile_height": "image-height--mobile",
-        "mobile_image": "shopify://shop_images/bogo50Mobile_copy.png",
+        "mobile_image": "shopify://shop_images/bogofreeMobile.png",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
