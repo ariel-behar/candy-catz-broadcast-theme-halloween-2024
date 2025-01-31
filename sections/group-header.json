@@ -16,9 +16,8 @@
       "blocks": {
         "text_fpe78z": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>XMAS SALE: -60% on selected items</p>",
+            "text": "<p>Buy 1, Get 1 FREE w/ code SLAYWITH2 </p>",
             "target_url_enabled": false,
             "target_url": "shopify://collections/shop-all",
             "target_referrer_enabled": false,
@@ -29,6 +28,7 @@
         },
         "text_Pm7cMa": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>🌈  BUY ONE, GET ONE 50% OFF! CODE BOGO50 🦄</p>",
             "target_url_enabled": false,
@@ -41,10 +41,9 @@
         },
         "countdown_KDEgXW": {
           "type": "countdown",
-          "disabled": true,
           "settings": {
-            "end_date": "2024-12-6",
-            "end_time": "19:00",
+            "end_date": "2025-02-1",
+            "end_time": "18:00",
             "period": "pm",
             "end_message": "<p>Offer has expired</p>",
             "hide_on_complete": true,
