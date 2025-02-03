@@ -12,7 +12,7 @@
 {%- capture social_link -%}{{ social_handle }}_link{%- endcapture -%}
 
 {%- if settings[social_link] != blank -%}
-  <li>
+  <li>{{ social }}
     <a href="{{ settings[social_link] }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: social }}" rel="noopener" target="_blank" class="social-link">
       {%- case social_handle -%}
       {%- when 'instagram' -%}
