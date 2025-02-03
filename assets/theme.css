@@ -19523,7 +19523,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 }
 
 .footer__block .social-link:hover {
-  color: var(--link-hover);
+  color: var(--COLOR-FOOTER-LINK);
 }
 
 .footer__block__title {
