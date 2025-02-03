@@ -19427,7 +19427,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
   padding-bottom: var(--cart-bar-height, 0px);
 }
 .footer-sections a:not(.btn) {
- 
+  transition: color 0.25s ease, background 0.25s ease;
 }
 
 .site-footer-wrapper {
