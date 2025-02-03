@@ -37,6 +37,8 @@
         {%- render 'icon-snapchat' -%}
       {%- when 'feed' -%}
         {% render 'icon-rss' %}
+       {%- when 'threads' -%}
+        {% render 'icon-threads' %}
       {%- endcase -%}
       <span class="icon-fallback-text">{{ social }}</span>
     </a>
