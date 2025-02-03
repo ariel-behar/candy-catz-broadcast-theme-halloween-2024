@@ -24615,4 +24615,5 @@ nav.drawer .drawer__body .drawer__menu {
 
 .icon-threads:hover {
   fill: #d5d5d5;
+  transition: color .25s ease; 
 }
