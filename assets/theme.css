@@ -24613,4 +24613,6 @@ nav.drawer .drawer__body .drawer__menu {
 .product__price--off { display: none;}
 
 
-
+.icon-threads:hover {
+  fill: #cccccc;
+}
