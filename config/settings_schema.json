@@ -611,6 +611,12 @@
         "info": "http://store.myshopify.com/blogs/news.atom"
       },
       {
+        "type": "text",
+        "id": "threads_link",
+        "label": "Threads",
+        "info": "http://threads.com/@shopify"
+      },
+      {
         "type": "header",
         "content": "Sharing options"
       },
