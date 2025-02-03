@@ -15,6 +15,7 @@
   <li>
     <a href="{{ settings[social_link] }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: social }}" rel="noopener" target="_blank" class="social-link">
       {%- case social_handle -%}
+        {{ social_handle }}
       {%- when 'instagram' -%}
         {%- render 'icon-instagram' -%}
       {%- when 'facebook' -%}
