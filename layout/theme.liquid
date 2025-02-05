@@ -290,9 +290,9 @@
       "name": "Home",
       "item": "{{ shop.url }}"
     }
-    {% assign sorted_collections = product.collections | sort: "all_products_count" | reverse %}
-  {% assign collection_count = 0 %}
-    {% for collection in sorted_collections limit: 1 %}
+    {%- assign sorted_collections = product.collections | sort: "all_products_count" | reverse -%}
+  {%- assign collection_count = 0 -%}
+    {%- for collection in sorted_collections limit: 1 -%}
       {% assign collection_count = collection_count | plus: 1 %}
     ,
     {
@@ -301,7 +301,7 @@
       "name": "{{ collection.title }}",
       "item": "{{ shop.url }}{{ collection.url }}"
     }
-    {% endfor %},
+    {%- endfor -%},
     {
       "@type": "ListItem",
       "position": {{ collection_count | plus: 2 }},
