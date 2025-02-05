@@ -289,16 +289,17 @@
     "position": 1,
     "name": "Home",
     "item": "{{ shop.url }}"
-  }
-    ,{
-      "@type": "ListItem",
-      "position": 2,
-      "name": "{{ product.collections.first.title }}",
-      "item": "{{ shop.url }}{{ product.collections.first.url }}"
-    },{
-      "@type": "ListItem",
-      "position": 3,
-      "name": "{{ product.title }}"
+  },
+  {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "{{ product.collections.first.title }}",
+    "item": "{{ shop.url }}{{ product.collections.first.url }}"
+  },
+  {
+    "@type": "ListItem",
+    "position": 3,
+    "name": "{{ product.title }}"
     }]
 }]
 {%- else -%}
@@ -311,12 +312,12 @@
     "position": 1,
     "name": "Home",
     "item": "{{ shop.url }}"
-  }
-    ,{
-      "@type": "ListItem",
-      "position": 2,
-      "name": "{{ page_title }}",
-      "item": "{{ shop.url }}{{ request.path }}"
+  },
+  {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "{{ page_title }}",
+    "item": "{{ shop.url }}{{ request.path }}"
   }]
 }]
 
