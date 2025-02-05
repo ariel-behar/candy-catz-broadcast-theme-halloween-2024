@@ -280,8 +280,10 @@
 }
 
 {%- elsif template == 'product'  -%}
-
-[{
+{% assign sorted_collections = product.collections | sort: "all_products_count" | reverse %}
+  [  
+  {% for collection in sorted_collections limit: 3 %}
+{
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [{
@@ -293,15 +295,17 @@
   {
     "@type": "ListItem",
     "position": 2,
-    "name": "{{ product.collections.first.title }}",
-    "item": "{{ shop.url }}{{ product.collections.first.url }}"
+    "name": "{{ collection.title }}",
+    "item": "{{ shop.url }}{{ collection.url }}"
   },
   {
     "@type": "ListItem",
     "position": 3,
     "name": "{{ product.title }}"
     }]
-}]
+}{% if forloop.index == 1 or forloop.index == 2 %},{% endif %}
+{% endfor %}
+  ]
 {%- else -%}
 
 {
