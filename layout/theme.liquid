@@ -263,7 +263,7 @@
 
 <script type="application/ld+json">
 {%- if template == 'collection' -%}
-[{
+{
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [{
@@ -277,7 +277,7 @@
     "name": "{{ collection.title }}",
     "item": "{{ collection.url }}"
     }]
-}]
+}
 
 {%- elsif template == 'product'  -%}
 
