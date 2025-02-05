@@ -261,7 +261,8 @@
     {% else %}
 
 
-    <script type="application/ld+json">
+<script type="application/ld+json">
+{%- if template == 'collection' -%}
 [{
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -271,12 +272,24 @@
     "name": "Home",
     "item": "{{ shop.url }}"
   }
-    {%- if template == 'collection' -%}
     ,{"@type": "ListItem",
     "position": 2,
     "name": "{{ collection.title }}",
     "item": "{{ collection.url }}"
-    {%- elsif template == 'product' -%}
+    }]
+}]
+
+{%- elsif template == 'product'  -%}
+
+[{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "{{ shop.url }}"
+  }
     ,{
       "@type": "ListItem",
       "position": 2,
@@ -286,16 +299,30 @@
       "@type": "ListItem",
       "position": 3,
       "name": "{{ product.title }}"
-    }
-    {%- else -%}
+    }]
+}]
+{%- else -%}
+
+[{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "{{ shop.url }}"
+  }
     ,{
       "@type": "ListItem",
       "position": 2,
       "name": "{{ page_title }}",
       "item": "{{ shop.url }}{{ request.path }}"
-    {% endif %}
   }]
 }]
+
+{%- endif -%}
+    
+
 </script>
     
 {% endif %}
