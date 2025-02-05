@@ -302,7 +302,7 @@
     {% endfor %},
     {
       "@type": "ListItem",
-      "position": {{ sorted_collections.size | at_least: 1 | plus: 2 }},
+      "position": {{ sorted_collections | size | plus: 2 }},
       "name": "{{ product.title }}"
     }
   ]
