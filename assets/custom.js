@@ -24,7 +24,8 @@ window.addEventListener('DOMContentLoaded', () => {
    
   }
 
-  if (canonicalTag && canonicalTag.href === "https://candycatz.com/search") {
+
+  if (canonicalTag && /^https:\/\/candycatz\.com\/search(\?q=[^&]*)?/.test(canonicalTag.href)) {
     canonicalTag.parentNode.removeChild(canonicalTag);
    
   }
