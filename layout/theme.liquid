@@ -275,7 +275,7 @@
     ,{"@type": "ListItem",
     "position": 2,
     "name": "{{ collection.title }}",
-    "item": "{{ collection.url }}"
+    "item": "{{ shop.url }}{{ collection.url }}"
     }]
 }
 
@@ -294,7 +294,7 @@
       "@type": "ListItem",
       "position": 2,
       "name": "{{ product.collections.first.title }}",
-      "item": "{{ product.collections.first.url }}"
+      "item": "{{ shop.url }}{{ product.collections.first.url }}"
     },{
       "@type": "ListItem",
       "position": 3,
