@@ -24,6 +24,11 @@ window.addEventListener('DOMContentLoaded', () => {
    
   }
 
+  if (canonicalTag && canonicalTag.href === "https://candycatz.com/search") {
+    canonicalTag.parentNode.removeChild(canonicalTag);
+   
+  }
+
   if (canonicalTag && url.includes("variant=") && robotsMetaTag) {
     robotsMetaTag.parentNode.removeChild(robotsMetaTag);
     
