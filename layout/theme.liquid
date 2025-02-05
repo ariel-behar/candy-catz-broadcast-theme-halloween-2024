@@ -9,7 +9,12 @@
   {% if request.path == '/404' %}
   <meta name="robots" content="noindex, nofollow">
   {% else %}
+
+  {% if request.path == '/search' %}
+
+  {% else %}
   <link rel="canonical" href="{{ canonical_url }}"> 
+  {% endif %}
   {% endif %}
  
   <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
