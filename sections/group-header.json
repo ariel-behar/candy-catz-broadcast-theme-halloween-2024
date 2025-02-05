@@ -16,6 +16,7 @@
       "blocks": {
         "text_fpe78z": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Buy 1, Get 1 FREE w/ code SLAYWITH2 </p>",
             "target_url_enabled": false,
@@ -28,7 +29,6 @@
         },
         "text_Pm7cMa": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "<p>🌈  BUY ONE, GET ONE 50% OFF! CODE BOGO50 🦄</p>",
             "target_url_enabled": false,
@@ -41,6 +41,7 @@
         },
         "countdown_KDEgXW": {
           "type": "countdown",
+          "disabled": true,
           "settings": {
             "end_date": "2025-02-5",
             "end_time": "16:00",
