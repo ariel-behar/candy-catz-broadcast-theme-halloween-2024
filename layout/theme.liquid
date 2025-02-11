@@ -15,7 +15,7 @@
   {% else %}
 
 
-  {% if collection.metafields.custom.noindex %}
+  {% if product.metafields.custom.noindex or collection.metafields.custom.noindex %}
   <meta name="robots" content="noindex, nofollow">
   {% else %}
   <link rel="canonical" href="{{ canonical_url }}"> 
