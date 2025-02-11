@@ -13,8 +13,18 @@
   {% if request.path == '/search' %}
 
   {% else %}
+
+
+  {% if collection.metafields.custom.noindex %}
+  <meta name="robots" content="noindex, nofollow">
+  {% else %}
   <link rel="canonical" href="{{ canonical_url }}"> 
   {% endif %}
+    
+  {% endif %}
+
+
+  
   {% endif %}
  
   <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
