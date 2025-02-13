@@ -84,7 +84,7 @@
   if ranking_product_type == blank
   assign alt2title = product.title | append: " " | append: media.position
   else
-  assign alt2title = product.title | append: " " | append: ranking_product_type
+  assign alt2title = product.title | append: " " | append: media.position
   endif
 
    else
