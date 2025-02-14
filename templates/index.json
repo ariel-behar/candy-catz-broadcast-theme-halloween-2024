@@ -133,7 +133,7 @@
         "height": "image-height",
         "width": "wrapper--full",
         "image_1": "shopify://shop_images/statixDesk2.png",
-        "link": "shopify://collections/the-black",
+        "link": "shopify://collections/statix",
         "mobile_height": "image-height--mobile",
         "mobile_image": "shopify://shop_images/bogo50Mobile_copy.png",
         "flex_align_desktop": "align--middle-center-desktop",
@@ -152,7 +152,7 @@
           "type": "collection",
           "settings": {
             "title": "The Black",
-            "featured_collection": "the-black",
+            "featured_collection": "statix",
             "show_image": false,
             "align_with_product_images": false,
             "overlay_opacity": 0,
