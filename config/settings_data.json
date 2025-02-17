@@ -215,7 +215,7 @@
           "offset_bottom": 0,
           "offset_left": 0,
           "offset_right": 0,
-          "collections_wishlist_button": "none",
+          "collections_wishlist_button": "overlay",
           "collection_button_border_radius": 50,
           "floating_link_placement": "right",
           "floating_link_vertical_offset": 0,
