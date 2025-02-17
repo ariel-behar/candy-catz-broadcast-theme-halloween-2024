@@ -20,27 +20,6 @@
             "padding_bottom": 8
           }
         },
-        "loox_reviews_loox_rating_BCKDnV": {
-          "type": "shopify://apps/loox-reviews/blocks/loox-rating/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-            "contentSize": 14,
-            "pattern": "",
-            "hideText": false,
-            "alignment": "",
-            "layout": "",
-            "textColor": "",
-            "starColor": "#000000",
-            "showAllReviews": true,
-            "looxOpenFloatingWidget": false,
-            "emptyRatingWidget": false
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-            "padding_bottom": 16
-          }
-        },
         "advanced_wishlist_wishlist_btn_p4ctnU": {
           "type": "shopify://apps/advanced-wishlist/blocks/wishlist-btn/330d9272-08ea-4193-b3e0-475a69fa65fa",
           "settings": {
@@ -67,6 +46,27 @@
             "icon_hover_color": "#5c6ac4",
             "selected_icon_fill_color": "#5c6ac4",
             "selected_icon_border_color": "#5c6ac4"
+          }
+        },
+        "loox_reviews_loox_rating_BCKDnV": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-rating/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "contentSize": 14,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "layout": "",
+            "textColor": "",
+            "starColor": "#000000",
+            "showAllReviews": true,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "padding_bottom": 16
           }
         },
         "kiwi_size_chart_recommender_kiwi_sizing_HGHDmB": {
@@ -206,9 +206,9 @@
       },
       "block_order": [
         "title",
+        "advanced_wishlist_wishlist_btn_p4ctnU",
         "loox_reviews_loox_rating_BCKDnV",
         "price",
-        "advanced_wishlist_wishlist_btn_p4ctnU",
         "kiwi_size_chart_recommender_kiwi_sizing_HGHDmB",
         "popup_xcAGBi",
         "variants",
