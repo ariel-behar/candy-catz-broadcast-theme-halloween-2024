@@ -232,7 +232,7 @@
       },
       "6471712195879653093": {
         "type": "shopify://apps/froonze-customer-accounts/blocks/social_logins/3c495b68-652c-468d-a0ef-5bad6935d104",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "position": "below",
           "divider": true,
