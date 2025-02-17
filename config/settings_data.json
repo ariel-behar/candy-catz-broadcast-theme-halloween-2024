@@ -204,7 +204,7 @@
       },
       "11074193060611426105": {
         "type": "shopify://apps/froonze-customer-accounts/blocks/product_wishlist/3c495b68-652c-468d-a0ef-5bad6935d104",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "placement": "below_add_to_cart",
           "product_css_selector": "",
