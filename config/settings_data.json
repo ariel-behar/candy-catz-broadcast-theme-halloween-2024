@@ -208,7 +208,7 @@
         "settings": {
           "placement": "below_add_to_cart",
           "product_css_selector": "",
-          "button_style": "icon_and_text",
+          "button_style": "icon",
           "border_radius": 4,
           "shadow": true,
           "offset_top": 0,
@@ -223,7 +223,7 @@
           "floating_link_border_radius": 4,
           "navigation_link": false,
           "navigation_link_css_selector": "",
-          "add_button_color": "#5873F9",
+          "add_button_color": "#cb4fd4",
           "add_button_text_color": "#ffffff",
           "remove_button_color": "#333333",
           "remove_button_text_color": "#ffffff",
