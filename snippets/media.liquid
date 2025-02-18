@@ -48,7 +48,9 @@
 
     if media.position == 1 
   assign alt2title = product.title
-   elsif media.position == 2
+   endif
+   
+   if media.position == 2
 
   if ranking_color == blank
    assign custom_position = custom_position | plus: 1
@@ -58,8 +60,9 @@
   assign alt2title = product.title | append: " " | append: ranking_color
   
   endif
+   endif
    
-   elsif media.position == 3
+   if media.position == 3
 
   if ranking_occasion == blank
    assign custom_position = custom_position | plus: 1
@@ -69,8 +72,9 @@
   assign alt2title = product.title | append: " " | append: ranking_occasion
   
   endif
-
-   elsif media.position == 4
+  endif
+  
+   if media.position == 4
 
   if ranking_fabric == blank
    assign custom_position = custom_position | plus: 1
@@ -80,8 +84,9 @@
   assign alt2title = product.title | append: " " | append: ranking_fabric
   
   endif
-
-   elsif media.position == 5
+  endif
+   
+   if media.position == 5
 
   if ranking_gender == blank
    assign custom_position = custom_position | plus: 1
@@ -91,8 +96,9 @@
   assign alt2title = ranking_gender | append: " " | append: product.title
   
   endif
-
-   elsif media.position == 6
+  endif
+   
+   if media.position == 6
 
   if ranking_product_type == blank
    assign custom_position = custom_position | plus: 1
@@ -103,8 +109,9 @@
   assign alt2title = product.title | append: " " | append: custom_position
   
   endif
-
-   else
+  endif 
+   
+  if media.position >= 6
  assign custom_position = custom_position | plus: 1
    assign alt2title = product.title | append: " " | append: custom_position
   
