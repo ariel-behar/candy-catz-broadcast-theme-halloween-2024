@@ -111,7 +111,7 @@
   endif
   endif 
    
-  if media.position >= 6
+  if media.position > 6
  assign custom_position = custom_position | plus: 1
    assign alt2title = product.title | append: " " | append: custom_position
   
