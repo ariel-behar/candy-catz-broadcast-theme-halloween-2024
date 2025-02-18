@@ -96,7 +96,7 @@
     {%- endfor -%}
  {%- endcapture -%}
  
-  <title>{{ camelcase }}</title>
+  <title>{{ camelcase | strip_newlines  }}</title>
 
   {% if page_description %}
     {%- if template.name == 'product' -%}
