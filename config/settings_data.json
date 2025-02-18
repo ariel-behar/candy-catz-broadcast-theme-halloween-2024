@@ -197,55 +197,6 @@
         "disabled": false,
         "settings": {}
       },
-      "15796953133730294439": {
-        "type": "shopify://apps/growave-loyalty-wishlist/blocks/block.embed.socialshopwave-helper/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
-        "disabled": true,
-        "settings": {}
-      },
-      "11074193060611426105": {
-        "type": "shopify://apps/froonze-customer-accounts/blocks/product_wishlist/3c495b68-652c-468d-a0ef-5bad6935d104",
-        "disabled": true,
-        "settings": {
-          "placement": "below_add_to_cart",
-          "product_css_selector": "",
-          "button_style": "icon",
-          "border_radius": 4,
-          "shadow": true,
-          "offset_top": 0,
-          "offset_bottom": 0,
-          "offset_left": 0,
-          "offset_right": 0,
-          "collections_wishlist_button": "overlay",
-          "collection_button_border_radius": 50,
-          "floating_link_placement": "right",
-          "floating_link_vertical_offset": 0,
-          "floating_link_lateral_offset": 0,
-          "floating_link_border_radius": 4,
-          "navigation_link": false,
-          "navigation_link_css_selector": "",
-          "add_button_color": "#cb4fd4",
-          "add_button_text_color": "#ffffff",
-          "remove_button_color": "#333333",
-          "remove_button_text_color": "#ffffff",
-          "custom_css": ""
-        }
-      },
-      "6471712195879653093": {
-        "type": "shopify://apps/froonze-customer-accounts/blocks/social_logins/3c495b68-652c-468d-a0ef-5bad6935d104",
-        "disabled": true,
-        "settings": {
-          "position": "below",
-          "divider": true,
-          "style": "icon_and_text",
-          "text_alignment": "center",
-          "icon_alignment": "left",
-          "icon_style": "white",
-          "border_radius": 4,
-          "spacing": 8,
-          "shadow": true,
-          "custom_css": ""
-        }
-      },
       "3678330922655817062": {
         "type": "shopify://apps/boost-ai-search-discovery/blocks/boost-sd-ssr/7fc998ae-a150-4367-bab8-505d8a4503f7",
         "disabled": true,
@@ -253,6 +204,11 @@
           "templateId": "",
           "productGridSelector": ""
         }
+      },
+      "15796953133730294439": {
+        "type": "shopify://apps/growave-loyalty-wishlist/blocks/block.embed.socialshopwave-helper/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
