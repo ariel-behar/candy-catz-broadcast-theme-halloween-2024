@@ -96,7 +96,7 @@
     {%- endfor -%}
  {%- endcapture -%}
  
-  <title>{{ camelcase | replace: '\n', ' ' }}</title>
+  <title>{{ camelcase | replace: '\n', ' ' | replace: '\r', ''  }}</title>
 
   {% if page_description %}
     {%- if template.name == 'product' -%}
