@@ -12,23 +12,7 @@
   Usage:
   {% render 'media', media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: section.id  %}
 {% endcomment %}
-{% assign custom_position = 1 %}
-{% capture custom_position %}0{% endcapture %}
 
-
-{% if media.position == 2 and ranking_color == blank %}
-{% increment custom_position %}
-  {% elsif media.position == 3 and ranking_occasion == blank %}
-{% increment custom_position %}
-  {% elsif media.position == 4 and ranking_fabric == blank %}
-{% increment custom_position %}
-  {% elsif media.position == 5 and ranking_gender == blank %}
-  {% increment custom_position %}
-{% elsif media.position == 6 and ranking_product_type == blank %}
-  {% increment custom_position %}
-{% elsif media.position > 6 %}
- {% increment custom_position %}
-{% endif %}
 
 
 {%- liquid
