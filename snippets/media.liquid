@@ -45,9 +45,7 @@
    assign ranking_gender = product.metafields.custom.ranking_gender | replace_last: ",", "" | replace: ",", ", "
    assign ranking_product_type = product.metafields.custom.ranking_product_type | replace_last: ",", "" | replace: ",", ", "
   assign alt2title = ''
-capture custom_position
-  assign custom_position = 0 
-   endcapture
+  assign custom_position = 0
 
 
     if media.position == 1 
