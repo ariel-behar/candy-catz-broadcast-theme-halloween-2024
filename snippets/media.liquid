@@ -99,6 +99,7 @@
   assign alt2title = product.title | append: " " | append: custom_position
    
   else
+   assign custom_position = custom_position | plus: 1
   assign alt2title = product.title | append: " " | append: custom_position
   
   endif
