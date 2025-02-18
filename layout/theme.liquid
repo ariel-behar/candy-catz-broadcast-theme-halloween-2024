@@ -105,10 +105,10 @@
     <meta name="description" content="{{ page_description | escape }}">
     {%- endif -%}
   {% else %}
-    {{ template }}
-    {%- if template == 'collection' -%}
+    
+    {%- if template contains 'collection' -%}
     <meta name="description" content="Discover the {{ collection.title }} collection from Candy Catz! Striking styles, premium quality, and fast delivery – ideal for parties, raves, and festivals.">
-    {%- elsif template == 'product' -%}
+    {%- elsif template contains 'product' -%}
    <meta name="description" content="{{ product.title }} for {{ product.price_min }} from Candy Catz. Express yourself with our exclusive designs, perfect for parties, raves and festivals.">
     {%- else -%}
    <meta name="description" content="{{ shop.description | escape }}">
