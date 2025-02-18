@@ -94,7 +94,7 @@
   assign alt2title = product.title | append: " " | append: custom_position
    assign custom_position = custom_position | plus: 1
   else
-  assign alt2title = product.title | append: " " | append: media.position
+  assign alt2title = product.title | append: " " | append: custom_position
   
   endif
 
