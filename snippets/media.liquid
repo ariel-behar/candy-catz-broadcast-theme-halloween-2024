@@ -13,7 +13,22 @@
   {% render 'media', media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: section.id  %}
 {% endcomment %}
 {%- liquid
-   assign custom_position = 0
+  assign custom_position = 1
+assign alt2title = product.title
+
+if media.position == 2 and ranking_color == blank
+  assign custom_position = custom_position | plus: 1
+elsif media.position == 3 and ranking_occasion == blank
+  assign custom_position = custom_position | plus: 1
+elsif media.position == 4 and ranking_fabric == blank
+  assign custom_position = custom_position | plus: 1
+elsif media.position == 5 and ranking_gender == blank
+  assign custom_position = custom_position | plus: 1
+elsif media.position == 6 and ranking_product_type == blank
+  assign custom_position = custom_position | plus: 1
+elsif media.position > 6
+  assign custom_position = custom_position | plus: 1
+endif
   assign image_size = '1024x1024'
   assign media_aspect_ratio = media.aspect_ratio
   unless media_aspect_ratio
@@ -54,7 +69,6 @@
    if media.position == 2
 
   if ranking_color == blank
-   assign custom_position = custom_position | plus: 1
   assign alt2title = product.title | append: " " | append: custom_position
   
   else
@@ -66,7 +80,6 @@
    if media.position == 3
 
   if ranking_occasion == blank
-   assign custom_position = custom_position | plus: 1
   assign alt2title = product.title | append: " " | append: custom_position
    
   else
@@ -78,7 +91,6 @@
    if media.position == 4
 
   if ranking_fabric == blank
-   assign custom_position = custom_position | plus: 1
   assign alt2title = product.title | append: " " | append: custom_position
    
   else
@@ -90,7 +102,6 @@
    if media.position == 5
 
   if ranking_gender == blank
-   assign custom_position = custom_position | plus: 1
   assign alt2title = product.title | append: " " | append: custom_position
    
   else
@@ -102,18 +113,15 @@
    if media.position == 6
 
   if ranking_product_type == blank
-   assign custom_position = custom_position | plus: 1
   assign alt2title = product.title | append: " " | append: custom_position
    
   else
-   assign custom_position = custom_position | plus: 1
   assign alt2title = product.title | append: " " | append: custom_position
   
   endif
   endif 
    
   if media.position > 6
- assign custom_position = custom_position | plus: 1
    assign alt2title = product.title | append: " " | append: custom_position
   
    
