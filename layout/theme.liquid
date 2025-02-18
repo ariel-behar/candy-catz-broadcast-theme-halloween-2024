@@ -105,6 +105,7 @@
     <meta name="description" content="{{ page_description | escape }}">
     {%- endif -%}
   {% else %}
+    {{ template }}
     {%- if template == 'collection' -%}
     <meta name="description" content="Discover the {{ collection.title }} collection from Candy Catz! Striking styles, premium quality, and fast delivery – ideal for parties, raves, and festivals.">
     {%- elsif template == 'product' -%}
