@@ -44,52 +44,59 @@
    assign ranking_gender = product.metafields.custom.ranking_gender | replace_last: ",", "" | replace: ",", ", "
    assign ranking_product_type = product.metafields.custom.ranking_product_type | replace_last: ",", "" | replace: ",", ", "
   assign alt2title = ''
-   
+   assign custom_position = 1
+
     if media.position == 1 
   assign alt2title = product.title
    elsif media.position == 2
 
   if ranking_color == blank
-  assign alt2title = product.title | append: " " | append: media.position
+  assign alt2title = product.title | append: " " | append: custom_position
   else
   assign alt2title = product.title | append: " " | append: ranking_color
+  assign custom_position = custom_position | plus: 1
   endif
    
    elsif media.position == 3
 
   if ranking_occasion == blank
-  assign alt2title = product.title | append: " " | append: media.position
+  assign alt2title = product.title | append: " " | append: custom_position
   else
   assign alt2title = product.title | append: " " | append: ranking_occasion
+  assign custom_position = custom_position | plus: 1
   endif
 
    elsif media.position == 4
 
   if ranking_fabric == blank
-  assign alt2title = product.title | append: " " | append: media.position
+  assign alt2title = product.title | append: " " | append: custom_position
   else
   assign alt2title = product.title | append: " " | append: ranking_fabric
+  assign custom_position = custom_position | plus: 1
   endif
 
    elsif media.position == 5
 
   if ranking_gender == blank
-  assign alt2title = product.title | append: " " | append: media.position
+  assign alt2title = product.title | append: " " | append: custom_position
   else
   assign alt2title = ranking_gender | append: " " | append: product.title
+  assign custom_position = custom_position | plus: 1
   endif
 
    elsif media.position == 6
 
   if ranking_product_type == blank
-  assign alt2title = product.title | append: " " | append: media.position
+  assign alt2title = product.title | append: " " | append: custom_position
   else
   assign alt2title = product.title | append: " " | append: media.position
+  assign custom_position = custom_position | plus: 1
   endif
 
    else
 
-   assign alt2title = product.title | append: " " | append: media.position
+   assign alt2title = product.title | append: " " | append: custom_position
+   assign custom_position = custom_position | plus: 1
    
    endif
    
