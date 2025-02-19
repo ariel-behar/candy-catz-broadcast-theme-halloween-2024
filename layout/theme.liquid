@@ -96,7 +96,7 @@
     {%- endfor -%}
  {%- endcapture -%}
  
-  <title>{{ camelcase | replace: '\n', ' ' | replace: '\r', ''  }}</title>
+  <title>{{ camelcase }}</title>
 
   {% if page_description %}
     {%- if template.name == 'product' -%}
@@ -427,5 +427,6 @@
 
   <!-- And above this comment line ================================================== -->
 {% render 'hulkappsWishlistPopup' %}
+  {% render 'gw-custom' %}
 </body>
 </html>
