@@ -407,7 +407,7 @@
 
 <!-- Debug: Покажи текущите параметри в URL -->
 <!--<p>Текущи параметри: {{ url_params | join: ', ' }}</p>-->
-<!--<p>Пълен URL: {{ request.url }}</p>-->
+<!--<p>Пълен URL: {{ request.query_string  }}</p>-->
 {% assign all_params_found = true %}
 
 {% for required_param in required_params %}
