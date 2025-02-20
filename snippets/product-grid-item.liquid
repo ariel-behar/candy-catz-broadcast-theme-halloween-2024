@@ -516,7 +516,7 @@
           {%- else -%}
             <deferred-image class="product-item__bg__under">
               <template>
-                {%- render 'image' image: product.media[1].preview_image, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, cover: true -%}
+                {%- render 'image' image: product.media[1].preview_image, alt: product.title, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, cover: true -%}
               </template>
             </deferred-image>
           {%- endif -%}
