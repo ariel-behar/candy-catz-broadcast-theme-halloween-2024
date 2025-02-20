@@ -401,7 +401,7 @@
     <!-- CONTENT -->
     <main role="main" id="MainContent" class="main-content">
 
- {% assign required_url = "https://candycatz.com/collections/all-female-bodysuits?size=XL,XXL,3XL&style=Rave" %}
+{% assign required_url = "https://candycatz.com/collections/all-female-bodysuits?size=XL,XXL,3XL&style=Rave" %}
 {% assign required_params = required_url | split: '?' | last | split: '&' %}
 {% assign url_params = request.url | split: '?' | last | split: '&' %}
 
@@ -410,20 +410,23 @@
 {% for required_param in required_params %}
   {% assign param_found = false %}
   {% for url_param in url_params %}
-    {% if url_param == required_param %}
+    {% if url_param | downcase == required_param | downcase %}
       {% assign param_found = true %}
+      {% break %}
     {% endif %}
   {% endfor %}
   {% unless param_found %}
     {% assign all_params_found = false %}
+    {% break %}
   {% endunless %}
 {% endfor %}
 
 {% if all_params_found %}
   <!-- Кодът тук ще се изпълни, ако URL съдържа всички параметри -->
-  <p>Всички параметри са налични в URL!</p>
 {% else %}
 {% endif %}
+
+      
 {%- if request.path contains '/collection' -%}
   {%- unless request.path contains '/product' -%}  
       <div align="center" class="collection_h1"><h1>{{ collection.title }}</h1></div>
