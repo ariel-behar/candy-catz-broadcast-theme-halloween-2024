@@ -418,11 +418,11 @@
       
 {% assign required_url = "https://candycatz.com/collections/all-female-bodysuits?size=XL,XXL,3XL&style=Rave" %}
 {% assign required_params = required_url | split: '?' | last | split: '&' %}
-{% assign url_params = request.url | split: '?' | last | split: '&' %}
+{% assign url_params = finalurl | split: '?' | last | split: '&' %}
 
 <!-- Debug: Покажи текущите параметри в URL -->
 <!--<p>Текущи параметри: {{ url_params | join: ', ' }}</p>-->
-<!--<p>Пълен URL: {{ finalurl  }}</p>-->
+
 {% assign all_params_found = true %}
 
 {% for required_param in required_params %}
