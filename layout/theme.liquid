@@ -405,12 +405,18 @@
 {% assign required_params = required_url | split: '?' | last | split: '&' %}
 {% assign url_params = request.url | split: '?' | last | split: '&' %}
 
+<!-- Debug: Покажи текущите параметри в URL -->
+<!--<p>Текущи параметри: {{ url_params | join: ', ' }}</p>-->
+
 {% assign all_params_found = true %}
 
 {% for required_param in required_params %}
   {% assign param_found = false %}
   {% for url_param in url_params %}
-    {% if url_param | downcase == required_param | downcase %}
+    {% assign clean_required = required_param | strip | url_decode %}
+    {% assign clean_url = url_param | strip | url_decode %}
+
+    {% if clean_url == clean_required %}
       {% assign param_found = true %}
       {% break %}
     {% endif %}
@@ -422,9 +428,11 @@
 {% endfor %}
 
 {% if all_params_found %}
-  <!-- Кодът тук ще се изпълни, ако URL съдържа всички параметри -->
+  <!-- алл -->
 {% else %}
-{% endif %}
+<!-- нон -->
+  {% endif %}
+
 
       
 {%- if request.path contains '/collection' -%}
