@@ -458,8 +458,9 @@
               assign preload = true
             endif
 
+            assign producttitle = product.title | append: '1'
             capture featured_image
-              render 'image' image: product.featured_media.preview_image, alt: product.title  | append: ' 1', aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, loading: loading, fetchpriority: fetchpriority, preload: preload, attributes: image_animations, cover: true
+              render 'image' image: product.featured_media.preview_image, alt: producttitle, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, loading: loading, fetchpriority: fetchpriority, preload: preload, attributes: image_animations, cover: true
             endcapture
           -%}
 
@@ -516,8 +517,8 @@
           {%- else -%}
             <deferred-image class="product-item__bg__under">
               <template>
-                
-                {%- render 'image' image: product.media[1].preview_image, alt: product.title  | append: ' 2', aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, cover: true -%}
+                {% assign producttitle = product.title | append: '1' %}
+                {%- render 'image' image: product.media[1].preview_image, alt: producttitle, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, cover: true -%}
               </template>
             </deferred-image>
           {%- endif -%}
