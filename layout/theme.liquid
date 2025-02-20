@@ -401,13 +401,28 @@
     <!-- CONTENT -->
     <main role="main" id="MainContent" class="main-content">
 
+      {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+  {%- assign pageUrl = contentForQuerystring
+    | split: '"pageurl":"'
+    | last
+    | split: '"'
+    | first
+    | split: '.myshopify.com'
+    | last
+    | replace: '\/', '/'
+    | replace: '%20', ' '
+    | replace: '\u0026', '&'
+  -%}
+  {% capture finalurl %}https://{{ pageUrl }}{% endcapture %}
+
+      
 {% assign required_url = "https://candycatz.com/collections/all-female-bodysuits?size=XL,XXL,3XL&style=Rave" %}
 {% assign required_params = required_url | split: '?' | last | split: '&' %}
 {% assign url_params = request.url | split: '?' | last | split: '&' %}
 
 <!-- Debug: Покажи текущите параметри в URL -->
 <!--<p>Текущи параметри: {{ url_params | join: ', ' }}</p>-->
-<!--<p>Пълен URL: {{ request.origin  }}</p>-->
+<!--<p>Пълен URL: {{ finalurl  }}</p>-->
 {% assign all_params_found = true %}
 
 {% for required_param in required_params %}
