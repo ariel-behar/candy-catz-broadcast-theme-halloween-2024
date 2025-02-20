@@ -9,7 +9,7 @@
   {% if request.path == '/404' %}
   <meta name="robots" content="noindex, nofollow">
   {% else %}
-
+  
   {% if request.path == '/search' %}
    <meta name="robots" content="noindex, nofollow">
   {% else %}
@@ -23,8 +23,20 @@
     
   {% endif %}
 
-
-  
+  {% if request.path contains 'cart' %}
+  <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  {% if request.path contains 'checkout' %}
+  <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  {% if request.path contains 'account' %}
+  <meta name="robots" content="noindex, nofollow">
+  {% else %}
+  {% if request.path contains 'orders' %}
+  <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  {% endif %}
+    
   {% endif %}
  
   <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
