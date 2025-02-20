@@ -401,6 +401,24 @@
     <!-- CONTENT -->
     <main role="main" id="MainContent" class="main-content">
 
+      {% assign required_params = "size=XL,XXL,3XL&style=Rave" | split: "&" %}
+{% assign url_params = request.url | split: "?" | last | split: "&" %}
+
+{% assign all_params_found = true %}
+
+{% for param in required_params %}
+  {% unless url_params contains param %}
+    {% assign all_params_found = false %}
+  {% endunless %}
+{% endfor %}
+
+{% if all_params_found %}
+ ++
+{% else %}
+ 
+{% endif %}
+
+      
 {%- if request.path contains '/collection' -%}
   {%- unless request.path contains '/product' -%}  
       <div align="center" class="collection_h1"><h1>{{ collection.title }}</h1></div>
