@@ -481,7 +481,7 @@
                 {%- assign variant_title = variant.title | replace: '"', "'" -%}
                 <deferred-image class="product-item__bg__inner" data-variant-title="{{ variant_title }}">
                   <template>
-                    {%- render 'image' image: variant.featured_image, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, cover: true -%}
+                    {%- render 'image' image: variant.featured_image, alt: product.title  | append: ' 2', aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, cover: true -%}
                   </template>
                 </deferred-image>
               {%- endif -%}
@@ -516,7 +516,8 @@
           {%- else -%}
             <deferred-image class="product-item__bg__under">
               <template>
-                {%- render 'image' image: product.media[1].preview_image, alt: product.title, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, cover: true -%}
+                
+                {%- render 'image' image: product.media[1].preview_image, alt: product.title  | append: ' 2', aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, cover: true -%}
               </template>
             </deferred-image>
           {%- endif -%}
