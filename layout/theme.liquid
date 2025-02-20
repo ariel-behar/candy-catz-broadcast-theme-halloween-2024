@@ -421,32 +421,40 @@
 {% assign url_params = finalurl | split: '?' | last | split: '&' %}
 
 <!-- Debug: Покажи текущите параметри в URL -->
-<!--<p>Текущи параметри: {{ url_params | join: ', ' }}</p>-->
+<!-- <p>Текущи параметри: {{ url_params | join: ', ' }}</p> -->
 
 {% assign all_params_found = true %}
 
-{% for required_param in required_params %}
-  {% assign param_found = false %}
-  {% for url_param in url_params %}
-    {% assign clean_required = required_param | strip | url_decode %}
-    {% assign clean_url = url_param | strip | url_decode %}
+<!-- Проверка дали броят на параметрите съвпада -->
+{% if url_params.size != required_params.size %}
+  {% assign all_params_found = false %}
+{% endif %}
 
-    {% if clean_url == clean_required %}
-      {% assign param_found = true %}
+{% if all_params_found %}
+  {% for required_param in required_params %}
+    {% assign param_found = false %}
+    {% for url_param in url_params %}
+      {% assign clean_required = required_param | strip | url_decode %}
+      {% assign clean_url = url_param | strip | url_decode %}
+
+      {% if clean_url == clean_required %}
+        {% assign param_found = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% unless param_found %}
+      {% assign all_params_found = false %}
       {% break %}
-    {% endif %}
+    {% endunless %}
   {% endfor %}
-  {% unless param_found %}
-    {% assign all_params_found = false %}
-    {% break %}
-  {% endunless %}
-{% endfor %}
+{% endif %}
 
 {% if all_params_found %}
   <!-- алл -->
 {% else %}
-<!-- нон -->
-  {% endif %}
+  <!-- нон -->
+{% endif %}
+
 
 
       
