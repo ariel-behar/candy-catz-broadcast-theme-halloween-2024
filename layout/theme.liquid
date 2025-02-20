@@ -420,12 +420,10 @@
 {% assign required_params = required_url | split: '?' | last | split: '&' %}
 {% assign url_params = finalurl | split: '?' | last | split: '&' %}
 
-<!-- Debug: Покажи текущите параметри в URL -->
-<!-- <p>Текущи параметри: {{ url_params | join: ', ' }}</p> -->
+
 
 {% assign all_params_found = true %}
 
-<!-- Проверка дали броят на параметрите съвпада -->
 {% if url_params.size != required_params.size %}
   {% assign all_params_found = false %}
 {% endif %}
@@ -450,9 +448,9 @@
 {% endif %}
 
 {% if all_params_found %}
-  <!-- алл -->
+
 {% else %}
-  <!-- нон -->
+
 {% endif %}
 
 
