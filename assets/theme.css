@@ -24618,3 +24618,8 @@ nav.drawer .drawer__body .drawer__menu {
   transition: color .25s ease; 
 }
 #shopify-section-sections--23418854375757__header > div.header__wrapper.js__show__mobile > header > div > div.header__mobile > div.header__mobile__right > div:nth-child(2) { display: none; }
+
+/* WISHLIST */
+
+.gw-wl-page__subheader .gw-btn.gw-button.--outlined { color: #fff; }
+.gw-wl-page-list__header-title-btn { color: #fff; }
