@@ -480,6 +480,11 @@
       </div>
     {%- endif -%}
 
+    <div
+        class="gw-wl-header-icon-placeholder"
+        style="display: block"
+    ></div>
+    
     {%- if shop.customer_accounts_enabled -%}
       <div class="header__mobile__button">
         <a href="{{ routes.account_url }}" class="navlink{% if show_icons == false %} navlink--toplevel{% endif %}">
