@@ -471,19 +471,15 @@
     {% endif %}
 
     {% if all_params_found %}
-      <!-- Parameters match! -->
+     {%- assign h1 = collection.metafields.custom.h1 -%}
     {% else %}
-      <!-- Parameters do not match -->
+     {%- assign h1 = collection.title -%}  
     {% endif %}
 
   {% endfor %}
 {% endfor %}
   
-{%- if collection.metafields.custom.h1 -%}  
-{%- assign h1 = collection.metafields.custom.h1 -%}
-{%- else -%}
-{%- assign h1 = collection.title -%}  
-{%- endif -%}
+
 
 
 
@@ -497,7 +493,7 @@
       
 {%- if request.path contains '/collection' -%}
   {%- unless request.path contains '/product' -%}  
-      <div align="center" class="collection_h1"><h1>{{ collection.title }}</h1></div>
+      <div align="center" class="collection_h1"><h1>{{ h1 }}</h1></div>
     {%- endunless -%}
 {%- endif -%}
       {{ content_for_layout }}
