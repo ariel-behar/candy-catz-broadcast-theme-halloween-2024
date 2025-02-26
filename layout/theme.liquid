@@ -280,6 +280,19 @@
   <!-- Shopify app scripts =========================================================== -->
 
   {% render 'boost-sd-fallback' %}
+   {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+  {%- assign pageUrl = contentForQuerystring
+    | split: '"pageurl":"'
+    | last
+    | split: '"'
+    | first
+    | split: '.myshopify.com'
+    | last
+    | replace: '\/', '/'
+    | replace: '%20', ' '
+    | replace: '\u0026', '&'
+  -%}
+  {% capture finalurl %}https://{{ pageUrl }}{% endcapture %}
   
     {{ content_for_header }}
 
@@ -402,19 +415,7 @@
     <main role="main" id="MainContent" class="main-content">
 {%- if request.path contains '/collection' -%}
       
-      {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
-  {%- assign pageUrl = contentForQuerystring
-    | split: '"pageurl":"'
-    | last
-    | split: '"'
-    | first
-    | split: '.myshopify.com'
-    | last
-    | replace: '\/', '/'
-    | replace: '%20', ' '
-    | replace: '\u0026', '&'
-  -%}
-  {% capture finalurl %}https://{{ pageUrl }}{% endcapture %}
+     
 
 
 {%- assign h1 = collection.title -%}  
