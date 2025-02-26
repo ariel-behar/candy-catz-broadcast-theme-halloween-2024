@@ -419,6 +419,21 @@
 
 
 
+
+{% assign metaobjects_groups = "collections_data" | split: "," %}
+
+
+{%- for group in metaobjects_groups -%}
+  {%- assign collections_data = shop.metaobjects[group].values -%}
+  
+  {%- for colvar in collections_data -%}
+
+    {{ colvar.h1 }}
+
+    {%- endfor -%}
+
+  {%- endfor -%}
+  
 {%- if collection.metafields.custom.h1 -%}  
 {%- assign h1 = collection.metafields.custom.h1 -%}
 {%- else -%}
