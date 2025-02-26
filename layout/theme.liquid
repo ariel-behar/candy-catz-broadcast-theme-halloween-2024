@@ -422,7 +422,8 @@
 
 {% assign metaobjects_groups = "collections_data" | split: "," %}
 
-
+{% assign all_params_found = true %}
+  
 {%- for group in metaobjects_groups -%}
   {%- assign collections_data = shop.metaobjects[group].values -%}
   
@@ -436,7 +437,7 @@
 
 <!-- {{ required_url }} -->
 
-{% assign all_params_found = true %}
+
 
 {% if url_params.size != required_params.size %}
   {% assign all_params_found = false %}
