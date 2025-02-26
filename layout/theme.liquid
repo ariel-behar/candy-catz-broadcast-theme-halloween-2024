@@ -400,8 +400,9 @@
 
     <!-- CONTENT -->
     <main role="main" id="MainContent" class="main-content">
-
- {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+{%- if request.path contains '/collection' -%}
+      
+      {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
   {%- assign pageUrl = contentForQuerystring
     | split: '"pageurl":"'
     | last
@@ -414,11 +415,6 @@
     | replace: '\u0026', '&'
   -%}
   {% capture finalurl %}https://{{ pageUrl }}{% endcapture %}
-
-      
-{%- if request.path contains '/collection' -%}
-      
-     
 
 
 
@@ -439,7 +435,7 @@
 {% assign required_params = required_url | split: '?' | last | split: '&' %}
 {% assign url_params = finalurl | split: '?' | last | split: '&' %}
 
-<!-- {{ final_url }} -->
+<!-- {{ finalurl }} -->
 
 
 
