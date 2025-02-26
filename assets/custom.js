@@ -13,15 +13,7 @@
 window.addEventListener('DOMContentLoaded', () => {
 
 
- fetch('/cart/update.js', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      attributes: {
-        full_url: window.location.href
-      }
-    })
-  });
+
    
   var canonicalTag = document.querySelector('link[rel="canonical"]');
   var robotsMetaTag = document.querySelector('meta[name="robots"][content="noindex,nofollow"]');
