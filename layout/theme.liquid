@@ -428,21 +428,10 @@
   
   {%- for colvar in collections_data -%}
 
-   {{ colvar.url }}
-
-    {%- endfor -%}
-
-  {%- endfor -%}
-  
-{%- if collection.metafields.custom.h1 -%}  
-{%- assign h1 = collection.metafields.custom.h1 -%}
-{%- else -%}
-{%- assign h1 = collection.title -%}  
-{%- endif -%}
 
 
-
-{% assign required_url = "https://candycatz.com/collections/all-female-bodysuits?size=XL,XXL,3XL&style=Rave" %}
+    
+{% assign required_url = colvar.url %}
 {% assign required_params = required_url | split: '?' | last | split: '&' %}
 {% assign url_params = finalurl | split: '?' | last | split: '&' %}
 
@@ -474,10 +463,24 @@
 {% endif %}
 
 {% if all_params_found %}
-
+<!-- find -->
 {% else %}
 
 {% endif %}
+    
+
+    {%- endfor -%}
+
+  {%- endfor -%}
+  
+{%- if collection.metafields.custom.h1 -%}  
+{%- assign h1 = collection.metafields.custom.h1 -%}
+{%- else -%}
+{%- assign h1 = collection.title -%}  
+{%- endif -%}
+
+
+
 
 
 {%- endif -%}
