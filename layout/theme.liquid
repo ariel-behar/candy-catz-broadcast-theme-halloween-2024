@@ -417,7 +417,7 @@
   {% capture finalurl %}https://{{ pageUrl }}{% endcapture %}
 
 
-
+{%- assign h1 = collection.title -%}  
 
 
 {% assign metaobjects_groups = "collections_data" | split: "," %}
@@ -473,7 +473,7 @@
     {% if all_params_found %}
      {%- assign h1 = collection.metafields.custom.h1 -%}
     {% else %}
-     {%- assign h1 = collection.title -%}  
+     
     {% endif %}
 
   {% endfor %}
