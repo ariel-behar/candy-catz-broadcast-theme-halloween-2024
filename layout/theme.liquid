@@ -430,8 +430,8 @@
 
 
 
-  {% assign required_url = "https://candycatz.com/collections/all-female-bodysuits?size=XL,XXL,3XL&style=Rave" %}
-{% assign required_params = required_url | split: '?' | last | split: '&' %}
+ 
+{% assign required_params = colvar.url | split: '?' | last | split: '&' %}
 {% assign url_params = finalurl | split: '?' | last | split: '&' %}
 
 
