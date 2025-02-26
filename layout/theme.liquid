@@ -422,7 +422,7 @@
 
 {% assign metaobjects_groups = "collections_data" | split: "," %}
 
-{% assign all_params_found = true %}
+{% assign all_params_found = false %}
   
 {%- for group in metaobjects_groups -%}
   {%- assign collections_data = shop.metaobjects[group].values -%}
