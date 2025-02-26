@@ -400,7 +400,8 @@
 
     <!-- CONTENT -->
     <main role="main" id="MainContent" class="main-content">
-
+{%- if request.path contains '/collection' -%}
+      
       {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
   {%- assign pageUrl = contentForQuerystring
     | split: '"pageurl":"'
@@ -415,7 +416,17 @@
   -%}
   {% capture finalurl %}https://{{ pageUrl }}{% endcapture %}
 
-      
+
+
+
+{%- if collection.metafields.custom.h1 -%}  
+{%- assign h1 = collection.metafields.custom.h1 -%}
+{%- else -%}
+{%- assign h1 = collection.title -%}  
+{%- endif -%}
+
+
+
 {% assign required_url = "https://candycatz.com/collections/all-female-bodysuits?size=XL,XXL,3XL&style=Rave" %}
 {% assign required_params = required_url | split: '?' | last | split: '&' %}
 {% assign url_params = finalurl | split: '?' | last | split: '&' %}
@@ -454,7 +465,8 @@
 {% endif %}
 
 
-
+{%- endif -%}
+      
       
 {%- if request.path contains '/collection' -%}
   {%- unless request.path contains '/product' -%}  
