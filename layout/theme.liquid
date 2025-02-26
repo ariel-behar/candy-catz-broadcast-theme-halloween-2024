@@ -422,57 +422,62 @@
 
 {% assign metaobjects_groups = "collections_data" | split: "," %}
 
+{% assign finalurl = finalurl | default: '' %}
 {% assign all_params_found = true %}
   
-{%- for group in metaobjects_groups -%}
-  {%- assign collections_data = shop.metaobjects[group].values -%}
+{% for group in metaobjects_groups %}
+  {% assign collections_data = shop.metaobjects[group].values %}
   
-  {%- for colvar in collections_data -%}
+  {% for colvar in collections_data %}
 
+    {% assign required_url = colvar.url | default: '' %}
 
+    {% if required_url contains '?' %}
+      {% assign required_params = required_url | split: '?' | last | split: '&' %}
+    {% else %}
+      {% assign required_params = '' | split: ',' %}
+    {% endif %}
 
-{% assign required_url = colvar.url %}
-{% assign required_params = required_url | split: '?' | last | split: '&' %}
-{% assign url_params = finalurl | split: '?' | last | split: '&' %}
+    {% if finalurl contains '?' %}
+      {% assign url_params = finalurl | split: '?' | last | split: '&' %}
+    {% else %}
+      {% assign url_params = '' | split: ',' %}
+    {% endif %}
 
-<!-- {{ finalurl }} -->
+    <!-- Debugging output -->
+    <!-- Required: {{ required_params | join: ',' }} -->
+    <!-- URL Params: {{ url_params | join: ',' }} -->
 
-
-
-{% if url_params.size != required_params.size %}
-  {% assign all_params_found = false %}
-{% endif %}
-
-{% if all_params_found %}
-  {% for required_param in required_params %}
-    {% assign param_found = false %}
-    {% for url_param in url_params %}
-      {% assign clean_required = required_param | strip | url_decode %}
-      {% assign clean_url = url_param | strip | url_decode %}
-
-      {% if clean_url == clean_required %}
-        {% assign param_found = true %}
-        {% break %}
-      {% endif %}
-    {% endfor %}
-    {% unless param_found %}
+    {% if url_params.size != required_params.size %}
       {% assign all_params_found = false %}
-      {% break %}
-    {% endunless %}
+    {% else %}
+      {% for required_param in required_params %}
+        {% assign param_found = false %}
+        {% assign clean_required = required_param | strip | url_decode %}
+
+        {% for url_param in url_params %}
+          {% assign clean_url = url_param | strip | url_decode %}
+          {% if clean_url == clean_required %}
+            {% assign param_found = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+
+        {% unless param_found %}
+          {% assign all_params_found = false %}
+          {% break %}
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
+
+    {% if all_params_found %}
+      <!-- Parameters match! -->
+    {% else %}
+      <!-- Parameters do not match -->
+    {% endif %}
+
   {% endfor %}
-{% endif %}
-
-{% if all_params_found %}
-<!-- {{ all_params_found }} -->
-{% else %}
-
-{% endif %}
-    
-    
-
-    {%- endfor -%}
-
-  {%- endfor -%}
+{% endfor %}
   
 {%- if collection.metafields.custom.h1 -%}  
 {%- assign h1 = collection.metafields.custom.h1 -%}
