@@ -41,6 +41,21 @@
             "emptyRatingWidget": false
           }
         },
+        "loox_reviews_loox_rating_mdMCD6": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-rating/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "contentSize": 16,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "layout": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -50,7 +65,8 @@
         "kiwi_size_chart_recommender_kiwi_sizing_HGHDmB": {
           "type": "shopify://apps/kiwi-size-chart-recommender/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
           "settings": {
-            "product": ""
+            "product": "",
+            "waitForElementSelector": ""
           }
         },
         "popup_xcAGBi": {
@@ -186,6 +202,7 @@
         "title",
         "growave_loyalty_wishlist_block_product_fave_button_NHXFWw",
         "loox_reviews_loox_rating_BCKDnV",
+        "loox_reviews_loox_rating_mdMCD6",
         "price",
         "kiwi_size_chart_recommender_kiwi_sizing_HGHDmB",
         "popup_xcAGBi",
