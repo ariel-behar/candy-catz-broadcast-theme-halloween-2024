@@ -540,6 +540,15 @@
 {% render 'hulkappsWishlistPopup' %}
   {% render 'gw-custom' %}
   {% assign full_url = request.host | append: request.path %}
-{{ full_url }}
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+
+{% comment %} Use string splitting to pull the value from content_for_header and apply some string clean up {% endcomment %}
+
+{%- assign pageUrlWithHost = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first |
+   replace:'\/','/' | 
+   replace:'%20',' ' | 
+   replace:'\u0026','&'
+-%}
+Full URL:  {{ pageUrlWithHost }}
 </body>
 </html>
