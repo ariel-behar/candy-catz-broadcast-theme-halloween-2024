@@ -408,7 +408,96 @@
 
     <!-- CONTENT -->
     <main role="main" id="MainContent" class="main-content">
+{%- if request.path contains '/collection' -%}
+      
+      {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+  {%- assign pageUrl = contentForQuerystring
+    | split: '"pageurl":"'
+    | last
+    | split: '"'
+    | first
+    | split: '.myshopify.com'
+    | last
+    | replace: '\/', '/'
+    | replace: '%20', ' '
+    | replace: '\u0026', '&'
+  -%}
+  {% capture finalurl %}https://{{ pageUrl }}{% endcapture %}
 
+
+{%- assign h1 = collection.title -%}  
+
+<!-- xsa {{ cart.attributes.full_url }} -->
+
+{% assign metaobjects_groups = "collections_data" | split: "," %}
+
+{% assign finalurl = finalurl | default: '' %}
+{% assign all_params_found = true %}
+  
+{% for group in metaobjects_groups %}
+  {% assign collections_data = shop.metaobjects[group].values %}
+  
+  {% for colvar in collections_data %}
+
+    {% assign required_url = colvar.url | default: '' %}
+
+    {% if required_url contains '?' %}
+      {% assign required_params = required_url | split: '?' | last | split: '&' %}
+    {% else %}
+      {% assign required_params = '' | split: ',' %}
+    {% endif %}
+
+    {% if finalurl contains '?' %}
+      {% assign url_params = finalurl | split: '?' | last | split: '&' %}
+    {% else %}
+      {% assign url_params = '' | split: ',' %}
+    {% endif %}
+
+    <!-- Debugging output -->
+    <!-- Required: {{ required_params | join: ',' }} -->
+    <!-- URL Params: {{ url_params | join: ',' }} -->
+
+    {% if url_params.size != required_params.size %}
+      {% assign all_params_found = false %}
+    {% else %}
+      {% for required_param in required_params %}
+        {% assign param_found = false %}
+        {% assign clean_required = required_param | strip | url_decode %}
+
+        {% for url_param in url_params %}
+          {% assign clean_url = url_param | strip | url_decode %}
+          {% if clean_url == clean_required %}
+            {% assign param_found = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+
+        {% unless param_found %}
+          {% assign all_params_found = false %}
+          {% break %}
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
+
+    {% if all_params_found %}
+     {% comment %}{%- assign h1 = colvar.h1 -%}{% endcomment %}
+    {% else %}
+     
+    {% endif %}
+
+  {% endfor %}
+{% endfor %}
+  
+
+
+
+
+
+    
+
+
+
+{%- endif -%}
       
       
 {%- if request.path contains '/collection' -%}
