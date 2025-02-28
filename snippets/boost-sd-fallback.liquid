@@ -1,11 +1,5 @@
 <script>
-  Filter.prototype.afterRender = function() {
-    // The filter data returned from API
-    var data = this.data;
-
-    // Insert your custom code here to handle the filter data
-   console.log(data);
-};
+  
   const boostSDAssetFileURL = {{ 'boost_sd_assets_file_url.gif' | asset_url | json }};
   window.boostSDAssetFileURL = boostSDAssetFileURL;
 
