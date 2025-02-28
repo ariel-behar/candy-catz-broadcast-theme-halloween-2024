@@ -539,5 +539,7 @@
   <!-- And above this comment line ================================================== -->
 {% render 'hulkappsWishlistPopup' %}
   {% render 'gw-custom' %}
+  {% assign full_url = request.host | append: request.path %}
+{{ full_url }}
 </body>
 </html>
