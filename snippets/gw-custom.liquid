@@ -71,8 +71,20 @@
 
           })
 
-          observer.observe(filterWrapper, { childList: true })
-          observer.observe(document.querySelector('.boost-sd-filter-tree-column'), { childList: true })
+          // Check if filterWrapper exists before observing
+          if (filterWrapper) {
+            observer.observe(filterWrapper, { childList: true });
+          } else {
+              console.error("filterWrapper element not found");
+          }
+          
+          // Check if the element from the selector exists before observing
+          const treeColumn = document.querySelector('.boost-sd-filter-tree-column');
+          if (treeColumn) {
+            observer.observe(treeColumn, { childList: true });
+          } else {
+              console.error("boost-sd-filter-tree-column element not found");
+          }
   
           clearInterval(waitForContainer)
         }
