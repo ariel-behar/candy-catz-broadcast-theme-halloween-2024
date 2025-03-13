@@ -14,6 +14,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "qjwqsztup0");
 </script>
+  
 {% assign selectedAuthor = cart.attributes.selectedAuthor %}
 
 <script type="text/javascript">
@@ -53,7 +54,7 @@ fetch('/cart.js')
 .then(response => response.json())
 .then(cart => {
 var currentAuthor = cart.attributes.selectedAuthor;
-var authorParam = getURLParameter('author');
+var authorParam = getURLParameter('product_type');
 
 if (authorParam && authorParam !== currentAuthor) {
 updateCartAttribute('selectedAuthor', authorParam);
