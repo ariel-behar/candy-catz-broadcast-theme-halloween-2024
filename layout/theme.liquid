@@ -35,7 +35,7 @@ body: formData
 }).then(response => {
 if (response.ok) {
 console.log('Cart attribute updated');
-window.location.href = window.location.pathname + '?author=' + encodeURIComponent(value);
+window.location.href = window.location.pathname + '?product_type=' + encodeURIComponent(value);
 } else {
 console.error('Failed to update cart attribute');
 }
