@@ -6,12 +6,12 @@
 <script>
       var waitForContainer = setInterval(function () {
         var filterWrapper = document.getElementsByClassName('boost-sd__filter-block')[0];
-        console.log(11111111111, filterWrapper)
+        //console.log(11111111111, filterWrapper)
         if (filterWrapper) {
           function addWidgets() {
             window.ssw_widgets_products = [];
             var gridItems = filterWrapper.querySelectorAll('.boost-sd__product-item');
-            console.log(2222222222, gridItems)
+            //console.log(2222222222, gridItems)
             gridItems.forEach(function (element) {
               var placeholder = element.querySelector('.gw-add-to-wishlist-product-card-placeholder');
               if (!placeholder) {
