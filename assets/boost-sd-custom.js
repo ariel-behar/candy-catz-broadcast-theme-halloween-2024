@@ -1,3 +1,9 @@
+const originalPageTitle = document.title
+const originalMetaContent = document.querySelector('meta[name="description"]')?.getAttribute("content");  
+const originalCanonical = document.querySelector('link[rel="canonical"]')?.getAttribute("href");  
+const h1Original = document.querySelector(".collection_h1")?.textContent
+
+
 const customize = {
    updateProductItemGrid: (componentRegistry) => {
       componentRegistry.useComponentPlugin('ProductItem', {
@@ -33,7 +39,72 @@ const customize = {
             }
          }),
       });
+   },
+
+  updateInfoBasedOnMetafiled: (componentRegistry) => {
+    componentRegistry.useComponentPlugin('CollectionHeader', {
+         name: 'Update title and meta info based on collection metafield',
+         enabled: true,
+         apply: () => ({
+            beforeRender(element) {
+               try {
+                 if (window.collectionMetaFromLiquid) {
+                   const jsonInfo = JSON.parse(window.collectionMetaFromLiquid.customInfo)
+                    const h1Elm = document.querySelector(".collection_h1")
+                   if (Array.isArray(jsonInfo)) {
+                     jsonInfo.forEach(info => {
+                       if (window.location.href == info.url) {
+                         console.log("matched")
+                         if (h1Elm) h1Elm.innerHTML = `<h1>${info.h1}</h1>`
+                         document.title = info.meta_title
+                         updateMetaDescription(info.meta_description)
+                         updateCanonical(info.url)
+                       } 
+                     })
+
+                     if (!jsonInfo.find(info => info.url == window.location.href)) {
+                                                console.log("not matched")
+                         if (h1Elm) h1Elm.innerHTML = `<h1>${h1Original}</h1>`
+                         if (originalPageTitle) document.title = originalPageTitle
+                         if (originalMetaContent) updateMetaDescription(originalMetaContent)
+                       if (originalCanonical) updateCanonical(originalCanonical)
+                     }
+                   }               
+                 }
+               } catch (e) {
+                  console.warn(e);
+               }
+            }
+         }),
+      });
    }
 }
 
-window.__BoostCustomization__ = (window.__BoostCustomization__ ?? []).concat([customize.updateProductItemGrid]);
+window.__BoostCustomization__ = (window.__BoostCustomization__ ?? []).concat([customize.updateProductItemGrid, customize.updateInfoBasedOnMetafiled]);
+
+function updateMetaDescription(newDescription) {  
+  console.log(newDescription)
+  let meta = document.querySelector('meta[name="description"]');  
+  if (meta) {  
+    meta.setAttribute("content", newDescription);  
+  } else {  
+    // If the meta description tag doesn't exist, create it  
+    meta = document.createElement('meta');  
+    meta.setAttribute('name', 'description');  
+    meta.setAttribute('content', newDescription);  
+    document.head.appendChild(meta);  
+  }  
+}  
+function updateCanonical(newCanonical) {  
+  console.log(newCanonical)
+  let meta = document.querySelector('link[rel="canonical"]');  
+  if (meta) {  
+    meta.setAttribute("href", newCanonical);  
+  } else {  
+    // If the meta description tag doesn't exist, create it  
+    meta = document.createElement('link');  
+    meta.setAttribute('rel', 'canonical');  
+    meta.setAttribute('href', newCanonical);  
+    document.head.appendChild(meta);  
+  }  
+}  
