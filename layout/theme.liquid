@@ -1,6 +1,12 @@
 <!doctype html>
 <html class="no-js no-touch supports-no-cookies" lang="{{ request.locale.iso_code }}">
   
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="{{ settings.accent_bright }}">
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -8,13 +14,60 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "qjwqsztup0");
 </script>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="{{ settings.accent_bright }}">
+{% assign selectedAuthor = cart.attributes.selectedAuthor %}
 
+<script type="text/javascript">
+function getURLParameter(name) {
+name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+var results = regex.exec(window.location.search);
+return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+}
 
+function updateCartAttribute(name, value) {
+var formData = new FormData();
+formData.append('attributes[' + name + ']', value);
+
+fetch('/cart/update.js', {
+method: 'POST',
+body: formData
+}).then(response => {
+if (response.ok) {
+console.log('Cart attribute updated');
+window.location.href = window.location.pathname + '?author=' + encodeURIComponent(value);
+} else {
+console.error('Failed to update cart attribute');
+}
+});
+}
+
+function showAuthorContent() {
+var content = document.querySelector('.custom-author-content');
+if (content) {
+content.style.display = 'block';
+}
+}
+
+function checkAndUpdateCartAttribute() {
+fetch('/cart.js')
+.then(response => response.json())
+.then(cart => {
+var currentAuthor = cart.attributes.selectedAuthor;
+var authorParam = getURLParameter('author');
+
+if (authorParam && authorParam !== currentAuthor) {
+updateCartAttribute('selectedAuthor', authorParam);
+} else if (!currentAuthor && authorParam) {
+updateCartAttribute('selectedAuthor', authorParam);
+} else {
+// Show the content if the selectedAuthor is correctly set
+showAuthorContent();
+}
+});
+}
+
+document.addEventListener('DOMContentLoaded', checkAndUpdateCartAttribute);
+</script>
   {% if collection.metafields.custom.canonical %}
   {% assign canonical_url = collection.metafields.custom.canonical %}
   {% endif %}
