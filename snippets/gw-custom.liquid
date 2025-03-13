@@ -72,8 +72,11 @@
           })
 
           observer.observe(filterWrapper, { childList: true })
-          observer.observe(document.querySelector('.boost-sd-filter-tree-column'), { childList: true })
-  
+          
+          const filterTreeColumn = document.querySelector('.boost-sd-filter-tree-column');
+          if (filterTreeColumn) {
+            observer.observe(filterTreeColumn, { childList: true });
+          }  
           clearInterval(waitForContainer)
         }
       }, 2500);
