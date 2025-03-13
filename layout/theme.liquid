@@ -71,6 +71,7 @@ showAuthorContent();
 
 document.addEventListener('DOMContentLoaded', checkAndUpdateCartAttribute);
 </script>
+  {{ selectedAuthor }}
   {% if collection.metafields.custom.canonical %}
   {% assign canonical_url = collection.metafields.custom.canonical %}
   {% endif %}
