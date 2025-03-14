@@ -127,6 +127,66 @@
         "padding_bottom": 10
       }
     },
+    "section_hero_kJxP4U": {
+      "type": "section-hero",
+      "settings": {
+        "height": "image-height",
+        "width": "wrapper--full",
+        "image_1": "shopify://shop_images/downTheRABBITDesk.jpg",
+        "link": "shopify://collections/statix",
+        "mobile_height": "image-height--mobile",
+        "mobile_image": "shopify://shop_images/downMobile.jpg",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#ffffff"
+      }
+    },
+    "section_tab_collections_6WdKzC": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "collection_cXATm4": {
+          "type": "collection",
+          "settings": {
+            "title": "Beyond Wonderland",
+            "featured_collection": "beyond-wonderland",
+            "show_image": false,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_cXATm4"
+      ],
+      "settings": {
+        "title": "",
+        "text": "",
+        "layout": "stacked",
+        "show_product_count": false,
+        "layout_desktop": "slider",
+        "layout_mobile": "slider",
+        "product_limit": 12,
+        "grid": 2,
+        "rows": 1,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
+    },
     "section_hero_9QPMnh": {
       "type": "section-hero",
       "settings": {
@@ -249,6 +309,7 @@
     },
     "section_hero_PFp7m6": {
       "type": "section-hero",
+      "disabled": true,
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
@@ -270,6 +331,7 @@
       "blocks": {
         "collection_XPTEYq": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "title": "",
             "featured_collection": "bestsellers-men",
@@ -885,6 +947,8 @@
   "order": [
     "section_collections_list_GmreYY",
     "section_tab_collections_L8gUPt",
+    "section_hero_kJxP4U",
+    "section_tab_collections_6WdKzC",
     "section_hero_9QPMnh",
     "section_tab_collections_aqTECq",
     "section_hero_WzHaFX",
