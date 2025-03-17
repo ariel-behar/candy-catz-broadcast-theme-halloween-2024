@@ -48,7 +48,7 @@
         "collection_A6A8g8": {
           "type": "collection",
           "settings": {
-            "collection": "new-all-halloween",
+            "collection": "halloween",
             "collection_image": "shopify://shop_images/SHOP_allMINIDesk2_copy.jpg",
             "title": ""
           }
@@ -292,8 +292,7 @@
       "blocks": {
         "boost_ai_search_discovery_product_filter_DWx8T8": {
           "type": "shopify://apps/boost-ai-search-discovery/blocks/product-filter/7fc998ae-a150-4367-bab8-505d8a4503f7",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
