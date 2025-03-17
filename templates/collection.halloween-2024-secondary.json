@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "section_highlights_4KjqtQ": {
@@ -16,7 +16,7 @@
           "type": "highlight",
           "settings": {
             "heading": "",
-            "url": "shopify://collections/new-all-halloween",
+            "url": "shopify://collections/halloween",
             "image": "shopify://shop_images/shopAllMINIDesk_copy.jpg",
             "color": "",
             "bg_color": "rgba(0,0,0,0)",
@@ -264,8 +264,7 @@
       "blocks": {
         "de305a87-1699-4623-83a2-cc252c7b7dea": {
           "type": "shopify://apps/boost-ai-search-discovery/blocks/product-filter/7fc998ae-a150-4367-bab8-505d8a4503f7",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
