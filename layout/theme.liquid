@@ -413,7 +413,7 @@
   "name": "{{ product.title }}",
   "url": "{{ shop.url }}{{ product.url }}",
   "image": [
-    "https:{{ product.featured_image | img_url: 'master' }}"
+    "https:{{ product.featured_image | imgage_url: 'master' }}"
   ],
   "description": "{{ product.description | strip_html | escape }}",
   "sku": "{{ product.sku | default: 'SKU' }}",
