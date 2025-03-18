@@ -415,7 +415,7 @@
   "image": [
     "https:{{ product.featured_image | img_url: 'master' }}"
   ],
-  "description": "{{ product.description | strip_html | escape }}",
+  "description": "{{ product.description | strip_html | escape | strip }}",
   "sku": "{{ product.sku | default: 'SKU' }}",
   "brand": {
     "@type": "Brand",
