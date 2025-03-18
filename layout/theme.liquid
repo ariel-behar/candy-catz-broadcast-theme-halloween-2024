@@ -423,8 +423,8 @@
   },
   "offers": {
     "@type": "AggregateOffer",
-    "lowPrice": "{{ product.variants | sort: 'price' | first | map: 'price' | money_without_currency }}",
-    "highPrice": "{{ product.variants | sort: 'price' | last | map: 'price' | money_without_currency }}",
+    "lowPrice": "{{ product.price_min | money_without_currency }}",
+    "highPrice": "{{ product.price_max | money_without_currency }}",
     "priceCurrency": "{{ cart.currency.iso_code }}",
     "availability": "https://schema.org/InStock"
   }
