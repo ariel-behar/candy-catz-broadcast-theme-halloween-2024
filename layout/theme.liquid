@@ -416,7 +416,7 @@
     "https:{{ product.featured_image | img_url: 'master' }}"
   ],
   "description": "{{ product.description | strip_html | escape | strip }}",
-  "sku": "{{ product.sku | default: 'SKU' }}",
+  "sku": "{{ product.sku }}",
   "brand": {
     "@type": "Brand",
     "name": "CandyCatz"
