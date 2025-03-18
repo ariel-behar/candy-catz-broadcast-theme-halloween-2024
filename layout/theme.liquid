@@ -405,7 +405,32 @@
 </script>
     
 {% endif %}
-  
+{%- if template == 'product'  -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "{{ product.title }}",
+  "url": "{{ shop.url }}{{ product.url }}",
+  "image": [
+    "{{ product.featured_image | img_url: 'master' }}"
+  ],
+  "description": "{{ product.description | strip_html | escape }}",
+  "sku": "{{ product.sku | default: 'SKU' }}",
+  "brand": {
+    "@type": "Brand",
+    "name": "CandyCatz"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "lowPrice": "{{ product.price_min | money_without_currency }}",
+    "highPrice": "{{ product.price_max | money_without_currency }}",
+    "priceCurrency": "{{ cart.currency.iso_code }}",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+{% endif %}
 <script type="text/javascript">if(typeof window.hulkappsWishlist === 'undefined') {
                             window.hulkappsWishlist = {};
                         }
