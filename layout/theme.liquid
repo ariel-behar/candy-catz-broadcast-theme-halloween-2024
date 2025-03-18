@@ -39,20 +39,20 @@
     {% endif %}
     
   {% endif %}
-  {{ request.path }}
+  
   {% if request.path contains 'cart' %}
   <meta name="robots" content="noindex, nofollow">
   {% endif %}
-  {% if request.path contains 'collections/all' %}
+  {% if request.path = '/collections/all' %}
   <meta name="robots" content="noindex, follow">
   {% endif %}
-  {% if request.path contains 'collections/all-male' %}
+  {% if request.path = 'collections/all-male' %}
   <meta name="robots" content="noindex, follow">
   {% endif %}
-  {% if request.path contains 'collections/all' %}
+  {% if request.path = 'collections/shop-all' %}
   <meta name="robots" content="noindex, follow">
   {% endif %}
-  {% if request.path contains 'collections/all' %}
+  {% if request.path = 'collections/shop-almost-all' %}
   <meta name="robots" content="noindex, follow">
   {% endif %}
   {% if request.path contains 'checkout' %}
