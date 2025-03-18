@@ -141,7 +141,7 @@
 
   {% if page_description %}
     {%- if template.name == 'product' -%}
-   <meta name="description" content="{{ product.title }} for {{ product.price_min | replace: "<span class=money>", "" | money }} from Candy Catz. Express yourself with our exclusive designs, perfect for parties, raves and festivals.">
+   <meta name="description" content="{{ product.title }} for {{ product.price_min | money | strip_html }} from Candy Catz. Express yourself with our exclusive designs, perfect for parties, raves and festivals.">
     {%- else -%}
     <meta name="description" content="{{ page_description | escape }}">
     {%- endif -%}
@@ -150,7 +150,7 @@
     {%- if template.name == 'collection' -%}
     <meta name="description" content="Discover the {{ collection.title | capitalize  }} collection from Candy Catz! Striking styles, premium quality, and fast delivery – ideal for parties, raves, and festivals.">
     {%- elsif template.name == 'product' -%}
-   <meta name="description" content="{{ product.title }} for {{ product.price_min | strip_html | money }} from Candy Catz. Express yourself with our exclusive designs, perfect for parties, raves and festivals.">
+   <meta name="description" content="{{ product.title }} for {{ product.price_min | money }} from Candy Catz. Express yourself with our exclusive designs, perfect for parties, raves and festivals.">
     {%- else -%}
    <meta name="description" content="{{ shop.description | escape }}">
     {% endif %}
