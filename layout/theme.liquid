@@ -43,6 +43,9 @@
   {% if request.path contains 'cart' %}
   <meta name="robots" content="noindex, nofollow">
   {% endif %}
+   {% if request.path contains 'collections/all' %}
+  <meta name="robots" content="noindex, follow">
+  {% endif %}
   {% if request.path contains 'checkout' %}
   <meta name="robots" content="noindex, nofollow">
   {% endif %}
