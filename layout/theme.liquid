@@ -352,7 +352,7 @@
     }
     {%- assign sorted_collections = product.collections | sort: "all_products_count" | reverse -%}
   {%- assign collection_count = 0 -%}
-    {%- for collection in sorted_collections limit: 1 -%}
+    {%- for collection in sorted_collections -%}
       {% assign collection_count = collection_count | plus: 1 %}
     ,
     {
