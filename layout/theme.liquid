@@ -466,12 +466,12 @@
 
     <!-- CONTENT -->
     <main role="main" id="MainContent" class="main-content">
-{%- assign h1 = collection.title -%} 
+{%- assign hh = collection.title -%} 
       
       
 {%- if request.path contains '/collection' -%}
   {%- unless request.path contains '/product' -%}  
-      <div align="center" class="collection_h1"><h1>{{ h1 }}</h1></div>
+      <div align="center" class="collection_h1"><h1>{{ hh }}</h1></div>
     {%- endunless -%}
 {%- endif -%}
       {{ content_for_layout }}
