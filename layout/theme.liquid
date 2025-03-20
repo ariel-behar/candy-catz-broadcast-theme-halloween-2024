@@ -420,7 +420,7 @@
   "image": [
     "https:{{ product.featured_image | img_url: 'master' }}"
   ],
-  "description": "{{ product.description | strip_html | escape | strip }}",
+  "description": {{ product.description | strip_html | json }},
   "sku": "{{ current_variant.sku }}",
   "brand": {
     "@type": "Brand",
