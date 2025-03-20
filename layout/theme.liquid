@@ -313,7 +313,17 @@
 
   {% render 'boost-sd-fallback' %}
   
-    {{ content_for_header }}
+   {% capture cfh %}
+  {{ content_for_header }}
+{% endcapture %}
+
+{% assign unwanted_canonical = '<link rel="canonical" href="https://candycatz.com/account/login">' %}
+
+{% if cfh contains unwanted_canonical %}
+  {% assign cfh = cfh | remove: unwanted_canonical %}
+{% endif %}
+
+{{ cfh }}
 
  {% if template == 'index' %}
 <script type="application/ld+json">
