@@ -421,7 +421,7 @@
     "https:{{ product.featured_image | img_url: 'master' }}"
   ],
   "description": {{ product.description | strip_html | json }},
-  "sku": "{{ current_variant.sku }}",
+  "sku": "{% assign set_variant = product.variants | where: 'title', 'Set' | first %}{% if set_variant %}{{ set_variant.sku }}{% else %}{{ product.variants.first.sku }}{% endif %}",
   "brand": {
     "@type": "Brand",
     "name": "CandyCatz"
