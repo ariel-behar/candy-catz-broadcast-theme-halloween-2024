@@ -427,13 +427,10 @@
     "name": "CandyCatz"
   },
   "offers": {
-    "@type": "AggregateOffer",
-  {%- if product.price_min == product.price_max -%}
-      "price": {{ product.price_min | money_without_currency }},
-    {% else %}
+    "@type": "AggregateOffer",{% if product.price_min == product.price_max %}
+    "price": {{ product.price_min | money_without_currency }},{% else %}
     "lowPrice": {{ product.price_min | money_without_currency }},
-    "highPrice": {{ product.price_max | money_without_currency }},
-  {% endif %}
+    "highPrice": {{ product.price_max | money_without_currency }},{% endif %}
     "priceCurrency": "{{ cart.currency.iso_code }}",
     "availability": "https://schema.org/InStock"
   }
