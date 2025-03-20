@@ -96,7 +96,7 @@
         "image_WA4K6k": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/bohemianMobile.jpg",
+            "image": "shopify://shop_images/hippie.png",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
