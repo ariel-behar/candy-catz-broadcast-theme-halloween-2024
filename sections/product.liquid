@@ -908,7 +908,7 @@
     endif
   -%}
 
-  <script type="application/ld+json">
+  {% comment %}<script type="application/ld+json">
   {
     "@context": "http://schema.org/",
     "@type": "Product",
@@ -952,7 +952,7 @@
       {%- endfor -%}
     ]
   }
-  </script>
+  </script>{% endcomment %}
 
   {%- if show_cart_bar -%}
     <!-- /partials/cart-bar.liquid -->
