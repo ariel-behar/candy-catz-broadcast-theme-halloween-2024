@@ -428,9 +428,9 @@
   },
   "offers": {
     "@type": "AggregateOffer",
-    {%- if product.price_min == product.price_max -%}
+    {% if product.price_min == product.price_max %}
     "price": {{ product.price_min | money_without_currency }},
-    {% else %}
+    {%- else -%}
     "lowPrice": {{ product.price_min | money_without_currency }},
     "highPrice": {{ product.price_max | money_without_currency }},
   {% endif %}
