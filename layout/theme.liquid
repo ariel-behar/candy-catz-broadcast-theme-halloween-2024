@@ -410,7 +410,7 @@
 {% endif %}
 {%- if template == 'product'  -%}
 {%- assign current_variant = product.selected_or_first_available_variant -%}
-
+{% assign unique_prices = product.variants | map: "price" | uniq %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -427,14 +427,10 @@
     "name": "CandyCatz"
   },
   "offers": {
-    "@type": "AggregateOffer",
-    {% assign unique_prices = product.variants | map: "price" | uniq %}
-    {% if unique_prices.size == 1 %}
-    "price": {{ unique_prices.first | money_without_currency }},
-    {% else %}
+    "@type": "AggregateOffer",{% if unique_prices.size == 1 %}
+    "price": {{ unique_prices.first | money_without_currency }},{% else %}
     "lowPrice": {{ product.price_min | money_without_currency }},
-    "highPrice": {{ product.price_max | money_without_currency }},
-    {% endif %}
+    "highPrice": {{ product.price_max | money_without_currency }},{% endif %}
     "priceCurrency": "{{ cart.currency.iso_code }}",
     "availability": "https://schema.org/InStock"
   }
