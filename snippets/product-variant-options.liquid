@@ -206,15 +206,15 @@
               {%- endcapture -%}
             {%- endif -%}
           {%- endif -%}
-          {% if settings.variant_lines and is_size_option %}
-            
+          {% if is_size_option %}
+            {% if template == 'product' and product != blank %}
           <div class="pin-wrapper">
                   
                   <p>
                     Tip: If you are in between sizes - size up
                   </p>
                 </div>
-             
+              {% endif %}
             {% endif %}
           <div class="selector-wrapper{% if settings.variant_lines and is_size_option %} selector-wrapper--size{% elsif settings.variant_lines or is_swatch_option %} selector-wrapper--fullwidth{% endif %}"
             data-option-position="{{ option.position }}">
