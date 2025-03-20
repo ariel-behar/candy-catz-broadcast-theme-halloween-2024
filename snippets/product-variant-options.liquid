@@ -206,7 +206,12 @@
               {%- endcapture -%}
             {%- endif -%}
           {%- endif -%}
-
+          <div class="pin-wrapper">
+                  {% render 'icon-pin-new' %}
+                  <p>
+                    Tip: If you are in between sizes - size up
+                  </p>
+                </div>
           <div class="selector-wrapper{% if settings.variant_lines and is_size_option %} selector-wrapper--size{% elsif settings.variant_lines or is_swatch_option %} selector-wrapper--fullwidth{% endif %}"
             data-option-position="{{ option.position }}">
             {%- if settings.variant_lines or is_swatch_option -%}
