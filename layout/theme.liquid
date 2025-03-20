@@ -427,8 +427,7 @@
     "name": "CandyCatz"
   },
   "offers": {
-    "@type": "AggregateOffer",
-    {% if product.price_min == product.price_max %}
+    "@type": "AggregateOffer",{% if product.price_min == product.price_max %}
     "price": {{ product.price_min | money_without_currency }},
     {%- else -%}
     "lowPrice": {{ product.price_min | money_without_currency }},
