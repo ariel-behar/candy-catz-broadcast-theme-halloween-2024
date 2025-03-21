@@ -131,7 +131,7 @@
 
 
   {%- assign titletocamel = seo_title | strip_newlines -%}
-{%- assign letters = titletocamel | replace: ' ', '-' | split: '-' -%}
+{%- assign letters = titletocamel | strip_newlines | replace: ' ', '-' | split: '-' -%}
 {%- capture camelcase -%}
     {%- for letter in letters -%}
         {%- if forloop.index == 0 -%}
