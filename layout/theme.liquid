@@ -130,7 +130,7 @@
 
 
 
-  {%- assign titletocamel = seo_title -%}
+  {%- assign titletocamel = seo_title | strip_newlines -%}
 {%- assign letters = titletocamel | replace: ' ', '-' | split: '-' -%}
 {%- capture camelcase -%}
     {%- for letter in letters -%}
@@ -142,7 +142,7 @@
     {%- endfor -%}
  {%- endcapture -%}
  
-  <title>{{ camelcase | strip_newlines }}</title>
+  <title>{{ camelcase }}</title>
 
   {% if page_description %}
     {%- if template.name == 'product' -%}
