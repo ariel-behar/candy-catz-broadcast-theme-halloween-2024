@@ -422,7 +422,7 @@
   "name": "{{ product.title }}",
   "url": "{{ shop.url }}{{ product.url }}",
   "image": [
-    "https{{ product.featured_image | img_url: 'master' }}?crop=center&height=1500&width=1500&v={{ product.featured_image.last_modified | date: '%s' }}"
+    "https:{{ product.featured_image | img_url: 'master' }}"
   ],
   "description": {{ product.description | strip_html | json }},
   "sku": "{% assign set_variant = product.variants | where: 'title', 'Set' | first %}{% if set_variant %}{{ set_variant.sku }}{% else %}{{ product.variants.first.sku }}{% endif %}",
