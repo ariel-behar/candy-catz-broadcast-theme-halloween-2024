@@ -24622,4 +24622,6 @@ nav.drawer .drawer__body .drawer__menu {
 .product__selectors .radio__fieldset {
     padding-bottom: 0px;
 }
-
+.index-product > div > div > div > div > div > div > div:nth-child(8) > div { background: #ec6af57d;
+    padding: 5px;
+    max-width: 350px; }
