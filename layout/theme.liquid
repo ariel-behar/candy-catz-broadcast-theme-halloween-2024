@@ -142,7 +142,8 @@
     {%- endfor -%}
  {%- endcapture -%}
  
-  <title>{{ camelcase | replace: "  ", " " }}</title>
+  <title>{{ camelcase | replace: "
+", " " }}</title>
 
   {% if page_description %}
     {%- if template.name == 'product' -%}
