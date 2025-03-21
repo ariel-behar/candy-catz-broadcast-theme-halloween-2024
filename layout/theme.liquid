@@ -142,7 +142,7 @@
     {%- endfor -%}
  {%- endcapture -%}
  
-  <title>{{ camelcase | strip | replace: "
+  <title>{{ camelcase | strip | strip_html | replace: "
 ", " " | replace: "  ", " " | replace: "   ", " " }}</title>
 
   {% if page_description %}
