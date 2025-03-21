@@ -23,7 +23,9 @@
         "growave_loyalty_wishlist_block_product_fave_button_NHXFWw": {
           "type": "shopify://apps/growave-loyalty-wishlist/blocks/block.product.faveButton/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
           "settings": {
-            "option_button_class": ""
+            "option_button_class": "",
+            "custom_css": "",
+            "disable_shadow_root": false
           }
         },
         "loox_reviews_loox_rating_BCKDnV": {
@@ -67,7 +69,8 @@
           "type": "shopify://apps/kiwi-size-chart-recommender/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
           "settings": {
             "product": "",
-            "waitForElementSelector": ""
+            "waitForElementSelector": "",
+            "waitForElementDelay": 5
           }
         },
         "popup_xcAGBi": {
@@ -80,6 +83,18 @@
             "icon_size": 20,
             "icon_color": "#545454",
             "padding_bottom": 10
+          }
+        },
+        "icon_dwiLG3": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-diameter",
+            "icon_size": 20,
+            "icon_color": "#ec6af5",
+            "title": "Between sizes? We recommend sizing up.",
+            "text_size": 2,
+            "width": "full",
+            "padding_bottom": 0
           }
         },
         "variants": {
@@ -207,6 +222,7 @@
         "price",
         "kiwi_size_chart_recommender_kiwi_sizing_HGHDmB",
         "popup_xcAGBi",
+        "icon_dwiLG3",
         "variants",
         "buttons",
         "sami_product_labels_app_block_highlight_ABJWqm",
