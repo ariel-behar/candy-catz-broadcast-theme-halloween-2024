@@ -33,6 +33,18 @@ window.addEventListener('DOMContentLoaded', () => {
    if (canonicalTag && canonicalTag.href === "https://candycatz.com/collections") {
     canonicalTag.parentNode.removeChild(canonicalTag);
   }
+   if (canonicalTag && canonicalTag.href === "https://candycatz.com/collections/all") {
+    canonicalTag.parentNode.removeChild(canonicalTag);
+  }
+   if (canonicalTag && canonicalTag.href === "https://candycatz.com/collections/all-male") {
+    canonicalTag.parentNode.removeChild(canonicalTag);
+  }
+   if (canonicalTag && canonicalTag.href === "https://candycatz.com/collections/shop-all") {
+    canonicalTag.parentNode.removeChild(canonicalTag);
+  }
+   if (canonicalTag && canonicalTag.href === "https://candycatz.com/collections/shop-almost-all") {
+    canonicalTag.parentNode.removeChild(canonicalTag);
+  }
 
   if (canonicalTag && /^https:\/\/candycatz\.com\/search(\?q=[^&]*)?/.test(canonicalTag.href)) {
     canonicalTag.parentNode.removeChild(canonicalTag);
