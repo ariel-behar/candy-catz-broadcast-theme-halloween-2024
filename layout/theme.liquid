@@ -135,9 +135,9 @@
 {%- capture camelcase -%}
     {%- for letter in letters -%}
         {%- if forloop.index == 0 -%}
-            {{ letter }}
+            {{ letter | strip_newlines }}
         {%- else -%}
-            {{ letter | capitalize }}
+            {{ letter | capitalize | strip_newlines }}
         {%- endif -%}
     {%- endfor -%}
  {%- endcapture -%}
