@@ -130,19 +130,19 @@
 
 
 
-  {%- assign titletocamel = seo_title | strip_newlines -%}
-{%- assign letters = titletocamel | strip_newlines | replace: ' ', '-' | split: '-' -%}
+  {%- assign titletocamel = seo_title -%}
+{%- assign letters = titletocamel | replace: ' ', '-' | split: '-' -%}
 {%- capture camelcase -%}
     {%- for letter in letters -%}
         {%- if forloop.index == 0 -%}
-            {{ letter | strip_newlines }}
+            {{ letter }}
         {%- else -%}
-            {{ letter | capitalize | strip_newlines }}
+            {{ letter | capitalize }}
         {%- endif -%}
     {%- endfor -%}
  {%- endcapture -%}
  
-  <title>{{ camelcase }}</title>
+  <title>{{ camelcase | replace: '\n', ' ' }}</title>
 
   {% if page_description %}
     {%- if template.name == 'product' -%}
