@@ -30,6 +30,9 @@ window.addEventListener('DOMContentLoaded', () => {
     canonicalTag.parentNode.removeChild(canonicalTag);
    
   }
+   if (canonicalTag && canonicalTag.href === "https://candycatz.com/collections") {
+    canonicalTag.parentNode.removeChild(canonicalTag);
+  }
 
   if (canonicalTag && /^https:\/\/candycatz\.com\/search(\?q=[^&]*)?/.test(canonicalTag.href)) {
     canonicalTag.parentNode.removeChild(canonicalTag);
