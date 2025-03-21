@@ -117,12 +117,11 @@
 
 <figure class="{{ wrapper_classes }}" {{ wrapper_attributes }}>
   {%- if image -%}
-    {{ image | image_url: width: 1500, height: 1500 | image_tag:
+    {{ image | image_url: width: width, height: height | image_tag:
       loading: loading,
       srcset: srcset,
       sizes: sizes,
       alt: alt,
-    test: placeholder,
       fetchpriority: fetchpriority,
       preload: preload,
       class: img_class
