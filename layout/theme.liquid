@@ -360,6 +360,7 @@
 [
   {%- assign sorted_collections = product.collections | sort: "all_products_count" | reverse -%}
   {%- for collection in sorted_collections -%}
+  {%- unless collection.metafields.custom.noindex == 1 -%}
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -383,6 +384,7 @@
       }
     ]
   }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endunless -%}
   {%- endfor -%}
 ]
 {%- else -%}
