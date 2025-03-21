@@ -142,7 +142,7 @@
     {%- endfor -%}
  {%- endcapture -%}
  
-  <title>{{ camelcase | replace: '\n', ' ' }}</title>
+  <title>{{ seo_title }}</title>
 
   {% if page_description %}
     {%- if template.name == 'product' -%}
