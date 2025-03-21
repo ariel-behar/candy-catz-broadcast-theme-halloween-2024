@@ -415,6 +415,12 @@
 {%- if template == 'product'  -%}
 {%- assign current_variant = product.selected_or_first_available_variant -%}
 {% assign unique_prices = product.variants | map: "price" | uniq %}
+
+ {% assign image_url = product.featured_image | img_url: 'master' %}
+    {% assign v_value = image_url | split: 'v=' | last %}
+    {% assign modified_url = image_url | replace_first: 'v=' | replace_first: v_value, 'custom_before_v=' | append: v_value | append: 'custom_after_v' %}
+    
+  
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -422,7 +428,7 @@
   "name": "{{ product.title }}",
   "url": "{{ shop.url }}{{ product.url }}",
   "image": [
-    "https:{{ product.featured_image | img_url: 'master' }}"
+    "https:{{ product.featured_image | img_url: 'master' }}{{ v_value  }}"
   ],
   "description": {{ product.description | strip_html | json }},
   "sku": "{% assign set_variant = product.variants | where: 'title', 'Set' | first %}{% if set_variant %}{{ set_variant.sku }}{% else %}{{ product.variants.first.sku }}{% endif %}",
