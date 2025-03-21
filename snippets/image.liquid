@@ -122,7 +122,7 @@
         assign width = 1500 
         assign height = 1500 
      -%}
-      {% endif %}
+      {%- endif -%}
     {{ image | image_url: width: width, height: height | image_tag:
       loading: loading,
       srcset: srcset,
