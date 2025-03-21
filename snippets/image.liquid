@@ -117,6 +117,12 @@
 
 <figure class="{{ wrapper_classes }}" {{ wrapper_attributes }}>
   {%- if image -%}
+    {%- if productimage == 'yes' -%}
+     {%- liquid
+        assign width = 1500 
+        assign height = 1500 
+     -%}
+      {% endif %}
     {{ image | image_url: width: width, height: height | image_tag:
       loading: loading,
       srcset: srcset,
