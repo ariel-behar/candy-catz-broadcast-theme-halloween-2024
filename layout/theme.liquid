@@ -419,7 +419,7 @@
  {% assign image_url = product.featured_image | img_url: 'master' %}
     {% assign v_value = image_url | split: 'v=' | last %}
     {% assign modified_url = image_url | replace_first: 'v=' | replace_first: v_value, 'crop=center&height=1500&v=' | append: v_value | append: '&width=1500' %}
-    https://candycatz.com/cdn/shop/files/3_21750f1f-f2d4-4f9d-875a-1398b0652588.png?crop=center&height=1500&v=1725644403&width=1500
+   
   
 <script type="application/ld+json">
 {
@@ -428,7 +428,7 @@
   "name": "{{ product.title }}",
   "url": "{{ shop.url }}{{ product.url }}",
   "image": [
-    "https:{{ product.featured_image | img_url: 'master' }}{{ modified_url }}"
+    "https:{{ modified_url }}"
   ],
   "description": {{ product.description | strip_html | json }},
   "sku": "{% assign set_variant = product.variants | where: 'title', 'Set' | first %}{% if set_variant %}{{ set_variant.sku }}{% else %}{{ product.variants.first.sku }}{% endif %}",
