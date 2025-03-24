@@ -132,7 +132,7 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify://shop_images/bogo100Desk.jpg",
+        "image_1": "shopify://shop_images/bogo100Desk-smaller.jpg",
         "link": "shopify://collections/shop-all-bogo",
         "mobile_height": "image-height--mobile",
         "mobile_image": "shopify://shop_images/bogo100Mobile-banner.jpg",
