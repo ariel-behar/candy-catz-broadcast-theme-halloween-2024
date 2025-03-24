@@ -29,6 +29,7 @@
         },
         "text_Pm7cMa": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>🌈  BUY ONE, GET ONE 50% OFF! CODE BOGO50 🦄</p>",
             "target_url_enabled": false,
@@ -39,11 +40,22 @@
             "target_device": "mobile"
           }
         },
+        "text_pp3Nm4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>🌈  BUY ONE, GET ONE FREE! CODE BOGOHYPE 🦄</p>",
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
         "countdown_KDEgXW": {
           "type": "countdown",
-          "disabled": true,
           "settings": {
-            "end_date": "2025-02-5",
+            "end_date": "2025-03-26",
             "end_time": "16:00",
             "period": "pm",
             "end_message": "<p>Offer has expired</p>",
@@ -55,6 +67,7 @@
       "block_order": [
         "text_fpe78z",
         "text_Pm7cMa",
+        "text_pp3Nm4",
         "countdown_KDEgXW"
       ],
       "settings": {

@@ -132,6 +132,66 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
+        "image_1": "shopify://shop_images/bogo100Desk.jpg",
+        "link": "shopify://collections/shop-all-bogo",
+        "mobile_height": "image-height--mobile",
+        "mobile_image": "shopify://shop_images/bogo100Mobile-banner.jpg",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#ffffff"
+      }
+    },
+    "section_tab_collections_6WdKzC": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "collection_cTbbBM": {
+          "type": "collection",
+          "settings": {
+            "title": "Beyond Wonderland",
+            "featured_collection": "shop-all-bogo",
+            "show_image": false,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_cTbbBM"
+      ],
+      "settings": {
+        "title": "",
+        "text": "",
+        "layout": "stacked",
+        "show_product_count": false,
+        "layout_desktop": "slider",
+        "layout_mobile": "slider",
+        "product_limit": 12,
+        "grid": 2,
+        "rows": 1,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
+    },
+    "section_hero_ykFKCp": {
+      "type": "section-hero",
+      "settings": {
+        "height": "image-height",
+        "width": "wrapper--full",
         "image_1": "shopify://shop_images/downTheRABBITDesk.jpg",
         "link": "shopify://collections/beyond-wonderland",
         "mobile_height": "image-height--mobile",
@@ -145,10 +205,10 @@
         "color": "#ffffff"
       }
     },
-    "section_tab_collections_6WdKzC": {
+    "section_tab_collections_DRCcBx": {
       "type": "section-tab-collections",
       "blocks": {
-        "collection_cXATm4": {
+        "collection_npgnRa": {
           "type": "collection",
           "settings": {
             "title": "Beyond Wonderland",
@@ -169,7 +229,7 @@
         }
       },
       "block_order": [
-        "collection_cXATm4"
+        "collection_npgnRa"
       ],
       "settings": {
         "title": "",
@@ -950,6 +1010,8 @@
     "section_tab_collections_L8gUPt",
     "section_hero_kJxP4U",
     "section_tab_collections_6WdKzC",
+    "section_hero_ykFKCp",
+    "section_tab_collections_DRCcBx",
     "section_hero_9QPMnh",
     "section_tab_collections_aqTECq",
     "section_hero_WzHaFX",
