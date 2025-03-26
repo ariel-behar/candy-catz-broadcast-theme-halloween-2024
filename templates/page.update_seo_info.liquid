@@ -95,9 +95,13 @@
         function updateTextarea() {
             // Прочитаме стойностите от input полетата
             const updatedData = [];
+
+          let container = document.getElementById("collection-" + collectionId);
+        let inputs = container.querySelectorAll(".meta-input");
+          
             document.querySelectorAll(`#${textarea.id} ~ .input-container fieldset`).forEach((fieldset, index) => {
                 const item = {};
-                fieldset.querySelectorAll('.meta-input').forEach(input => {
+                inputs.forEach(input => {
                     const key = input.getAttribute('data-key');
                     item[key] = input.value;
                 });
