@@ -41,7 +41,10 @@
     {% endif %}
     
   {% endif %}
-  
+
+    {% if request.path == '/pages/update-seo' %}
+   <meta name="robots" content="noindex, nofollow">
+      {% endif %}
   {% if request.path contains 'cart' %}
   <meta name="robots" content="noindex, nofollow">
   {% endif %}
