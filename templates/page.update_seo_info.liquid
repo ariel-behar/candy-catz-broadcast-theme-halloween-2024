@@ -11,7 +11,7 @@
 
         <h3>{{ collection.title }}</h3>
 
-        <form>
+        
           <div id="collection-{{ collection.id }}">
             {% for item in json_info %}
               <fieldset style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
@@ -28,7 +28,7 @@
           <label>Updated JSON:</label><br>
           <textarea id="json-output-{{ collection.id }}" rows="6" cols="60">{{ meta_value }}</textarea><br>
           <button type="button" onclick="updateJson({{ collection.id }})">Update JSON</button>
-        </form>
+        
 
       {% endif %}
     {%- endfor -%}
