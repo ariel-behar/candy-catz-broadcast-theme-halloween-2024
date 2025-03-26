@@ -44,9 +44,7 @@
           <div id="collection-{{ collection.id }}">
 
 
-            <div class="entries-container">
-        <!-- Вече съществуващи записи ще се заредят тук като input полета -->
-    </div>
+           
             
           </div>
 
@@ -55,8 +53,6 @@
           <!-- Текстово поле за копиране на обновения JSON -->
           <label>Updated JSON:</label><br>
         
-<br />
-              <button type="button" class="add-entry" data-collection-id="{{ collection.id }}">Add Entry</button>
 <br />
           <textarea id="json-output-{{ collection.id }}" rows="6" cols="60">{{ meta_value }}</textarea><br>
           
@@ -107,78 +103,7 @@
     });
 
 
-       document.querySelectorAll('.entries-container').forEach(container => {
-    container.addEventListener('input', function () {
-        const collectionId = container.closest('[id^="collection-"]').getAttribute('id').replace('collection-', '');
-        const jsonTextarea = document.getElementById(`json-output-${collectionId}`);
-
-        let updatedData = [];
-
-        // Извличаме старите данни от textarea, ако има такива
-        try {
-            updatedData = JSON.parse(jsonTextarea.value);
-        } catch (e) {
-            console.error(`Invalid JSON in textarea for collection ${collectionId}:`, e);
-        }
-
-        // Обхождаме всички записи в контейнера (новите записи)
-        container.querySelectorAll('fieldset').forEach(fieldset => {
-            const item = {};
-            fieldset.querySelectorAll('.meta-input').forEach(input => {
-                const key = input.getAttribute('data-key');
-                item[key] = input.value;
-            });
-            updatedData.push(item); // Добавяме новия запис
-        });
-
-        // Актуализираме textarea с комбинираните данни
-        jsonTextarea.value = JSON.stringify(updatedData, null, 2);
-    });
-});
-       
-       // Място за съхраняване на всички записи
-    let entries = [];
-
-    // Намираме бутона за добавяне на нов запис
-    const addEntryButton = document.getElementById('add-entry');
-    const jsonOutputTextarea = document.getElementById('json-output');
-    const copyJsonButton = document.getElementById('copy-json');
-    
-    // Събитие при клик върху бутона "Add Entry"
-    addEntryButton.addEventListener('click', function () {
-        // Събираме стойностите от input полетата
-        const url = document.getElementById('url').value;
-        const h1 = document.getElementById('h1').value;
-        const metaTitle = document.getElementById('meta_title').value;
-        const metaDescription = document.getElementById('meta_description').value;
-
-        // Проверяваме дали всички полета са попълнени
-        if (!url || !h1 || !metaTitle || !metaDescription) {
-            alert("Please fill in all fields.");
-            return;
-        }
-
-        // Създаваме нов обект за новия запис
-        const newEntry = {
-            url: url,
-            h1: h1,
-            meta_title: metaTitle,
-            meta_description: metaDescription
-        };
-
-        // Добавяме новия запис към масива от записи
-        entries.push(newEntry);
-
-        // Актуализираме textarea с новия JSON
-        jsonOutputTextarea.value = JSON.stringify(entries, null, 2);
-
-        // Почистваме input полетата за следващия запис
-        document.getElementById('url').value = '';
-        document.getElementById('h1').value = '';
-        document.getElementById('meta_title').value = '';
-        document.getElementById('meta_description').value = '';
-    });
-
+      
     // Събитие за копиране на JSON в клипборда
     copyJsonButton.addEventListener('click', function () {
         // Избираме съдържанието на textarea
