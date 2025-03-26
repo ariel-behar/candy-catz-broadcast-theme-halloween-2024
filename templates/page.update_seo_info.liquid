@@ -38,6 +38,45 @@
     {%- endfor -%}
 
     <script>
+
+      document.addEventListener("DOMContentLoaded", function () {
+    // ID на колекцията
+    const collectionId = "604072444237";
+
+    // Намираме текстовото поле с JSON
+    const textarea = document.getElementById(`json-output-${collectionId}`);
+    if (!textarea) return; // Ако textarea не съществува, спираме изпълнението
+
+    // Парсваме JSON съдържанието
+    let jsonData;
+    try {
+        jsonData = JSON.parse(textarea.value);
+    } catch (e) {
+        console.error("Invalid JSON:", e);
+        return;
+    }
+
+    // Намираме контейнера за input полетата
+    const collectionDiv = document.getElementById(`collection-${collectionId}`);
+    if (!collectionDiv || !Array.isArray(jsonData)) return;
+
+    // Взимаме всички input полета вътре
+    const inputs = collectionDiv.querySelectorAll(".meta-input");
+
+    // Проверяваме дали имаме поне един запис в JSON
+    if (jsonData.length > 0) {
+        const data = jsonData[0]; // Взимаме първия обект от JSON масива
+
+        // Обхождаме input полетата и попълваме стойностите им
+        inputs.forEach(input => {
+            const key = input.getAttribute("data-key");
+            if (key && data[key]) {
+                input.value = data[key]; // Задаваме стойността
+            }
+        });
+    }
+});
+      
       function updateJson(collectionId) {
         let updatedData = [];
         let container = document.getElementById("collection-" + collectionId);
