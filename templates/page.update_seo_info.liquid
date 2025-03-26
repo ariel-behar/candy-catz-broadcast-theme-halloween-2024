@@ -22,7 +22,8 @@
           <!-- Текстово поле за копиране на обновения JSON -->
           <label>Updated JSON:</label><br>
           <textarea id="json-output-{{ collection.id }}" rows="6" cols="60">{{ meta_value }}</textarea><br>
-          <button type="button" onclick="updateJson({{ collection.id }})">Update JSON</button>
+          
+          <button type="button" id="copy-{{ collection.id }}">Copy Data</button>
         
 
       {% endif %}
@@ -104,6 +105,27 @@
             // Актуализираме стойността на textarea
             textarea.value = JSON.stringify(updatedData, null, 2);
         }
+
+      const copyButton = document.getElementById(`copy-${collectionId}`);
+        if (copyButton) {
+            copyButton.addEventListener("click", function () {
+                const textarea = document.getElementById(`json-output-${collectionId}`);
+                if (textarea) {
+                    // Избираме съдържанието на textarea
+                    textarea.select();
+                    textarea.setSelectionRange(0, 99999); // За мобилни устройства
+
+                    // Копираме съдържанието в клипборда
+                    try {
+                        document.execCommand('copy');
+                        alert('Data copied to clipboard!');
+                    } catch (err) {
+                        console.error('Unable to copy text', err);
+                    }
+                }
+            });
+        }
+      
     });
 });
 
