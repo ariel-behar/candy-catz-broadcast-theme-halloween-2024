@@ -78,7 +78,7 @@
                 input.classList.add('meta-input');
                 input.setAttribute('data-key', key);
                 input.value = item[key];
-                input.addEventListener('input', updateTextarea);
+                input.addEventListener('input', () => updateTextarea(textarea));  // Актуализираме само текущия textarea
 
                 label.appendChild(input);
                 fieldset.appendChild(label);
@@ -92,18 +92,15 @@
         textarea.parentNode.insertBefore(inputContainer, textarea);
 
         // Функция за актуализиране на JSON в textarea при промяна на input полета
-        function updateTextarea() {
-            // Прочитаме стойностите от input полетата
+        function updateTextarea(textarea) {
+            // Прочитаме стойностите от input полетата само в рамките на текущия inputContainer
             const updatedData = [];
 
-         
-         
-         
-            document.querySelectorAll(`#${textarea.id} ~ .input-container fieldset`).forEach((fieldset, index) => {
+            // Ограничаваме търсенето на input полета само за контейнера с конкретния textarea
+            textarea.parentNode.querySelectorAll('.input-container fieldset').forEach((fieldset, index) => {
                 const item = {};
                 fieldset.querySelectorAll(".meta-input").forEach(input => {
                     const key = input.getAttribute('data-key');
-                  console.log(item);
                     item[key] = input.value;
                 });
                 updatedData.push(item);
