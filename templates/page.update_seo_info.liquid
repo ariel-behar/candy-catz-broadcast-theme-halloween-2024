@@ -14,7 +14,7 @@
         
           <div id="collection-{{ collection.id }}">
             {% for item in json_info %}
-              {{ item }}
+              {{ item[0] }}
               <fieldset style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
                 <legend>Entry {{ forloop.index }}</legend>
                 <label>URL: <input type="text" class="meta-input" data-key="url" value="{{ item.url }}" /></label><br>
