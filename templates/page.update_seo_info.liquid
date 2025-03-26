@@ -72,6 +72,11 @@
        // Място за съхраняване на всички записи
    let entries = [];
 
+       function cleanUrl(url) {
+    const urlObject = new URL(url);
+    return urlObject.origin + urlObject.pathname; // Връща само основния URL без параметрите
+}
+       
 // Намираме бутона за добавяне на нов запис
 const addEntryButton = document.getElementById('add-entry');
 const jsonOutputTextarea = document.getElementById('json-output');
@@ -91,33 +96,48 @@ addEntryButton.addEventListener('click', function () {
         return;
     }
 
+    // Изчистваме параметрите от URL
+    const cleanedUrl = cleanUrl(url);
+
     // Създаваме нов обект за новия запис
     const newEntry = {
-        url: url,
+        url: cleanedUrl,
         h1: h1,
         meta_title: metaTitle,
         meta_description: metaDescription
     };
 
-    // Проверяваме дали URL-то вече съществува в някой от текстареите
+    // Проверяваме дали URL-то вече съществува в някоя от текстареите
     const allTextareas = document.querySelectorAll('textarea[id^="json-output-"]');
     let found = false;
-    allTextareas.forEach(textarea => {
-        const existingData = JSON.parse(textarea.value || '[]');
-        const existingEntry = existingData.find(entry => entry.url === url);
 
-        if (existingEntry) {
-            // Ако URL-то съществува в този textarea, комбинираме стария и новия запис
-            existingData.push(newEntry); // Добавяме новия запис
-            jsonOutputTextarea.value = JSON.stringify(existingData, null, 2); // Обновяваме съответния textarea
-            found = true; // Отбелязваме, че записът е намерен и добавен
+    // Идентифицираме колекцията, в която се намираме
+    const collectionId = addEntryButton.getAttribute('data-collection-id'); // Получаваме ID-то на колекцията, където се намира бутонът
+
+    allTextareas.forEach(textarea => {
+        // Проверяваме дали този textarea съответства на колекцията
+        if (textarea.id === `json-output-${collectionId}`) {
+            // Парсираме съществуващия JSON от textarea
+            const existingData = JSON.parse(textarea.value || '[]');
+            
+            // Проверяваме дали вече има запис с такова URL
+            const existingEntry = existingData.find(entry => cleanUrl(entry.url) === cleanedUrl);
+
+            if (existingEntry) {
+                // Ако URL-то съществува в този textarea, комбинираме стария и новия запис
+                existingData.push(newEntry); // Добавяме новия запис
+                textarea.value = JSON.stringify(existingData, null, 2); // Обновяваме съответния textarea
+                found = true; // Отбелязваме, че записът е намерен и добавен
+            }
         }
     });
 
     // Ако URL-то не съществува в никоя текстарея, добавяме го в текущия textarea
     if (!found) {
         entries.push(newEntry); // Добавяме новия запис към текущия масив от записи
-        jsonOutputTextarea.value = JSON.stringify(entries, null, 2); // Актуализираме текущия textarea
+        // Вземаме съответния textarea за текущата колекция и го актуализираме
+        const currentTextarea = document.getElementById(`json-output-${collectionId}`);
+        currentTextarea.value = JSON.stringify(entries, null, 2); // Актуализираме съответния textarea
     }
 
     // Почистваме input полетата за следващия запис
