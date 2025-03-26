@@ -103,7 +103,7 @@
                 const item = {};
                 fieldset.querySelectorAll(".meta-input").forEach(input => {
                     const key = input.getAttribute('data-key');
-                  alert(item);
+                  console.log(item);
                     item[key] = input.value;
                 });
                 updatedData.push(item);
