@@ -1,0 +1,21 @@
+{% if customer %}
+  {% if customer.email == "zaimovirbam@gmail.com" %}
+    <p>Permissions granted!</p>
+
+
+
+    
+<p>Колекции изключени от сайтмап но вкарани в стратегията:</p>
+{%- for collection in collections -%}
+
+  
+{%- endfor -%}
+
+    
+    
+  {% else %}
+ <p>Permissions denied.</p>
+  {% endif %}
+{% else %}
+  <p>Permissions denied.</p>
+{% endif %}
