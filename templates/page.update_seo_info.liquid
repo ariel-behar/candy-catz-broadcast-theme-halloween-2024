@@ -70,47 +70,62 @@
        
        
        // Място за съхраняване на всички записи
-    let entries = [];
+   let entries = [];
 
-    // Намираме бутона за добавяне на нов запис
-    const addEntryButton = document.getElementById('add-entry');
-    const jsonOutputTextarea = document.getElementById('json-output');
-    const copyJsonButton = document.getElementById('copy-json');
-    
-    // Събитие при клик върху бутона "Add Entry"
-    addEntryButton.addEventListener('click', function () {
-        // Събираме стойностите от input полетата
-        const url = document.getElementById('url').value;
-        const h1 = document.getElementById('h1').value;
-        const metaTitle = document.getElementById('meta_title').value;
-        const metaDescription = document.getElementById('meta_description').value;
+// Намираме бутона за добавяне на нов запис
+const addEntryButton = document.getElementById('add-entry');
+const jsonOutputTextarea = document.getElementById('json-output');
+const copyJsonButton = document.getElementById('copy-json');
 
-        // Проверяваме дали всички полета са попълнени
-        if (!url || !h1 || !metaTitle || !metaDescription) {
-            alert("Please fill in all fields.");
-            return;
+// Събитие при клик върху бутона "Add Entry"
+addEntryButton.addEventListener('click', function () {
+    // Събираме стойностите от input полетата
+    const url = document.getElementById('url').value;
+    const h1 = document.getElementById('h1').value;
+    const metaTitle = document.getElementById('meta_title').value;
+    const metaDescription = document.getElementById('meta_description').value;
+
+    // Проверяваме дали всички полета са попълнени
+    if (!url || !h1 || !metaTitle || !metaDescription) {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    // Създаваме нов обект за новия запис
+    const newEntry = {
+        url: url,
+        h1: h1,
+        meta_title: metaTitle,
+        meta_description: metaDescription
+    };
+
+    // Проверяваме дали URL-то вече съществува в някой от текстареите
+    const allTextareas = document.querySelectorAll('textarea[id^="json-output-"]');
+    let found = false;
+    allTextareas.forEach(textarea => {
+        const existingData = JSON.parse(textarea.value || '[]');
+        const existingEntry = existingData.find(entry => entry.url === url);
+
+        if (existingEntry) {
+            // Ако URL-то съществува в този textarea, комбинираме стария и новия запис
+            existingData.push(newEntry); // Добавяме новия запис
+            textarea.value = JSON.stringify(existingData, null, 2); // Обновяваме съответния textarea
+            found = true; // Отбелязваме, че записът е намерен и добавен
         }
-
-        // Създаваме нов обект за новия запис
-        const newEntry = {
-            url: url,
-            h1: h1,
-            meta_title: metaTitle,
-            meta_description: metaDescription
-        };
-
-        // Добавяме новия запис към масива от записи
-        entries.push(newEntry);
-
-        // Актуализираме textarea с новия JSON
-        jsonOutputTextarea.value = JSON.stringify(entries, null, 2);
-
-        // Почистваме input полетата за следващия запис
-        document.getElementById('url').value = '';
-        document.getElementById('h1').value = '';
-        document.getElementById('meta_title').value = '';
-        document.getElementById('meta_description').value = '';
     });
+
+    // Ако URL-то не съществува в никоя текстарея, добавяме го в текущия textarea
+    if (!found) {
+        entries.push(newEntry); // Добавяме новия запис към текущия масив от записи
+        jsonOutputTextarea.value = JSON.stringify(entries, null, 2); // Актуализираме текущия textarea
+    }
+
+    // Почистваме input полетата за следващия запис
+    document.getElementById('url').value = '';
+    document.getElementById('h1').value = '';
+    document.getElementById('meta_title').value = '';
+    document.getElementById('meta_description').value = '';
+});
 
     // Събитие за копиране на JSON в клипборда
     copyJsonButton.addEventListener('click', function () {
