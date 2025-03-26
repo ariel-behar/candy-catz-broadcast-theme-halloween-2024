@@ -7,13 +7,13 @@
     {%- for collection in collections -%}
       {% assign meta_value = collection.metafields.custom.info %}
       {% if meta_value != blank %}
-        {% assign json_info = meta_value | parse_json %}
+        
 
         <h3>{{ collection.title }}</h3>
 
         
           <div id="collection-{{ collection.id }}">
-            {% for item in json_info %}
+            {% for item in meta_value %}
               
               <fieldset style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
                 <legend>Entry {{ forloop.index }}</legend>
