@@ -79,11 +79,13 @@ const customize = {
                      }
                    }               
                  }
-
-                 if (h1Elm) {
-   
+                 else {
+                   if (h1Elm) {
     h1Elm.style.display = "block";
 }
+                 }
+
+                 
                  
                } catch (e) {
                   console.warn(e);
