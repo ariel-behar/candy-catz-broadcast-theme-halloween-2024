@@ -78,7 +78,7 @@
                 input.classList.add('meta-input');
                 input.setAttribute('data-key', key);
                 input.value = item[key];
-                input.addEventListener('input', updateTextarea(collectionId));
+                input.addEventListener('input', updateTextarea);
 
                 label.appendChild(input);
                 fieldset.appendChild(label);
@@ -96,12 +96,11 @@
             // Прочитаме стойностите от input полетата
             const updatedData = [];
 
-          let container = document.getElementById("collection-" + collectionId);
-        let inputs = container.querySelectorAll(".meta-input");
+         
           
             document.querySelectorAll(`#${textarea.id} ~ .input-container fieldset`).forEach((fieldset, index) => {
                 const item = {};
-                inputs.forEach(input => {
+                fieldset.querySelectorAll(".meta-input").forEach(input => {
                     const key = input.getAttribute('data-key');
                     item[key] = input.value;
                 });
