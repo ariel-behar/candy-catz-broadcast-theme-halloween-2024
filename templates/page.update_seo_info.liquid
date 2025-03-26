@@ -11,7 +11,7 @@
         {% assign meta_value = collection.metafields.custom.info %}
         {% if meta_value != blank %}
           <li>
-            <a href="{{ collection.url }}">{{ collection.title }}</a> - {{ meta_value }}
+            <a href="{{ collection.url }}">{{ collection.title }}</a> - <textarea>{{ meta_value }}</textarea>
           </li>
         {% endif %}
       {%- endfor -%}
