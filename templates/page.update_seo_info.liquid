@@ -1,26 +1,65 @@
 {% if customer %}
   {% if customer.email == "unufri@gmail.com" %}
     <p>Permissions granted!</p>
-
-
-
     
-<p>Update SEO for Collections</p>
- <ul>
-      {%- for collection in collections -%}
-        {% assign meta_value = collection.metafields.custom.info %}
-        {% if meta_value != blank %}
-          <li>
-            <a href="{{ collection.url }}">{{ collection.title }}</a> - <textarea>{{ meta_value }}</textarea>
-          </li>
-        {% endif %}
-      {%- endfor -%}
-    </ul>
+    <p>Update SEO for Collections</p>
 
-    
-    
+    {%- for collection in collections -%}
+      {% assign meta_value = collection.metafields.custom.info %}
+      {% if meta_value != blank %}
+        {% assign json_info = meta_value | parse_json %}
+
+        <h3>{{ collection.title }}</h3>
+
+        <form>
+          <div id="collection-{{ collection.id }}">
+            {% for item in json_info %}
+              <fieldset style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+                <legend>Entry {{ forloop.index }}</legend>
+                <label>URL: <input type="text" class="meta-input" data-key="url" value="{{ item.url }}" /></label><br>
+                <label>H1: <input type="text" class="meta-input" data-key="h1" value="{{ item.h1 }}" /></label><br>
+                <label>Meta Title: <input type="text" class="meta-input" data-key="meta_title" value="{{ item.meta_title }}" /></label><br>
+                <label>Meta Description: <input type="text" class="meta-input" data-key="meta_description" value="{{ item.meta_description }}" /></label>
+              </fieldset>
+            {% endfor %}
+          </div>
+
+          <!-- Текстово поле за копиране на обновения JSON -->
+          <label>Updated JSON:</label><br>
+          <textarea id="json-output-{{ collection.id }}" rows="6" cols="60">{{ meta_value }}</textarea><br>
+          <button type="button" onclick="updateJson({{ collection.id }})">Update JSON</button>
+        </form>
+
+      {% endif %}
+    {%- endfor -%}
+
+    <script>
+      function updateJson(collectionId) {
+        let updatedData = [];
+        let container = document.getElementById("collection-" + collectionId);
+        let inputs = container.querySelectorAll(".meta-input");
+
+        // Групиране на input стойностите в JSON
+        let items = [];
+        let fields = ["url", "h1", "meta_title", "meta_description"];
+        inputs.forEach((input, index) => {
+          let field = input.getAttribute("data-key");
+          let itemIndex = Math.floor(index / fields.length); // Намерете кой запис се обработва
+
+          if (!items[itemIndex]) {
+            items[itemIndex] = {};
+          }
+
+          items[itemIndex][field] = input.value;
+        });
+
+        // Поставяне на актуализирания JSON в textarea
+        document.getElementById("json-output-" + collectionId).value = JSON.stringify(items, null, 2);
+      }
+    </script>
+
   {% else %}
- <p>Permissions denied.</p>
+    <p>Permissions denied.</p>
   {% endif %}
 {% else %}
   <p>Permissions denied.</p>
