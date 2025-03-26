@@ -256,8 +256,10 @@
             collectionContainer.querySelectorAll('.input-container fieldset').forEach((fieldset) => {
                 const item = {};
                 fieldset.querySelectorAll(".meta-input").forEach(input => {
+                  if (!input.closest('.entries-container')) {
                     const key = input.getAttribute('data-key');
                     item[key] = input.value;
+                  }
                 });
                 updatedData.push(item);
             });
