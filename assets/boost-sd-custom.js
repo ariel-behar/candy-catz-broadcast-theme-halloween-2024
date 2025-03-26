@@ -79,12 +79,8 @@ const customize = {
                      }
                    }               
                  }
-                 else {
-                   if (h1Elm) {
-    h1Elm.style.display = "block";
-}
-                 }
-
+                 
+              h1Elm.style.display = "block";
                  
                  
                } catch (e) {
