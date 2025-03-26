@@ -56,7 +56,11 @@ const customize = {
                      jsonInfo.forEach(info => {
                        if (window.location.href == info.url) {
                          console.log("matched")
-                         if (h1Elm) h1Elm.innerHTML = `<h1>${info.h1}</h1>`
+                         if (h1Elm) { 
+                           h1Elm.innerHTML = `<h1>${info.h1}</h1>`
+                           h1Elm.style.display = "block";
+
+                                    }
                          document.title = info.meta_title
                          updateMetaDescription(info.meta_description)
                          updateCanonical(info.url)
@@ -65,7 +69,10 @@ const customize = {
 
                      if (!jsonInfo.find(info => info.url == window.location.href)) {
                                                 console.log("not matched")
-                         if (h1Elm) h1Elm.innerHTML = `<h1>${h1Original}</h1>`
+                         if (h1Elm) { 
+                           h1Elm.innerHTML = `<h1>${h1Original}</h1>`
+                           h1Elm.style.display = "block";
+                         }
                          if (originalPageTitle) document.title = originalPageTitle
                          if (originalMetaContent) updateMetaDescription(originalMetaContent)
                        if (originalCanonical) updateCanonical(originalCanonical)
