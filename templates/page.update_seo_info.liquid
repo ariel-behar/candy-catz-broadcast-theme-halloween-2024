@@ -112,7 +112,7 @@
             const collectionId = container.closest('[id^="collection-"]').getAttribute('id').replace('collection-', '');
             const jsonTextarea = document.getElementById(`json-output-${collectionId}`);
 
-            const updatedData = jsonTextarea.value;
+            const updatedData = [];
 
             // Обхождаме всички записи в контейнера
             container.querySelectorAll('fieldset').forEach(fieldset => {
