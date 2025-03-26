@@ -16,16 +16,7 @@
 
         
           <div id="collection-{{ collection.id }}">
-            {% for item in json_items %}
-              
-              <fieldset style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
-                <legend>Entry {{ forloop.index }}</legend>
-                <label>URL: <input type="text" class="meta-input" data-key="url" value="{{ item.url }}" /></label><br>
-                <label>H1: <input type="text" class="meta-input" data-key="h1" value="{{ item.h1 }}" /></label><br>
-                <label>Meta Title: <input type="text" class="meta-input" data-key="meta_title" value="{{ item.meta_title }}" /></label><br>
-                <label>Meta Description: <input type="text" class="meta-input" data-key="meta_description" value="{{ item.meta_description }}" /></label>
-              </fieldset>
-            {% endfor %}
+           
           </div>
 
           <!-- Текстово поле за копиране на обновения JSON -->
