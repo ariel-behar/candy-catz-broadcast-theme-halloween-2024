@@ -80,12 +80,13 @@ const customize = {
                    }               
                  }
                  
-              h1Elm.style.display = "block";
+              
                  
                  
                } catch (e) {
                   console.warn(e);
                }
+              document.querySelector(".collection_h1").style.display="block";
             }
          }),
       });
