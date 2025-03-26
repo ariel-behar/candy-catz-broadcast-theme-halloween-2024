@@ -109,7 +109,7 @@ addEntryButton.addEventListener('click', function () {
         if (existingEntry) {
             // Ако URL-то съществува в този textarea, комбинираме стария и новия запис
             existingData.push(newEntry); // Добавяме новия запис
-            textarea.value = JSON.stringify(existingData, null, 2); // Обновяваме съответния textarea
+            jsonOutputTextarea.value = JSON.stringify(existingData, null, 2); // Обновяваме съответния textarea
             found = true; // Отбелязваме, че записът е намерен и добавен
         }
     });
