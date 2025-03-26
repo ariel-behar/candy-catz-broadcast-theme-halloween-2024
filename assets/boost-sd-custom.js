@@ -58,7 +58,7 @@ const customize = {
                          console.log("matched")
                          if (h1Elm) { 
                            h1Elm.innerHTML = `<h1>${info.h1}</h1>`
-                           h1Elm.style.display = "block";
+                           //h1Elm.style.display = "block";
 
                                     }
                          document.title = info.meta_title
@@ -71,7 +71,7 @@ const customize = {
                                                 console.log("not matched")
                          if (h1Elm) { 
                            h1Elm.innerHTML = `<h1>${h1Original}</h1>`
-                           h1Elm.style.display = "block";
+                           //h1Elm.style.display = "block";
                          }
                          if (originalPageTitle) document.title = originalPageTitle
                          if (originalMetaContent) updateMetaDescription(originalMetaContent)
