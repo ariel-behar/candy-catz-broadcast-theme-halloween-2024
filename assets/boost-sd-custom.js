@@ -49,6 +49,7 @@ const customize = {
             beforeRender(element) {
                try {
                  if (window.collectionMetaFromLiquid) {
+                   
                    const jsonInfo = JSON.parse(window.collectionMetaFromLiquid.customInfo)
                     const h1Elm = document.querySelector(".collection_h1")
                    if (Array.isArray(jsonInfo)) {
@@ -71,6 +72,12 @@ const customize = {
                      }
                    }               
                  }
+
+                 if (h1Elm) {
+   
+    h1Elm.style.display = "block";
+}
+                 
                } catch (e) {
                   console.warn(e);
                }
