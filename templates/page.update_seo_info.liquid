@@ -17,9 +17,7 @@
         <label>Meta Description: <input type="text" id="meta_description" class="meta-input" placeholder="Enter Meta Description"></label>
     </fieldset>
 <br />
-      <div class="entries-container">
-        <!-- Вече съществуващи записи ще се заредят тук като input полета -->
-    </div>
+     
     <!-- Бутон за добавяне на нов запис -->
     <button type="button" id="add-entry">Add Entry</button><br /><br />
 
@@ -47,8 +45,13 @@
            
           </div>
 
+         <div class="entries-container">
+        <!-- Вече съществуващи записи ще се заредят тук като input полета -->
+    </div>
+        
           <!-- Текстово поле за копиране на обновения JSON -->
           <label>Updated JSON:</label><br>
+        
 <br />
               <button type="button" class="add-entry" data-collection-id="{{ collection.id }}">Add Entry</button>
 <br />
