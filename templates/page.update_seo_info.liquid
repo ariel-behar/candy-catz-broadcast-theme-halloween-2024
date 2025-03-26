@@ -46,6 +46,9 @@
 
           <!-- Текстово поле за копиране на обновения JSON -->
           <label>Updated JSON:</label><br>
+<br />
+              <button type="button" class="add-entry" data-collection-id="{{ collection.id }}">Add Entry</button>
+<br />
           <textarea id="json-output-{{ collection.id }}" rows="6" cols="60">{{ meta_value }}</textarea><br>
           
           <button type="button" id="copy-{{ collection.id }}">Copy Data</button>
