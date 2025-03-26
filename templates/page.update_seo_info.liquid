@@ -253,7 +253,7 @@
             // Прочитаме стойностите от input полетата само в рамките на контейнера за тази колекция
             const updatedData = [];
 
-            collectionContainer.querySelectorAll('.input-container fieldset:not(.entries-container fieldset)').forEach((fieldset) => {
+            collectionContainer.querySelectorAll('.input-container fieldset').forEach((fieldset) => {
                 const item = {};
                 fieldset.querySelectorAll(".meta-input").forEach(input => {
                   
