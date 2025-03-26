@@ -67,51 +67,38 @@
        document.querySelectorAll('.add-entry').forEach(button => {
         button.addEventListener('click', function () {
             const collectionId = button.getAttribute('data-collection-id'); // ID на колекцията
+            const entriesContainer = document.querySelector(`#collection-${collectionId} .entries-container`);
 
-            // Намираме textarea за съответната колекция, за да актуализираме JSON
-            const jsonTextarea = document.getElementById(`json-output-${collectionId}`);
+            // Създаваме новите input полета за новия запис
+            const newEntryFields = document.createElement('fieldset');
+            newEntryFields.style.border = '1px solid #ccc';
+            newEntryFields.style.padding = '10px';
+            newEntryFields.style.marginBottom = '10px';
 
-            let jsonData;
-            try {
-                jsonData = JSON.parse(jsonTextarea.value); // Опитваме се да парснем JSON от textarea
-            } catch (e) {
-                console.error(`Invalid JSON for collection ${collectionId}:`, e);
-                return; // Прекратяваме ако JSON е невалиден
-            }
+            const legend = document.createElement('legend');
+            legend.textContent = `Entry ${entriesContainer.children.length + 1}`;
+            newEntryFields.appendChild(legend);
 
-            // Събираме стойностите от input полетата
-            const url = document.querySelector(`#collection-${collectionId} .meta-input[data-key="url"]`).value;
-            const h1 = document.querySelector(`#collection-${collectionId} .meta-input[data-key="h1"]`).value;
-            const metaTitle = document.querySelector(`#collection-${collectionId} .meta-input[data-key="meta_title"]`).value;
-            const metaDescription = document.querySelector(`#collection-${collectionId} .meta-input[data-key="meta_description"]`).value;
+            // Генерираме input полета за новия запис
+            const fields = ['url', 'h1', 'meta_title', 'meta_description'];
+            fields.forEach(field => {
+                const label = document.createElement('label');
+                label.textContent = `${field.charAt(0).toUpperCase() + field.slice(1)}: `;
 
-            // Проверяваме дали всички полета са попълнени
-            if (!url || !h1 || !metaTitle || !metaDescription) {
-                alert("Please fill in all fields.");
-                return;
-            }
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.classList.add('meta-input');
+                input.setAttribute('data-key', field);
+                input.value = ''; // Празно по подразбиране
+                newEntryFields.appendChild(label);
+                newEntryFields.appendChild(input);
+                newEntryFields.appendChild(document.createElement('br'));
+            });
 
-            // Създаваме нов обект за новия запис
-            const newEntry = {
-                url: url,
-                h1: h1,
-                meta_title: metaTitle,
-                meta_description: metaDescription
-            };
-
-            // Добавяме новия запис към масива от записи
-            jsonData.push(newEntry);
-
-            // Актуализираме стойността на textarea с новия JSON
-            jsonTextarea.value = JSON.stringify(jsonData, null, 2);
-
-            // Почистваме input полетата
-            document.querySelector(`#collection-${collectionId} .meta-input[data-key="url"]`).value = '';
-            document.querySelector(`#collection-${collectionId} .meta-input[data-key="h1"]`).value = '';
-            document.querySelector(`#collection-${collectionId} .meta-input[data-key="meta_title"]`).value = '';
-            document.querySelector(`#collection-${collectionId} .meta-input[data-key="meta_description"]`).value = '';
+            // Добавяме новите input полета към контейнера за записи
+            entriesContainer.appendChild(newEntryFields);
         });
-       });
+    });
 
        // Място за съхраняване на всички записи
     let entries = [];
