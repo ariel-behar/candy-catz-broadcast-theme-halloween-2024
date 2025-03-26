@@ -97,11 +97,15 @@
             const updatedData = [];
 
          
-         alert(textarea.id);
-            document.querySelectorAll(`#${textarea.id} ~ .input-container fieldset`).forEach((fieldset, index) => {
+         
+          
+          alert(container);
+            document.querySelectorAll(`#collection-${collectionId} ~ .input-container fieldset`).forEach((fieldset, index) => {
                 const item = {};
                 fieldset.querySelectorAll(".meta-input").forEach(input => {
                     const key = input.getAttribute('data-key');
+
+                    
                     item[key] = input.value;
                 });
                 updatedData.push(item);
