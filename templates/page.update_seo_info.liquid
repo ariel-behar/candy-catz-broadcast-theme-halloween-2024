@@ -78,7 +78,7 @@
                 input.classList.add('meta-input');
                 input.setAttribute('data-key', key);
                 input.value = item[key];
-                input.addEventListener('input', updateTextarea);
+                input.addEventListener('input', updateTextarea(collectionId));
 
                 label.appendChild(input);
                 fieldset.appendChild(label);
