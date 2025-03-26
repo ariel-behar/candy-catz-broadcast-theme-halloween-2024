@@ -39,42 +39,37 @@
 
     <script>
 
-      document.addEventListener("DOMContentLoaded", function () {
-    // ID на колекцията
-    const collectionId = "604072444237";
+     document.addEventListener("DOMContentLoaded", function () {
+    // Намираме всички textarea елементи, които съдържат JSON
+    document.querySelectorAll("textarea[id^='json-output-']").forEach(textarea => {
+        const collectionId = textarea.id.replace("json-output-", ""); // Извличаме ID на колекцията
+        
+        // Опитваме се да парснем JSON-а
+        let jsonData;
+        try {
+            jsonData = JSON.parse(textarea.value);
+        } catch (e) {
+            console.error(`Invalid JSON for collection ${collectionId}:`, e);
+            return; // Прекратяваме изпълнението за тази колекция
+        }
 
-    // Намираме текстовото поле с JSON
-    const textarea = document.getElementById(`json-output-${collectionId}`);
-    if (!textarea) return; // Ако textarea не съществува, спираме изпълнението
+        // Намираме div-а за текущата колекция
+        const collectionDiv = document.getElementById(`collection-${collectionId}`);
+        if (!collectionDiv || !Array.isArray(jsonData)) return;
 
-    // Парсваме JSON съдържанието
-    let jsonData;
-    try {
-        jsonData = JSON.parse(textarea.value);
-    } catch (e) {
-        console.error("Invalid JSON:", e);
-        return;
-    }
+        // Проверяваме дали имаме поне един запис в JSON
+        if (jsonData.length > 0) {
+            const data = jsonData[0]; // Взимаме първия обект от JSON масива
 
-    // Намираме контейнера за input полетата
-    const collectionDiv = document.getElementById(`collection-${collectionId}`);
-    if (!collectionDiv || !Array.isArray(jsonData)) return;
-
-    // Взимаме всички input полета вътре
-    const inputs = collectionDiv.querySelectorAll(".meta-input");
-
-    // Проверяваме дали имаме поне един запис в JSON
-    if (jsonData.length > 0) {
-        const data = jsonData[0]; // Взимаме първия обект от JSON масива
-
-        // Обхождаме input полетата и попълваме стойностите им
-        inputs.forEach(input => {
-            const key = input.getAttribute("data-key");
-            if (key && data[key]) {
-                input.value = data[key]; // Задаваме стойността
-            }
-        });
-    }
+            // Взимаме всички input полета в този div и попълваме стойностите
+            collectionDiv.querySelectorAll(".meta-input").forEach(input => {
+                const key = input.getAttribute("data-key");
+                if (key && data[key]) {
+                    input.value = data[key]; // Задаваме стойността
+                }
+            });
+        }
+    });
 });
       
       function updateJson(collectionId) {
