@@ -53,10 +53,13 @@
             return; // Прекратяваме изпълнението за тази колекция
         }
 
+        // Намираме контейнера на колекцията (div с id collection-{{ collection.id }})
+        const collectionContainer = document.getElementById(`collection-${collectionId}`);
+        
         // Намираме контейнера, в който ще добавяме input полетата
         const inputContainer = document.createElement('div');
         inputContainer.classList.add("input-container");
-        
+
         // Генерираме input полета за всеки запис в JSON масива
         jsonData.forEach((item, index) => {
             const fieldset = document.createElement('fieldset');
@@ -78,7 +81,7 @@
                 input.classList.add('meta-input');
                 input.setAttribute('data-key', key);
                 input.value = item[key];
-                input.addEventListener('input', () => updateTextarea(textarea));  // Актуализираме само текущия textarea
+                input.addEventListener('input', () => updateTextarea(collectionId));  // Актуализираме само текущия textarea
 
                 label.appendChild(input);
                 fieldset.appendChild(label);
@@ -88,16 +91,17 @@
             inputContainer.appendChild(fieldset);
         });
 
-        // Вмъкваме inputContainer преди textarea
-        textarea.parentNode.insertBefore(inputContainer, textarea);
+        // Вмъкваме inputContainer в контейнера на колекцията (преди самия textarea)
+        collectionContainer.appendChild(inputContainer);
 
         // Функция за актуализиране на JSON в textarea при промяна на input полета
-        function updateTextarea(textarea) {
-            // Прочитаме стойностите от input полетата само в рамките на текущия inputContainer
+        function updateTextarea(collectionId) {
+            const textarea = document.getElementById(`json-output-${collectionId}`); // Намираме съответния textarea
+
+            // Прочитаме стойностите от input полетата само в рамките на контейнера за тази колекция
             const updatedData = [];
 
-            // Ограничаваме търсенето на input полета само за контейнера с конкретния textarea
-            textarea.parentNode.querySelectorAll('.input-container fieldset').forEach((fieldset, index) => {
+            collectionContainer.querySelectorAll('.input-container fieldset').forEach((fieldset) => {
                 const item = {};
                 fieldset.querySelectorAll(".meta-input").forEach(input => {
                     const key = input.getAttribute('data-key');
@@ -111,6 +115,7 @@
         }
     });
 });
+
       
       function updateJson(collectionId) {
         let updatedData = [];
