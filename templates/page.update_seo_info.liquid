@@ -44,9 +44,7 @@
           <div id="collection-{{ collection.id }}">
 
 
-            <div class="entries-container">
-        <!-- Вече съществуващи записи ще се заредят тук като input полета -->
-    </div>
+            
             
           </div>
 
@@ -55,8 +53,7 @@
           <!-- Текстово поле за копиране на обновения JSON -->
           <label>Updated JSON:</label><br>
         
-<br />
-              <button type="button" class="add-entry" data-collection-id="{{ collection.id }}">Add Entry</button>
+
 <br />
           <textarea id="json-output-{{ collection.id }}" rows="6" cols="60">{{ meta_value }}</textarea><br>
           
@@ -70,64 +67,7 @@
 
      document.addEventListener("DOMContentLoaded", function () {
 
-       document.querySelectorAll('.add-entry').forEach(button => {
-        button.addEventListener('click', function () {
-            const collectionId = button.getAttribute('data-collection-id'); // ID на колекцията
-            const entriesContainer = document.querySelector(`#collection-${collectionId} .entries-container`);
-
-            // Създаваме новите input полета за новия запис
-            const newEntryFields = document.createElement('fieldset');
-            newEntryFields.style.border = '1px solid #ccc';
-            newEntryFields.style.padding = '10px';
-            newEntryFields.style.marginBottom = '10px';
-
-            const legend = document.createElement('legend');
-            legend.textContent = `Entry ${entriesContainer.children.length + 1}`;
-            newEntryFields.appendChild(legend);
-
-            // Генерираме input полета за новия запис
-            const fields = ['url', 'h1', 'meta_title', 'meta_description'];
-            fields.forEach(field => {
-                const label = document.createElement('label');
-                label.textContent = `${field.charAt(0).toUpperCase() + field.slice(1)}: `;
-
-                const input = document.createElement('input');
-                input.type = 'text';
-                input.classList.add('meta-input');
-                input.setAttribute('data-key', field);
-                input.value = ''; // Празно по подразбиране
-                newEntryFields.appendChild(label);
-                newEntryFields.appendChild(input);
-                newEntryFields.appendChild(document.createElement('br'));
-            });
-
-            // Добавяме новите input полета към контейнера за записи
-            entriesContainer.appendChild(newEntryFields);
-        });
-    });
-
-
-       document.querySelectorAll('.entries-container').forEach(container => {
-        container.addEventListener('input', function () {
-            const collectionId = container.closest('[id^="collection-"]').getAttribute('id').replace('collection-', '');
-            const jsonTextarea = document.getElementById(`json-output-${collectionId}`);
-
-            const updatedData = [];
-
-            // Обхождаме всички записи в контейнера
-            container.querySelectorAll('fieldset').forEach(fieldset => {
-                const item = {};
-                fieldset.querySelectorAll('.meta-input').forEach(input => {
-                    const key = input.getAttribute('data-key');
-                    item[key] = input.value;
-                });
-                updatedData.push(item);
-            });
-
-            // Актуализираме textarea с новия JSON
-            jsonTextarea.value = JSON.stringify(updatedData, null, 2);
-        });
-    });
+       
        
        // Място за съхраняване на всички записи
     let entries = [];
