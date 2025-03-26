@@ -7,7 +7,7 @@
     {%- for collection in collections -%}
       {% assign meta_value = collection.metafields.custom.info %}
       {% if meta_value != blank %}
-        {% assign json_info = meta_value | json %}
+        {% assign json_info = meta_value | parse_json %}
 
         <h3>{{ collection.title }}</h3>
 
