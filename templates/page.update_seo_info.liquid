@@ -72,7 +72,10 @@
        // Място за съхраняване на всички записи
    let entries = [];
 
-      
+      function cleanUrl(url) {
+    const urlObject = new URL(url);
+    return urlObject.origin + urlObject.pathname; // Връща само основния URL без параметрите
+}
        
 // Намираме бутона за добавяне на нов запис
 const addEntryButton = document.getElementById('add-entry');
@@ -106,7 +109,7 @@ addEntryButton.addEventListener('click', function () {
     let found = false;
     allTextareas.forEach(textarea => {
         const existingData = JSON.parse(textarea.value || '[]');
-        const existingEntry = existingData.find(entry => entry.url === url);
+        const existingEntry = existingData.find(entry => cleanUrl(entry.url) === cleanUrl(url));
 
         if (existingEntry) {
             // Ако URL-то съществува в този textarea, комбинираме стария и новия запис
