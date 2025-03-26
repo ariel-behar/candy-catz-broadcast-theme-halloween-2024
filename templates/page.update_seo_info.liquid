@@ -108,26 +108,33 @@
 
 
        document.querySelectorAll('.entries-container').forEach(container => {
-        container.addEventListener('input', function () {
-            const collectionId = container.closest('[id^="collection-"]').getAttribute('id').replace('collection-', '');
-            const jsonTextarea = document.getElementById(`json-output-${collectionId}`);
+    container.addEventListener('input', function () {
+        const collectionId = container.closest('[id^="collection-"]').getAttribute('id').replace('collection-', '');
+        const jsonTextarea = document.getElementById(`json-output-${collectionId}`);
 
-            const updatedData = [];
+        let updatedData = [];
 
-            // Обхождаме всички записи в контейнера
-            container.querySelectorAll('fieldset').forEach(fieldset => {
-                const item = {};
-                fieldset.querySelectorAll('.meta-input').forEach(input => {
-                    const key = input.getAttribute('data-key');
-                    item[key] = input.value;
-                });
-                updatedData.push(item);
+        // Извличаме старите данни от textarea, ако има такива
+        try {
+            updatedData = JSON.parse(jsonTextarea.value);
+        } catch (e) {
+            console.error(`Invalid JSON in textarea for collection ${collectionId}:`, e);
+        }
+
+        // Обхождаме всички записи в контейнера (новите записи)
+        container.querySelectorAll('fieldset').forEach(fieldset => {
+            const item = {};
+            fieldset.querySelectorAll('.meta-input').forEach(input => {
+                const key = input.getAttribute('data-key');
+                item[key] = input.value;
             });
-
-            // Актуализираме textarea с новия JSON
-            jsonTextarea.value = JSON.stringify(updatedData, null, 2);
+            updatedData.push(item); // Добавяме новия запис
         });
+
+        // Актуализираме textarea с комбинираните данни
+        jsonTextarea.value = JSON.stringify(updatedData, null, 2);
     });
+});
        
        // Място за съхраняване на всички записи
     let entries = [];
