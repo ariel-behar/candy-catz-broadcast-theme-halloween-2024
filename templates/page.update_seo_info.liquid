@@ -4,6 +4,31 @@
     
     <p>Update SEO for Collections</p>
 
+
+    <div id="new-collection">
+    <h3>Create New Collection</h3>
+    
+    <!-- Формата за добавяне на нов запис -->
+    <fieldset style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+        <legend>Entry</legend>
+        <label>URL: <input type="text" id="url" class="meta-input" placeholder="Enter URL"></label><br>
+        <label>H1: <input type="text" id="h1" class="meta-input" placeholder="Enter H1"></label><br>
+        <label>Meta Title: <input type="text" id="meta_title" class="meta-input" placeholder="Enter Meta Title"></label><br>
+        <label>Meta Description: <input type="text" id="meta_description" class="meta-input" placeholder="Enter Meta Description"></label>
+    </fieldset>
+
+    <!-- Бутон за добавяне на нов запис -->
+    <button type="button" id="add-entry">Add Entry</button>
+
+    <!-- Показване на генерирания JSON в textarea -->
+    <textarea id="json-output" rows="6" cols="60" placeholder="Generated JSON will appear here..."></textarea>
+    
+    <!-- Бутон за копиране на JSON -->
+    <button type="button" id="copy-json">Copy JSON</button>
+</div>
+
+
+    
     {%- for collection in collections -%}
       {% assign meta_value = collection.metafields.custom.info %}
       {% if meta_value != blank %}
@@ -32,6 +57,71 @@
     <script>
 
      document.addEventListener("DOMContentLoaded", function () {
+
+
+       // Място за съхраняване на всички записи
+    let entries = [];
+
+    // Намираме бутона за добавяне на нов запис
+    const addEntryButton = document.getElementById('add-entry');
+    const jsonOutputTextarea = document.getElementById('json-output');
+    const copyJsonButton = document.getElementById('copy-json');
+    
+    // Събитие при клик върху бутона "Add Entry"
+    addEntryButton.addEventListener('click', function () {
+        // Събираме стойностите от input полетата
+        const url = document.getElementById('url').value;
+        const h1 = document.getElementById('h1').value;
+        const metaTitle = document.getElementById('meta_title').value;
+        const metaDescription = document.getElementById('meta_description').value;
+
+        // Проверяваме дали всички полета са попълнени
+        if (!url || !h1 || !metaTitle || !metaDescription) {
+            alert("Please fill in all fields.");
+            return;
+        }
+
+        // Създаваме нов обект за новия запис
+        const newEntry = {
+            url: url,
+            h1: h1,
+            meta_title: metaTitle,
+            meta_description: metaDescription
+        };
+
+        // Добавяме новия запис към масива от записи
+        entries.push(newEntry);
+
+        // Актуализираме textarea с новия JSON
+        jsonOutputTextarea.value = JSON.stringify(entries, null, 2);
+
+        // Почистваме input полетата за следващия запис
+        document.getElementById('url').value = '';
+        document.getElementById('h1').value = '';
+        document.getElementById('meta_title').value = '';
+        document.getElementById('meta_description').value = '';
+    });
+
+    // Събитие за копиране на JSON в клипборда
+    copyJsonButton.addEventListener('click', function () {
+        // Избираме съдържанието на textarea
+        jsonOutputTextarea.select();
+        jsonOutputTextarea.setSelectionRange(0, 99999); // За мобилни устройства
+
+        // Копираме съдържанието в клипборда
+        try {
+            // Използваме новия Clipboard API за да копираме текста
+            navigator.clipboard.writeText(jsonOutputTextarea.value).then(() => {
+                alert('JSON copied to clipboard!');
+            }).catch(err => {
+                console.error('Error copying text: ', err);
+                alert('Failed to copy data');
+            });
+        } catch (err) {
+            console.error('Error copying text: ', err);
+        }
+    });
+       
     // Намираме всички textarea елементи, които съдържат JSON
     document.querySelectorAll("textarea[id^='json-output-']").forEach(textarea => {
         const collectionId = textarea.id.replace("json-output-", ""); // Извличаме ID на колекцията
