@@ -7,13 +7,16 @@
     {%- for collection in collections -%}
       {% assign meta_value = collection.metafields.custom.info %}
       {% if meta_value != blank %}
-        <pre>{{ meta_value }}</pre>
+       
+        {% assign json_string = collection.metafields.custom.info | json %}
+{% assign json_string = json_string | remove_first: '[' | remove_last: ']' %}
+{% assign json_items = json_string | split: '},' %}
 
         <h3>{{ collection.title }}</h3>
 
         
           <div id="collection-{{ collection.id }}">
-            {% for item in meta_value %}
+            {% for item in json_items %}
               
               <fieldset style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
                 <legend>Entry {{ forloop.index }}</legend>
