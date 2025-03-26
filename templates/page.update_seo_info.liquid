@@ -6,10 +6,16 @@
 
     
 <p>Update SEO for Collections</p>
-{%- for collection in collections -%}
-
-  
-{%- endfor -%}
+ <ul>
+      {%- for collection in collections -%}
+        {% assign meta_value = collection.metafields.custom.info %}
+        {% if meta_value != blank %}
+          <li>
+            <a href="{{ collection.url }}">{{ collection.title }}</a> - {{ meta_value }}
+          </li>
+        {% endif %}
+      {%- endfor -%}
+    </ul>
 
     
     
