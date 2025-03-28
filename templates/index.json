@@ -129,6 +129,7 @@
     },
     "section_hero_kJxP4U": {
       "type": "section-hero",
+      "disabled": true,
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
@@ -171,6 +172,7 @@
       "block_order": [
         "collection_cTbbBM"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "text": "",
