@@ -7,7 +7,7 @@
 
     <div id="new-collection">
     <h3>Create New SEO data for Collection</h3>
-    
+    <textarea id=textarea_pasted></textarea>
     <!-- Формата за добавяне на нов запис -->
     <fieldset style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
         <legend>Entry</legend>
@@ -119,6 +119,32 @@ const addEntryButton = document.getElementById('add-entry');
 const jsonOutputTextarea = document.getElementById('json-output');
 const copyJsonButton = document.getElementById('copy-json');
 
+
+
+// Функция за разпределяне на текста
+function distributeText() {
+    const text = document.getElementById('textarea_pasted').value; // Текста от текстовото поле
+
+    // Използваме регулярни изрази за разделяне на текста
+    const regex = /^(.+?)\s*\[H1\]\s*-\s*(.+?)\s*\[H1\]\s*by\s*(.+?)\s*FALSE\s*(https?:\/\/[^\s]+)/;
+
+    const match = text.match(regex);
+
+    if (match) {
+        // Ако намерим съвпадение, разпределяме в полетата
+        document.getElementById('h1').value = match[1]; // "Plus size gothic tops"
+        document.getElementById('meta_title').value = match[2]; // "[H1] - Candy Catz"
+        document.getElementById('meta_description').value = match[3]; // "[H1] by Candy Catz that will make you go wild..."
+        document.getElementById('url').value = match[4]; // URL-то
+    } else {
+        alert("Text format does not match the expected structure.");
+    }
+}
+
+// Добавяме събитие за пействане на текст в текстовото поле
+document.getElementById('textarea_pasted').addEventListener('input', distributeText);
+
+       
 // Събитие при клик върху бутона "Add Entry"
 addEntryButton.addEventListener('click', function () {
     // Събираме стойностите от input полетата
