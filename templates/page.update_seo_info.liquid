@@ -59,7 +59,7 @@
           <textarea id="json-output-{{ collection.id }}" rows="6" cols="60">{{ meta_value }}</textarea><br>
           
           <button type="button" id="copy-{{ collection.id }}" style='background: #ffffff; color: #000000; padding: 5px;'>Copy Data</button>
-        
+        <a href="https://admin.shopify.com/store/candycatz/bulk/collection?resource_name=Collection&query={{ collection.handle }}&ids={{ collection.id }}&edit=metafields.custom.info" target="_blank">🔗 Edit Collection</a>
 
       {% endif %}
     {%- endfor -%}
