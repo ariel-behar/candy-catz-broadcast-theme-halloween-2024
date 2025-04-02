@@ -135,7 +135,7 @@ function distributeText() {
         // Ако намерим съвпадение, разпределяме в полетата
         document.getElementById('h1').value = match[1]; // "Plus size gothic tops"
         document.getElementById('meta_title').value = '[H1] - ' + match[2]; // "[H1] - Candy Catz"
-        document.getElementById('meta_description').value = '[H1] - ' + match[3]; // "[H1] by Candy Catz that will make you go wild..."
+        document.getElementById('meta_description').value = '[H1] by ' + match[3]; // "[H1] by Candy Catz that will make you go wild..."
         document.getElementById('url').value = match[4]; // URL-то
     } else {
         alert("Text format does not match the expected structure.");
