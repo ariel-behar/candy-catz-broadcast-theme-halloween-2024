@@ -126,7 +126,8 @@ function distributeText() {
     const text = document.getElementById('textarea_pasted').value; // Текста от текстовото поле
 
     // Използваме регулярни изрази за разделяне на текста
-    const regex = /^(.+?)\s*\[H1\]\s*-\s*(.+?)\s*\[H1\]\s*by\s*(.+?)\s*FALSE\s*(https?:\/\/[^\s]+)/;
+        const regex = /^(.+?)\s*\[H1\]\s*-\s*(.+?)\s*\[H1\]\s*by\s*(.+?)\s*FALSE\s*(https?:\/\/[^\s]+)/;
+
 
     const match = text.match(regex);
 
