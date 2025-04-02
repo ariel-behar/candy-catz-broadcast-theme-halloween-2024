@@ -136,7 +136,7 @@ addEntryButton.addEventListener('click', function () {
   getCollectionIdByHandle(extractCollectionHandle(url)).then(collectionId => {
     
      const button = document.getElementById("copy-json");
- 
+ console.log(collectionId);
     // Ако вече има линк, премахваме стария
     const existingLink = document.getElementById("collection-link");
     if (existingLink) {
