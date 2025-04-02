@@ -123,20 +123,37 @@ const copyJsonButton = document.getElementById('copy-json');
 
 // Функция за разпределяне на текста
 function distributeText() {
-    const text = document.getElementById('textarea_pasted').value; // Текста от текстовото поле
+    const text = document.getElementById('textarea').value; // Текста от текстовото поле
 
-    // Използваме регулярни изрази за разделяне на текста
-        const regex = /^(.+?)\s*\[H1\]\s*-\s*(.+?)\s*\[H1\]\s*by\s*(.+?)\s*FALSE\s*(https?:\/\/[^\s]+)/;
-
+    // Нов регулярния израз, който улавя целия текст за meta_title и meta_description
+    const regex = /^(.+?)\s*(\[H1\])?\s*-\s*(.+?)\s*(\[H1\])?\s*by\s*(.+?)\s*FALSE\s*(https?:\/\/[^\s]+)/;
 
     const match = text.match(regex);
 
     if (match) {
-        // Ако намерим съвпадение, разпределяме в полетата
-        document.getElementById('h1').value = match[1]; // "Plus size gothic tops"
-        document.getElementById('meta_title').value = match[2]; // "[H1] - Candy Catz"
-        document.getElementById('meta_description').value = match[3]; // "[H1] by Candy Catz that will make you go wild..."
-        document.getElementById('url').value = match[4]; // URL-то
+        // Проверяваме дали има [H1] и го включваме само ако го има
+        const h1Text = match[1];
+        const metaTitle = match[3];
+        const metaDescription = match[5];
+        const url = match[6];
+
+        document.getElementById('h1').value = h1Text; // "Plus size gothic tops"
+        
+        // Ако има [H1], го включваме в meta_title
+        if (match[2]) {
+            document.getElementById('meta_title').value = `[H1] - ${metaTitle}`;
+        } else {
+            document.getElementById('meta_title').value = metaTitle;
+        }
+
+        // Ако има [H1] в meta_description, включваме го
+        if (match[4]) {
+            document.getElementById('meta_description').value = `[H1] by ${metaDescription} that will make you go wild! Stand out with exclusive designs, high-quality materials and worldwide shipping.`;
+        } else {
+            document.getElementById('meta_description').value = `${metaDescription} that will make you go wild! Stand out with exclusive designs, high-quality materials and worldwide shipping.`;
+        }
+
+        document.getElementById('url').value = url; // URL-то
     } else {
         alert("Text format does not match the expected structure.");
     }
