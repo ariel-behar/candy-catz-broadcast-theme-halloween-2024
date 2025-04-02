@@ -133,7 +133,7 @@ addEntryButton.addEventListener('click', function () {
         return;
     }
 
-
+console.log(getCollectionIdByHandle(extractCollectionHandle(url)));
    const button = document.getElementById("copy-json");
   const collectionId = getCollectionIdByHandle(extractCollectionHandle(url));
     // Ако вече има линк, премахваме стария
