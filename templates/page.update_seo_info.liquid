@@ -87,7 +87,11 @@ async function getCollectionIdByHandle(handle) {
     });
 
     const data = await response.json();
-    console.log("Collection ID:", data.data.collectionByHandle?.id);
+    
+  const gid = data.data.collectionByHandle?.id;
+const collectionId = gid.split("/").pop(); 
+console.log(collectionId); 
+  
 }
 
 getCollectionIdByHandle("all-dresses");
