@@ -7,6 +7,7 @@
 
     <div id="new-collection">
     <h3>Create New SEO data for Collection</h3>
+    
     <textarea id=textarea_pasted></textarea>
     <!-- Формата за добавяне на нов запис -->
     <fieldset style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
@@ -239,7 +240,7 @@ metaDescription = metaDescription.replaceAll("[H1]", h1);
         try {
             // Използваме новия Clipboard API за да копираме текста
             navigator.clipboard.writeText(jsonOutputTextarea.value).then(() => {
-                alert('JSON copied to clipboard!');
+                //alert('JSON copied to clipboard!');
             }).catch(err => {
                 console.error('Error copying text: ', err);
                 alert('Failed to copy data');
