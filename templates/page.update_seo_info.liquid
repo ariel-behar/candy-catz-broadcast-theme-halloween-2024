@@ -133,9 +133,10 @@ addEntryButton.addEventListener('click', function () {
         return;
     }
 
-console.log(getCollectionIdByHandle(extractCollectionHandle(url)));
-   const button = document.getElementById("copy-json");
-  const collectionId = getCollectionIdByHandle(extractCollectionHandle(url));
+  getCollectionIdByHandle(extractCollectionHandle(url)).then(collectionId => {
+    
+     const button = document.getElementById("copy-json");
+ 
     // Ако вече има линк, премахваме стария
     const existingLink = document.getElementById("collection-link");
     if (existingLink) {
@@ -153,6 +154,11 @@ console.log(getCollectionIdByHandle(extractCollectionHandle(url)));
 
     // Добавяме линка след бутона
     button.parentNode.insertBefore(link, button.nextSibling);
+    
+});
+  
+
+  
   
     
   
