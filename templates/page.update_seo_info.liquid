@@ -124,8 +124,8 @@ addEntryButton.addEventListener('click', function () {
     // Събираме стойностите от input полетата
     const url = document.getElementById('url').value;
     const h1 = document.getElementById('h1').value;
-    const metaTitle = document.getElementById('meta_title').value;
-    const metaDescription = document.getElementById('meta_description').value;
+    let metaTitle = document.getElementById('meta_title').value;
+    let metaDescription = document.getElementById('meta_description').value;
 
     // Проверяваме дали всички полета са попълнени
     if (!url || !h1 || !metaTitle || !metaDescription) {
