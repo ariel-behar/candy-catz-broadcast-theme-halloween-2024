@@ -20,7 +20,7 @@
 <br />
      
     <!-- Бутон за добавяне на нов запис -->
-    <button type="button" id="add-entry">Add Entry</button><br /><br />
+    <button type="button" id="add-entry" style='background: #ffffff; color: #000000; padding: 5px;'>Add Entry</button><br /><br />
 
     <!-- Показване на генерирания JSON в textarea -->
     <textarea id="json-output" rows="6" cols="60" placeholder="Generated JSON will appear here..."></textarea>
@@ -58,7 +58,7 @@
 <br />
           <textarea id="json-output-{{ collection.id }}" rows="6" cols="60">{{ meta_value }}</textarea><br>
           
-          <button type="button" id="copy-{{ collection.id }}">Copy Data</button>
+          <button type="button" id="copy-{{ collection.id }}" style='background: #ffffff; color: #000000; padding: 5px;'>Copy Data</button>
         
 
       {% endif %}
