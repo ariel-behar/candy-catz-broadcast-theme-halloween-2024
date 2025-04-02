@@ -133,8 +133,28 @@ addEntryButton.addEventListener('click', function () {
         return;
     }
 
+
+   const button = document.getElementById("copy-json");
+  const collectionId = getCollectionIdByHandle(extractCollectionHandle(url));
+    // Ако вече има линк, премахваме стария
+    const existingLink = document.getElementById("collection-link");
+    if (existingLink) {
+        existingLink.remove();
+    }
+
+    // Създаваме нов <a> елемент
+    const link = document.createElement("a");
+    link.id = "collection-link"; // Даваме ID, за да не дублираме
+    link.href = `https://admin.shopify.com/store/candycatz/bulk/collection?resource_name=Collection&query=all-dresses&ids=${collectionId}&edit=metafields.custom.info`;
+    link.textContent = "🔗 Отвори колекцията";
+    link.target = "_blank"; // Отваря линка в нов таб
+    link.style.display = "block"; // За да е под бутона
+    link.style.marginTop = "10px"; // Малко разстояние
+
+    // Добавяме линка след бутона
+    button.parentNode.insertBefore(link, button.nextSibling);
   
-    getCollectionIdByHandle(extractCollectionHandle(url));
+    
   
 //    https://admin.shopify.com/store/candycatz/bulk/collection?resource_name=Collection&query=all-dresses&ids=407269114110&edit=metafields.custom.info
     // Създаваме нов обект за новия запис
