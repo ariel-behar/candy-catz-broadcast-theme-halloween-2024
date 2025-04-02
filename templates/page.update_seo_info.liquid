@@ -179,8 +179,8 @@ addEntryButton.addEventListener('click', function () {
     link.href = `https://admin.shopify.com/store/candycatz/bulk/collection?resource_name=Collection&query=${collectionHandle}&ids=${collectionId}&edit=metafields.custom.info`;
     link.textContent = "🔗 Edit Collection";
     link.target = "_blank"; // Отваря линка в нов таб
-    link.style.display = "block"; // За да е под бутона
-    link.style.marginTop = "10px"; // Малко разстояние
+    link.style.display = "inline"; // За да е под бутона
+    link.style.paddingLeft = "5px"; // Малко разстояние
 
     // Добавяме линка след бутона
     button.parentNode.insertBefore(link, button.nextSibling);
