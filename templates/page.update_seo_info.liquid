@@ -90,13 +90,17 @@ async function getCollectionIdByHandle(handle) {
     
   const gid = data.data.collectionByHandle?.id;
 const collectionId = gid.split("/").pop(); 
-console.log(collectionId); 
+
+  return collectionId;
   
 }
 
-getCollectionIdByHandle("all-dresses");
-      
 
+      
+function extractCollectionHandle(url) {
+    const match = url.match(/\/collections\/([^/?]+)/);
+    return match ? match[1] : null;
+}
       
      document.addEventListener("DOMContentLoaded", function () {
 
@@ -129,6 +133,10 @@ addEntryButton.addEventListener('click', function () {
         return;
     }
 
+  console.log(extractCollectionHandle(url));
+    //getCollectionIdByHandle("all-dresses");
+  
+//    https://admin.shopify.com/store/candycatz/bulk/collection?resource_name=Collection&query=all-dresses&ids=407269114110&edit=metafields.custom.info
     // Създаваме нов обект за новия запис
     const newEntry = {
         url: url,
