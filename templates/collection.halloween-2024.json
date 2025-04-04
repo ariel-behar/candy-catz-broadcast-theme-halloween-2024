@@ -109,6 +109,14 @@
             "title": ""
           }
         },
+        "collection_e8ienf": {
+          "type": "collection",
+          "settings": {
+            "collection": "butterfly",
+            "collection_image": "shopify://shop_images/butterfly2.png",
+            "title": ""
+          }
+        },
         "collection_rJPhgL": {
           "type": "collection",
           "settings": {
@@ -127,6 +135,7 @@
         "collection_yM88Kw",
         "collection_HiBK4D",
         "collection_DTazw4",
+        "collection_e8ienf",
         "collection_rJPhgL"
       ],
       "custom_css": [
