@@ -214,7 +214,7 @@
           "type": "collection",
           "settings": {
             "title": "Beyond Wonderland",
-            "featured_collection": "beyond-wonderland",
+            "featured_collection": "whats-new",
             "show_image": false,
             "align_with_product_images": false,
             "overlay_opacity": 0,
