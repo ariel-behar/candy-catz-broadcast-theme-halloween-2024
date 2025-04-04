@@ -81,6 +81,16 @@
             "bg_color": "rgba(0,0,0,0)",
             "border_color": "#ffffff"
           }
+        },
+        "highlight_6jjF4E": {
+          "type": "highlight",
+          "settings": {
+            "heading": "CHEETAH",
+            "url": "shopify://collections/cheetah",
+            "color": "#ffffff",
+            "bg_color": "#000000",
+            "border_color": "#ffffff"
+          }
         }
       },
       "block_order": [
@@ -90,7 +100,8 @@
         "highlight_87CDzy",
         "highlight_GmfLNg",
         "highlight_R6gLaJ",
-        "highlight_anqNLy"
+        "highlight_anqNLy",
+        "highlight_6jjF4E"
       ],
       "custom_css": [
         ".highlights__container {padding-left: 20px; padding-right: 20px;}",
@@ -120,8 +131,7 @@
       "blocks": {
         "de305a87-1699-4623-83a2-cc252c7b7dea": {
           "type": "shopify://apps/boost-ai-search-discovery/blocks/product-filter/7fc998ae-a150-4367-bab8-505d8a4503f7",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
