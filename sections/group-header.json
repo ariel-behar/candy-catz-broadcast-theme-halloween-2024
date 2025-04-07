@@ -215,7 +215,7 @@
           "type": "image",
           "settings": {
             "position": "4",
-            "image": "shopify://shop_images/WOMENFavMobileX2_copy_cfc897f5-03fc-492c-806a-8bceb54c177d.jpg",
+            "image": "shopify://shop_images/WOMENFavMobileX22.png",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
@@ -230,7 +230,7 @@
           "type": "image",
           "settings": {
             "position": "4",
-            "image": "shopify://shop_images/fullCotumes_X2_copy.jpg",
+            "image": "shopify://shop_images/fullCostumes2.png",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
