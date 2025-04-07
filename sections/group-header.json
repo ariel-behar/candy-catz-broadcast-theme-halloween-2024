@@ -425,7 +425,7 @@
           "type": "image",
           "settings": {
             "position": "7",
-            "image": "shopify://shop_images/prideX2_copy.jpg",
+            "image": "shopify://shop_images/pride.2.png",
             "aspect_ratio": 0.6,
             "wide_image": true,
             "overlay_opacity": 0,
