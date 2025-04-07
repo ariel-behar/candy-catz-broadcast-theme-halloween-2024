@@ -1,0 +1,323 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "subcollections": {
+      "type": "subcollections",
+      "disabled": true,
+      "settings": {
+        "subcollection_layout": "grid",
+        "subcollection_description": false,
+        "select_image": "collection",
+        "color": "#ffffff",
+        "bg_color": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "hero": {
+      "type": "collection-image-with-title",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "show_description": false,
+        "flex_align": "align--middle-left",
+        "bg_color": "",
+        "color": "",
+        "show_image": false,
+        "banner_layout": "overlay",
+        "height": "screen-height-one-third",
+        "mobile_height": "screen-height-one-half--mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_collections_list_bnq8D6": {
+      "type": "section-collections-list",
+      "blocks": {
+        "collection_A6A8g8": {
+          "type": "collection",
+          "settings": {
+            "collection": "halloween",
+            "collection_image": "shopify://shop_images/SHOP_allMINIDesk2_copy.jpg",
+            "title": ""
+          }
+        },
+        "collection_VkKYTy": {
+          "type": "collection",
+          "settings": {
+            "collection": "halloween-skeletons",
+            "collection_image": "shopify://shop_images/skeletonMINIDesk_copy_a64f828a-524d-4bd4-8772-94b84c3431b4.jpg",
+            "title": ""
+          }
+        },
+        "collection_cEYphe": {
+          "type": "collection",
+          "settings": {
+            "collection": "fairy",
+            "collection_image": "shopify://shop_images/fairy3.png",
+            "title": ""
+          }
+        },
+        "collection_4UGUm4": {
+          "type": "collection",
+          "settings": {
+            "collection": "witches",
+            "collection_image": "shopify://shop_images/witchesMINIDesk_copy_d14a2e52-66d0-4365-8142-233f72a07a30.jpg",
+            "title": ""
+          }
+        },
+        "collection_JU3eMx": {
+          "type": "collection",
+          "settings": {
+            "collection": "cyber",
+            "collection_image": "shopify://shop_images/cyber_MINIDesk_copy.jpg",
+            "title": ""
+          }
+        },
+        "collection_yM88Kw": {
+          "type": "collection",
+          "settings": {
+            "collection": "halloween-zombies",
+            "collection_image": "shopify://shop_images/scaryMINIDesk_copy_df59aa5d-2132-449c-99a7-3e9203bbd567.jpg",
+            "title": ""
+          }
+        },
+        "collection_HiBK4D": {
+          "type": "collection",
+          "settings": {
+            "collection": "sexy-hwf",
+            "collection_image": "shopify://shop_images/sexyMINIDesk_copy_copy_2.jpg",
+            "title": ""
+          }
+        },
+        "collection_DTazw4": {
+          "type": "collection",
+          "settings": {
+            "collection": "uv-bodysuits",
+            "collection_image": "shopify://shop_images/UVMINIDesk_copy.jpg",
+            "title": ""
+          }
+        },
+        "collection_e8ienf": {
+          "type": "collection",
+          "settings": {
+            "collection": "butterfly",
+            "collection_image": "shopify://shop_images/butterfly2.png",
+            "title": ""
+          }
+        },
+        "collection_rJPhgL": {
+          "type": "collection",
+          "settings": {
+            "collection": "pop-culture",
+            "collection_image": "shopify://shop_images/popCultMINIDesk_copy_fc709fdd-2caa-470b-b606-fb2ef3264089.jpg",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_A6A8g8",
+        "collection_VkKYTy",
+        "collection_cEYphe",
+        "collection_4UGUm4",
+        "collection_JU3eMx",
+        "collection_yM88Kw",
+        "collection_HiBK4D",
+        "collection_DTazw4",
+        "collection_e8ienf",
+        "collection_rJPhgL"
+      ],
+      "custom_css": [
+        ".collection-item__info {display: none;}",
+        ".grid--slider {--item-width: calc((100vw - var(--scrollbar-width) - var(--outer) * 2) * 0.2);}",
+        "@media only screen and (max-width: 749px) {.grid--mobile-slider .grid-item {width: calc(100% - 123px); }}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "button_text": "",
+        "button_url": "shopify://collections",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout": "slider",
+        "aspect_ratio": 1.2,
+        "grid": 4,
+        "layout_mobile": "slider",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "section_highlights_FPMfBp": {
+      "type": "section-highlights",
+      "blocks": {
+        "highlight_arFNJN": {
+          "type": "highlight",
+          "settings": {
+            "heading": "WOMEN BODYSUITS",
+            "url": "shopify://collections/all-female-bodysuits",
+            "color": "",
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
+          }
+        },
+        "highlight_nrqRUi": {
+          "type": "highlight",
+          "settings": {
+            "heading": "MEN BODYSUITS",
+            "url": "shopify://collections/body-male",
+            "color": "",
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
+          }
+        },
+        "highlight_DitcU8": {
+          "type": "highlight",
+          "disabled": true,
+          "settings": {
+            "heading": "BOGO100",
+            "url": "shopify://collections/candy-bogo",
+            "color": "",
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
+          }
+        },
+        "highlight_6MMQNz": {
+          "type": "highlight",
+          "settings": {
+            "heading": "WINGS",
+            "url": "shopify://collections/wings",
+            "color": "",
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
+          }
+        },
+        "highlight_zVXtrk": {
+          "type": "highlight",
+          "settings": {
+            "heading": "SKELETON",
+            "url": "shopify://collections/halloween-skeletons",
+            "color": "",
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
+          }
+        },
+        "highlight_AYdkix": {
+          "type": "highlight",
+          "settings": {
+            "heading": "UV",
+            "url": "shopify://collections/uv-bodysuits",
+            "color": "",
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
+          }
+        },
+        "highlight_g8QW6H": {
+          "type": "highlight",
+          "settings": {
+            "heading": "BLACK",
+            "url": "shopify://collections/black-1",
+            "color": "",
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
+          }
+        },
+        "highlight_WFdR7p": {
+          "type": "highlight",
+          "settings": {
+            "heading": "GREEN",
+            "url": "shopify://collections/green",
+            "color": "",
+            "bg_color": "rgba(0,0,0,0)",
+            "border_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "highlight_arFNJN",
+        "highlight_nrqRUi",
+        "highlight_DitcU8",
+        "highlight_6MMQNz",
+        "highlight_zVXtrk",
+        "highlight_AYdkix",
+        "highlight_g8QW6H",
+        "highlight_WFdR7p"
+      ],
+      "custom_css": [
+        ".highlights__container {padding-left: 20px; padding-right: 20px;}",
+        ".highlights__items.highlights__items--mobile-slider {padding-left: 0;}",
+        ".highlights__item {--width-desktop: 15px + 100% / var(--columns-desktop, var(--column-default));}",
+        ".highlights__items .highlights__item-inner {padding: 5px 0px;}",
+        ".highlights__item-inner .highlights__item__content span {text-wrap: nowrap;}",
+        "@media only screen and (max-width: 749px) {.highlights .highlights__items--mobile-slider .highlights__item {font-size: 11px; }}"
+      ],
+      "settings": {
+        "style": "button",
+        "grid": 8,
+        "width": "wrapper--full-padded",
+        "heading": "",
+        "heading_position": "text-center",
+        "heading_size": 1,
+        "text_size": 1,
+        "color": "rgba(0,0,0,0)",
+        "bg_color": "rgba(0,0,0,0)",
+        "layout_mobile": "slider",
+        "padding_top": 15,
+        "padding_bottom": 15
+      }
+    },
+    "main": {
+      "type": "collection",
+      "disabled": true,
+      "settings": {
+        "enable_sort": true,
+        "enable_filters": true,
+        "filter_layout": "inline-closed",
+        "collection_linklist": "",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 24,
+        "border_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "17258740864c636ff3": {
+      "type": "apps",
+      "blocks": {
+        "boost_ai_search_discovery_product_filter_DWx8T8": {
+          "type": "shopify://apps/boost-ai-search-discovery/blocks/product-filter/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "boost_ai_search_discovery_product_filter_DWx8T8"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "subcollections",
+    "hero",
+    "section_collections_list_bnq8D6",
+    "section_highlights_FPMfBp",
+    "main",
+    "17258740864c636ff3"
+  ]
+}
