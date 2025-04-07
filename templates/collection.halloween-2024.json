@@ -93,6 +93,14 @@
             "title": ""
           }
         },
+        "collection_zzXhiw": {
+          "type": "collection",
+          "settings": {
+            "collection": "aliens",
+            "collection_image": "shopify://shop_images/Alien3.png",
+            "title": ""
+          }
+        },
         "collection_HiBK4D": {
           "type": "collection",
           "settings": {
@@ -133,6 +141,7 @@
         "collection_4UGUm4",
         "collection_JU3eMx",
         "collection_yM88Kw",
+        "collection_zzXhiw",
         "collection_HiBK4D",
         "collection_DTazw4",
         "collection_e8ienf",
