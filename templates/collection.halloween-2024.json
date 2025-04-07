@@ -85,6 +85,22 @@
             "title": ""
           }
         },
+        "collection_e8ienf": {
+          "type": "collection",
+          "settings": {
+            "collection": "butterfly",
+            "collection_image": "shopify://shop_images/butterfly2.png",
+            "title": ""
+          }
+        },
+        "collection_DTazw4": {
+          "type": "collection",
+          "settings": {
+            "collection": "uv-bodysuits",
+            "collection_image": "shopify://shop_images/UVMINIDesk_copy.jpg",
+            "title": ""
+          }
+        },
         "collection_yM88Kw": {
           "type": "collection",
           "settings": {
@@ -101,35 +117,19 @@
             "title": ""
           }
         },
-        "collection_HiBK4D": {
-          "type": "collection",
-          "settings": {
-            "collection": "sexy-hwf",
-            "collection_image": "shopify://shop_images/sexyMINIDesk_copy_copy_2.jpg",
-            "title": ""
-          }
-        },
-        "collection_DTazw4": {
-          "type": "collection",
-          "settings": {
-            "collection": "uv-bodysuits",
-            "collection_image": "shopify://shop_images/UVMINIDesk_copy.jpg",
-            "title": ""
-          }
-        },
-        "collection_e8ienf": {
-          "type": "collection",
-          "settings": {
-            "collection": "butterfly",
-            "collection_image": "shopify://shop_images/butterfly2.png",
-            "title": ""
-          }
-        },
         "collection_rJPhgL": {
           "type": "collection",
           "settings": {
             "collection": "pop-culture",
             "collection_image": "shopify://shop_images/popCultMINIDesk_copy_fc709fdd-2caa-470b-b606-fb2ef3264089.jpg",
+            "title": ""
+          }
+        },
+        "collection_HiBK4D": {
+          "type": "collection",
+          "settings": {
+            "collection": "sexy-hwf",
+            "collection_image": "shopify://shop_images/sexyMINIDesk_copy_copy_2.jpg",
             "title": ""
           }
         }
@@ -140,12 +140,12 @@
         "collection_cEYphe",
         "collection_4UGUm4",
         "collection_JU3eMx",
+        "collection_e8ienf",
+        "collection_DTazw4",
         "collection_yM88Kw",
         "collection_zzXhiw",
-        "collection_HiBK4D",
-        "collection_DTazw4",
-        "collection_e8ienf",
-        "collection_rJPhgL"
+        "collection_rJPhgL",
+        "collection_HiBK4D"
       ],
       "custom_css": [
         ".collection-item__info {display: none;}",
