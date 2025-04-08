@@ -18,7 +18,6 @@
     assign line_item_variant_compare_at_price = line_item.variant.compare_at_price | money
     assign line_item_original_price = line_item.original_price | money
     assign line_item_unit_price = line_item.unit_price | money
-    assign line_item_tags = line_item.tags
     assign cart_products = cart_products | append: line_item.product.id | append: ','
   -%}
 
@@ -46,7 +45,7 @@
   {%- assign required_tag = entry.product_tag -%}
 
   {%- if current_date >= start_date and current_date <= end_date -%}
-   {{ line_item_tags }}
+   {{ line_item }}
     {%- if line_item_tags contains required_tag -%}
       
   
