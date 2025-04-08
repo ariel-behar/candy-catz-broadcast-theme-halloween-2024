@@ -259,6 +259,24 @@
                   {%- when 'title' -%}
                     {{ cart_title }}
 
+
+                  {% assign content = shop.metaobjects.info_cart_slider_content.values | first %}
+{% assign promotion_title = content.promo_title %}
+{% assign promotion_content = content.promo_content %}
+{%- assign current_date = 'now' | date: "%s" -%}
+{%- assign start_date = content.date_start | date: "%s" -%}
+  {%- assign end_date = content.date_end | date: "%s" -%}
+ 
+
+  {%- if current_date >= start_date and current_date <= end_date -%}
+
+<div class="bogo-cart-wrapper">
+                  {{ content.cart_drawer_content }}
+                  </div>
+    
+    {%- endif -%}
+
+                  
                   {%- when 'cart-message' -%}
                     {%- liquid
                       assign cart_custom_message_text = block.settings.cart_custom_message_text
