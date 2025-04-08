@@ -18,7 +18,7 @@ if (typeof BogoDrawer === 'undefined') {
       this.closeOverlay = bogoRoot.querySelector('[data-bogo-drawer-close-overlay]');
 
       this.observeTooltipChanges();
-      this.bindStaticEvents(); // само веднъж за drawer-а
+      this.bindStaticEvents(); 
     }
 
     bindStaticEvents() {
@@ -41,10 +41,10 @@ if (typeof BogoDrawer === 'undefined') {
     }
 
     observeTooltipChanges() {
-      // Закачаме се веднага към вече налични
+     
       this.bindTooltipEvents();
 
-      // Наблюдаваме бъдещи добавяния
+      
       const observer = new MutationObserver(() => {
         this.bindTooltipEvents();
       });
