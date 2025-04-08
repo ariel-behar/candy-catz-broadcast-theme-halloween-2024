@@ -36,6 +36,28 @@
         <a href="{{ line_item.url }}" aria-label="{{ line_item.title | escape }}">
           {%- if line_item.image -%}
             <div class="lazy-image is-loading">
+               {%- assign current_date = 'now' | date: "%s" -%}
+
+{%- for entry in shop.metaobjects['promo_labels'].values -%}
+  
+  {%- assign start_date = entry.date_to_start | date: "%s" -%}
+  {%- assign end_date = entry.date_to_end | date: "%s" -%}
+  {%- assign required_tag = entry.product_tag -%}
+
+  {%- if current_date >= start_date and current_date <= end_date -%}
+    
+    {%- if product.tags contains required_tag -%}
+      
+  
+        
+        <div class="bogo-badge" style='background: {{ entry.background }}; color: {{ entry.text }}; border: 1px {{ entry.border }} solid;'>{{ entry.label }}</div>
+     
+     
+      
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+              
               {{ line_item.image | image_url: width: 180 | image_tag: widths: '90, 180, 270, 360', sizes: '90px', class: 'is-loading', loading: 'lazy', fetchpriority: fetchpriority }}
             </div>
           {%- endif -%}
