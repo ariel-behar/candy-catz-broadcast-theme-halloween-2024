@@ -37,9 +37,9 @@
           {%- if line_item.image -%}
             <div class="lazy-image is-loading">
                {%- assign current_date = 'now' | date: "%s" -%}
-
+x
 {%- for entry in shop.metaobjects['promo_labels'].values -%}
-  x
+  
   {%- assign start_date = entry.date_to_start | date: "%s" -%}
   {%- assign end_date = entry.date_to_end | date: "%s" -%}
   {%- assign required_tag = entry.product_tag -%}
