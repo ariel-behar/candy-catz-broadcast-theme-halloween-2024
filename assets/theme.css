@@ -6575,8 +6575,8 @@ toggle-ellipsis {
 }
 .cart__item__image a {
   display: block;
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   background-color: var(--bg);
   filter: brightness(var(--filter-bg));
   text-decoration: none;
