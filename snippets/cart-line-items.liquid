@@ -45,8 +45,8 @@
   {%- assign required_tag = entry.product_tag -%}
 
   {%- if current_date >= start_date and current_date <= end_date -%}
-   {{ line_item.product.tags }}
-    {%- if line_item_tags contains required_tag -%}
+  
+    {%- if line_item.product.tags contains required_tag -%}
       
   
         
