@@ -446,6 +446,31 @@
   style="--swatch-size: var(--swatch-size-filters);"
   data-grid-item
 >
+
+   {%- assign current_date = 'now' | date: "%s" -%}
+  {%- assign is_promo_label = false -%}
+  {%- assign next_to_price = false -%}
+   {%- assign promo_bogo_label = false -%}
+{%- for entry in shop.metaobjects['promo_labels'].values -%}
+  
+  {%- assign start_date = entry.date_to_start | date: "%s" -%}
+  {%- assign end_date = entry.date_to_end | date: "%s" -%}
+  {%- assign required_tag = entry.product_tag -%}
+
+  {%- if current_date >= start_date and current_date <= end_date -%}
+    
+    {%- if product.tags contains required_tag -%}
+      {%- assign is_promo_label = true -%}
+      {%- assign next_to_price = entry.text_next_to_price -%}
+     
+      <!-- <div class="promo-label">
+        <div class="bogo-badge" style='background: {{ entry.background }}; color: {{ entry.text }}; border: 1px {{ entry.border }} solid;'>{{ entry.label }}</div>
+      </div>-->
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+
+  
   <div class="product-item__image{% if double_img %} double__image{% endif %}" data-product-image>
 
     <div style="display: block;" class="gw-add-to-wishlist-product-card-placeholder"
@@ -612,7 +637,15 @@
           </div>
         </div>
       </a>
-
+{% if is_promo_label == true %}
+      <!--  <div class="bogo-tooltip-holder">
+          <p class="bogo-text">{{ next_to_price }}</p>
+           <div class="bogo-info-wrapper" data-bogo-tooltip>
+    {% render 'icon-info' %}
+  </div>
+        </div>-->
+      {% endif %}
+      
       {%- if siblings_html != blank -%}
         {{ siblings_html }}
       {%- elsif has_colors -%}
