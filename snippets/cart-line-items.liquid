@@ -32,7 +32,7 @@
       data-animation-delay="{{ animation_delay }}"
       {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
     >
-      <div class="cart__item__image{% unless line_item.image %} image--empty{% endunless %}">
+      x<div class="cart__item__image{% unless line_item.image %} image--empty{% endunless %}">
         <a href="{{ line_item.url }}" aria-label="{{ line_item.title | escape }}">
           {%- if line_item.image -%}
             <div class="lazy-image is-loading">
