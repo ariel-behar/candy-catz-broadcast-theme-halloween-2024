@@ -6595,7 +6595,7 @@ toggle-ellipsis {
 }
 
 .cart__item__content {
-  width: calc(100% - 90px);
+  width: calc(100% - 120px);
   padding-left: 30px;
 }
 
