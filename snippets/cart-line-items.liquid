@@ -20,7 +20,7 @@
     assign line_item_unit_price = line_item.unit_price | money
     assign cart_products = cart_products | append: line_item.product.id | append: ','
   -%}
-
+{%- assign current_date = 'now' | date: "%s" -%}
   {%- capture cart_line_item -%}
 
     <div class="cart__item{% if forloop.last %} cart__item--no-border{% endif %}"
@@ -32,13 +32,7 @@
       data-animation-delay="{{ animation_delay }}"
       {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
     >
-      <div class="cart__item__image{% unless line_item.image %} image--empty{% endunless %}">
-        <a href="{{ line_item.url }}" aria-label="{{ line_item.title | escape }}">
-          {%- if line_item.image -%}
-            <div class="lazy-image is-loading">
-               {%- assign current_date = 'now' | date: "%s" -%}
-
-{%- for entry in shop.metaobjects['promo_labels'].values -%}
+      {%- for entry in shop.metaobjects['promo_labels'].values -%}
   
   {%- assign start_date = entry.date_to_start | date: "%s" -%}
   {%- assign end_date = entry.date_to_end | date: "%s" -%}
@@ -57,6 +51,10 @@
     {%- endif -%}
   {%- endif -%}
 {%- endfor -%}
+      <div class="cart__item__image{% unless line_item.image %} image--empty{% endunless %}">
+        <a href="{{ line_item.url }}" aria-label="{{ line_item.title | escape }}">
+          {%- if line_item.image -%}
+            <div class="lazy-image is-loading">
               
               {{ line_item.image | image_url: width: 180 | image_tag: widths: '90, 180, 270, 360', sizes: '90px', class: 'is-loading', loading: 'lazy', fetchpriority: fetchpriority }}
             </div>
