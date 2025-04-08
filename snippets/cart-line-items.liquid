@@ -39,13 +39,13 @@
                {%- assign current_date = 'now' | date: "%s" -%}
 
 {%- for entry in shop.metaobjects['promo_labels'].values -%}
-  
+  x
   {%- assign start_date = entry.date_to_start | date: "%s" -%}
   {%- assign end_date = entry.date_to_end | date: "%s" -%}
   {%- assign required_tag = entry.product_tag -%}
 
   {%- if current_date >= start_date and current_date <= end_date -%}
-    x
+    
     {%- if line_item.tags contains required_tag -%}
       
   
