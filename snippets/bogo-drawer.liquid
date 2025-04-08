@@ -1,0 +1,38 @@
+{% assign content = shop.metaobjects.info_cart_slider_content.values | first %}
+{% assign promotion_title = content.promo_title %}
+{% assign promotion_content = content.promo_content %}
+{%- assign current_date = 'now' | date: "%s" -%}
+{%- assign start_date = content.date_start | date: "%s" -%}
+  {%- assign end_date = content.date_end | date: "%s" -%}
+ 
+
+  {%- if current_date >= start_date and current_date <= end_date -%}
+<div class="bogo-tooltip-holder real_bogo_holder">
+    <bogo-drawer>
+ 
+  <div class="bogo-drawer" data-bogo-drawer>
+    <div class="bogo-drawer__overlay" data-bogo-drawer-close-overlay></div>
+    <div class="bogo-drawer__content">
+      
+      <div class="bogo-drawer__body">
+        <div class="title-cancel-btn-wrapper">
+          {% if promotion_title != blank %}
+            <h3 class="promotion-title">{{ promotion_title }}</h3>
+          {% endif %}
+          <button class="bogo-drawer__close" data-bogo-drawer-close-btn>
+            {% render 'icon-close' %}
+          </button>
+        </div>
+        
+        {% if promotion_content != blank %}
+          <div class="bogo-content_wrapper">
+            {{ promotion_content | metafield_tag }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</bogo-drawer>
+</div>
+     {% endif %}
+
