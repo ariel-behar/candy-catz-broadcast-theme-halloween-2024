@@ -191,7 +191,7 @@
         "image_C7iUNz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/nocturnalMobile.jpg",
+            "image": "shopify://shop_images/halloween.png",
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "normal",
