@@ -6,7 +6,7 @@ if (typeof BogoDrawer === 'undefined') {
       this.closeButton = null;
       this.closeOverlay = null;
       this.tooltips = [];
-      this.initializedTooltips = new WeakSet(); // предотвратява двойно закачване
+      this.initializedTooltips = new WeakSet();
     }
 
     init() {
