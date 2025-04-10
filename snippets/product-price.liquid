@@ -85,7 +85,15 @@
       <!-- <div class="bogo-tooltip-holder">
           <p class="bogo-text">{{ entry.text_next_to_price }}</p>
           <div class="bogo-info-wrapper" data-bogo-tooltip>
+      {% assign content = shop.metaobjects.info_cart_slider_content.values | first %}
+{%- assign current_date = 'now' | date: "%s" -%}
+{%- assign start_date = content.date_start | date: "%s" -%}
+  {%- assign end_date = content.date_end | date: "%s" -%}
+ 
+
+  {%- if current_date >= start_date and current_date <= end_date -%}
     {% render 'icon-info' %}
+    {%- endif -%}
   </div>
         </div>-->
     {%- endif -%}
