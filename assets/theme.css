@@ -24815,6 +24815,12 @@ div.product-information > div > div { justify-content: center; }
 div.product__price__wrap > div.bogo-tooltip-holder > p.bogo-text { 
   font-size: 13px;
   line-height: 32px; }
+@media screen and (max-width: 989px) {
+div.product__price__wrap>div.bogo-tooltip-holder>p.bogo-text {
+
+    line-height: 25px;
+}
+}
   .bogo-badge-cart-drawer { 
     position: absolute;
     z-index: 1;
