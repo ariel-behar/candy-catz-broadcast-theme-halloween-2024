@@ -24866,3 +24866,6 @@ div.product__price__wrap>div.bogo-tooltip-holder>p.bogo-text {
     bottom: 5px !important;
     left: 5px !important;
 }
+.collection_h1 {
+text-transform: uppercase;
+  }
