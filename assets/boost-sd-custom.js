@@ -101,14 +101,10 @@ if (nextToPrice && productTags.length > 0 && priceWrappers.length > 0) {
                     const h1Elm = document.querySelector(".collection_h1")
 
 
-                   const currentUrlObj = new URL(window.location.href);
-  const params = currentUrlObj.searchParams;
-
-  // Премахваме само параметъра "page"
-  params.delete('page');
-
-  // Конструираме отново URL без "page", но с останалите параметри
-  const cleanUrl = currentUrlObj.origin + currentUrlObj.pathname + (params.toString() ? '?' + params.toString() : '');
+                   //const currentUrlObj = new URL(window.location.href);
+  //const params = currentUrlObj.searchParams;
+  //params.delete('page');
+  //const cleanUrl = currentUrlObj.origin + currentUrlObj.pathname + (params.toString() ? '?' + params.toString() : '');
 
                    
                    if (Array.isArray(jsonInfo)) {
