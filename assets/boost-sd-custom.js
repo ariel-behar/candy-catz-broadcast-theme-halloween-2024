@@ -32,32 +32,37 @@ const customize = {
                      }
 
 
-                    const promoLabel = document.querySelector('.product-promo-label');
-const alreadyCloned = productItem.querySelector('.product-promo-label--cloned');
+                   const promoLabel = document.querySelector('.product-promo-label');
+const nextToPrice = document.querySelector('.product-next-to-price');
 const imageWrappers = productItem.querySelectorAll('.boost-sd__product-image');
+const priceWrappers = productItem.querySelectorAll('.boost-sd__product-price');
 
-if (promoLabel && imageWrappers.length > 0 && !alreadyCloned) {
-  imageWrappers.forEach(wrapper => {
-    const clone = promoLabel.cloneNode(true);
-    clone.classList.add('product-promo-label--cloned');
-    wrapper.parentNode.insertBefore(clone, wrapper);
-  });
+// Проверка дали продуктът има правилния tag
+const requiredTag = promoLabel?.getAttribute('data-required-tag'); // Взима стойността на data-required-tag
+const productTags = productData.tags; // Таговете на продукта, трябва да е в productData
 
- 
+// Клониране на product-promo-label само ако продуктът има съответния таг
+if (requiredTag && productTags.includes(requiredTag) && imageWrappers.length > 0) {
+  const alreadyCloned = productItem.querySelector('.product-promo-label--cloned');
+  if (!alreadyCloned) {
+    imageWrappers.forEach(wrapper => {
+      const clone = promoLabel.cloneNode(true);
+      clone.classList.add('product-promo-label--cloned');
+      wrapper.parentNode.insertBefore(clone, wrapper);
+    });
+  }
 }
 
-
-                    const nextToPrice = document.querySelector('.product-next-to-price');
-const priceWrappers = productItem.querySelectorAll('.boost-sd__product-price');
-const alreadyClonedPrice = productItem.querySelector('.product-next-to-price--cloned');
-
-if (nextToPrice && priceWrappers.length > 0 && !alreadyClonedPrice) {
-  priceWrappers.forEach(wrapper => {
-    const clone = nextToPrice.cloneNode(true);
-    clone.classList.add('product-next-to-price--cloned');
-    wrapper.parentNode.insertBefore(clone, wrapper.nextSibling); // Вмъква го *след* цената
-  });
-
+// Клониране на product-next-to-price само ако продуктът има съответния таг
+if (nextToPrice && productTags.includes(requiredTag) && priceWrappers.length > 0) {
+  const alreadyClonedPrice = productItem.querySelector('.product-next-to-price--cloned');
+  if (!alreadyClonedPrice) {
+    priceWrappers.forEach(wrapper => {
+      const clone = nextToPrice.cloneNode(true);
+      clone.classList.add('product-next-to-price--cloned');
+      wrapper.parentNode.insertBefore(clone, wrapper.nextSibling); // Вмъква го *след* цената
+    });
+  }
 }
                     
                     
