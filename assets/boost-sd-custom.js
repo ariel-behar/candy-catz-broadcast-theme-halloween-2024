@@ -31,6 +31,20 @@ const customize = {
                         hoverImage.alt = `${hoverImage.alt} 2`;
                      }
 
+
+                    const promoLabel = productItem.querySelector('.product-promo-label');
+const imageWrappers = productItem.querySelectorAll('.boost-sd__product-image');
+
+if (promoLabel && imageWrappers.length > 0) {
+  imageWrappers.forEach(wrapper => {
+    const clone = promoLabel.cloneNode(true);
+    wrapper.parentNode.insertBefore(clone, wrapper);
+  });
+
+  // По избор: скрий оригинала, ако не искаш да се дублира
+  promoLabel.style.display = 'none';
+}
+                    
                      hasUpdated = true;
                   }
                } catch (e) {
