@@ -462,9 +462,9 @@
     {%- if product.tags contains required_tag -%}
       {%- assign is_promo_label = true -%}
       {%- assign next_to_price = entry.text_next_to_price -%}
-      <!--
+     
         <div class="bogo-badge" style='background: {{ entry.background }}; color: {{ entry.text }}; border: 1px {{ entry.border }} solid;'>{{ entry.label }}</div>
-     -->
+     
     {%- endif -%}
   {%- endif -%}
 {%- endfor -%}
