@@ -24857,3 +24857,14 @@ div.product__price__wrap>div.bogo-tooltip-holder>p.bogo-text {
   display: block; }
 .product-promo-label--cloned { display: block; }
 .boost-sd__product-link:hover { color: #ffffff; }
+
+.currency-converter-currency-button {
+    background:#000000;
+    margin: 0px;
+    padding: 5px;
+    font-size: 13px;
+    right: unset !important;
+    bottom: 5px;
+    left: 5px;
+    top: unset !important;
+}
