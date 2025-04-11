@@ -489,7 +489,30 @@
 {%- if request.path contains '/collection' -%}
   {%- unless request.path contains '/product' -%}  
       <div align="center" class="collection_h1"><h1>{{ hh }}</h1></div>
-    <div class="product-promo-label">.</div>
+   
+
+    {%- assign current_date = 'now' | date: "%s" -%}
+  {%- assign is_promo_label = false -%}
+  {%- assign next_to_price = false -%}
+   {%- assign promo_bogo_label = false -%}
+{%- for entry in shop.metaobjects['promo_labels'].values -%}
+  
+  {%- assign start_date = entry.date_to_start | date: "%s" -%}
+  {%- assign end_date = entry.date_to_end | date: "%s" -%}
+  {%- assign required_tag = entry.product_tag -%}
+
+  {%- if current_date >= start_date and current_date <= end_date -%}
+    
+    {%- if product.tags contains required_tag -%}
+      {%- assign is_promo_label = true -%}
+      {%- assign next_to_price = entry.text_next_to_price -%}
+    
+        <div class="product-promo-label bogo-badge" style='background: {{ entry.background }}; color: {{ entry.text }}; border: 1px {{ entry.border }} solid;'>{{ entry.label }}</div>
+     
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+    
     {%- endunless -%}
 {%- endif -%}
       {{ content_for_layout }}
