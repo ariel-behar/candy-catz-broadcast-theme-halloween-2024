@@ -113,7 +113,7 @@ if (nextToPrice && productTags.length > 0 && priceWrappers.length > 0) {
                    
                    if (Array.isArray(jsonInfo)) {
                      jsonInfo.forEach(info => {
-                       if (cleanUrl == info.url) {
+                       if (window.location.href == info.url) {
                          console.log("matched")
                          if (h1Elm) { 
                            h1Elm.innerHTML = `<h1>${info.h1}</h1>`
@@ -126,7 +126,7 @@ if (nextToPrice && productTags.length > 0 && priceWrappers.length > 0) {
                        } 
                      })
 
-                     if (!jsonInfo.find(info => info.url == cleanUrl)) {
+                     if (!jsonInfo.find(info => info.url == window.location.href)) {
                                                 console.log("not matched")
                          if (h1Elm) { 
                            h1Elm.innerHTML = `<h1>${h1Original}</h1>`
