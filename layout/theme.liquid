@@ -494,7 +494,6 @@
     {%- assign current_date = 'now' | date: "%s" -%}
   {%- assign is_promo_label = false -%}
   {%- assign next_to_price = false -%}
-   {%- assign promo_bogo_label = false -%}
 {%- for entry in shop.metaobjects['promo_labels'].values -%}
   
   {%- assign start_date = entry.date_to_start | date: "%s" -%}
