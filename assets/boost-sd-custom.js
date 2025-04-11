@@ -32,7 +32,7 @@ const customize = {
                      }
 
 
-                    const promoLabel = productItem.querySelector('.product-promo-label');
+                    const promoLabel = document.querySelector('.product-promo-label');
 const imageWrappers = productItem.querySelectorAll('.boost-sd__product-image');
 
 if (promoLabel && imageWrappers.length > 0) {
