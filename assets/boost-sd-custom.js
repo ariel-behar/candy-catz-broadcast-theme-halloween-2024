@@ -43,7 +43,7 @@ if (promoLabel && imageWrappers.length > 0 && !alreadyCloned) {
     wrapper.parentNode.insertBefore(clone, wrapper);
   });
 
-  promoLabel.style.display = 'none';
+ 
 }
                     
                      hasUpdated = true;
