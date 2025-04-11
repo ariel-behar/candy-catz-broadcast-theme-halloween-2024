@@ -45,6 +45,22 @@ if (promoLabel && imageWrappers.length > 0 && !alreadyCloned) {
 
  
 }
+
+
+                    const nextToPrice = document.querySelector('.product-next-to-price');
+const priceWrappers = productItem.querySelectorAll('.boost-sd__product-price');
+const alreadyClonedPrice = productItem.querySelector('.product-next-to-price--cloned');
+
+if (nextToPrice && priceWrappers.length > 0 && !alreadyClonedPrice) {
+  priceWrappers.forEach(wrapper => {
+    const clone = nextToPrice.cloneNode(true);
+    clone.classList.add('product-next-to-price--cloned');
+    wrapper.parentNode.insertBefore(clone, wrapper.nextSibling); // Вмъква го *след* цената
+  });
+
+  nextToPrice.style.display = 'none';
+}
+                    
                     
                      hasUpdated = true;
                   }
