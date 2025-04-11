@@ -24851,5 +24851,5 @@ div.product__price__wrap>div.bogo-tooltip-holder>p.bogo-text {
                           }
 .product-promo-label { display: none; }
 .product-next-to-price { display: none; }
-.product-next-to-price--cloned { display: block; }
-.product-promo-label--cloned { display: block; }
+.product-next-to-price--cloned { display: none; }
+.product-promo-label--cloned { display: none; }
