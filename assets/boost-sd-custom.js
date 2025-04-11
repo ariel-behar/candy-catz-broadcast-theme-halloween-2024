@@ -32,17 +32,17 @@ const customize = {
                      }
 
 
-                  // Намери всички елементи с клас product-promo-label
+                 
 const promoLabels = document.querySelectorAll('.product-promo-label');
 const nextToPrice = document.querySelector('.product-next-to-price');
 const imageWrappers = productItem.querySelectorAll('.boost-sd__product-image');
 const priceWrappers = productItem.querySelectorAll('.boost-sd__product-price');
 
-// Проверка дали продуктът има някой от изискваните тагове
-const productTags = productData.tags; // Таговете на продукта
+
+const productTags = productData.tags; 
 
 promoLabels.forEach(promoLabel => {
-  const requiredTag = promoLabel.getAttribute('data-required-tag'); // Вземи таг от data атрибута
+  const requiredTag = promoLabel.getAttribute('data-required-tag'); 
 
   // Клонирай само ако продуктът има съответния таг
   if (requiredTag && productTags.includes(requiredTag) && imageWrappers.length > 0) {
@@ -51,14 +51,14 @@ promoLabels.forEach(promoLabel => {
       imageWrappers.forEach(wrapper => {
         const clone = promoLabel.cloneNode(true);
         clone.classList.add('product-promo-label--cloned');
-        clone.setAttribute('data-required-tag', requiredTag); // Добави таг на клонирания елемент
+        clone.setAttribute('data-required-tag', requiredTag); 
         wrapper.parentNode.insertBefore(clone, wrapper);
       });
     }
   }
 });
 
-// Клониране на product-next-to-price само ако продуктът има съответния таг
+
 if (nextToPrice && productTags.length > 0 && priceWrappers.length > 0) {
   promoLabels.forEach(promoLabel => {
     const requiredTag = promoLabel.getAttribute('data-required-tag');
@@ -69,7 +69,7 @@ if (nextToPrice && productTags.length > 0 && priceWrappers.length > 0) {
         priceWrappers.forEach(wrapper => {
           const clone = nextToPrice.cloneNode(true);
           clone.classList.add('product-next-to-price--cloned');
-          clone.setAttribute('data-required-tag', requiredTag); // Добави таг на клонирания елемент
+          clone.setAttribute('data-required-tag', requiredTag); 
           wrapper.parentNode.insertBefore(clone, wrapper.nextSibling);
         });
       }
