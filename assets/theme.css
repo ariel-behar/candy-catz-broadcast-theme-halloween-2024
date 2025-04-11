@@ -24860,11 +24860,11 @@ div.product__price__wrap>div.bogo-tooltip-holder>p.bogo-text {
 
 .currency-converter-currency-button {
     background:#000000;
-    margin: 0px;
-    padding: 5px;
+    margin: 0px !important;
+    padding: 5px !important;
     font-size: 13px;
     right: unset !important;
-    bottom: 5px;
-    left: 5px;
+    bottom: 5px !important;
+    left: 5px !important;
     top: unset !important;
 }
