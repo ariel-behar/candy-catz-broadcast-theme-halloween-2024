@@ -58,7 +58,6 @@ if (nextToPrice && priceWrappers.length > 0 && !alreadyClonedPrice) {
     wrapper.parentNode.insertBefore(clone, wrapper.nextSibling); // Вмъква го *след* цената
   });
 
-  nextToPrice.style.display = 'none';
 }
                     
                     
