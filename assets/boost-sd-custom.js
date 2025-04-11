@@ -99,9 +99,21 @@ if (nextToPrice && productTags.length > 0 && priceWrappers.length > 0) {
                    
                    const jsonInfo = JSON.parse(window.collectionMetaFromLiquid.customInfo)
                     const h1Elm = document.querySelector(".collection_h1")
+
+
+                   const currentUrlObj = new URL(window.location.href);
+  const params = currentUrlObj.searchParams;
+
+  // Премахваме само параметъра "page"
+  params.delete('page');
+
+  // Конструираме отново URL без "page", но с останалите параметри
+  const cleanUrl = currentUrlObj.origin + currentUrlObj.pathname + (params.toString() ? '?' + params.toString() : '');
+
+                   
                    if (Array.isArray(jsonInfo)) {
                      jsonInfo.forEach(info => {
-                       if (window.location.href == info.url) {
+                       if (cleanUrl == info.url) {
                          console.log("matched")
                          if (h1Elm) { 
                            h1Elm.innerHTML = `<h1>${info.h1}</h1>`
@@ -114,7 +126,7 @@ if (nextToPrice && productTags.length > 0 && priceWrappers.length > 0) {
                        } 
                      })
 
-                     if (!jsonInfo.find(info => info.url == window.location.href)) {
+                     if (!jsonInfo.find(info => info.url == cleanUrl)) {
                                                 console.log("not matched")
                          if (h1Elm) { 
                            h1Elm.innerHTML = `<h1>${h1Original}</h1>`
