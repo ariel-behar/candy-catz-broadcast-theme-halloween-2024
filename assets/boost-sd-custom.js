@@ -32,37 +32,49 @@ const customize = {
                      }
 
 
-                   const promoLabel = document.querySelector('.product-promo-label');
+                  // Намери всички елементи с клас product-promo-label
+const promoLabels = document.querySelectorAll('.product-promo-label');
 const nextToPrice = document.querySelector('.product-next-to-price');
 const imageWrappers = productItem.querySelectorAll('.boost-sd__product-image');
 const priceWrappers = productItem.querySelectorAll('.boost-sd__product-price');
 
-// Проверка дали продуктът има правилния tag
-const requiredTag = promoLabel?.getAttribute('data-required-tag'); // Взима стойността на data-required-tag
-const productTags = productData.tags; // Таговете на продукта, трябва да е в productData
+// Проверка дали продуктът има някой от изискваните тагове
+const productTags = productData.tags; // Таговете на продукта
 
-// Клониране на product-promo-label само ако продуктът има съответния таг
-if (requiredTag && productTags.includes(requiredTag) && imageWrappers.length > 0) {
-  const alreadyCloned = productItem.querySelector('.product-promo-label--cloned');
-  if (!alreadyCloned) {
-    imageWrappers.forEach(wrapper => {
-      const clone = promoLabel.cloneNode(true);
-      clone.classList.add('product-promo-label--cloned');
-      wrapper.parentNode.insertBefore(clone, wrapper);
-    });
+promoLabels.forEach(promoLabel => {
+  const requiredTag = promoLabel.getAttribute('data-required-tag'); // Вземи таг от data атрибута
+
+  // Клонирай само ако продуктът има съответния таг
+  if (requiredTag && productTags.includes(requiredTag) && imageWrappers.length > 0) {
+    const alreadyCloned = productItem.querySelector(`.product-promo-label--cloned[data-required-tag="${requiredTag}"]`);
+    if (!alreadyCloned) {
+      imageWrappers.forEach(wrapper => {
+        const clone = promoLabel.cloneNode(true);
+        clone.classList.add('product-promo-label--cloned');
+        clone.setAttribute('data-required-tag', requiredTag); // Добави таг на клонирания елемент
+        wrapper.parentNode.insertBefore(clone, wrapper);
+      });
+    }
   }
-}
+});
 
 // Клониране на product-next-to-price само ако продуктът има съответния таг
-if (nextToPrice && productTags.includes(requiredTag) && priceWrappers.length > 0) {
-  const alreadyClonedPrice = productItem.querySelector('.product-next-to-price--cloned');
-  if (!alreadyClonedPrice) {
-    priceWrappers.forEach(wrapper => {
-      const clone = nextToPrice.cloneNode(true);
-      clone.classList.add('product-next-to-price--cloned');
-      wrapper.parentNode.insertBefore(clone, wrapper.nextSibling); // Вмъква го *след* цената
-    });
-  }
+if (nextToPrice && productTags.length > 0 && priceWrappers.length > 0) {
+  promoLabels.forEach(promoLabel => {
+    const requiredTag = promoLabel.getAttribute('data-required-tag');
+    
+    if (requiredTag && productTags.includes(requiredTag)) {
+      const alreadyClonedPrice = productItem.querySelector(`.product-next-to-price--cloned[data-required-tag="${requiredTag}"]`);
+      if (!alreadyClonedPrice) {
+        priceWrappers.forEach(wrapper => {
+          const clone = nextToPrice.cloneNode(true);
+          clone.classList.add('product-next-to-price--cloned');
+          clone.setAttribute('data-required-tag', requiredTag); // Добави таг на клонирания елемент
+          wrapper.parentNode.insertBefore(clone, wrapper.nextSibling);
+        });
+      }
+    }
+  });
 }
                     
                     
