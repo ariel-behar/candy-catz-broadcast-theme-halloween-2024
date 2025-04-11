@@ -194,10 +194,10 @@
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify://shop_images/RaveWave1900x800NEW.jpg",
+        "image_1": "shopify://shop_images/imaginariumDesk1.png",
         "link": "shopify://collections/imaginarium",
         "mobile_height": "image-height--mobile",
-        "mobile_image": "shopify://shop_images/raveWaveMobile.jpg",
+        "mobile_image": "shopify://shop_images/imagineMobil2.png",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
@@ -967,7 +967,7 @@
           "settings": {
             "title": "",
             "title_color": "",
-            "title_size": 0,
+            "title_size_v2": 0,
             "alignment": "center",
             "margin_top": 0,
             "margin_bottom": 0,
