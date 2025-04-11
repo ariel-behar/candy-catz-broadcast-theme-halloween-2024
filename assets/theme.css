@@ -24839,6 +24839,9 @@ div.product__price__wrap>div.bogo-tooltip-holder>p.bogo-text {
 
     line-height: 25px;
 }
+  .collection_h1 h1 {
+font-size: 22px;
+  }
 }
   .bogo-badge-cart-drawer { 
     position: absolute;
