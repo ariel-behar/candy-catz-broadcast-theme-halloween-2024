@@ -24639,7 +24639,7 @@ nav.drawer .drawer__body .drawer__menu {
   font-size: 13px;
   padding: 5px 20px;
   font-weight: 700;
-  /*display: block;*/
+ 
 }
 
 .grid-item.product-item .bogo-badge{
@@ -24807,7 +24807,7 @@ cart-drawer.drawer.drawer--cart.is-empty .bogo-cart-wrapper{
     z-index: 2;
     font-size: 8px;
     padding: 5px 12px;
-  /*display: block;*/
+  
 }
   
   .bogo-tooltip-holder .bogo-text{
@@ -24851,3 +24851,5 @@ div.product__price__wrap>div.bogo-tooltip-holder>p.bogo-text {
                           }
 .product-promo-label { display: none; }
 .product-next-to-price { display: none; }
+.product-next-to-price--cloned { display: block; }
+.product-promo-label--cloned { display: block; }
