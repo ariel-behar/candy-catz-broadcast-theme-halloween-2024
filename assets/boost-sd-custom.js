@@ -33,15 +33,16 @@ const customize = {
 
 
                     const promoLabel = document.querySelector('.product-promo-label');
+const alreadyCloned = productItem.querySelector('.product-promo-label--cloned');
 const imageWrappers = productItem.querySelectorAll('.boost-sd__product-image');
 
-if (promoLabel && imageWrappers.length > 0) {
+if (promoLabel && imageWrappers.length > 0 && !alreadyCloned) {
   imageWrappers.forEach(wrapper => {
     const clone = promoLabel.cloneNode(true);
+    clone.classList.add('product-promo-label--cloned');
     wrapper.parentNode.insertBefore(clone, wrapper);
   });
 
-  // По избор: скрий оригинала, ако не искаш да се дублира
   promoLabel.style.display = 'none';
 }
                     
