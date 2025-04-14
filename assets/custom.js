@@ -12,14 +12,7 @@
   // Add custom code below this line
 
 
-  const drawer = document.querySelector('.drawer__body');
 
-if (drawer) {
-  drawer.addEventListener('scroll', () => {
-    console.log('Drawer scrollTop:', drawer.scrollTop);
-  });
-}
-  
   
 window.addEventListener('DOMContentLoaded', () => {
 
