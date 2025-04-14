@@ -129,14 +129,13 @@
     },
     "section_hero_kJxP4U": {
       "type": "section-hero",
-      "disabled": true,
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
-        "image_1": "shopify://shop_images/bogo100Desk-smaller.jpg",
+        "image_1": "shopify://shop_images/bogo100.png",
         "link": "shopify://collections/shop-all-bogo",
         "mobile_height": "image-height--mobile",
-        "mobile_image": "shopify://shop_images/bogo100Mobile-banner.jpg",
+        "mobile_image": "shopify://shop_images/bogo100Mobil2.png",
         "flex_align_desktop": "align--middle-center-desktop",
         "flex_align_mobile": "align--middle-center-mobile",
         "overlay_opacity": 0,
@@ -152,7 +151,7 @@
         "collection_cTbbBM": {
           "type": "collection",
           "settings": {
-            "title": "Beyond Wonderland",
+            "title": "Shop All BOGO",
             "featured_collection": "shop-all-bogo",
             "show_image": false,
             "align_with_product_images": false,
@@ -172,7 +171,6 @@
       "block_order": [
         "collection_cTbbBM"
       ],
-      "disabled": true,
       "settings": {
         "title": "",
         "text": "",
