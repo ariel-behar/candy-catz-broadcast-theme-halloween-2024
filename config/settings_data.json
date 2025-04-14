@@ -172,11 +172,6 @@
           "embed_SPOF_label": ""
         }
       },
-      "14952540001915115444": {
-        "type": "shopify://apps/upcart-cart-drawer/blocks/app-embed/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
-        "disabled": false,
-        "settings": {}
-      },
       "17453258828962521766": {
         "type": "shopify://apps/captain-insure/blocks/app/a7ef2f88-bc96-4a68-ba4e-f042ccbc8beb",
         "disabled": false,
@@ -217,8 +212,8 @@
         "disabled": false,
         "settings": {}
       },
-      "3824936769257688723": {
-        "type": "shopify://apps/sami-product-labels/blocks/app-embed-block/b9b44663-5d51-4be1-8104-faedd68da8c5",
+      "14952540001915115444": {
+        "type": "shopify://apps/upcart-cart-drawer/blocks/app-embed/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
         "disabled": true,
         "settings": {}
       }
