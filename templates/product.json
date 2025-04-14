@@ -25,7 +25,7 @@
           "settings": {
             "option_button_class": "",
             "custom_css": "",
-            "disable_shadow_root": false
+            "shadow_root_options": "null"
           }
         },
         "loox_reviews_loox_rating_BCKDnV": {
@@ -106,19 +106,27 @@
             "padding_bottom": 16
           }
         },
+        "inventory_countdown_WHLbcD": {
+          "type": "inventory_countdown",
+          "disabled": true,
+          "settings": {
+            "show_notice": "always",
+            "max_inventory": 1,
+            "hide_inventory_counter": true,
+            "icon_size": 20,
+            "in_stock_color": "#56AD6A",
+            "low_stock_color": "#f79554",
+            "out_of_stock_color": "#721C24",
+            "padding_bottom": 16
+          }
+        },
         "buttons": {
           "type": "buttons",
           "settings": {
-            "show_quantity": true,
+            "show_quantity": false,
             "show_payment_button": false,
             "show_gift_card_recipient": false,
             "padding_bottom": 32
-          }
-        },
-        "sami_product_labels_app_block_highlight_ABJWqm": {
-          "type": "shopify://apps/sami-product-labels/blocks/app-block-highlight/b9b44663-5d51-4be1-8104-faedd68da8c5",
-          "settings": {
-            "shortcode": "<div class=\"samitaPL-highlight\" data-id=\"932\"></div>"
           }
         },
         "icon_dYwiFr": {
@@ -206,11 +214,18 @@
         },
         "badges_adcwXL": {
           "type": "badges",
-          "disabled": true,
           "settings": {
             "sale_badge": true,
             "product_badges": true,
             "padding_bottom": 8
+          }
+        },
+        "code_qUBFTL": {
+          "type": "code",
+          "disabled": true,
+          "settings": {
+            "code": "<script>\n(function () {\n  const productKey = 'product-purchases-' + window.location.pathname;\n  const savedData = JSON.parse(localStorage.getItem(productKey));\n  const now = Date.now();\n\n  let purchaseCount;\n\n  if (savedData && now - savedData.timestamp < 24 * 60 * 60 * 1000) {\n    // Използвай записаното число, ако е по-малко от 24 часа\n    purchaseCount = savedData.count;\n  } else {\n    // Генерирай ново число и го запази с текущото време\n    purchaseCount = Math.floor(Math.random() * 51); // 0 - 50\n    localStorage.setItem(productKey, JSON.stringify({\n      count: purchaseCount,\n      timestamp: now\n    }));\n  }\n\n  // Създай елемент за показване на съобщението\n  const message = document.createElement('div');\n  message.textContent = `🔥 ${purchaseCount} people bought this in the last 24 hours`;\n  message.style.cssText = `\n    margin-top: 10px;\n    font-weight: bold;\n    color: #ff3c75;\n    font-size: 16px;\n  `;\n\n  // Къде да се вмъкне – примерно под бутона Add to Cart\n  const target = document.querySelector('#add_to_cart_product_page');\n  if (target && target.parentNode) {\n    target.parentNode.insertBefore(message, target.nextSibling);\n  }\n})();\n\n</script>",
+            "padding_bottom": 16
           }
         }
       },
@@ -224,8 +239,8 @@
         "popup_xcAGBi",
         "icon_dwiLG3",
         "variants",
+        "inventory_countdown_WHLbcD",
         "buttons",
-        "sami_product_labels_app_block_highlight_ABJWqm",
         "icon_dYwiFr",
         "icon_VT6hKn",
         "icon_HGhAMg",
@@ -233,7 +248,8 @@
         "divider_D73gCW",
         "tabs",
         "upsell_Miyb47",
-        "badges_adcwXL"
+        "badges_adcwXL",
+        "code_qUBFTL"
       ],
       "custom_css": [],
       "settings": {
