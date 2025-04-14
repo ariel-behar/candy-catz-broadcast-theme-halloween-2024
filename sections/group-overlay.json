@@ -60,7 +60,7 @@
         "shipping_estimate_UyqBfK": {
           "type": "shipping-estimate",
           "settings": {
-            "pin_to_bottom": true
+            "pin_to_bottom": false
           }
         }
       },
