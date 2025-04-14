@@ -56,6 +56,12 @@ window.addEventListener('DOMContentLoaded', () => {
     
   }
 
+  Object.defineProperty(drawer, 'scrollTop', {
+  set: function(value) {
+    console.trace('scrollTop set to:', value);
+  }
+});
+  
   
    var radioButton = document.querySelector('.radio__button.sale');
     if (radioButton) {
