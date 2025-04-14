@@ -30,7 +30,7 @@
         "text_Pm7cMa": {
           "type": "text",
           "settings": {
-            "text": "<p>🌈  BUY ONE, GET ONE 50% OFF! CODE BOGO50 🦄</p>",
+            "text": "<p>🌈  BUY ONE, GET ONE FREE! CODE 1FREE 🦄</p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
@@ -54,11 +54,10 @@
         },
         "countdown_KDEgXW": {
           "type": "countdown",
-          "disabled": true,
           "settings": {
-            "end_date": "2025-03-28",
-            "end_time": "16:00",
-            "period": "pm",
+            "end_date": "2025-04-17",
+            "end_time": "10:00",
+            "period": "am",
             "end_message": "<p>Offer has expired</p>",
             "hide_on_complete": true,
             "text": ""
