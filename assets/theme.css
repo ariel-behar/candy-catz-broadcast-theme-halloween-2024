@@ -24966,8 +24966,10 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
 }
 @media only screen and (max-width: 967px) {
     .boost-sd__filter-tree-toggle-button-title {
-        
         width: auto !important;
+      margin-left: 10px !important;
+      margin-right: 0px !important;
+        order: 2 !important;
     }
   .boost-sd__filter-tree-toggle-button {
     justify-content: left !important;
@@ -24980,6 +24982,10 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
         justify-content: right !important;
        
     }
+
+     .boost-sd__filter-tree-toggle-button-icon {
+    order: 1 !important;
+}
   .highlights__items--mobile-slider .highlights__item--rectangle {
     width: calc(100% - 205px) !important;
   }
