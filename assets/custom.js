@@ -15,23 +15,6 @@
 
   
 window.addEventListener('DOMContentLoaded', () => {
-
-
-const interval = setInterval(() => {
-  const select = document.querySelector("#address_country");
-  if (select && select.options.length > 0) {
-    const hasSelected = Array.from(select.options).some(opt => opt.selected);
-    if (!hasSelected) {
-      const usOption = select.querySelector('option[value="US"]');
-      if (usOption) {
-        usOption.selected = true;
-        clearInterval(interval); // спира интервала
-      }
-    } else {
-      clearInterval(interval); // ако вече има избрано — спира
-    }
-  }
-}, 200); // проверява на всеки 200ms
    
   var canonicalTag = document.querySelector('link[rel="canonical"]');
   var robotsMetaTag = document.querySelector('meta[name="robots"][content="noindex,nofollow"]');
