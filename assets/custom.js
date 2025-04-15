@@ -12,7 +12,7 @@
   // Add custom code below this line
 
 
-const select = document.querySelector(".shipping-calculator__container #address_country");
+const select = document.querySelector("#address_country");
 
 if (select) {
   const observer = new MutationObserver(() => {
