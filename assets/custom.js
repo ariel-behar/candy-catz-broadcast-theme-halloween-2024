@@ -12,18 +12,7 @@
   // Add custom code below this line
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const select = document.querySelector(".shipping-calculator__container > #address_country");
-  if (select) {
-    const hasSelected = Array.from(select.options).some(option => option.selected);
-    if (!hasSelected) {
-      const usOption = select.querySelector('option[value="US"]');
-      if (usOption) {
-        usOption.selected = true;
-      }
-    }
-  }
-});
+
   
 window.addEventListener('DOMContentLoaded', () => {
 
