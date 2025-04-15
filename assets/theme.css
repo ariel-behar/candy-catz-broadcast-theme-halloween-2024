@@ -24850,7 +24850,7 @@ font-size: 22px;
   padding: 0px;
 }
  .header__menu .header__dropdown {
-    padding: 10px 20px;
+    padding: 10px 20px !important;
 }
 }
 
