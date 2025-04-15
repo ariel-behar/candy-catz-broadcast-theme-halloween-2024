@@ -24844,6 +24844,13 @@ div.product__price__wrap>div.bogo-tooltip-holder>p.bogo-text {
 font-size: 22px;
   }
 }
+
+@media screen and (min-width: 989px) {
+.parent .header__dropdown__wrapper {
+  padding: 0px;
+}
+}
+
   .bogo-badge-cart-drawer { 
     position: absolute;
     z-index: 1;
