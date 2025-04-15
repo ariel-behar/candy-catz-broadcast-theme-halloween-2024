@@ -24923,3 +24923,7 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
 .cart__item__title { font-size: 14px !important; }
 .cart__item__title a { color: #e0e0e0; }
 .cart__item__content .cart__price, .cart__item__content .cart__price span { font-size: 14px; color: #e0e0e0; }
+.cart__quantity { width: 85px; }
+.cart__quantity .cart__quantity-field {
+    padding: 5px 30px;
+}
