@@ -24984,3 +24984,4 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
    
 }
 .boost-sd__sorting-option { min-width: auto !important; }
+.boost-sd__toolbar-top-mobile .boost-sd__sorting-list { right: 0 !important; left: auto !important; }
