@@ -24912,5 +24912,7 @@ span.cbb-price-currency-BGN > span.cbb-price-symbol {
 span.cbb-price-currency-BGN > span.cbb-price-digits {
   order: 1;
 }
-
+.ship-insurance {
+    margin: 10px 0px 0px 0px !important;
+}
 
