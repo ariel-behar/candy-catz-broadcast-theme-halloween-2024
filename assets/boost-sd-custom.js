@@ -141,7 +141,7 @@ if (nextToPrice && productTags.length > 0 && priceWrappers.length > 0) {
                } catch (e) {
                   console.warn(e);
                }
-              document.querySelector(".collection_h1").style.display="block";
+              document.querySelector(".collection_h1").style.visibility="visible";
             }
          }),
       });
