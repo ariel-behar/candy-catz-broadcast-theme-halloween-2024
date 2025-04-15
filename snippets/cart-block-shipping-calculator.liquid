@@ -56,7 +56,7 @@
 
       <div class="p">
         <label for="address_country">{{ 'customer.addresses.country' | t }}</label>
-        <select id="address_country" name="address[country]" class="cart__field" {% if shop.customer_accounts_enabled and customer %}data-default="{{ customer.default_address.country_code }}" data-default-fullname="{{ customer.default_address.country }}"{% elsif default_country != '' %}data-default="{{ default_country.iso_code }}" data-default-fullname="{{ default_country }}"{% endif %}><option value="">-- Select Country --</option></select>
+        <select id="address_country" name="address[country]" class="cart__field" {% if shop.customer_accounts_enabled and customer %}data-default="{{ customer.default_address.country_code }}" data-default-fullname="{{ customer.default_address.country }}"{% elsif default_country != '' %}data-default="{{ default_country.iso_code }}" data-default-fullname="{{ default_country }}"{% endif %}><option value="CHOOSE">-- Select Country --</option></select>
       </div>
 
       <div id="address_province_container"  class="p shipping-calculator__province">
