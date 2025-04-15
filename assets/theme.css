@@ -23233,7 +23233,7 @@ dialog.is-loading .loader {
 }
 
 .highlights__item--rectangle .highlights__item__background {
-  padding-bottom: 75%;
+ /* padding-bottom: 75%;*/
 }
 
 .highlights__item--circle .highlights__item__background {
