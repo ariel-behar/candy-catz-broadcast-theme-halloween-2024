@@ -17,22 +17,21 @@
 window.addEventListener('DOMContentLoaded', () => {
 
 
-const select = document.querySelector("#address_country");
-
-if (select) {
-  const observer = new MutationObserver(() => {
+const interval = setInterval(() => {
+  const select = document.querySelector("#address_country");
+  if (select && select.options.length > 0) {
     const hasSelected = Array.from(select.options).some(opt => opt.selected);
     if (!hasSelected) {
       const usOption = select.querySelector('option[value="US"]');
       if (usOption) {
         usOption.selected = true;
-        observer.disconnect(); // спира наблюдението след като избере
+        clearInterval(interval); // спира интервала
       }
+    } else {
+      clearInterval(interval); // ако вече има избрано — спира
     }
-  });
-
-  observer.observe(select, { childList: true }); // следи за добавяне на <option>
-}
+  }
+}, 200); // проверява на всеки 200ms
    
   var canonicalTag = document.querySelector('link[rel="canonical"]');
   var robotsMetaTag = document.querySelector('meta[name="robots"][content="noindex,nofollow"]');
