@@ -12,18 +12,22 @@
   // Add custom code below this line
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const select = document.querySelector("#address_country");
-  if (select) {
-    const hasSelected = Array.from(select.options).some(option => option.selected);
+const select = document.querySelector(".shipping-calculator__container #address_country");
+
+if (select) {
+  const observer = new MutationObserver(() => {
+    const hasSelected = Array.from(select.options).some(opt => opt.selected);
     if (!hasSelected) {
       const usOption = select.querySelector('option[value="US"]');
       if (usOption) {
         usOption.selected = true;
+        observer.disconnect(); // спира наблюдението след като избере
       }
     }
-  }
-});
+  });
+
+  observer.observe(select, { childList: true }); // следи за добавяне на <option>
+}
   
 window.addEventListener('DOMContentLoaded', () => {
 
