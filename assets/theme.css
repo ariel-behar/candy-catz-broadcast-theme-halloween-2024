@@ -24965,7 +24965,7 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
   .highlights__items--mobile-slider .highlights__item--rectangle {
     width: calc(100% - 225px) !important;
   }
-    .highlights__items--mobile-slider .highlights__item {
+    .highlights__items--mobile-slider .highlights__item--button {
         width: auto !important;
     }
   .highlights__items .highlights__item-inner {
