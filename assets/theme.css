@@ -24835,7 +24835,7 @@ div.product__price__wrap > div.bogo-tooltip-holder > p.bogo-text {
   font-size: 13px;
   line-height: 32px; }
 @media screen and (max-width: 989px) {
-  .boost-sd-right .boost-sd__product-list.boost-sd__product-list--margin { margin-top: 1px; }
+  .boost-sd-right .boost-sd__product-list.boost-sd__product-list--margin { margin-top: 2px; }
 div.product__price__wrap>div.bogo-tooltip-holder>p.bogo-text {
 
     line-height: 25px;
