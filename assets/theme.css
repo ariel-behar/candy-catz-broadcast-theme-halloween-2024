@@ -24947,3 +24947,6 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
 .boost-sd__filter-option-item-button--with-checkbox:before {
     border: 1px solid rgb(163 163 163 / 60%) !important;
 }
+.boost-sd__refine-by-vertical-refine-by-heading {
+    color: #bcbcbc !important;
+}
