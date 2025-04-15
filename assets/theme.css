@@ -24898,5 +24898,5 @@ text-transform: uppercase;
     margin: 0px !important;
     font-size: 14px !important;
 }
-#cart-drawer > collapsible-elements > div.drawer__foot > div > form > div > div.cart__price__holder > div.cart__total > span > span > span { font-size: 22px; }
+#cart-drawer > collapsible-elements > div.drawer__foot > div > form > div > div.cart__price__holder > div.cart__total > span > span > span { font-size: 22px !important; }
 
