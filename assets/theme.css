@@ -24905,11 +24905,11 @@ text-transform: uppercase;
   flex-direction: row;
 }
 
-.currency-converter-amount.cbb-price-currency-BGN > .currency-converter-amount .cbb-price-symbol {
+span.cbb-price-currency-BGN > span > span > span.cbb-price-symbol {
   order: 2;
 }
 
-.currency-converter-amount.cbb-price-currency-BGN > .currency-converter-amount .cbb-price-digits {
+span.cbb-price-currency-BGN > span > span > span.cbb-price-digits {
   order: 1;
 }
 
