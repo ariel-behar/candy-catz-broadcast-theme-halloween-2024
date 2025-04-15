@@ -24890,3 +24890,4 @@ text-transform: uppercase;
 .cart__widget select.cart__field option {
     color: #000;
 }
+.select-popout__option:hover { color: #000; }
