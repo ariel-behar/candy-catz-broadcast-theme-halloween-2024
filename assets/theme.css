@@ -24852,6 +24852,9 @@ font-size: 22px;
  .header__menu .header__dropdown {
     padding: 10px 20px !important;
 }
+  .navlink.navlink--child span {
+    color: #fff;
+}
 }
 
   .bogo-badge-cart-drawer { 
