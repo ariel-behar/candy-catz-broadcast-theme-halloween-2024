@@ -24627,7 +24627,7 @@ nav.drawer .drawer__body .drawer__menu {
   padding: 5px;
   max-width: fit-content; 
   border-radius: 3px; }
-.collection_h1 { display: none; }
+.collection_h1 { visibility: hidden; }
 
 
 
