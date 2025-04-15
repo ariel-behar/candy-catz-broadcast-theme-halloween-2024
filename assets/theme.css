@@ -24853,7 +24853,7 @@ font-size: 22px;
     padding: 10px 20px !important;
 }
  .header__dropdown__inner .navlink.navlink--child span {
-    color: #fff;
+    color: #fff !important;
 }
 }
 
