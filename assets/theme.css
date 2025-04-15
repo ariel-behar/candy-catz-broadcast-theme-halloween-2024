@@ -24900,3 +24900,17 @@ text-transform: uppercase;
 }
 #cart-drawer > collapsible-elements > div.drawer__foot > div > form > div > div.cart__price__holder > div.cart__total > span > span > span { font-size: 22px !important; }
 
+.currency-converter-amount.cbb-price-currency-BGN {
+  display: flex;
+  flex-direction: row;
+}
+
+.currency-converter-amount.cbb-price-currency-BGN .currency-converter-amount .cbb-price-symbol {
+  order: 2;
+}
+
+.currency-converter-amount.cbb-price-currency-BGN .currency-converter-amount .cbb-price-digits {
+  order: 1;
+}
+
+
