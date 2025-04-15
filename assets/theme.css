@@ -24935,3 +24935,9 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
 .ssw-faveicon-custom { display: none; }
 .boost-sd__toolbar-container { height: 36px; }
 .gw-add-to-wishlist-product-card-placeholder { z-index: 2 !important; }
+@media only screen and (min-width: 768px) {
+    .boost-sd-layout .boost-sd__filter-tree-vertical-content {
+        padding-left: 10px !important;
+        padding-right: 16px;
+    }
+}
