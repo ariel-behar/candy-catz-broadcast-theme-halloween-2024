@@ -24941,7 +24941,15 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
         padding-right: 16px;
     }
 
-
+.boost-sd__sorting-list {
+    background: #000 !important;
+    border: 1px solid #eee;
+    color: #fff !important;
+    z-index: 3 !important;
+    margin-right: -10px !important;
+    top: calc(100% + 9px) !important;
+   
+}
     .boost-sd__toolbar-inner {
         padding-left: 10px !important;
         padding-right: 10px  !important;
@@ -24970,12 +24978,4 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
 .boost-sd-container .boost-sd__sorting-button:after {
     border-color: #fff !important;
 }
-.boost-sd__sorting-list {
-    background: #000 !important;
-    border: 1px solid #eee;
-    color: #fff !important;
-    z-index: 3 !important;
-    margin-right: -10px !important;
-    top: calc(100% + 9px) !important;
-   
-}
+
