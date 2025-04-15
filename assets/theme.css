@@ -24953,6 +24953,14 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
     }
 
 }
+@media only screen and (max-width: 967px) {
+.boost-sd__sorting-list {
+    
+    margin-right: -10px !important;
+    top: calc(100% + 9px) !important;
+   
+}
+}
 .boost-sd__filter-option-item-button--with-checkbox:after {
     border: 2px solid #cb4fd4 !important;
   border-right: none !important;
