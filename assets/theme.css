@@ -24927,3 +24927,7 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
 .cart__quantity .cart__quantity-field {
     padding: 5px 30px;
 }
+
+.cart__item {
+    border-bottom: 1px solid rgb(84 84 84);
+}
