@@ -24887,3 +24887,6 @@ font-size: 22px;
 text-transform: uppercase;
   }
 .product-modal__close { color: #fff; }
+.cart__widget select.cart__field option {
+    color: #000;
+}
