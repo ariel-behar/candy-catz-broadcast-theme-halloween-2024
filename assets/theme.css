@@ -24905,8 +24905,12 @@ text-transform: uppercase;
   flex-direction: row;
 }
 
+span.cbb-price-currency-BGN > span.cbb-price-symbol {
+  order: 2;
+}
+
 span.cbb-price-currency-BGN > span.cbb-price-digits {
-  float: left;
+  order: 1;
 }
 
 
