@@ -24942,8 +24942,7 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
     }
 
 .boost-sd__sorting-list {
-    
-    margin-right: -10px !important;
+   
     top: calc(100% + 9px) !important;
    
 }
@@ -24953,15 +24952,18 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
     }
 
 }
+
+.boost-sd__sorting-list {
+   margin-right: -10px !important;
+}
 @media only screen and (max-width: 967px) {
 .boost-sd__sorting-list {
     
-    margin-right: -10px !important;
     top: calc(100% + 11px) !important;
    
 }
   .boost-sd__sorting-option { min-width: auto !important; }
-  .boost-sd__filter-option-listitem--inline .boost-sd__filter-option-item { margin-right: 5px !important; }
+  .boost-sd__filter-option-listitem--inline .boost-sd__filter-option-item { margin-right: 0px !important; }
 }
 .boost-sd__filter-option-item-button--with-checkbox:after {
     border: 2px solid #cb4fd4 !important;
