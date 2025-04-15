@@ -24916,4 +24916,5 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
 .ship-insurance {
     margin: 10px 0px 0px 0px !important;
 }
+.cart__total__price { font-size: 22px !important; }
 
