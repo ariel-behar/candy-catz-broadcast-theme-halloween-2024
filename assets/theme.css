@@ -24940,6 +24940,13 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
         padding-left: 10px !important;
         padding-right: 16px;
     }
+
+
+    .boost-sd__toolbar-inner {
+        padding-left: 10px !important;
+        padding-right: 5px  !important;
+    }
+
 }
 .boost-sd__filter-option-item-button--with-checkbox:after {
     border: 2px solid #cb4fd4 !important;
