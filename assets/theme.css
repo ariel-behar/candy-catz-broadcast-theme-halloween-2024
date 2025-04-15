@@ -24853,8 +24853,12 @@ font-size: 22px;
  .header__menu .header__dropdown {
     padding: 10px 20px !important;
 }
- .header__dropdown__inner .navlink.navlink--child span {
-    color: #fff !important;
+
+   .header__dropdown__inner .navlink.navlink--child span {
+    color: var(--link) !important;
+}
+  .header__dropdown__inner .navlink.navlink--child span:hover {
+    color: var(--text--light) !important;
 }
 }
 
