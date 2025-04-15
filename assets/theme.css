@@ -24891,3 +24891,4 @@ text-transform: uppercase;
     color: #000;
 }
 .select-popout__option:hover { color: #000; }
+.select-popout__item.is-active .select-popout__option { color: #000; }
