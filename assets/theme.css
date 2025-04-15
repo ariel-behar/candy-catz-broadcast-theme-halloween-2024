@@ -24960,6 +24960,7 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
     top: calc(100% + 11px) !important;
    
 }
+  .boost-sd__sorting-option { min-width: auto !important; }
   .boost-sd__filter-option-listitem--inline .boost-sd__filter-option-item { margin-right: 5px !important; }
 }
 .boost-sd__filter-option-item-button--with-checkbox:after {
@@ -24992,7 +24993,7 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
     width: auto !important;
    
 }
-.boost-sd__sorting-option { min-width: auto !important; }
+
 .boost-sd__toolbar-top-mobile .boost-sd__sorting-list { right: 0 !important; left: auto !important; }
 .noUi-connect {
     background: #cb4fd4 !important;
