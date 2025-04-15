@@ -12,6 +12,11 @@
   // Add custom code below this line
 
 
+
+  
+window.addEventListener('DOMContentLoaded', () => {
+
+
 const select = document.querySelector("#address_country");
 
 if (select) {
@@ -28,11 +33,6 @@ if (select) {
 
   observer.observe(select, { childList: true }); // следи за добавяне на <option>
 }
-  
-window.addEventListener('DOMContentLoaded', () => {
-
-
-
    
   var canonicalTag = document.querySelector('link[rel="canonical"]');
   var robotsMetaTag = document.querySelector('meta[name="robots"][content="noindex,nofollow"]');
