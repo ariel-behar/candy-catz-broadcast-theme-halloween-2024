@@ -24980,6 +24980,7 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
     border: 1px solid #eee;
     color: #fff !important;
     z-index: 5 !important;
-    
+    width: auto !important;
    
 }
+.boost-sd__sorting-option { min-width: auto !important; }
