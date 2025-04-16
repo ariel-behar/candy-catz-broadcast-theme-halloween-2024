@@ -24898,7 +24898,8 @@ text-transform: uppercase;
 .select-popout__option:hover { color: #000; }
 .select-popout__item.is-active .select-popout__option { color: #000; }
 
-#cart-drawer > collapsible-elements > div.drawer__foot > div > form > div > div.cart__price__holder > div.currency-converter-cart-note.cbb-desktop-view.translatable {
+
+#cart-drawer > collapsible-elements > div.drawer__foot > div > form > div > div.cart__price__holder > div.currency-converter-cart-note.cbb-desktop-view.translatable, #cart-drawer > collapsible-elements > div.drawer__foot > div > form > div > div.cart__price__holder > div.currency-converter-cart-note.cbb-mobile-view.translatable {
   padding: 10px  !important;
     margin: 0px !important;
     font-size: 14px !important;
