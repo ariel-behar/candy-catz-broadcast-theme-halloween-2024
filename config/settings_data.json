@@ -214,7 +214,7 @@
       },
       "15870211849024486148": {
         "type": "shopify://apps/da-redirects/blocks/link_tracker/e7993789-f4e0-4d27-95f9-d952daf886fe",
-        "disabled": true,
+        "disabled": false,
         "settings": {}
       }
     }
