@@ -25053,3 +25053,4 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
         scrollbar-width: thin !important; 
 }
 body { padding-right: 0px !important; }
+html { overflow-x: hidden; }
