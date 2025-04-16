@@ -12,6 +12,17 @@
   // Add custom code below this line
 
 
+  if (
+  window.location.pathname.length > 1 && // игнорира началната страница "/"
+  window.location.pathname.endsWith('/')
+) {
+  const newUrl =
+    window.location.origin + window.location.pathname.slice(0, -1) + window.location.search + window.location.hash;
+
+  // 301 redirect – постоянен
+  window.location.replace(newUrl); // SEO-friendly redirect
+}
+
 
   
 window.addEventListener('DOMContentLoaded', () => {
