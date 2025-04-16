@@ -25044,3 +25044,7 @@ span.cbb-price-currency-BGN > span.cbb-price-digits {
 .boost-sd__filter-option-content-inner--scrollbar {
     scrollbar-color: #ffffff #000000 !important;
 }
+    .boost-sd__filter-tree-vertical-sticky-body .boost-sd__filter-tree-vertical-content {
+        scrollbar-color: #ffffff #000000 !important;
+        scrollbar-width: thin !important;
+    }
