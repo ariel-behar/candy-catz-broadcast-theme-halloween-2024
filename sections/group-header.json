@@ -55,8 +55,8 @@
         "countdown_KDEgXW": {
           "type": "countdown",
           "settings": {
-            "end_date": "2025-04-17",
-            "end_time": "10:00",
+            "end_date": "2025-04-18",
+            "end_time": "11:00",
             "period": "am",
             "end_message": "<p>Offer has expired</p>",
             "hide_on_complete": true,

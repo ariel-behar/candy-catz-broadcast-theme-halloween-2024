@@ -211,11 +211,6 @@
         "type": "shopify://apps/currency-converter/blocks/app-embed-block/a56d6bd1-e9df-4a4a-b98e-e9bb5c43a042",
         "disabled": false,
         "settings": {}
-      },
-      "5017882195547572635": {
-        "type": "shopify://apps/sc-easy-redirects/blocks/app/be3f8dbd-5d43-46b4-ba43-2d65046054c2",
-        "disabled": true,
-        "settings": {}
       }
     }
   },
