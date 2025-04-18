@@ -129,6 +129,7 @@
     },
     "section_hero_kJxP4U": {
       "type": "section-hero",
+      "disabled": true,
       "settings": {
         "height": "image-height",
         "width": "wrapper--full",
@@ -150,6 +151,7 @@
       "blocks": {
         "collection_cTbbBM": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "title": "Shop All BOGO",
             "featured_collection": "shop-all-bogo",
@@ -967,9 +969,9 @@
             "title_color": "",
             "title_size_v2": 0,
             "alignment": "center",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "margin_sides": 0,
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
             "show_instagram_link": false,
             "link_alignment": "left",
             "link_color": "#000000",
