@@ -4,80 +4,79 @@
   }
 </style>
 <script>
-      var waitForContainer = setInterval(function () {
-        var filterWrapper = document.getElementsByClassName('boost-sd__filter-block')[0];
-        //console.log(11111111111, filterWrapper)
-        if (filterWrapper) {
-          function addWidgets() {
-            window.ssw_widgets_products = [];
-            var gridItems = filterWrapper.querySelectorAll('.boost-sd__product-item');
-            //console.log(2222222222, gridItems)
-            gridItems.forEach(function (element) {
-              var placeholder = element.querySelector('.gw-add-to-wishlist-product-card-placeholder');
-              if (!placeholder) {
-                var getUrl = element.querySelector('a.boost-sd__product-link').getAttribute('href');
-              
-                var sswFaveIcon = `<div class="ssw-faveicon-custom" data-product-id="${getUrl}"></div>`;
-                window.ssw_widgets_products.push(getUrl);
-                var imageLink = element.querySelector('.boost-sd__product-item-grid-view-layout-image');
-                if (imageLink) {
-                    imageLink.insertAdjacentHTML('beforebegin', sswFaveIcon);
-                }
-                
-              }
-            });
+      
+<style>
+  .header__mobile__right {
+    align-items: center;
+  }
+</style>
+<script>
+    var waitForContainer = setInterval(() => {
+  const filterWrapper = document.querySelector('.boost-sd__filter-block');
+  if (!filterWrapper) return;
 
-            function ssw_widgets(handles) {
-              handles.forEach((handle) => {
-                  function removeVariantParameter(handle) {
-                      return handle.split('?')[0]; 
-                  }
-                  
-                  var newHandle = removeVariantParameter(handle);
+  clearInterval(waitForContainer);
 
-                var xhr = new XMLHttpRequest();
-                xhr.open("GET", "https://candycatz.com/"+ newHandle + "?view=ssw-v2-layouts", true);
-                xhr.onreadystatechange = function() {
-                  if (xhr.readyState === 4 && xhr.status === 200) {
-                    var res = xhr.responseText;
-                    var tmp = document.createElement('div');
-                    tmp.innerHTML = res;
-                    var placeholders = tmp.querySelectorAll('.gw-add-to-wishlist-product-card-placeholder');
-                    placeholders.forEach(function(placeholder) {
-                      
-                      var faveIcon = document.querySelector(`.ssw-faveicon-custom[data-product-id="${handle}"]`);
-                      if (faveIcon) {
-                        faveIcon.outerHTML = placeholder.outerHTML;
-                      }
-                    });
-                    
-                    }
-                  };
-                xhr.send();
-              });
-              window.ssw_widgets_products = [];
-            }
-            ssw_widgets(window.ssw_widgets_products);
-          }
+  const debounce = (fn, delay) => {
+    let timer;
+    return () => {
+      clearTimeout(timer);
+      timer = setTimeout(fn, delay);
+    };
+  };
 
-          addWidgets()
+  const addWidgets = () => {
+    const items = filterWrapper.querySelectorAll('.boost-sd__product-item');
+    window.ssw_widgets_products = [];
 
-          const observer = new MutationObserver(function (mutations) {
-            for (let mutation of mutations) {
-              if (mutation.type === 'childList') {
-                addWidgets()
-              }
-            }
+    items.forEach(item => {
+      if (item.querySelector('.gw-add-to-wishlist-product-card-placeholder')) return;
 
-          })
+      const link = item.querySelector('a.boost-sd__product-link')?.getAttribute('href');
+      if (!link) return;
 
-          observer.observe(filterWrapper, { childList: true })
-          
-          const filterTreeColumn = document.querySelector('.boost-sd-filter-tree-column');
-          if (filterTreeColumn) {
-            observer.observe(filterTreeColumn, { childList: true });
-          }  
-          clearInterval(waitForContainer)
-        }
-      }, 2500);
+      window.ssw_widgets_products.push(link);
+      const target = item.querySelector('.boost-sd__product-item-grid-view-layout-image');
+
+      if (target && !item.querySelector(`.ssw-faveicon-custom[data-product-id="${link}"]`)) {
+        target.insertAdjacentHTML('beforebegin', `<div class="ssw-faveicon-custom" data-product-id="${link}"></div>`);
+      }
+    });
+
+    window.ssw_widgets_products.forEach(handle => {
+      const cleanHandle = handle.split('?')[0];
+      fetch(`https://candycatz.com/${cleanHandle}?view=ssw-v2-layouts`)
+        .then(res => res.text())
+        .then(html => {
+          const tmp = document.createElement('div');
+          tmp.innerHTML = html;
+          tmp.querySelectorAll('.gw-add-to-wishlist-product-card-placeholder').forEach(placeholder => {
+            const target = document.querySelector(`.ssw-faveicon-custom[data-product-id="${handle}"]`);
+            if (target) target.outerHTML = placeholder.outerHTML;
+          });
+        });
+    });
+
+    window.ssw_widgets_products = [];
+  };
+
+  const debouncedAddWidgets = debounce(addWidgets, 300);
+  addWidgets();
+
+  new MutationObserver(mutations => {
+    if (mutations.some(m => m.addedNodes.length)) debouncedAddWidgets();
+  }).observe(filterWrapper, { childList: true, subtree: true });
+
+  let prevCount = 0;
+  setInterval(() => {
+    const current = filterWrapper.querySelectorAll('.boost-sd__product-item').length;
+    if (current !== prevCount) {
+      prevCount = current;
+      addWidgets();
+    }
+  }, 1000);
+
+}, 2500);
+
+  </script>
   </script>
